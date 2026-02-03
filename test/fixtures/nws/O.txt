@@ -1,0 +1,2875 @@
+about: Over
+about1: New World Scheduler is ontwikkeld om het plannen en organiseren van activiteiten door aangestelde broeders in de gemeente te vereenvoudigen en te stroomlijnen. Of je nu ouderling, dienaar in de bediening, coördinator van het lichaam van ouderlingen, secretaris bent of een andere verantwoordelijkheid hebt, we hopen dat New World Scheduler je werk gemakkelijker en sneller maakt. Zo kunnen we allemaal meer tijd besteden aan onze gezinnen, prediken, onderwijzen en herderlijk werk!
+about2: NWS wordt beheerd door een klein team van broeders en zusters in Australië. Ons team bestaat volledig uit volletijdpredikers en alle broeders zijn ouderling. Samen hebben we meer dan 45 jaar in de volletijddienst doorgebracht, waarvan meer dan 10 jaar in speciale volletijddienst. Onze teamleden hebben ook gediend op bijkantoren, afgelegen vertaalbureaus en in vele landen waar de behoefte groter is.
+aboutNote: Let op: Hoewel alle teamleden actieve Jehovah's Getuigen zijn, zijn we niet verbonden aan JW.org of het Wachttoren Bijbel- en Traktaatgenootschap. Dit programma vervangt geen officieel programma of website, bevat geen 'geestelijk voedsel' en verzamelt geen persoonlijke gegevens. Alle gegevens in dit programma zijn uitsluitend afkomstig van het plaatselijke lichaam van ouderlingen.
+aboutUs: Over ons
+accompanyingBrother: Assistent
+account: Account
+accountsServant: Boekhouddienaar
+acknowledge: Bevestigen
+actionRequired: Actie vereist
+active: Actief
+activeBrothers: Actieve broeders
+activeCampaign: Huidige campagne
+activePersons: Actieve personen
+activePersonsOnly: Alleen actieve personen
+activePublishers: Actieve verkondigers
+activePublishersExplanation1: Tel alle personen in de gemeente die in de afgelopen zes maanden minimaal één keer een bericht hebben ingeleverd.
+activeRegularInformation: Actief en geregeld wordt automatisch ingesteld wanneer het Gemeente Velddienstrapport wordt verzonden. Het kan ook handmatig worden aangepast als dat nodig is.
+activities: Activiteiten
+activity: Activiteit
+add: Toevoegen
+addAll: Voeg alles toe
+addApartmentNumber: Appartementsnummer toevoegen
+addEditBoundary: Grens toevoegen of bewerken
+addEditCongregationBoundary: Gemeentegrens toevoegen of bewerken
+addEditLabels: Labels toevoegen of bewerken
+addFromFile: Bestand toevoegen
+addGroup: Groep toevoegen
+additional: Extra
+additionalHelp: Aanvullende hulp
+addMultipleApartmentNumbers: Voeg meerdere appartementnummers toe
+addOrEditPublicTalkOutlines: Schema's voor openbare lezing toevoegen of bewerken
+addOrRemoveLocalPublicSpeakers: Klik op Personen om plaatselijke openbare sprekers toe te voegen of te verwijderen
+addPerson: Persoon toevoegen
+addPersons: Personen toevoegen
+address: Adres
+addressBeforeApartmentNumber: Adres vóór appartementnummer
+addressButtons: Adresknoppen
+addressDisplay: Adresweergave
+addresses: Adressen
+addressLanguage: Adres Taal
+addressNotesFromPublishers: Adresnotities van verkondigers
+addressTypesToInclude: Adrestypen die moeten worden opgenomen
+addressTypesToReset: Adrestypen om te resetten
+addSharedPerson: Gebruiker toevoegen
+addUpdate: Toevoegen / bijwerken
+affectAllAppUsers: Dit heeft gevolgen voor alle App-gebruikers.
+affectAllSharedCongregations: Dit heeft gevolgen voor alle gedeelde gemeenten.
+affectAllSharedPersons: Dit heeft gevolgen voor alle gesynchroniseerde gebruikers.
+africa: Afrika
+afternoon: middag
+age: Leeftijd
+all: Alle
+allAppointedBrothers: Alle aangestelde broeders
+allAppointedBrothersInYourCongregation: Alle aangestelde broeders in je gemeente
+allAssignmentsAndDutiesByPerson: Alle toewijzingen en taken per persoon
+allCategories: Alle categorieën
+allCircuits: Alle kringen
+allCongregationFieldServiceReportsSubmitted: Alle velddienstberichten van de gemeente ingediend op jw.org.
+allDatesAvailable: Alle beschikbare datums
+allDutiesScheduled: Alle taken gepland.
+allFieldServiceGroupsHaveOverseerAssistant: Alle velddienstgroepen hebben een opziener en een assistent.
+allFieldServiceReportsReceived: Alle velddienstrapporten ontvangen.
+allFieldServiceScheduled: Alle velddienstbijeenkomsten gepland.
+allFuture: Alle toekomstige
+allGroups: Alle groepen
+allMeetings: Alle vergaderingen
+allNonSchoolParts: Alle niet-schoolaandelen
+allOtherElders: Alle andere ouderlingen
+allowEditAddressNotes: Adresnotities bewerken toestaan
+allowHospitalityRequests: Gastgezin verzoeken toestaan
+allowReservations: Reserveringen toestaan
+allowSelfAssign: Zelf toewijzen toestaan
+allowSelfAssignTerritories: Zelf gebieden toewijzen toestaan
+allowSelfCompleteTerritories: Zelf gebieden inleveren toestaan
+allowSubmitAwayPeriods: Afwezigheidsperioden doorgeven toestaan
+allowSubmitLiteratureRequests: Lectuuraanvragen doorgeven toestaan
+allowSubmitMeetingAttendance: Vergaderingsbezoek doorgeven toestaan
+allowSubmitNewAddresses: Sta het indienen van nieuwe adressen toe
+allowSubmitReports: Velddienstberichten doorgeven toestaan
+allowTerritoryRequests: Gebied aanvragen toestaan
+allPartsAreScheduled: Alle aandelen zijn gepland.
+allPersons: Alle personen
+allPioneers: Alle pioniers
+allPublicTalkCoordinators: Alle openbare lezingen coördinatoren
+allPublicTalksScheduled: Alle openbare lezingen gepland.
+allPublishers: Alle verkondigers
+allPublishersAssignedFieldServiceGroup: Alle verkondigers zijn toegewezen aan een velddienstgroep.
+allPublishersHaveEmergencyContactInformation: Alle verkondigers hebben contactgegevens voor noodgevallen.
+allPublishersPersonalInformationUpToDate: Alle persoonlijke informatie van verkondigers is up-to-date.
+allRequestedSpeakersUnavailableAllRequestedDates: Geen van de aangevraagde sprekers is beschikbaar op de aangevraagde datums
+allSchoolParts: Alle school aandelen
+allSchools: Alle scholen
+allSharedPersonsRecentlyConnected: Alle gebruikers die onlangs zijn verbonden
+allSlips: Alle overzichten
+allSpeakers: Alle sprekers
+allTasks: Alle taken
+allTerritories: Alle gebieden
+allTerritoriesToKML: Alle gebieden naar KML
+allWeekendAssignmentsScheduled: Alle weekendtoewijzingen toegewezen.
+alsoDisableNWPApp: Schakel de NW Publisher-app ook uit?
+alsoRemoveCongregationSharing: Ook deze gemeente verwijderen uit de synchronisatie?
+alsoRemoveFamily: Wil je dit gezin ook verwijderen?
+alternatively: Alternatief
+am: Ochtend
+amount: Hoeveelheid
+and: en
+announcement: Mededeling
+announcements: Mededelingen
+announcementsLettersNotes: Mededelingen/Brieven/Notities
+annualItems: Jaarlijkse artikelen
+anointed: Gezalfde
+answered: Beantwoord
+any: Alle
+anyCampaign: Elke campagne
+anyDuty: Elke taak
+anyExcludingAssistant: Iedereen (excl. assistent)
+anyIncludingAssistant: Iedereen (incl. assistent)
+anyPart: Elk aandeel
+anySchoolPart: Elk school aandeel
+apartment: Appartement
+apartments: Appartementen
+apartmentsDisplay: Weergave van appartementen
+appAdministration: App beheer
+appAllUsersDisconnectReconnectCongregationPINMessage: Na het wijzigen van de Gemeente PIN moeten alle gebruikers van de NW Publisher-app de verbinding verbreken en vervolgens opnieuw verbinding maken met de gemeente.
+appAllUsersDisconnectReconnectRegionMessage: Na het wijzigen van de app-regio moeten alle gebruikers van de NW Publisher-app de nieuwe regio selecteren.
+appChangeAppRegionMessage: Een gemeentebeheerder moet de app-regio wijzigen
+appCongregationPINFixMessage1: 1. Sluit NWS Desktop en open deze opnieuw.
+appCongregationPINFixMessage2: 2. Typ hieronder opnieuw de gemeentepincode en klik vervolgens op Opnieuw verbinden.
+appCongregationPINFixMessage3: 3. Vraag een andere ouderling om je te vertellen wat ze zien in NWS Desktop onder NW Publisher app > Gemeente PIN. Typ vervolgens die pincode hieronder en klik op Opnieuw verbinden.
+appCongregationPINFixMessage44: 4. Klik op Gemeente > Backup en herstellen en herstel alleen NW Publisher app-instellingen. Klik vervolgens op Opnieuw verbinden of sluit en open NWS Desktop opnieuw
+appCongregationPINFixMessage5: 5. Als al het bovenstaande niet lukt, schakel dan de app uit en vervolgens weer in.
+appCongregationPINFixMessage6: Let op: Nadat je de app opnieuw hebt ingeschakeld, kun je op Wijzig pincode klikken en deze terugzetten naar je vorige 8-cijferige pincode. Als je dit niet doet, moeten alle verkondigers de verbinding met de app verbreken en opnieuw verbinden
+appCongregationPINProblem11Message: De gemeentepincode is onjuist
+appCongregationPINProblem2Message: De gemeentepincode ontbreekt.
+appCongregationPINReminderMessage1: Noteer of bewaar deze gemeentepincode op een veilige plaats.
+appCongregationPINReminderMessage2: Als je de gemeentepincode vergeet, moeten mogelijk alle verkondigers hun verbinding met de gemeente verbreken en opnieuw verbinding maken!
+appConnecting: App verbinden...
+appDataAutomaticallyRefreshed: Het is meestal niet nodig om dit te doen. Gegevens worden automatisch ververst wanneer je NWS Desktop voor het eerst opent.
+appDataCouldNotBeImportedCheckMessage: Sommige app-gegevens kunnen niet worden geïmporteerd. Controleer de gegevens afzonderlijk.
+appDataWaitingToReceiveMessage1: Er wachten momenteel app-gegevens om te worden ontvangen en geïmporteerd.
+appDataWaitingToReceiveMessage2: Je hebt tijdelijk gebruikers toegang gegeven om alle wachtende app-gegevens te ontvangen en te importeren.
+appDataWaitingToReceiveMessage3: Ontvang en importeer eerst alle wachtende app-gegevens, daarna kun je de app-regio wijzigen.
+appDevicesAutomaticallyRefreshed: Het is meestal niet nodig om dit te doen. Apparaten worden automatisch ververst wanneer je NWS Desktop voor het eerst opent.
+appDisableAppAccessMessage1: Deze persoon kan niet langer verbinding maken met de gemeente via de NW Publisher app.
+appEnabledPleaseConnect: De NW Publisher-app is ingeschakeld voor je gemeente. Maak verbinding zodat je app-gegevens kunt verzenden en ontvangen.
+appErrorPleaseTryAgain: Controleer je internetverbinding, klik op Opnieuw verbinden en probeer het opnieuw. Sluit anders NWS Desktop, open het opnieuw en probeer het opnieuw. Als het probleem aanhoudt, klik dan op Help.
+appExperiencedError: Sorry, er is een fout opgetreden in de NW Publisher-app
+appExperiencedErrorStep1: 1. Controleer de foutdetails, die informatie kunnen bevatten over hoe je dit kunt oplossen
+appExperiencedErrorStep2: 2. Klik op Opnieuw verbinden en probeer het opnieuw
+appExperiencedErrorStep3: 3. Sluit NWS Desktop, open het opnieuw en probeer het opnieuw
+appExperiencedErrorStep444: 4. Sluit NWS Desktop, wacht een paar uur, open het opnieuw en probeer het opnieuw. Soms ondervinden internetservers tijdelijk problemen
+appExperiencedErrorStep55: 5. Klik op Help > NW Publisher-app
+appExperiencedErrorStep6: 6. Schakel de NW Publisher-app uit en weer in
+appInternetConnectionErrorHelpLink: Help > NW Publisher-app > Veelgestelde vragen en problemen
+applyToAllFamilyMembers: Van toepassing op alle gezinsleden
+applyYourselfToTheFieldMinistry: Leg je toe op de velddienst
+applyYourselfToTheFieldMinistryShort: Velddienst
+appNewCongregationPINWarning: De gemeentepincode moet veilig en uniek zijn. Het mag geen datums of theocratische getallen bevatten.
+appNoDataFoundAdministratorMessage: Als dat niet werkt, klik je op Verzenden om de NW Publisher-app opnieuw in te stellen
+appNoDataFoundMessage1: Er zijn 3 manieren waarop dit kan gebeuren:
+appNoDataFoundMessage2: 1. Een gemeentebeheerder in je gemeente heeft de app uitgeschakeld of de app-regio gewijzigd
+appNoDataFoundMessage3: 2. Je hebt de NW Publisher-app 3 maanden niet gebruikt en je app-gegevens zijn automatisch verwijderd
+appNoDataFoundMessage44: 3. Een gemeentebeheerder heeft contact opgenomen met NW Scheduler Support en ons gevraagd je app-gegevens opnieuw in te stellen
+appNoDataFoundMessage55: Selecteer de juiste app-regio en klik op Opnieuw verbinden
+appNoDataFoundNonAdministratorMessage: Als dat niet werkt, neem dan contact op met een gemeentebeheerder voor hulp. Mogelijk moeten ze de NW Publisher-app opnieuw instellen.
+appNotDoneOftenMessage: Dit moet NIET vaak worden gedaan. Als je dit vaak moet doen, klik dan op Help of Neem contact met ons op.
+appointedBrothers: Aangestelde broeders
+appointmentsAndPioneers: Aanstellingen en pioniers
+appProcessReceivedAppDataErrors: Er zijn enkele fouten opgetreden bij het ontvangen van de app-gegevens. Controleer de 'App Logboeken - Ontvangen'.
+appRefreshPersonMessage: Je dient dit alleen te doen als deze persoon problemen heeft met app-gegevens.
+appRememberSendAppData: Vergeet niet om de app-gegevens te verzenden, anders verschijnen er geen gegevens in de app.
+appRemovePersonInformationMessage: De persoonlijke gegevens van deze persoon worden verwijderd van de app-server, inclusief van de verkondigerslijst, maar met uitzondering van hun naam op toewijzingen.
+appResetDevicesMessage: Je dient dit alleen te doen als deze persoon problemen heeft met app-meldingen, of als app-meldingen blijven mislukken voor deze persoon.
+appResetPINMessage: Je dient dit alleen te doen als deze persoon geen verbinding kan maken met zijn app-pincode.
+approve: Goedkeuren
+approveCongregation: Gemeente goedkeuren
+approved: Goedgekeurd
+approvedAssignmentsAndDutiesByPerson: Goedgekeurde toewijzingen en taken per persoon
+approvedBy: Goedgekeurd door
+approvedCLMAssignmentsByPerson: Goedgekeurde LED-toewijzingen per persoon
+approvedRequests: Goedgekeurde verzoeken
+approvedSpeakers: Goedgekeurde sprekers
+approveRequest: Aanvraag goedkeuren
+appUnableToDecryptMessage: Deze gegevens kunnen niet worden geïmporteerd en moeten worden verwijderd. De verkondiger moet proberen deze gegevens opnieuw te verzenden. Als dat niet werkt, moet hij/zij eerst de verbinding met de gemeente verbreken en vervolgens opnieuw verbinden, en vervolgens de gegevens opnieuw verzenden.
+appWrongPINMessage1: Er zijn verschillende manieren waarop dit kan gebeuren:
+appWrongPINMessage2: 1. Een app-beheerder in je gemeente klikte op App uitschakelen en schakelde vervolgens de app opnieuw in. Hierdoor wordt een nieuwe Gemeente pincode aangemaakt
+appWrongPINMessage3: 2. Een app-beheerder in je gemeente heeft op Wijzig pincode geklikt
+appWrongPINMessage4: 3. Een app-beheerder in je gemeente heeft een gemeente geïmporteerd in NWS Desktop, die je Gemeente pincode overschrijft
+appWrongPINMessage5: 4. Een app-beheerder in je gemeente heeft gemeente- of app-instellingen hersteld vanuit een back-up
+area: Gebied
+areas: Gebieden
+areYouAbsolutelySure: Weet je absoluut zeker dat je dit wilt doen?
+areYouCongregationAdministratorAndElder: Ben je een ouderling en gemeentebeheerder?
+areYouStillThere: Ben je er nog?
+areYouSure: Weet je het zeker?
+areYouSureScheduleWithoutRequest: Weet je zeker dat je deze Openbare spreker wilt plannen zonder een verzoek te verzenden?
+argentinePeso: Argentijnse peso
+as: net zo
+asiaPacific: Aziatisch-Pacifisch
+assembly: Kring
+assign: Toewijzen
+assignByMeeting: Toewijzen per vergadering
+assignByMonth: Toewijzen per maand
+assignByWeek: Toewijzen per week
+assignDelegate: Wijs gemachtigde toe
+assigned: Toegewezen
+assignedBy: Toegewezen door
+assignedTo: Toegewezen aan
+assignment: Toewijzing
+assignments: Toewijzingen
+assignmentSlips: Toewijzingen
+assignmentsOtherPersonList: Overzicht toewijzingen andere personen
+assignPrivilegesAndDuties: Wijs taken en verantwoordelijkheden toe
+assistant: Assistent
+assistantCLM: Assistent
+assistants: Assistenten
+assistantSlips: Assistent toewijzingen
+atHome: Thuis
+atHomeAbbreviation: TH
+atLeastOnePersonEditAccess: Ten minste één persoon moet te allen tijde BEWERK-toegang hebben tot de Gemeente en personen
+attachment: Bijlage
+attachments: Bijlagen
+attachmentTooLarge: Sorry, dit bestand is te groot. Het bestand moet 2 MB of minder zijn.
+attendance: Aanwezigen
+attendant: Zaalwacht
+attendants: Zaalwachten
+attendantsServant: Zaalwacht
+audience: Publiek
+audioVideoSupportCoordinator: Coördinator audio/video-ondersteuning
+australianDollar: Australische dollar
+autoAssign: Automatisch toewijzen
+autoAssignNotEnoughPersonsAvailable: Let op: niet alle aandelen zijn automatisch toegewezen omdat er niet genoeg beschikbare personen waren voor het volgende:
+autoMaintenanceLogs: Auto-onderhoudslogboeken
+automaticallyAssignRequests: Wijs verzoeken automatisch toe
+automaticallyImported: Automatisch geïmporteerd
+automaticallyImportingNWPAppData: Automatisch importeren van NW Publisher app-gegevens
+automaticallyImportMeetingData: Automatisch vergaderingsgegevens importeren
+automaticallyImportPublicWitnessingReservations: Automatisch reserveringen voor openbaar getuigenis importeren
+automaticallyImportUpdatedTerritoryAddresses: Importeer automatisch bijgewerkte gebiedsadressen
+automaticallyImportUpdatedTerritoryAssignments: Importeer automatisch bijgewerkte gebiedstoewijzingen
+automaticallyRefresh: Automatisch verversen
+automaticBackup: Automatische back-up
+automaticBackups: Automatische back-ups
+automaticDataMaintenance: Automatische data-onderhoud
+automaticTask: Automatische taak
+automaticTasks: Automatische taken
+auxiliary: Extra
+auxiliary1Short: Tweede school
+auxiliary2Short: Derde school
+auxiliaryAbbreviation: Extra/2e/3e
+auxiliaryAbbreviationOnly: Alleen extra
+auxiliaryClassroom: Extra school
+auxiliaryClassroom1: Tweede school
+auxiliaryClassroom2: Derde school
+auxiliaryClassroomCounselor: Raadgever extra school
+auxiliaryClassroomCounselorAbbreviation: Raadgever extra school
+auxiliaryClassroomCounselorShort: Raadgever extra school
+auxiliaryCounselor: Toegevoegd raadgever
+auxiliaryPioneer: Hulppionier
+auxiliaryPioneerAbbreviation: HP
+auxiliaryPioneers: Hulppioniers
+availability: Beschikbaarheid
+available: Beschikbaar
+availableForHospitality: Beschikbaar voor gastgezin
+availableFrom: Beschikbaar van
+availableFullVersionOnly: Alleen beschikbaar in de volledige versie
+availableTerritories: Beschikbare gebieden
+availableTo: tot en met
+availableToSelfAssign: Beschikbaar voor zelf toewijzen
+average: Gemiddelde
+averageAbbreviation: Gem
+averageAttendanceEachMonth: Gemiddeld aantal aanwezigen per maand
+averageAttendanceEachWeek: Gemiddeld aantal aanwezigen per week
+averageMeetingAttendance: Gemiddeld aantal aanwezigen op vergaderingen
+averagePerPerson: Gemiddelde per persoon
+averageTimeToCompleteATerritory: Gemiddelde tijd om een ​​gebied te voltooien
+averageWeekendMeetingAttendance: Gemiddeld aantal aanwezigen in het weekend
+averageWeeksBetweenPart: Gemiddelde weken tussen aandeel
+awaitingConfirmation: In afwachting van bevestiging
+awaitingReply: In afwachting van antwoord
+awaitingYourAcknowledgement: In afwachting van je bevestiging
+awaitingYourConfirmation: In afwachting van je bevestiging
+awaitingYourResponse: In afwachting van je reactie
+away: Afwezig
+awayFrequency: Afwezigheidsfrequentie
+awayFrom: Weg van
+awayPeriod: Afwezigheidsperiode
+awayPeriodConflicts: Afwezigheid-conflicten!
+awayPeriods: Afwezigheidsperioden
+awayPeriodsApplyToAllFamilyMembers: Deze persoon is een gezinshoofd. Wil je de Afwezigheidsperiode(n) toepassen op alle gezinsleden?
+awayPeriodsApplyToAllFamilyRequest: Deze persoon heeft verzocht om deze Afwezigheidsperiode toe te passen op alle gezinsleden.
+awayPublicSpeaker: Gastspreker
+awayPublicSpeakers: Gastsprekers
+awayPublicTalk: Uitlezing
+awayPublicTalks: Uitlezingen
+awayPublicTalksList: Overzicht uitlezingen
+awaySpeakers: Gastsprekers
+awayTo: Weg naar
+backgroundOpacity: Achtergrondtransparantie
+backup: Back-up
+backupAllData: Complete back-up
+backupAndRestore: Back-up en herstellen
+backupCongregation: Back-up gemeente
+backupFailed: Back-up mislukt
+backupFile: Back-upbestand
+backupIncludeMapFiles1: Gebied afbeeldingen opnemen?
+backupIncludeMapFiles2: (Hierdoor wordt je back-upbestand veel groter)
+backupNow: Nu back-up maken
+backupReminder: Back-up herinnering
+backupReminderMessage1: BELANGRIJK!: Maak regelmatig een externe back-up van je gegevens!
+backupReminderMessage2: NWS Desktop maakt elke keer dat het programma wordt afgesloten een automatische back-up. Dit wordt alleen op je lokale computer/laptop opgeslagen. Automatische back-ups bevatten geen gebied afbeeldingen.
+backupReminderMessage3: We raden je sterk aan om ook regelmatig een externe back-up te maken op een draagbare harde schijf of usb-stick voor het geval je computer/laptop crasht, beschadigd of gestolen wordt of als je gegevens beschadigd of corrupt raken.
+backupReminderMessage4: Wil je nu een externe back-up maken? (Plaats eerst een draagbare harde schijf of usb-stick)
+backupRestore: Back-up maken en herstellen
+backupSharedPersons: Back-up van gebruikers
+backupSource: Back-up bron
+backupSuccessful: Back-up succesvol!
+bajanDollar: Bajan-dollar
+baptismDate: Doopdatum
+baptized: Gedoopt
+baptized1Year: Gedoopt 1 jaar
+baptizedMonths: Gedoopte maanden
+baptizedPublishers: Gedoopte verkondigers
+bcc: Bcc
+beforeImportPleaseBackup: Maak voor het importeren een back-up van je gegevens!
+believingFamilyMembers: Gelovige gezinsleden
+believingFamilyMembersLivingWithYou: Gelovige inwonende gezinsleden
+betaCurrentlyUsing: Je gebruikt momenteel een bètaversie van NWS Desktop
+betaGreatlyAppreciateMessage: We waarderen iedereen die zich liefdevol beschikbaar stelt om Beta Tester te worden enorm!
+betaPleaseTestMessage1: 1. Lees *aandachtig* het overzicht, de belangrijke informatie en de release-opmerkingen.
+betaPleaseTestMessage2: 2. Test alle nieuwe en bijgewerkte functies.
+betaPleaseTestMessage3: 3. Klik op de knop Betaversie testen om eventuele problemen, bugs, schermafbeeldingen of andere opmerkingen te verzenden.
+betaPleaseTestMessage4: Herinnering: Alleen ervaren gebruikers van NWS Desktop, die goed zijn in het oplossen van problemen en de Help zorgvuldig hebben gelezen, mogen bètaversies testen inschakelen.
+betaSendMultipleScreenshots: Belangrijk: voeg meerdere screenshots toe van eventuele problemen die je hebt, inclusief screenshots van elke stap die je hebt uitgevoerd in de aanloop naar het probleem, en wat je ziet na het probleem.
+betaThankYouForSendingMessage: Bedankt voor het sturen van eventuele problemen, bugs, screenshots of andere opmerkingen
+betaVersion: Bètaversie
+betaVersionTestingReminder: Herinnering voor het testen van de bètaversie
+betaVersionUpdates: Updates van de bètaversie
+betaVersionUpdatesAndTesting: Bètaversie-updates en testen
+bibleReading: Bijbellezen
+bibleReadingAbbreviation: BL
+bibleReadingShort: Bijbellezen
+bibles: Bijbels
+bibleStudies: Bijbelstudies
+bibleStudiesAbbreviation: BS
+bibleStudy: Bijbelstudie
+bibleStudyAbbreviation: BS
+blank: Leeg
+blind: Blind
+blindPublishers: Blinde verkondigers
+books: Boeken
+brazilianReal: Braziliaanse real
+brochuresAndBooklets: Brochures
+brother: Broeder
+brothers: Broeders
+business: Zakelijk
+button: Knop
+buttons: Knoppen
+by: door
+calendarMonths: Kalendermaanden
+campaign: Campagne
+campaigns: Campagnes
+campaignStatistics: Statistieken campagne
+canadianDollar: Canadese dollar
+cancel: Annuleer
+cancelled: Geannuleerd
+cancelledRequests: Geannuleerde verzoeken
+cancelRequest: Annuleer verzoek
+cannotBeUndone: Dit kan niet ongedaan gemaakt worden!
+cannotReachServerMessage: De server is niet bereikbaar. Controleer je internetverbinding en probeer het opnieuw.
+canYouHelp: Kun je helpen?
+captain: Leider
+captureFromMap: Van kaart vastleggen
+cart: Lectuurstand
+cartNumber: Standnummer:
+categories: Categorieën
+categoriesAndTasks: Categorieën en taken
+category: Categorie
+cc: Cc
+ccTheirPublicTalkCoordinator: Cc hun coördinator openbare lezingen
+ccYourPublicTalkCoordinator: Cc je coördinator openbare lezingen
+chairman: Voorzitter
+chairmanNotes: Aantekeningen voor de voorzitter
+chairmanOutline: Voorzitter overzicht
+change: Aanpassen
+changeAppRegion: Wijzig app-regio
+changed: Gewijzigd
+changedBy: Gewijzigd door
+changePassword: Wachtwoord wijzigen
+changePIN: Wijzig pincode
+changeSharingRegion: Wijzig synchronisatieregio
+changingComputersOrMultipleComputers: Van computer of meerdere computers wisselen
+checkContactDetails: Controleer de contactgegevens
+checkContactDetailsRequest: Verzoek om contactgegevens te controleren
+checkForExistingAssignment: Controleer op bestaande toewijzing
+checkForUpdates: Controleer op updates
+checkingForUpdates: Controleren op updates ...
+child: Kind
+children: Kinderen
+chileanPeso: Chileense peso
+christianLifeMinistryAbbreviation: LED
+circuit: Kring
+circuitAssembly: Kringvergadering
+circuitCode: Kringcode
+circuitName: Kringnaam:
+circuitOverseer: Kringopziener
+circuitOverseerAbbreviation: KO
+circuitOverseerAbbreviationName: Naam KO
+circuitOverseerAbbreviationWifeName: Naam echtgenote KO
+circuitOverseerCopy: Kopie kringopziener
+circuitOverseerNote: Opmerking: Vat het zojuist behandelde programma samen, geef een voorproefje van het programma van volgende week, doe eventuele mededelingen, lees belangrijke brieven voor en kondig vervolgens de kringopziener aan.
+circuitOverseerReport: Kringopziener rapport
+circuitOverseersWife: Vrouw van kringopziener
+circuitOverseerTalk: Lezing van de kringopziener
+circuitOverseerVersion: Kringopziener versie
+circuitOverseerVisit: Bezoek kringopziener
+circuitOverseerVisitActivities: Bezoekactiviteiten kringopziener
+circuitOverseerVisitEndOnSunday: Het bezoek van de kringopziener moet eindigen op de zondag van dezelfde week
+circuitOverseerVisitNotScheduled: Sorry, het bezoek van de kringopziener is nog niet gepland. Plan eerst het bezoek van de kringopziener.
+circuitOverseerVisitPreparationComplete: Voorbereiding bezoek kringopziener voltooid
+circuitOverseerVisitRemoveExistingAssignmentsMessage1: Wil je voor deze week alle Schooltoewijzingen, GBS leider, GBS lezer, WT lezer en geplande openbare lezing verwijderen?
+circuitOverseerVisitRemoveExistingAssignmentsMessage2: Als je niet weet welke spreker er gepland was, kies dan Nee en informeer de spreker. Kom daarna terug naar Gemeentegebeurtenissen, wis de datum van het bezoek van de kringopziener en vul opnieuw de datum in. Druk daarna op Ja, anders kun je problemen in de planning veroorzaken.
+circuitOverseerVisitSchedule: Bezoekschema kringopziener
+circuitOverseerVisitStartOnTuesday: Het bezoek van de kringopziener moet dinsdag beginnen
+circuits: Kringen
+circuitsCongregationsPublicSpeakers: Kringen, gemeenten en openbare sprekers
+circuitStillHasApprovedCongregations: Sorry, deze kring heeft nog steeds andere goedgekeurde, verbonden gemeenten.
+city: Stad
+citySuburb: Plaats
+cleaning: Schoonmaak
+cleaningAndGardenCare: Schoonmaak en tuinverzorging
+cleaningCoordinator: Schoonmaakcoördinator
+cleaningDutiesNotScheduled: Schoonmaakwerkzaamheden niet gepland
+cleaningGroups: Schoonmaakgroepen
+cleaningLightCleaning: Schoonmaak na vergadering
+cleaningMajorCleaning: Grote schoonmaak
+cleaningMonthlyCleaning: Maandelijkse schoonmaak
+cleaningSchedule: Schoonmaakschema
+cleaningThoroughCleaning: Wekelijkse schoonmaak
+clear: Wissen
+clearAll: Wis alles
+clearAllCLMAssignments: Hiermee zijn alle toewijzingen voor Leven-en-Dienen van deze week afgerond.
+clearAllHistory: Wis alle historie
+clearData: Verwijder gegevens
+clearDevices: Wis apparaten
+clearExistingAssigmentsMessage: Dit onderdeel wist alle bestaande doordeweekse of weekend toewijzingen op deze dag / week.
+clearHours: Uren wissen
+clearingReceivedAppData: Ontvangen app-gegevens wissen
+clearMapCache: Wis kaartcache
+clearMonth: Maand wissen
+clearNonPioneerHoursExplanation: Hierdoor worden alle uren van alle niet-pioniersmaanden voor deze persoon gewist.
+clearNotesFromPublisher: Wis notities van verkondiger
+clearWithoutSending: Wissen zonder te verzenden
+clickHereToDownload: Klik hier om te downloaden
+clmAssignments: LED-toewijzingen
+clmExplorerNotFound: CLM Explorer niet gevonden. Wil je in plaats daarvan een CLM Explorer-back-upbestand gebruiken? Zo ja, gebruik dan CLM Explorer om een ​​lokale back-up te maken (Bestand > Back-up) en klik vervolgens op Ja om het back-upbestand te selecteren.
+clmScheduleCheckDraftExplanation: In de conceptmodus worden geen wijzigingen in het schema of toewijzingen naar de NW Publisher-app verzonden.
+clmScheduleUncheckDraftExplanation: Dit schema en alle toewijzingen kunnen nu naar de NW Publisher-app worden verzonden.
+clmStudent: LED leerling
+clmStudents: LED leerlingen
+close: Sluiten
+closeAnyway: Toch sluiten
+closeNow: Nu sluiten
+closing: Sluiten...
+closingPrayer: Slotgebed
+closingSong: Slotlied
+closingViewMessageCreatingAutomaticBackup: Automatische back-up maken...
+closingViewMessageSavingAllData: Alle gegevens opslaan...
+closingViewMessageSyncingSharedData: Gedeelde gegevens synchroniseren...
+code: Code
+coListScheduledFieldMinistry: lijst van degenen die zijn ingedeeld ​​om met KO en zijn vrouw samen te werken.
+colombianPeso: Colombiaanse peso
+combined: gecombineerd
+combinedMonthlyTotals: Gecombineerde maandelijkse totalen
+combineInto1File: Combineer in 1 bestand
+commonQuestionsAndProblems: Veelvoorkomende vragen en problemen (FAQ)
+comparisonPeriod: Vergelijkingsperiode
+completed: Gereed
+completedLast12Months: Bewerkt in de afgelopen 12 maanden
+completedLast6Months: Bewerkt in de afgelopen 6 maanden
+completedMonthsSubmittedToBranch: Zorg er eerst voor dat alle ingevulde velddienstrapporten zijn gemarkeerd als 'Ingediend bij het Bijkantoor'. Alleen maanden die zijn 'ingediend bij het Bijkantoor' worden opgenomen.
+completedPerMonth: Per maand afgerond
+completedTerritory: Voltooid gebied
+completeS61: S-61 compleet
+compressAndSave: Comprimeren en opslaan
+compressedSize: Gecomprimeerde grootte
+computerCannotOpenFile: Sorry, je computer kan dit bestandstype niet automatisch openen. Open Windows Verkenner en open dit bestand vervolgens handmatig.
+computerCannotOpenLink: Sorry, je computer kan deze link niet openen. Probeer een andere standaard webbrowser in te stellen.
+conductFieldServiceMeetings: Velddienstbijeenkomsten leiden
+conductor: Leiding
+confident: Gevorderd
+confirm: Bevestigen
+confirmation: Bevestiging
+confirmationAgreePolicies: Ik heb het privacybeleid en de licentieovereenkomst gelezen en ga hiermee akkoord.
+confirmDeleteCongregationMessage: Weet je zeker dat je deze gemeente van je lokale computer wilt verwijderen?
+confirmed: Bevestigd
+confirmNewPIN: Bevestig nieuwe pincode
+confirmYourLocation: Bevestig je locatie
+conflicts: Conflicten
+congregation: Gemeente
+congregationAdministration: Gemeentebeheer
+congregationAdministrator: Gemeentebeheerder
+congregationAdministratorEnforcedEnablePinLock: Een beheerder van de gemeente heeft de pincodevergrendeling ingeschakeld. Je bent verplicht een pincode in te stellen en te gebruiken om toegang te krijgen tot NWS Mobile.
+congregationAdministrators: Gemeentebeheerders
+congregationAlreadyExists: De gemeente bestaat al
+congregationAnalysisReport: Gemeenteanalyse
+congregationAnnouncement: Gemeentemededeling
+congregationAnnouncementAttachmentNotExistMessage1: Deze Gemeentemededeling bevat een bijlage, maar de bijlage kan niet op je lokale computer of op de server worden gevonden.
+congregationAnnouncementAttachmentNotExistMessage3: 1) Klik op Gemeente > Mededelingenbord > Mededelingen en verwijder de bijlage of voeg deze opnieuw toe.
+congregationAnnouncementAttachmentNotExistMessage4: 2) Klik op Gemeente > Mededelingenbord > Mededelingen en verwijder deze mededeling.
+congregationAnnouncements: Gemeentemededelingen
+congregationAppDisabled: NW Publisher-app uitgeschakeld
+congregationAppPINChanged: NW Publisher-app Gemeente pincode gewijzigd
+congregationAssignments: Gemeentetoewijzingen
+congregationBibleStudy: Gemeentebijbelstudie
+congregationBibleStudyAbbreviation: GBS
+congregationBronze: Gemeente Brons
+congregationCalendar: Agenda
+congregationData: Gemeentegegevens
+congregationDeletedFromSharing: Gemeente verwijderd uit synchronisatie
+congregationDetails: Gemeentegegevens
+congregationDocument: Gemeentedocument
+congregationDocumentAttachmentNotExistMessage1: Dit document / deze brief bevat een bijlage, maar de bijlage kan niet op je lokale computer of op de server worden gevonden.
+congregationDocumentAttachmentNotExistMessage3: 1) Klik op Gemeente > Mededelingenbord > Documenten en Brieven en verwijder de bijlage of voeg deze opnieuw toe.
+congregationDocumentAttachmentNotExistMessage4: 2) Klik op Gemeente > Mededelingenbord > Documenten en Brieven en verwijder dit document / deze brief.
+congregationDocuments: Gemeentedocumenten
+congregationEvent: Gemeentegebeurtenis
+congregationEvents: Gemeentegebeurtenissen
+congregationEventsUpdated: Gemeentegebeurtenis bijgewerkt
+congregationFieldServiceReport: Gemeente velddienstbericht
+congregationFieldServiceReportNotYetSubmitted: Dit gemeente velddienstbericht is nog niet gemarkeerd als Ingezonden.
+congregationFieldServiceReports: Gemeente velddienstberichten
+congregationFieldServiceReportS1: Gemeenteberichten (S-1)
+congregationFieldServiceReportsNotYetSubmitted: Gemeente velddienstbericht nog niet ingevoerd op jw.org
+congregationFieldServiceSummary: Gemeentesamenvatting velddienst per type verkondiger
+congregationForCircuitOverseer: Gemeentegegevens voor kringopziener
+congregationGold: Gemeente Goud
+congregationID: Gemeente ID
+congregationInformation: Gemeente-informatie
+congregationLanguage: Gemeentetaal
+congregationLanguageChangeReminder: Herinnering: Je dient de gemeentetaal slechts éénmaal te wijzigen, wanneer je de gemeente voor het eerst aanmaakt en instelt.
+congregationLicenseActive: Gemeentelicentie actief
+congregationMeetings: Vergadertijden
+congregationName: Naam van de gemeente
+congregationNotes: Gemeentenotities
+congregationNotExist: Deze gemeente bestaat niet. Controleer je regio en gemeente-ID. Gebruik anders 'NWS Desktop' om een ​​nieuwe gemeente aan te maken.
+congregationNotExist1: Gemeente ID bestaat niet in deze regio. Controleer zorgvuldig de regio- en gemeente ID en probeer het opnieuw.
+congregationNotExist2: Als je nog steeds geen verbinding kunt maken, vraag dan een gemeentebeheerder om hulp.
+congregationNotExist3: Als je een gemeentebeheerder bent en geen andere gemeentebeheerders toegang hebben, neem dan contact met ons op voor hulp.
+congregationNotYetShared: Gemeente nog niet gesynchroniseerd
+congregationNumber: Gemeentenummer
+congregationOverview: Overzicht
+congregationPassword: Gemeente Synchronisatiewachtwoord
+congregationPasswordIncorrect: Het wachtwoord voor het delen van gegevens binnen de gemeente is onjuist. Probeer het opnieuw of klik op Help > Delen binnen de gemeente.
+congregationPerson: Persoon in de gemeente
+congregationPIN: Gemeente PIN
+congregationPINIncorrect: Gemeente PIN onjuist
+congregationPublisherRecord: Bericht van gemeenteverkondiger
+congregationPublisherRecords: Berichten van gemeenteverkondiger
+congregationRecentlyDeleted: Deze gemeente is onlangs verwijderd. Een gemeentebeheerder wordt verzocht 'NWS Desktop' te gebruiken om deze gemeente opnieuw in te stellen.
+congregationRecentlyDeletedFromSharing1: Deze gemeente is onlangs verwijderd uit de synchronisatie en moet opnieuw worden ingesteld door een gemeentebeheerder.
+congregationResponsibilities: Gemeenteverantwoordelijkheden
+congregationResponsibilitiesByPerson: Gemeenteverantwoordelijkheden per persoon
+congregations: Gemeenten
+congregationSharedButRequestNotSent: Deze gemeente wordt gedeeld en je hebt een Openbare spreker geselecteerd, maar je hebt geen verzoek verzonden.
+congregationSharing: Gemeentesynchronisatie
+congregationSharingAllUsersSelectRegionMessage: Na het wijzigen van de synchronisatieregio moeten alle gesynchroniseerde personen NWS Desktop openen en de nieuwe regio selecteren.
+congregationSharingAppointedBrothers: NWS Desktop is alleen bedoeld voor aangestelde broeders die gemeenteverantwoordelijkheden hebben. Niet-aangestelde broeders of zusters mogen alleen als synchronisatie lid worden toegevoegd als ze een gemeente-verantwoordelijkheid hebben.
+congregationSharingBeforeEnablingPleaseConfirm: Voordat je gemeentesynchronisatie inschakelt, moet je akkoord gaan met en het volgende bevestigen:
+congregationSharingConfirm: Ik heb op Help > gemeentesynchronisatie geklikt en begrijp hoe gemeentesynchronisatie werkt, hoe ik dit moet instellen en hoe ik eventuele problemen kan oplossen. Ik begrijp dat gemeentebeheerders verantwoordelijk zijn voor het aanmaken, bewerken en verwijderen van alle gemeente- en persoonlijke gegevens, en dat New World Solutions de persoonlijke of gemeentegegevens niet kan openen, bekijken, bewerken of overdragen.
+congregationSharingConfirmEUUKSimilar: Ik heb de webpagina 'New World Scheduler compliance with EU GDPR, UK GDPR and other similar Data Protection Regulations' bezocht en ik begrijp en ga akkoord met alles op die pagina, inclusief mijn verantwoordelijkheden. Ik begrijp dat door het inschakelen van gemeentesynchronisatie de gemeente de rol van gegevensbeheerder op zich neemt en New World Solutions de gegevensverwerking, met inachtneming van de voorwaarden van ons privacybeleid en onze gegevensverwerkingsovereenkomst.
+congregationSharingCongregationInEuropeanUnionUKorSimilar: Deze gemeente is WEL gevestigd in de Europese Unie, het Verenigd Koninkrijk of plaatsen met vergelijkbare voorschriften voor gegevensbescherming
+congregationSharingCongregationNotInEuropeanUnionUKorSimilar: Deze gemeente is NIET gevestigd in de Europese Unie, het Verenigd Koninkrijk of plaatsen met vergelijkbare voorschriften voor gegevensbescherming
+congregationSharingConnectMessage: Als je je synchronisatieregio, gemeente ID of wachtwoord voor gemeente synchronisatie niet weet, vraag het dan aan een gemeentebeheerder.
+congregationSharingDataErrors: Sorry, de gegevens voor het synchroniseren van je gemeente bevatten fouten. Probeer het opnieuw. Als dit probleem zich blijft voordoen, controleer dan of je de nieuwste versie van NWS Desktop hebt, werk deze eventueel bij en vraag een gemeentebeheerder om je opnieuw als gebruiker in te stellen. Klik op Help> Gemeentesynchronisatie voor meer informatie.
+congregationSharingDataNotExist: Er bestaan ​​geen gegevens op de server om te synchroniseren.
+congregationSharingDataRemotelyDeletedMessage: Als je denkt dat dit een vergissing was, neem dan contact op met je plaatselijke gemeentebeheerder.
+congregationSharingEnableExplanation1: Gemeentesynchronisatie stelt je in staat om automatisch alle NWS Desktop-gegevens te delen en te synchroniseren met andere aangestelde broeders in je gemeente. Dit staat los van de NW Publisher-app. Gemeentesynchronisatie slaat GEEN vertrouwelijke informatie online op.
+congregationSharingEnableExplanation2: NWS Desktop gemeentesynchronisatie is volledig in overeenstemming met sfg en de Algemene Verordening Gegevensbescherming (AVG) van de Europese Unie (EU).
+congregationSharingExperiencedError: Sorry, er is een fout opgetreden bij het synchroniseren van je gemeente
+congregationSharingExperiencedErrorStep1: 1. Klik op Opnieuw verbinden en probeer het opnieuw.
+congregationSharingExperiencedErrorStep2: 2. Sluit NWS Desktop, open het opnieuw en probeer het opnieuw.
+congregationSharingExperiencedErrorStep3: 3. Sluit NWS Desktop, wacht een paar uur, open vervolgens opnieuw en probeer het opnieuw.
+congregationSharingExperiencedErrorStep4: 4. Noteer de onderstaande foutdetails en klik op Help > Gemeentesynchronisatie
+congregationSharingHasProblem1: Je gemeentesynchronisatie heeft een probleem.
+congregationSharingHasProblem22: We raden je ten zeerste aan op Probleem oplossen te klikken en gemeentesynchronisatie te herstellen.
+congregationSharingHasProblemIgnoreMessage1: Als je problemen met gemeentesynchronisatie negeert, kan dit leiden tot gegevensverlies voor jezelf en anderen.
+congregationSharingHasProblemIgnoreMessage2: We raden je ten zeerste aan om het probleem op te lossen.
+congregationSharingHasProblemIgnoreMessage3: Je moet dit probleem alleen negeren als je daar een zeer goede reden voor hebt (bijvoorbeeld alleen gegevens bekijken) en precies begrijpt wat je doet.
+congregationSharingIdentifyMessage: Je e-mailadres wordt gebruikt om je te identificeren. Zorg ervoor dat een gemeentebeheerder je al heeft toegevoegd als gebruiker met behulp van het volgende e-mailadres.
+congregationSharingMoreThanThreePersonsCanEditData: Sommige functies kunnen door meer dan 3 personen worden bewerkt. We raden aan dat elke functie door slechts 2 of 3 personen kan worden bewerkt.
+congregationSharingNewEncryptionMessage: Opmerking: er is nu een nieuwe gegevensversleutelingsmethode beschikbaar. Klik op Gegevens bijwerken.
+congregationSharingNotFoundInRegionMessage: Je gemeente is niet gevonden in deze regio. Een gemeentebeheerder heeft mogelijk onlangs de regio gewijzigd of deze gemeente verwijderd.
+congregationSharingNotFoundInRegionOption1: 1. Vraag een beheerder van de gemeente welke synchronisatieregio je moet selecteren en maak opnieuw verbinding.
+congregationSharingNotFoundInRegionOption2: 2. Wacht tot een gemeentebeheerder het delen van gegevens in deze regio opnieuw heeft ingesteld en maak vervolgens opnieuw verbinding.
+congregationSharingNotFoundInRegionOption3: 3. Klik op Verbinding verbreken en controleer vervolgens of de synchronisatieregio, Gemeente ID en Gemeente synchronisatiewachtwoord correct zijn.
+congregationSharingNotFoundInRegionOption4: 4. Herstel de mogelijkheid tot het delen van gegevens in deze regio.
+congregationSharingNotSetupInRegionOverride: Ik ben een gemeentebeheerder en deze regio is correct.
+congregationSharingPassword: Gemeente synchronisatiewachtwoord
+congregationSharingPasswordChanged: Het wachtwoord van gemeentesynchronisatie is gewijzigd
+congregationSharingPasswordChangeMessage: Het wachtwoord van gemeentesynchronisatie is verouderd of onveilig. Wijzig het wachtwoord en informeer vervolgens alle gebruikers.
+congregationSharingPasswordChangeWarning: Zorg ervoor dat alle gesynchroniseerde personen NWS Desktop afgesloten hebben voordat je het wachtwoord wijzigt.
+congregationSharingPasswordIncorrectMessage1: Gemeente synchronisatiewachtwoord onjuist. Probeer het opnieuw of klik op Help > Gemeentesynchronisatie
+congregationSharingPasswordMessage1: Het wachtwoord moet aan andere broeders in je gemeente worden gegeven, zodat zij verbinding kunnen maken.
+congregationSharingPasswordMessage2: Het wachtwoord moet 12 tekens of langer zijn en kleine letters, hoofdletters en cijfers bevatten.
+congregationSharingPasswordMessage3: Omdat dit wachtwoord wordt gebruikt om je gegevens te versleutelen, raden wij je aan een veilig wachtwoord te kiezen. De beste wachtwoorden zijn lange, unieke zinnen die gemakkelijk te onthouden zijn.
+congregationSharingPasswordMessage4: bijv. Gemeente@Amsterdam2023 of OpenbaarGetuigenisIsLeuk!543 of DoodZalErNietMeerZijn21:34
+congregationSharingPasswordNeedsUpdating: Het wachtwoord van gemeentesynchronisatie moet worden bijgewerkt
+congregationSharingPersonEmailNotMatch1: Sorry, e-mailadressen komen niet overeen
+congregationSharingPersonEmailNotMatch2: Wijzig je e-mailadres of wijzig het Persoonsrecord 'E-mail 1'
+congregationSharingPersonNotExist11: Sorry, deze gemeente heeft geen gebruiker met het bovenstaande e-mailadres.
+congregationSharingPersonNotExist22: Zorg ervoor dat het bovenstaande e-mailadres exact overeenkomt met je NWS Desktop gebruikersbestand, of vraag een gemeentebeheerder om je toe te voegen als een gebruiker.
+congregationSharingPersonNotExist3: Als je een gemeentebeheerder bent, heb je een andere gemeentebeheerder nodig om je te helpen.
+congregationSharingPersonUpdated1: Een broeder in je gemeente heeft de nieuwste grote NWS Desktop update geïnstalleerd.
+congregationSharingPleaseSeeHelp: Zie Help > Gemeentesynchronisatie voor meer informatie.
+congregationSharingPleaseSeeHelpSharingProblems: Zie Help > Gemeentedelen > Problemen met delen voor meer informatie
+congregationSharingPleaseVerifyYourComputer: Controleer je computer a.u.b.
+congregationSharingProblem: Gemeentesynchronisatie probleem
+congregationSharingProblemHeading1a: Controleer ontbrekende gegevens, verkeerde gegevens of synchronisatieproblemen
+congregationSharingProblemHeading1Item1: Ververs het scherm
+congregationSharingProblemHeading1Item2: Controleer de synchronisatie logboeken
+congregationSharingProblemHeading2: Voorkom gegevens- of synchronisatieproblemen
+congregationSharingProblemHeading2Item1: Zorg ervoor dat alle ouderlingen altijd onmiddellijk updaten naar de nieuwste versie van NWS Desktop
+congregationSharingProblemHeading2Item2: Stel de gebruikerstoegang correct in
+congregationSharingProblemHeading2Item3: Bewerk gegevens alleen als het gemeentesynchronisatie-icoontje aangeeft dat je bent verbonden
+congregationSharingProblemHeading2Item4: Zorg ervoor dat iedereen verbonden is met dezelfde Gemeente ID en synchronisatieregio
+congregationSharingProblemHeading2Item5: Bewerk hetzelfde type gegevens niet tegelijkertijd met een andere gebruiker
+congregationSharingProblemHeading2Item6: Zorg ervoor dat alle gebruikers gegevens mogen opslaan op hun eigen computer
+congregationSharingProblemHeading2Item7: Zorg ervoor dat voor alle gebruikers de juiste computertijd is ingesteld
+congregationSharingProblemHeading3a: Herstel ontbrekende gegevens, verkeerde gegevens of synchronisatieproblemen
+congregationSharingProblemHeading3Item1: Verifiëren
+congregationSharingProblemHeading3Item2: Testen
+congregationSharingProblemHeading3Item3: Herstellen
+congregationSharingProblemHeading3SubItem1: Ververs de specifieke gegevens die niet worden gesynchroniseerd
+congregationSharingProblemHeading3SubItem2: Gegevens ophalen of pushen
+congregationSharingProblemHeading3SubItem3: Stel gemeentesynchronisatie opnieuw in
+congregationSharingProblemHeading4Item1: Gemeentesynchronisatie heeft nog steeds problemen...
+congregationSharingProblems: Problemen met het delen van gegevens binnen de gemeente
+congregationSharingRemotelyDeleteData: Op afstand al hun NWS Desktop-gegevens verwijderen
+congregationSharingRemotelyDeleteDataWarning: Normaal gesproken dien je deze optie alleen te kiezen in bijzondere omstandigheden, bijvoorbeeld als iemand zijn ambt als ouderling verliest en het niet eens is met de beslissing of als iemand geen noodzaak meer heeft om in het programma te kunnen.
+congregationSharingRemovePersonMessage: Deze persoon kan geen verbinding meer maken met gemeentesynchronisatie
+congregationSharingTimeIncorrectMessage: De computertijd is niet nauwkeurig. Stel de computertijd in op de juiste tijdzone voordat je verbinding kunt maken met gemeentesynchronisatie.
+congregationSharingVerificationCodeReSent: Er is zojuist opnieuw een verificatiecode naar je e-mail verzonden. Controleer je e-mail en voer vervolgens de verificatiecode in.
+congregationSharingVerificationCodeSent: Er is zojuist een verificatiecode naar je e-mail verzonden. Controleer je e-mail en voer vervolgens de verificatiecode in.
+congregationSharingVerificationNotReceiveCodeMessage: Als je de verificatiecode niet vlug ontvangt, kun je het volgende proberen:
+congregationSharingVerificationNotReceivedCheck1: 1. Controleer je Spam- of Ongewenste e-mail-mappen
+congregationSharingVerificationNotReceivedCheck2: 2. Controleer nogmaals of je e-mailadres precies correct is
+congregationSharingVerificationNotReceivedCheck44: 4. Wacht 15 minuten en stuur de verificatiecode opnieuw. Soms zijn onze e-mailservers erg druk, vooral na een update.
+congregationSharingVerificationNotReceivedCheck55: 5. Wacht 24 uur en probeer het opnieuw. Soms zijn e-mailservers tijdelijk niet beschikbaar.
+congregationSharingVerificationNotReceivedCheck66: 6. Maak een nieuw e-mailaccount aan dat e-mails accepteert. We raden Gmail aan.
+congregationSilver: Gemeente Zilver
+congregationsInCircuit: Gemeenten in kring
+congregationSummary: Gemeentesamenvatting (totalen en gemiddelden)
+connect: Verbinden
+connected: Verbonden
+connectedTo: Verbonden met
+connecting: Verbinden...
+connectingToNWPublisherApp: Verbinding maken met de NW Publisher-app
+connectingToYourCongregation: Contact maken met je gemeente
+connection: Verbinding
+connectionError: Verbindingsfout
+connectionErrorConnectionProblemsAndSolutions: Verbindingsproblemen en oplossingen
+connectionErrorLicenseMessage: Probeer het opnieuw of zie Registratie Help > Verbindingsproblemen
+connectionErrorMessage1: NWS Desktop kan geen verbinding maken met onze servers
+connectionErrorMessage2: Klik op Opnieuw verbinden en probeer het opnieuw, of klik op Internetverbinding testen, of zie Verbindingsproblemen en oplossingen.
+connectionFailedMessage: Verbinding mislukt. Probeer het opnieuw.
+connectionTimedOutMessage: Verbinding is mislukt vanwege een time-out. Probeer het opnieuw.
+connectToCongregation: Maak verbinding met de gemeente
+connectToNWPublisherApp: Maak verbinding met de NW Publisher-app
+connectToNWPublisherAppMessage11: Voer je NW Publisher app-regio en gemeente-PIN in om verbinding te maken met de NW Publisher-app.
+connectToNWPublisherAppMessage33: Als je de pincode voor de gemeente niet weet:
+connectToNWPublisherAppMessage44: 1) Vraag het aan een beheerder van de gemeente. Zij kunnen de pincode van de gemeente vinden onder NW Publisher-app > NW Publisher-app Overzicht.
+connectToNWPublisherAppMessage55: 2) Neem contact met ons op en vermeld je regio- en gemeente ID, dan kunnen we je NW Publisher-app resetten. Dit kan ertoe leiden dat alle verkondigers opnieuw verbinding moeten maken.
+connectToYourCongregation: Maak contact met je gemeente.
+contact: Contact
+contactDetails: Contactgegevens
+contactInformation: Contactgegevens
+contactInformationCheckNotYetReturned: Controle contactgegevens nog niet ontvangen
+contactInformationForAllPublishers: Contactgegevens van alle verkondigers
+contactName: Contactnaam
+contactUs: Neem contact op
+continuous: Vast
+continuousAuxiliary: Vaste hulppionier
+convention: Congres
+convertAddresses: Adressen converteren
+convertAddressesToLetterWriting: Converteer adressen naar brieven schrijven
+convertAddressesToPhoneWitnessing: Converteer adressen naar telefoongetuigenis
+coordinates: Coördinaten
+coordinator: Coördinator
+coordinatorOfBodyOfEldersAbbreviation: CO
+coordinatorOfTheBodyOfElders: Coördinator LVO
+coPartner: KO partner
+coPartners: KO partners
+copied: Gekopieerd
+copiedClipboard: Gekopieerd naar het klembord
+copy: Kopiëren
+copyDetails: Kopieer gegevens
+copyFromFamilyHead: Kopieer van gezinshoofd
+copyNotesFromPublisherToNotes: Kopieer notities van verkondiger naar notities
+copyToCOSchedule: Kopiëren naar KO-schema
+copyToFieldServiceSchedule: Kopie naar Velddienstschema
+copyToLastPublisherRecord: Kopiëren naar laatste verkondigersbericht
+costaRicanColon: Costa Ricaanse colon
+counselor: Raadgever
+count: Aantal
+country: Land
+countryOfCongregation: Land van gemeente
+couple: Echtpaar
+coVisit: KO-bezoek
+cOVisitActivities: KO-bezoekactiviteiten
+cOVisitActivity: KO-bezoekactiviteit
+coWifePartner: KO-vrouw partner
+coWifePartners: KO-vrouw partners
+crashMessage1: Klik op Opnieuw opstarten en probeer het nogmaals. Als hetzelfde probleem zich blijft voordoen, controleer dan of je de nieuwste versie gebruikt. Zo ja, kopieer dan de details en verzend het crashrapport.
+create: Maak aan
+create6DigitSharingPersonPIN: Maak een persoonlijke 6-cijferige pincode aan
+createAccount: Maak een account aan
+createCongregation: Maak gemeente aan
+createCongregationFieldServiceReport: Rapport opstellen voor de velddienst van de gemeente
+created: Gemaakt
+createdBy: Gemaakt door
+createMeetingAttendanceRecord: Maak een aanwezigheidsregistratie voor de vergadering aan.
+createMyCircuit: Maak mijn kring
+createNewCongregationEnableRegistration: Maak een nieuwe gemeente aan om registratie mogelijk te maken
+createNewCongregationMessage: Als je de eerste persoon in je gemeente bent die NWS Desktop gebruikt, selecteer dan "Nieuwe gemeente". Kies alsjeblieft géén “Nieuwe gemeente” als een andere ouderling in je gemeente NWS Desktop al gebruikt.
+createOrOpenCongregation: Gemeente aanmaken of openen
+createPassword: Maak een wachtwoord aan
+createSampleCongregationMessage: Hiermee wordt een willekeurig gegenereerde voorbeeldgemeente gemaakt en kun je NWS Desktop verkennen met voorbeeldgegevens. Later kun je de voorbeeldgemeente verwijderen en een echte gemeente maken.
+createScheduleFromAnotherLanguage: Een planning maken van een andere taal
+credit: Compensatie
+creditAbbreviation: Comp
+csvFileAlreadyOpen: Het CSV-bestand is al geopend. Sluit het bestand voordat je gaat importeren.
+currency: Munteenheid
+currentlyBeingWorked: Momenteel in bewerking
+custom: Aangepast
+customAssignment: Aangepaste toewijzing
+customDuty: Aangepaste taak
+customInformation: Aangepaste informatie
+customizePrintingTemplates: Afdruksjablonen aanpassen
+customSpiritual: Aangepast geestelijk
+data: Gegevens
+dataChanged: Gegevens gewijzigd
+dataChangedLogs: Gewijzigde gegevens logboeken
+dataCouldNotBeDecrypted: Gegevens konden niet worden ontsleuteld.
+dataCouldNotBeEncrypted: Gegevens konden niet worden gecodeerd.
+dataEditedWhileNotConnected: Gegevens zijn bewerkt terwijl je niet verbonden was met gemeentesynchronisatie en konden niet worden verzonden. Waarschuwing! Dit zal waarschijnlijk synchronisatieproblemen of gegevensfouten veroorzaken!
+dataExpiredLogs: Verlopen gegevens logboeken
+dataMaintenance: Databeheer
+dataMaintenanceLogs: Databeheer logboeken
+dataRemotelyDeleted: Gegevens op afstand verwijderd
+dataSize: Gegevensgrootte
+dataTimestamps: Tijdstempels van de gegevens
+dataToRestore: Herstel data
+dataToSend: Gegevens om te verzenden
+dataTransfer: Data overdracht
+dataWaiting: Gegevens wachten
+dataWaitingSendToApp: Er staan gegevens klaar om naar de NW Publisher-app te worden verzonden. We raden je aan deze gegevens te verzenden voordat je NWS Desktop sluit.
+dataWaitingToReceive: Gegevens wachten op ontvangst
+dataWaitingToSend: Gegevens wachten om te verzenden
+date: Datum
+dateAssigned: Datum toegewezen
+dateCompleted: Datum voltooid
+dateFirstStartedPreaching: Eerste velddienstmaand
+dateFirstStartedPreachingBeforeDateImmersed: Datum Eerste velddienst maand, moet vóór Datum gedoopt zijn
+dateFormat: Datumnotatie
+dateImmersed: Datum gedoopt
+dateOfAppointment: Datum van aanstelling
+dateOfBaptism: Doopdatum
+dateOfBirth: Geboortedatum
+dateOfLastPioneerSchool: Datum van de laatste Pioneer School
+dateOfRequest: Datum van verzoek
+dateRangeFormat: Datumbereik notatie
+dateReinstated: Datum hersteld
+dateRemoved: Datum verwijderd
+dateRequested: Gewenste datum
+datesAndTimes: Datum en tijd
+dateSent: Datum verzonden
+dateShort: Datum kort
+datesRequested: Datums gevraagd
+dateStarted: Begindatum
+day: Dag
+days: dagen
+daysAgo: dagen geleden
+dayShort: Dag kort
+daysRemaining: Resterende dagen
+deaf: Doof
+deafPublishers: Dove verkondigers
+dearBrothers: Beste broeders,
+decryptingLocalData: Lokale gegevens decoderen
+default: Standaard
+defaultPrinterHasProblems: Sorry. Windows zegt dat je standaardprinter problemen heeft of is verwijderd. Probeer een nieuwe standaardprinter toe te voegen.
+delegate: Gemachtigd aan
+delegated: Gemachtigd
+delegatesChanged: Gemachtigd aan gewijzigd
+delegateString: Delegeren
+delete: Verwijder
+deleteAddresses: Adressen verwijderen
+deleteAllFromApp: Alles verwijderen uit de app
+deleteAllFromAppMessage1: Hiermee worden ALLE aankomende gegevens van dit type uit de app verwijderd. Je moet deze dan opnieuw toevoegen aan NWS Desktop en opnieuw verzenden naar de app.
+deleteAllFromAppMessage2: Gegevens worden na een bepaalde tijd automatisch uit de app verwijderd, dus je mag deze optie alléén gebruiken als er ernstige gegevensfouten in de app zijn en deze niet kunnen worden opgelost in NWS Desktop.
+deleteAllPersonsSchedules: Wil je ook alle personen en schema's verwijderen?
+deleteApartmentNumber: Appartementsnummer verwijderen
+deleteBoundary: Grens verwijderen
+deleteCircuit: Kring verwijderen
+deleteCLMSchedule: Hierdoor worden de huidige gegevens van het vergaderschema voor Leven en Dienen verwijderd. Toewijzingen blijven ongewijzigd.
+deleteCongregation: Gemeente verwijderen
+deleted: Verwijderd
+deletedFromApp: Verwijderd uit de app
+deletedLocalDataMessage: Lokale gegevens verwijderd. Tik op Lokale gegevens opnieuw laden.
+deleteGroup: Groep verwijderen
+deleteLanguage: Taal verwijderen
+deleteLocalData: Lokale gegevens verwijderen
+deleteMeetingData: Vergadergegevens verwijderen
+deleteOrMovePersons: Personen verwijderen of verplaatsen
+deletePersonsAndSchedules: Personen en schema's verwijderen
+deletingAllSharedData: Alle synchronisatiegegevens verwijderen
+deletingAllSharedPersons: Alle gebruikers verwijderen
+deletingAllSharingLogs: Alle synchronisatielogboeken verwijderen
+delivered: Afgeleverd
+demo: Presentatie
+demographics: Samenstelling
+denyCongregation: Gemeente afwijzen
+denyRequest: Verzoek afwijzen
+description: Omschrijving
+details: Details
+detailsHostShepherdingMeals: Details van gastheer, herderlijke bezoeken en maaltijd regelingen
+detectDataProblems: Dataproblemen detecteren
+device: Apparaat
+devices: Apparaten
+deviceVerificationCodeIncorrect: De verificatiecode is onjuist. Probeer het opnieuw of klik op 'Verificatiecode opnieuw verzenden'.
+deviceVerificationTokenExpired: Het verificatietoken is verlopen. Verifieer je apparaat opnieuw.
+dialInNumber: Inbelnummer
+didNotShareInMinistry: Heeft niet deelgenomen aan de bediening
+differentAPs: Verschillende hulppioniers
+differentAuxiliaryPioneers: Verschillende hulppioniers
+differentCongLangauge: (Dit kan verschillen van je gemeentetaal)
+dinner: Avondeten
+disable: Uitschakelen
+disabled: Uitgeschakeld
+disableNWPAppAccess: NW Publisher-app toegang uitschakelen
+disableNWPAppAccessAndRemovePersonalInformation: Schakel de NWPublisher-apptoegang uit en verwijder persoonlijke gegevens.
+disablePublicSpeakerSharingMessage: Dit zorgt ervoor dat je gemeente en openbare sprekers uit alle gedeelde gemeenten in je kring worden verwijderd.
+disablePublisherReportsSharing: Schakel synchroniseren van verkondigersberichten uit
+disableSharing: Synchroniseren uitschakelen
+disconnect: Verbreken
+disconnected: Verbroken
+disconnectMessage: Je verbinding met je gemeente wordt verbroken en alle gemeentegegevens op dit apparaat worden verwijderd.
+discount: Korting
+discussion: Bespreking
+display: Weergave
+displayAfter: Weergeven na
+displayName: Weergavenaam
+document: Document
+documents: Documenten
+doesNotReportHere: Rapporteert niet via de Gemeente
+doNotCall: Bel niet
+doNotCallAbbreviation: NB
+doNotCalls: Niet bellen
+doNotReceiveBetaUpdates: Ontvang geen bèta-updates
+downgradeRenew: Downgraden en verlengen
+downgradeRenewUntil: Downgraden en verlengen tot
+download: Downloaden
+downloaded: Gedownload
+downloadFailedPleaseTryAgain: Download mislukt. Probeer het opnieuw.
+downloading: Downloaden
+downloadNow: Download nu
+doYouAgree: Ben je het hiermee eens?
+doYouWantToDownload: Wil je nu downloaden?
+draft: Concept
+drawTerritoryBoundaries: Gebiedsgrenzen trekken
+dueDate: Gereed voor
+duplicate: Dupliceer
+duties: Taken
+dutiesNotScheduled: Taken niet gepland
+dutiesPersonList: Overzicht personen per taak
+dutiesSchedule: Takenschema
+dutiesUpdated: Taken bijgewerkt
+dutiesUsageHistory: Taken historie per persoon
+duty: Taak
+earlyMorning: Vroege morgen
+edit: Bewerken
+editAddress: Verander adres
+editCategories: Categorieën bewerken
+editCongregation: Gemeente bewerken
+editedRequest: Bewerkt verzoek
+editInCongregationResponsibilities: Bewerk Gemeenteverantwoordelijkheden
+editing: Bewerken
+editInPersonInformation: Persoonlijke gegevens bewerken
+editInPublicTalksLocal: Bewerken in Openbare lezingen
+editMessage: Bewerk bericht
+editPassword: Wijzig wachtwoord
+editPersonInformation: Bewerk persoonsgegevens
+editRequest: Verzoek bewerken
+editYourCongregationInCongregationInformation: Bewerk je gemeente in Gemeente-informatie
+elder: Ouderling
+elderAbbreviation: ODL
+elderly: Ouderen
+elderlyInfirm: Oudere / hulpbehoevend
+elders: Ouderlingen
+eldersAndMSMeeting: Ouderlingen- en dienarenvergadering
+email: E-mail
+email2: E-mail 2
+emailAbbreviation: (e)
+emailAttachments: E-mailbijlagen
+emailDocument: E-maildocument
+emailing: E-mailen
+emailInvalid: E-mailadres ongeldig
+emailLogs: E-maillogboeken
+emailLooksWrong: Je e-mailadres lijkt niet te kloppen.
+emailLooksWrongMessage1: Het juiste format is meestal:
+emailLooksWrongMessage2: Je hebt ingevuld:
+emailLooksWrongMessage3: Wil je je e-mailadres aanpassen?
+emailMessage: E-mailbericht
+emailNoEmailsToSend: Geen e-mails om te verzenden.
+emailNotSetupMessage: E-mail niet ingesteld. Klik op 'van', stel je e-mail in en test deze. Klik op Help > E-mail > E-mail instellen voor meer informatie.
+emailNotYetVerified: E-mailadres nog niet geverifieerd. Controleer je e-mail en verifieer.
+emailPDF: E-mail PDF
+emailPleaseAddSubjectAndMessage: Voeg een onderwerp en bericht toe.
+emailReminderSent: E-mailherinnering verzonden
+emailsAlreadySent: E-mails zijn al verzonden.
+emailSchedulesSlipsAndReports: E-mail schema's, overzichten en rapporten
+emailServer: E-mailserver
+emailSpecialFeatures: E-mail speciale functies
+emailTags: E-mailtags
+emailTagSpecialFeatures: Deze e-mailtag kan alleen worden gebruikt voor rapporten die speciale e-mailfuncties ondersteunen.
+emailTemplates: E-mailsjablonen
+emergency: Noodgeval
+emergencyContact: Contactpersoon voor noodgevallen
+emergencyContactAbbreviation: ICE
+emergencyContactInformation: Contactinformatie bij een noodgeval
+emergencyContactList: Contactlijst voor noodgevallen
+emergencyContactListCondensed: Verkorte Contactlijst voor noodgevallen
+emergencyContactNotLinked: De verkondiger heeft aangegeven dat deze persoon in deze gemeente zit, maar ze zijn niet gelinkt.
+emergencyContacts: Contactpersonen voor noodgevallen
+emergencyContactsMissing: Contacten voor noodgevallen ontbreken
+emergencyNotes: Noodgeval opmerkingen
+enable: Inschakelen
+enableCongregationSharing: Synchronisatie inschakelen
+enabled: Ingeschakeld
+enableLimitedFinancialMeans: Beperkte financiële middelen inschakelen
+enablePinLock: PIN-vergrendeling inschakelen
+enablePublicSpeakerSharing: Gastsprekers delen inschakelen
+enableUserAccess: Gebruikerstoegang inschakelen
+end: Einde
+endDate: Einddatum
+endTime: Eindtijd
+enforceNWSMobilePINLock: Pincode vereisen voor gebruik van NWS Mobile
+enforceNWSMobilePINLockMessage: Dit zorgt ervoor dat alle NWS Mobile gebruikers verplicht worden om een pincode in te stellen en te gebruiken om toegang te krijgen tot NWS Mobile.
+enter: invoeren
+enter6DigitSharingPersonPIN: Voer je persoonlijke 6-cijferige pincode in
+enterNewPIN: Voer een nieuwe pincode in.
+enterPassword: Voer wachtwoord in
+enterPIN: Voer de pincode in
+enterPublicTalksMessage: Voer lezingnummers in, gescheiden door komma's
+error: Fout
+errorDetails: Fout details
+errorLogs: Foutlogboeken
+errorMessageCrash1: Sorry! Er is een fout opgetreden in NWS Desktop. Probeer aub het volgende:
+errorMessageCrash2: 1. Sluit NWS Desktop, open het opnieuw en probeer het opnieuw.
+errorMessageCrash3: 2. Klik op Mijn menu > Updates > Controleer op updates en update vervolgens NWS Desktop.
+errorMessageCrash4: Als je deze fout nog steeds ervaart, doe je het volgende:
+errorMessageCrash5: 1. Maak een screenshot van deze fout en screenshots van ALLE stappen die je hebt uitgevoerd voorafgaand aan deze fout.
+errorMessageCrash6: 2. Bezoek onze website en klik op Help > Neem contact met ons op > Probleem. Beschrijf vervolgens wat je aan het doen was en voeg alle schermafbeeldingen toe.
+errorReportCouldNotBeCreated: Sorry, dit rapport kan niet worden gemaakt.
+errors: Fouten
+errorUpdating: Fout bij bijwerken
+estimatedTimeToCompleteTerritory: Geschatte tijd om het hele gebied te bewerken
+euro: Euro
+europe: Europa
+europeNorth: Europa (Noord)
+europeSouthAfrica: Europa (Zuid) en Afrika
+evening: Avond
+eventEndDateLaterTodayAndWithin60Days: De einddatum moet later zijn dan de startdatum en binnen 60 dagen na de startdatum. Geen enkele gebeurtenis mag langer duren dan 60 dagen.
+eventName: Naam
+events: Belangrijke datums
+everyone: Iedereen
+everyoneInReport: Iedereen in rapport
+everyoneWithAnyAssignmentsDuties: Iedereen met toewijzingen of taken
+everyoneWithCLMAssignments: Iedereen met LED-toewijzingen
+everyoneWithDuties: Iedereen met taken
+everyoneWithFieldServiceAssignments: Iedereen met velddiensttoewijzingen
+everyoneWithTerritoriesOverdue: Iedereen met gebieden die te laat zijn
+everyoneWithWeekendAssignments: Iedereen met weekendtoewijzingen
+everything: Alles
+exactMatch: Exacte overeenkomst
+example: Voorbeeld
+examples: Voorbeelden
+exceptAttachmentsAndMaps: Behalve bijlagen en kaarten
+existingCOVisitFieldServiceActivitiesWillBeReplaced: Bestaande velddienstactiviteiten in het kader van het bezoek van kringopzieners worden vervangen.
+existingFieldServiceScheduleWillBeReplaced: Het bestaande velddienstschema wordt vervangen.
+existingPersonsFound: Bestaande personen gevonden. Als je een gemeente uit een bestand opent, worden alle bestaande personen verwijderd.
+expecting: Ervan uitgaand
+expert: Deskundig
+expired: Verlopen
+expiryDate: Vervaldatum
+explainingYourBeliefs: Leg uit wat je gelooft
+explainingYourBeliefsDemo: Leg uit wat je gelooft (presentatie)
+explainingYourBeliefsTalk: Leg uit wat je gelooft (lezing)
+export: Exporteren
+exportAddresses: Adressen exporteren
+exportAllPersons: Alle personen exporteren
+exportFailed: Exporteren mislukt
+exportForCircuitOverseer: Exporteren voor kringopziener
+exportFromKHS: Exporteren vanuit KHS
+exportPersons: Personen exporteren
+exportPersonsMessage: Je staat op het punt X Personen uit je gemeente te exporteren.
+exportPublicSpeakers: Openbare sprekers exporteren
+exportSelectedAddressTypes: Exporteer geselecteerde adrestypen
+exportSuccessful: Exporteren succesvol
+families: Gezinnen
+family: Gezin
+familyAlreadyHasFamilyHead: Dit gezin heeft al een gezinshoofd
+familyHead: Gezinshoofd
+familyHeadsOnly: Alleen gezinshoofden
+familyOnSameDay: Een gezinslid heeft al een aandeel
+familyOnSameDayAvoidScheduling: Vermijd het plannen van gezinsleden op dezelfde dag
+featureAvailableInCongregationGold: Deze functie is alleen beschikbaar in Gemeente Goud. Zie Mijn menu > Registratie.
+featureAvailableInCongregationSilverOrGold: Deze functie is alleen beschikbaar in Gemeente Zilver of Gemeente Goud. Zie Mijn menu > Registratie.
+featureExceeded1000Territories: Meer dan 1000 gebieden. Kan geen nieuw gebied toevoegen.
+featureExceeded100Territories: Meer dan 100 gebieden. Kan geen nieuw gebied toevoegen. Zie Mijn menu > Registratie.
+featureExceeded150Persons: Meer dan 150 personen. Kan geen nieuwe persoon toevoegen. Zie Mijn menu > Registratie.
+featureExceeded250Persons: Meer dan 250 personen. Kan geen nieuwe persoon toevoegen. Zie Mijn menu > Registratie.
+featureExceeded350Persons: Meer dan 350 personen. Kan geen nieuwe persoon toevoegen. Zie Mijn menu > Registratie
+featureExceeded500Territories: Meer dan 500 gebieden. Kan geen nieuw gebied toevoegen. Zie Mijn menu > Registratie.
+featureNotAvailableInIndividualVersion: Sorry, deze functie is niet beschikbaar in de individuele versie. Zie Mijn menu > Registratie.
+fee: Tarief
+feedback: Feedback
+female: Vrouw
+fieldMissionaries: Veldzendelingen
+fieldMissionary: Veldzendeling
+fieldMissionaryAbbreviation: ZEND
+fieldService: Velddienst
+fieldServiceAndMeetingAttendance: Gemeentebericht
+fieldServiceAssignmentsPersonList: Overzicht velddienstoewijzigen personen
+fieldServiceConductor: Velddienstleider
+fieldServiceGroup: Velddienstgroep
+fieldServiceGroups: Velddienstgroepen
+fieldServiceGroupsMissingOverseerAssistant: Velddienstgroepen missen Opziener of Assistent
+fieldServiceLocation: Locatie voor velddienst
+fieldServiceLocations: Locaties voor velddienst
+fieldServiceMeeting: Velddienstactie
+fieldServiceMeetings: Velddienstacties
+fieldServiceNotScheduled: Velddienst niet gepland
+fieldServicePrayers: Velddienstgebeden
+fieldServiceReport: Velddienstrapport
+fieldServiceReportNotReceived: Velddienstrapport niet ontvangen
+fieldServiceReports: Velddienstrapporten
+fieldServiceSchedule: Velddienstschema
+fieldServiceSchedules: Velddienstschema's
+fieldServiceTemplates: Velddienstsjablonen
+file: Bestand
+fileAlreadyExistsPleaseClose: Bestand bestaat al en is geopend. Kies een andere bestandsnaam of sluit het geopende bestand en probeer het opnieuw.
+fileCurrentlyOpenPleaseClose: Bestand momenteel geopend, sluit het bestand en probeer het opnieuw.
+fileInvalidOrCorrupted: Bestand ongeldig of beschadigd.
+fileNotValidCongregation: Bestand is geen geldige NWS Desktop Gemeente.
+fileNotValidSharedPersonsBackup: Bestand is geen geldige NWS Desktop back-up van gebruikers
+fileType: Bestandstype
+filter: Filter
+filterBySelectedOutline: Filteren op geselecteerd schema
+finalTalk: Slotlezing
+findAddress: Vind adres
+fineZoomingDisabled: Inzoomen uitgeschakeld
+fineZoomingEnabled: Inzoomen ingeschakeld
+firstContactUsForInstructionsImportPersonsFromKHS: Neem eerst contact met ons op en vraag om instructies voor het importeren van personen vanuit KHS.
+firstContactUsForInstructionsImportPublicSpeakersFromKHS: Neem eerst contact met ons op en vraag om instructies om openbare sprekers vanuit KHS te importeren.
+firstCreateAndSelectTheCongregation: Maak en selecteer eerst de Gemeente
+firstName: Voornaam
+fixProblem: Probleem oplossen
+folderNotValidOrNoAccess: Map is niet geldig of NWS Desktop heeft geen toegang tot deze map. Selecteer een andere map.
+followingUp: Ga terug
+fontSize: Lettertype grootte
+forCircuitOverseer: voor kringopziener
+forCOVisit: voor KO bezoek
+forMoreDetails: voor meer details.
+free: Vrij
+freeText: Vrije tekst
+freeTrial: Gratis proefversie
+frequentlyAskedQuestions: Veel gestelde vragen (FAQ)
+from: Van
+fromAutomaticBackup: van automatische back-up
+fromDate: Van datum
+fromFile: van bestand
+fromNWSchedulerFile: Uit NWS Desktop-bestand
+fromSharing: van synchroniseren/delen
+fullVersion: Volledige versie
+futureDatesOnly: Alleen toekomstige datums
+futureDuty: Toekomstige taak
+futureMonthsToShowOnSchedule: Aantal toekomstige maanden op schema tonen
+futurePart: Toekomstig aandeel
+futurePublicTalk: Toekomstige openbare lezing
+gardenCare: Tuinonderhoud
+gardenCareSchedule: Schema voor tuinonderhoud
+gender: Geslacht
+general: Algemeen
+generateS88: Genereer S-88
+geocodingProvider: Geocoderingsprovider
+geolocate: Geolokaliseren
+getStarted: Start!
+gettingDownload: Aan het downloaden
+gettingStarted: Start
+gettingStartedWithNWScheduler: Aan de slag met NWS Desktop
+giveInformationToTheCOBE: Geef informatie aan de CO
+givePINToOthers: Deze pincode moet vervolgens aan verkondigers worden gegeven zodat ze verbinding kunnen maken via de NW Publisher-app.
+goToRequest: Ga naar Verzoek
+graph: Grafiek
+graphsCannotBeIncluded: Sorry, grafieken kunnen alleen worden opgenomen als je 15 personen of minder selecteert. Kies minder personen, of vink 'Inclusief grafieken' uit.
+greatBritainPound: Britse pond
+group: Groep
+groupAlreadyHasAssistant: Deze groep heeft al een Groepsassistent
+groupAlreadyHasOverseer: Deze groep heeft al een Groepsopziener of -dienaar
+groupArrangements: Velddienstregelingen
+groupAssistant: Groepsassistent
+groupAssistantAbbreviation: GA
+groupAssistants: Groepsassistenten
+groupByFamily: Groeperen op gezin
+groupByFieldServiceGroup: Groeperen per velddienstgroep
+groupFieldServiceReportsCollection: Groep velddienstrapporten
+groupFieldServiceSummary: Samenvatting velddienst per groep
+groupOverseer: Groepsopziener
+groupOverseerAbbreviation: GO
+groupOverseers: Groepsopzieners
+groups: Groepen
+groupsAndFamilies: Groepen en gezinnen
+groupServant: Groepsdienaar
+groupServantAbbreviation: GD
+groupsPerPage: Groepen per pagina
+groupType: Groepstype
+guatemalanQuetzal: Guatemalteekse Quetzal
+guest: Gast
+guestCircuit: Gast kring
+guestCongregations: Gastgemeenten
+guyaneseDollar: Guyaanse dollar
+hello: Hallo!
+help: Help
+helpNeeded: Hulp nodig bij
+helpOffered: Hulp aangeboden
+helpOfferPersonalHelpAgreeMessage1: Ik ben een gevorderde of deskundige NWS Desktop-gebruiker en ik ben bereid broeders die om hulp vragen vrijwillig bij te staan
+helpOfferPersonalHelpAgreeMessage2a: Ik ga ermee akkoord dat mijn persoonlijke gegevens worden opgeslagen in een gecodeerde database die door andere broeders kan worden doorzocht met behulp van NWS Desktop.
+helpOfferPersonalHelpAgreeMessage3: Ik stem ermee in om vrijwillig degenen te helpen die contact met mij opnemen voor hulp.
+helpOfferPersonalHelpAgreeMessage4: Ik zal geduldig en liefdevol zijn en positief spreken over NWS Desktop en de NW Publisher-app.
+helpOfferPersonalHelpAppreciationMessage: We hebben grote waardering voor de zelfopofferende liefde die wordt getoond door degenen die zich vrijwillig inzetten om anderen te helpen.
+helpOfferPersonalHelpCancelExplanation: Al je persoonlijke hulp-informatie wordt verwijderd. Je biedt niet langer vrijwillig hulp aan.
+helpOfferPersonalHelpConfidentExplanation: 'Gevorderd' betekent dat je goed bekend bent met deze functie en deze functie regelmatig gebruikt. Je bent ook goed bekend met wat Help over deze functie zegt.
+helpOfferPersonalHelpExpertExplanation: 'Deskundig' betekent dat je meer geavanceerde onderdelen van deze functie volledig begrijpt (bijv. gerelateerde Snelle stappen, Mijn menu pagina meldingen, e-mailsjablonen, enz.). Je bent ook erg goed in het diagnosticeren of oplossen van eventuele problemen met deze functie.
+helpOfferPersonalHelpExplanationMessage1: Dit is een regeling waarbij broeders zich vrijwillig kunnen aanbieden om personen te helpen die persoonlijke hulp nodig hebben met NWS Desktop of de NW Publisher-app.
+helpOfferPersonalHelpExplanationMessage2: Als je akkoord gaat, worden je naam en contactgegevens toegevoegd aan een database die kan worden doorzocht door broeders in je omgeving die hulp nodig hebben.
+helpOfferPersonalHelpIncludeEmailOrPhone: Vermeld a.u.b. een e-mailadres en/of een telefoonnummer
+helpOfferPersonalHelpRequirementMessage1: Sorry, je moet een geldige gemeente hebben om hulp te bieden
+helpOfferPersonalHelpRequirementMessage2: Identificeer je eerst in de Mijn menu weergave om hulp te bieden
+helpOfferPersonalHelpRequirementMessage3: Sorry, je moet een geldige registratie hebben om hulp te kunnen bieden
+helpOfferPersonalHelpRequirementMessage4: Selecteer ten minste één taal
+helpOfferPersonalHelpStatus1CurrentlyOffering: Je biedt momenteel vrijwillig hulp aan.
+helpOfferPersonalHelpStatus2ExpireSoon: Je aangeboden hulp verloopt binnenkort. Controleer je gegevens en klik op Update.
+helpOfferPersonalHelpStatus3Expired: Je hulpaanbod is verlopen. Controleer je gegevens en klik op Update.
+helpRequested: Hulp gevraagd
+helpRequestPersonalHelpAgreeMessage1: Deze broeder is een vrijwilliger die zelfopofferende liefde toont om anderen te helpen. Wees alsjeblieft liefdevol en vriendelijk wanneer je om hulp vraagt. Verwacht alsjeblieft geen directe hulp, maar spreek liever een geschikt moment af.
+helpRequestPersonalHelpExplanationMessage1: Dit is een regeling waarbij je hulp kunt vragen aan broeders die zich vrijwillig hebben aangemeld om personen te helpen die hulp nodig hebben met NWS Desktop of de NW Publisher-app.
+helpRequestPersonalHelpExplanationMessage2: Toon alsjeblieft redelijkheid en vriendelijkheid bij het vragen van persoonlijke hulp aan vrijwilligers.
+helpUpdatingChristianLifeAndMinistryMeetingSchedule: Help > Bijwerken schema Leven-en-dienenvergadering
+helpWhatShouldIChoose: Help! Wat moet ik kiezen?
+hideGroupArrangements: Groepsregelingen verbergen
+highQuality: Hoge kwaliteit
+history: Historie
+home: Home
+homePhone: Telefoon thuis
+homePhoneAbbreviation: (h)
+hongKongDollar: Hongkongse dollar
+hospitality: Gastgezin
+hospitalityRequest: Gastgezin verzoek
+host: Gastheer
+hostInformation: Informatie gastheer
+hour: Uur
+hourAbbreviation: U
+hours: Uren
+hoursAbbreviation: Uren
+hoursAgo: uur geleden
+house: Huis
+howDoesCongregationSharingWork: Hoe werkt Gemeentesynchronisatie?
+howDoesNWPublisherAppWork: Hoe werkt de NW Publisher-app?
+howOften: hoe vaak?
+howTo: Hoe...
+identify: Identificeren
+identifyNotInList: Als je niet in de onderstaande lijst staat, controleer dan of je synchronisatie regio correct is. Neem anders contact op met een gemeentebeheerder en vraag hem je toe te voegen aan de Gemeente synchronisatie gebruikerslijst.
+ifAnyQuestionsProblemsPleaseClickHelp: Als je vragen of problemen hebt, klik dan op Help
+ifRequireAssistanceClickHelp: Als je vragen hebt of hulp nodig hebt bij nieuwe functies of updates, klik dan op Help
+ignoreProblem: Negeer het probleem
+import: Importeren
+importAddresses: Adressen importeren
+important: Belangrijk
+importantInformation: Belangrijke informatie
+importBoundaryFromKML: Grens importeren uit KML (Google Earth)
+importCompleted: Importeren voltooid
+importCompletedCarefullyCheckSaveImportLog: Importeren voltooid. Controleer het importlogboek hieronder zorgvuldig en sla het op.
+importCongregation: Gemeente importeren
+importCongregationFromCLMExplorer: Als je de eerste persoon in je gemeente bent die NWS Desktop gebruikt en je momenteel CLM Explorer gebruikt, kun je je CLM Explorer-gegevens importeren in NWS Desktop.
+importCongregationFromCSVFile: Als je de eerste persoon in je gemeente bent die NWS Desktop gebruikt en je hebt persoonsgegevens opgeslagen in CSV-bestandsindeling, dan kun je je CSV-gegevens importeren in NWS Desktop.
+importCongregationFromDeckhand: Als je de eerste persoon in je gemeente bent die NWS Desktop gebruikt en je momenteel Deckhand gebruikt, kun je je Deckhand-gegevens importeren in NWS Desktop.
+importCongregationFromHourglass: Als je de eerste persoon in je gemeente bent die NWS Desktop gebruikt en je gebruikt momenteel Hourglass, dan kun je je Hourglass-gegevens importeren in NWS Desktop.
+importCongregationFromKHS: Als je de eerste persoon in je gemeente bent die NWS Desktop gebruikt en je momenteel Majestic KHS gebruikt, kun je je KHS-gegevens importeren in NWS Desktop.
+importCongregationFromTSWin: Als je de eerste persoon in je gemeente bent die NWS Desktop gebruikt en je momenteel TSWin gebruikt, kun je je TSWin-gegevens importeren in NWS Desktop.
+importDataWillOverwriteExisting: Geïmporteerde gegevens overschrijven alle bestaande gegevens.
+imported: Geïmporteerd
+importedAppData: Geïmporteerde app-gegevens
+importedBy: Geïmporteerd door
+importedEPUBMeetingDataFound: Geïmporteerde EPUB-vergaderingsgegevens gevonden
+importedSuccessfully: Succesvol geïmporteerd
+importFailed: Importeren mislukt
+importFromAnotherCongregationKHS: Importeren uit een andere gemeente KHS
+importFromKHS: Importeren uit KHS
+importFromOwnKHS: Importeren uit eigen KHS
+importing: Importeren...
+importingCongregationOverwriteExisting: Het importeren van een gemeente overschrijft alle bestaande gemeentegegevens.
+importingKHSAnotherCongregationsData: Je importeert openbare sprekers van een andere gemeente die KHS gebruikt.
+importingKHSCongregationAppEnabled1: Je hebt 'Gemeente' aangevinkt, maar de NW Publisher-app is momenteel ingeschakeld.
+importingKHSCongregationAppEnabled2: Je moet eerst de app uitschakelen, of 'Gemeente' uitvinken.
+importingKHSCongregationSharingEnabled1: Je hebt 'Gemeente' aangevinkt, maar synchronisatie van een gemeente is momenteel ingeschakeld.
+importingKHSCongregationSharingEnabled2: Je moet eerst synchronisatie uitschakelen, of het vinkje bij 'Gemeente' verwijderen
+importingKHSCongregationSharingOrAppEnabled: Je kunt geen gemeente uit KHS importeren als Gemeente synchronisatie of de NW Publisher-app is ingeschakeld. Dit zou grote problemen veroorzaken.
+importingKHSOwnData: Je importeert je eigen KHS-gegevens.
+importIntoNWScheduler: Importeren in NWS Desktop
+importIntoNWSchedulerStep1: 1. Selecteer je geëxporteerde KHS-gegevensbestand (op het bureaublad)
+importIntoNWSchedulerStep2: 2. Kies de gegevens die je wilt importeren
+importMeetingWorkbookDateInvalid: EPUB-bestandsnaam Datum ongeldig. Moet 'mwb_E_202207.epub' of iets dergelijks zijn.
+importMeetingWorkbookDateWrong: Het EPUB-bestand bevat geen vergadergegevens voor de geselecteerde week. Controleer je EPUB-bestand of kies een andere week.
+importMeetingWorkbookEnglishNotExist: De gegevens van het Engelse werkboek voor vergaderingen zijn niet beschikbaar voor deze week. Je moet eerst het Engelse werkboek voor vergaderingen EPUB toevoegen en vervolgens je gemeentetaal toevoegen.
+importMeetingWorkbookEPUB: EPUB werkboek voor vergaderingen importeren
+importMeetingWorkbookFilenameIncorrect: EPUB-bestandsnaam is onjuist. Moet 'mwb_E_202207.epub' of iets dergelijks zijn.
+importMeetingWorkbookNotMatchLanguage: Dit EPUB-werkboekbestand komt niet overeen met de geselecteerde taal.
+importNamesMatchCLMAssignmentAdded: Als zowel de voornaam als de achternaam *exact overeenkomen* met een bestaande persoon, worden de LED-toewijzingen toegevoegd. Anders wordt er een waarschuwing weergegeven.
+importNamesMatchDutyAdded: Als zowel de voornaam als de achternaam *exact overeenkomen* met een bestaande persoon, wordt de taak toegevoegd. Anders wordt er een waarschuwing weergegeven.
+importNamesMatchPersonMerged: Als zowel de voornaam als de achternaam *exact overeenkomen* met bestaande personen, worden de bestaande persoonsgegevens samengevoegd. Anders wordt er een nieuwe persoon aangemaakt.
+importOrExport: Importeren of exporteren
+importPersons: Personen importeren
+importPersonsMessage: Je staat op het punt X Personen uit je gemeente te importeren.
+importProblems: Problemen met importeren
+importPublicSpeakers: Openbare sprekers importeren
+importTerritoriesFromCSVMessage: Kies deze optie NIET als je importeert vanuit Territory Helper, Hourglass, Alba, Territory Assistant, OTM of Multi-Terr. Lees in plaats daarvan de instructies zorgvuldig opnieuw.
+importTerritoryAddressesMessage1: Je hebt een gebied geselecteerd. Alle adressen worden in dit geselecteerde gebied geïmporteerd.
+importTerritoryAddressesMessage2: Om meerdere gebieden te importeren, klik je op Gemeente > Importeren of exporteren > Importeren
+importTerritoryAddressesTooManyMessage1: Je probeert een zeer groot aantal gebiedsadressen te importeren, wat erg lang zal duren.
+importTerritoryAddressesTooManyMessage2: We raden je aan het importbestand in kleinere bestanden van 5000 adressen op te splitsen en vervolgens één bestand tegelijk te importeren.
+improveAppTranslation: App-vertaling verbeteren
+improveTranslation: Vertaling verbeteren
+inactive: Inactief
+inactivePublishers: Inactieve verkondigers
+incarcerated: Gedetineerd
+incarceratedPublishers: Gedetineerde verkondigers
+include: Inclusief
+includeAddresses: Adressen opnemen
+includeAssign: Inclusief toewijzen
+includeAverages: Inclusief gemiddelden
+includeAwaySpeakers: Inclusief gastsprekers
+includeChildren: Inclusief kinderen
+includeCleaningDescription: Inclusief schoonmaak-beschrijving
+includeCLMStudents: Inclusief LED-leerlingen
+includeCoordinates: Inclusief coördinaten
+includeFieldServiceMeetings: Inclusief velddienstacties
+includeGardenCare: Inclusief tuinonderhoud
+includeGraphs: Grafieken opnemen
+includeGroupArrangements: Inclusief groepsregelingen
+includeGroupResponsibilities: Groepsverantwoordelijkheden opnemen
+includeHospitality: Inclusief gastgezin
+includeInactive: Inclusief inactieven
+includeLocalOnlySpeakers: Inclusief plaatselijke openbare sprekers
+includeNotHomeAndHomeColumns: Voeg de kolommen 'Niet thuis' en 'Thuis' toe
+includeOnlineMeetingDetails: Voeg details over online vergaderingen toe
+includeOtherSpeakers: Andere sprekers opnemen
+includePrivilegeTags: Inclusief voorrechten-tags
+includeQRCode: QR-code opnemen
+includeSpiritual: Inclusief geestelijk
+includeTerritories: Inclusief gebieden
+includeTotals: Totalen opnemen
+includingAssistant: Inclusief assistent
+includingAuxiliaryPioneers: Inclusief hulppioniers
+incomingRequest: Binnenkomend verzoek
+incomingRequests: Binnenkomende verzoeken
+incomingSpeakers: Gastsprekers
+indianRupee: Indiase Roepie
+individual: Individueel
+individualLicenseCongregationSharingEnabledMessage: Je hebt een Individuele licentie, maar gemeentesynchronisatie is ingeschakeld. Gemeentesynchronisatie vereist een gemeentelicentie.
+indonesianRupiah: Indonesische Roepia
+infirm: zwak
+infirmPioneer: Zwakke gezondheid
+information: Informatie
+informationBoard: Mededelingenbord
+informationBoardMessage1: Het Mededelingenbord mag alleen worden gebruikt voor mededelingen, brieven en documenten die normaal gesproken op het Mededelingenbord van de Koninkrijkszaal zouden verschijnen, of die tijdens de vergadering hardop worden voorgelezen.
+informationBoardMessage2: Alle mededelingen, brieven en documenten moeten worden goedgekeurd door de CO (zie sfg 1:12).
+informationBoardMessage3: NWS Desktop is geen berichtentoepassing. Gebruik het Mededelingenbord niet om berichten of notificaties naar verkondigers te sturen.
+informationBoardUpdated: Mededelingenbord bijgewerkt
+initialCall: Eerste gesprek
+initialSyncronization: Initiële synchronisatie
+initialView: Startpagina
+inOrderOfPreference: In volgorde van voorkeur
+inPerson: Fysiek
+installing: Installeren
+installOnAppleMac: Installeren op Apple Mac
+invalidEmail: Ongeldig e-mailadres. Probeer het opnieuw.
+invitation: Uitnodiging
+irregular: Ongeregeld
+irregularPublishers: Ongeregelde verkondigers
+isThisCorrect: Is dit correct?
+item: item
+itemNumber: Item nummer
+items: items
+jamaicanDollar: Jamaicaanse dollar
+japaneseYen: Japanse Yen
+joinedMaximumCircuits: Sorry, je bent al lid van het maximale aantal kringen.
+joinOrCreate: Verbind met of creëer
+jWorgRequested: Aangevraagd op JW.org
+jWStream: JW Stream
+keepOpen: Openhouden
+key: Vereist
+keyPerson: Vereist persoon
+khOperatingCommittee: KZ Beheercomité
+kindRegards: Met vriendelijke groeten
+kingdomHall: Koninkrijkszaal
+kingdomHallAddress: Adres Koninkrijkszaal
+kingdomHallKey: Koninkrijkszaal sleutel
+kingdomHallOperatingCommittee: Koninkrijkszaal beheercomité
+kingdomHallServant: Koninkrijkszaal ‘beheerder’
+label: Label
+labels: Labels
+landscape: Landschapsmodus
+language: Taal
+languageCode: Taalcode
+languageGroup: Taalgroep
+languageGroupInformation: Informatie over taalgroep
+languageGroupOnly: Alleen taalgroep
+languageGroups: Taalgroepen
+languages: Talen
+largePrint: Groteletteruitgave
+last12Months: Laatste 12 maanden
+last3Months: Laatste 3 maanden
+last6Months: Laatste 6 maanden
+lastChanged: Laatst gewijzigd
+lastCheckedUpdated: Laatst gecontroleerd of bijgewerkt
+lastConnected: Laatst verbonden
+lastDateCompleted: Laatste datum voltooid
+lastGiven1Years: Laatst gehouden 1+ jaar
+lastGiven2Years: Laatst gehouden 2+ jaar
+lastGiven3Years: Laatst gehouden 3+ jaar
+lastGiven4Years: Laatst gehouden 4+ jaar
+lastGiven5Years: Laatst gehouden 5+ jaar
+lastName: Achternaam
+lastPioneerSchool: Laatste pioniersschool
+lastPublisherRecord: Laatste verkondigersbericht
+lastUpdated: Laatst bijgewerkt
+lastVisited: Laatst bezocht
+late: Te laat
+later: Later
+lateReportExplanation: Vink alleen aan als het velddienstrapport van de gemeente deze maand al bij het Bijkantoor is ingediend. Dit rapport wordt toegevoegd aan het totaal voor de volgende maand.
+latestAppVersion: Nieuwste app-versie
+latestVersion: Laatste versie
+latitude: Breedtegraad
+lawn: Gazon
+learnMore: Leer meer
+leaveCircuit: Verlaat kring
+lessThan1MinuteLeft: minder dan 1 minuut resterend
+letter: Brief
+letters: Brieven
+letterWriting: Briefgetuigenis
+letterWritingAbbreviation: Brief
+letterWritingMaps: Gebieden voor het schrijven van brieven
+license: Licentie
+licenseAgreement: Licentieovereenkomst
+licensedTo: Geautoriseerd
+licenseExpiredViewOnly: Licentie verlopen. Alleen KIJKEN. Klik op Mij > Licentie.
+licenseFor: Licentie voor
+licenseHelp: Licentiehulp
+licenseKeyCorrupted: De licentiesleutel is beschadigd. Klik op Verversen.
+licenseNotFound: Licentie niet gevonden
+licenseType: Licentie type
+licenseTypes: Licentie types
+lifeAndMinistryMeeting: Leven-en-dienenvergadering
+lifeAndMinistryMeetingAssignment: Toewijzing voor de Leven-en-dienenvergadering
+lifeAndMinistryMeetingAssignments: Toewijzingen Leven-en-dienenvergadering
+lifeAndMinistryMeetingNotScheduled: Leven-en-dienenvergadering niet gepland
+lifeAndMinistryMeetingOverseer: Opziener Leven-en-dienenvergadering
+lifeAndMinistryMeetingSchedule: Schema Leven-en-dienenvergadering
+lifeAndMinistryMeetingStudent: Leerling Leven-en-dienenvergadering
+lifeAndMinistryOverseerAbbreviation: LEDO
+limitedFinancialMeans: Beperkte financiële middelen
+limitedFinancialMeansConfirmCountry: Ik bevestig dat het land van de gemeente correct is
+limitedFinancialMeansConfirmQualify: Ik kom in aanmerking voor registratie voor beperkte financiële middelen
+limitedFinancialMeansExplanation11: We erkennen dat sommige dierbare broeders beperkte financiële middelen hebben en in arme landen wonen. Daarom hebben we een optie genaamd Registratie Beperkte Financiële Middelen waarmee deze broeders zich kunnen registreren en profiteren van NWS Desktop.
+limitedFinancialMeansMightQualify: Mogelijk kom je in aanmerking voor de prijsstelling voor beperkte financiële middelen
+limitedFinancialMeansPricing: Beperkte financiële middelen prijsstelling
+limitedFinancialMeansRegistration: Registratie beperkte financiële middelen
+limitedFinancialMeansWhichBrothersQualify: Welke broeders komen in aanmerking?
+limitedFinancialMeansWhoQualifies: Registratie voor personen met beperkte financiële middelen is beschikbaar voor personen die in arme landen wonen, over beperkte financiële middelen beschikken en de standaardregistratie niet kunnen betalen.
+link: Koppel
+linkedToCongregationRecord: Gekoppeld aan gemeentebericht
+linkName: Linknaam
+linkToFamily: Koppel aan gezin
+linkURL: Link
+list: Overzicht
+literature: Lectuur
+literatureItem: Lectuurartikel
+literatureItems: Lectuurartikelen
+literatureRequest: Lectuuraanvraag
+literatureRequests: Lectuuraanvragen
+literatureRequestsWaitingToBeDelivered: Lectuurverzoeken wachten op levering
+literatureRequestsWaitingToBeOrdered: Lectuurverzoeken wachten op bestelling
+literatureServant: Lectuurdienaar
+livingAsChristians: Leven als christenen
+livingAsChristiansShort: Leven-als
+livingPart: Leven-als aandeel
+livingParts: Leven-als aandelen
+load: Laden
+loadedSuccessfully: Succesvol geladen
+loading: Laden
+loadingError: Fout bij laden
+loadSuggestedRole: Voorgestelde rol laden
+loadTemplate: Sjabloon laden
+local: lokaal
+localAttachmentNotOpenMessage1: Kan bijlage niet uploaden - Geen toegang tot de bijlage.
+localAttachmentNotOpenMessage2: SLUIT alle bijlagen voordat je ze verzendt! Verwijder anders de bijlage, voeg deze opnieuw toe en probeer het opnieuw.
+localDownloadLog: Plaatselijk download logboek
+localNeed: Plaatselijke behoefte
+localNeedCurrentlyScheduledMessage1: Deze plaatselijke behoefte is momenteel gepland.
+localNeeds: Plaatselijke behoeften
+localNeedsParts: Onderwerpen voor plaatselijke behoeften
+localNotes: Eigen opmerkingen
+localOnly: Alleen in eigen gemeente
+localPublicSpeaker: Plaatselijke openbare spreker
+localPublicTalk: Openbare lezing
+locate: Lokaliseer
+locateAddress: Zoek adres
+locateKingdomHall: Zoek Koninkrijkszaal
+location: Plaats
+locations: Locaties
+logEmpty: Logbestand is leeg.
+logFileSavedSuccessfully: Logbestand succesvol opgeslagen!
+loggedInSuccesfully: Succesvol ingelogd!
+loggingIn: Inloggen...
+login: Log in
+loginTo: Inloggen
+logout: Uitloggen
+logs: Logboeken
+longitude: Lengtegraad
+lunch: Lunch
+main: Hoofdzaal
+mainHall: Hoofdzaal
+mainOnly: Alleen hoofdzaal
+maintenance: Onderhoud
+maintenanceCalendar: Onderhoudskalender
+maintenanceCoordinator: Onderhoudscoördinator
+maintenanceDutiesByPerson: Onderhoudstaken per persoon
+maintenanceScheduleMonthly: Onderhoudsschema (maandelijks)
+maintenanceScheduleYearly: Onderhoudsschema (jaarlijks)
+maintenanceTask: Onderhoudstaak:
+maintenanceTaskCategories: Categorieën van onderhoudstaken
+maintenanceTaskCategory: Onderhoudstaak categorie
+maintenanceTasks: Onderhoudstaken
+majorProblemsPleaseReplyOrContactUs: Als er grote problemen zijn, beantwoord dan onze e-mail met importinstructies of neem contact met ons op. Je MOET het importlogboek meesturen wanneer je antwoordt of contact met ons opneemt.
+makingDisciples: Maak discipelen
+malaysianRinggit: Maleisische Ringgit
+male: Man
+manuallyEnterMeetingData: Handmatig vergadergegevens invoeren
+map: Kaart
+mapCache: Kaartcache
+mapCacheEnabledMessage: We raden ten zeerste aan om de kaartcache in te schakelen.
+mapDownloadFailedMessage: Kaart downloaden mislukt. Controleer je internetverbinding en probeer het opnieuw. Als het probleem aanhoudt, moet je de kaart verwijderen en vervolgens opnieuw toevoegen.
+mapFileTooBig: Sorry, dit bestand is te groot. Kaarten moeten 200 KB of minder zijn.
+mapNotFound: Kaart niet gevonden
+mapOverlay: Kaart overlay
+mapScale: Kaartschaal
+masterTerritoryMap: Gebiedskaart
+maximumAwaySpeakersPerWeek: Maximaal aantal gastsprekers per week
+maximumDelegatesMessage: Sorry, deze persoon heeft het maximum van 5 gemachtigden bereikt.
+me: Mijn menu
+meal: Maaltijd
+mealArrangements: Maaltijdregeling
+meeting: Vergadering
+meetingAttendance: Vergaderingsbezoek
+meetingAttendanceOnly: Alleen aanwezigheid bij vergaderingen
+meetingAttendanceRecord: Bericht gemeentevergaderingsbezoek
+meetingAttendanceRecords: Berichten gemeentevergaderingsbezoek
+meetingAttendanceValueEmpty: Er is een vergadering geweest, maar sommige velden zijn leeg. Vul de aanwezigheid (of 0) in voor alle weken dat er een vergadering is geweest.
+meetingDayChange: Wijziging vergaderdag
+meetingID: Vergadering-ID
+meetings: Vergaderingen
+meetingSchedules: Vergaderschema's
+memorial: Avondmaal
+message: Bericht
+meView: Mijn menu
+meViewAlerts: Mijn meldingen
+mexicanPeso: Mexicaanse peso
+microphone: Microfoon
+microphones: Microfoonlopen
+middleName: Tweede naam
+midweek: Doordeweeks
+midweekCleaning: Doordeweekse schoonmaak
+midweekDuties: Taken doordeweekse vergadering
+midweekMeeting: Doordeweekse vergadering
+midweekMeetingDataAvailable: Gegevens van de doordeweekse vergadering beschikbaar!
+midweekMeetingDataNotAvailable: Gegevens over de doordeweekse vergadering zijn niet beschikbaar.
+midweekMeetingDay: Doordeweekse vergaderdag
+midweekMeetingSchedule: Programma doordeweekse vergadering
+midweekMeetingSchedules: Vergaderschema's voor doordeweekse vergadering
+midweekMeetingTime: Vergadertijd doordeweekse vergadering
+minimumTimeBetweenCLMNonSchoolParts: Minimale tijd tussen niet LED Schoolaandelen
+minimumTimeBetweenCLMSchoolParts: Minimale tijd tussen LED Schoolaandelen
+minimumTimeBetweenDuties: Minimale tijd tussen taken
+ministerialServant: Dienaar in de bediening
+ministerialServantAbbreviation: Dienaar
+ministerialServants: Dienaren
+minutesAbbreviation: min.
+minutesAgo: minuten geleden
+minutesLeft: minuten over
+missingGroupOverseersAndAssistants: Ontbrekende groepsopzieners en assistenten
+missingPersonInformation: Ontbrekende persoonsinformatie
+missingReport: Ontbrekend rapport
+missingReportList: Overzicht ontbrekende rapporten
+missingReports: Ontbrekende rapporten
+mobile: Mobiel
+mobilePhoneAbbreviation: (m)
+month: Maand
+months: maanden
+monthTemplate: Maand sjabloon
+monthView: Maandoverzicht
+moreInformation: Meer informatie
+moreInformationPleaseSee: Voor meer informatie, zie:
+moreInformationPleaseVisitDownload: Ga voor meer informatie naar nwscheduler.com > Downloaden
+morning: ochtend
+move: Verplaats
+moveAddress: Adres verplaatsen
+moveAddresses: Adressen verplaatsen
+moveChangeDeleteCongregation: Gemeente verplaatsen, wijzigen, samenvoegen, splitsen of verwijderen
+moved: Verhuisd
+moveKingdomHall: Koninkrijkszaal verplaatsen
+moveLabels: Verplaats labels
+multiple: Meerdere
+multipleDataSelected: Meerdere gegevens geselecteerd
+multiplePersons: Meerdere personen
+myCircuit: Mijn kring
+myCircuits: Mijn kringen
+myCongregation: Mijn gemeente
+myCongregationResponsibilities: Mijn gemeenteverantwoordelijkheden
+myTasks: Mijn taken
+myUserAccess: Mijn gebruikerstoegang
+na: N.v.t.
+name: Naam
+nameDisplay: Naamweergave
+nameFormat: Naam format
+nameOrEmailBlank: Naam of e-mail leeg
+navigate: Navigeren
+navigateByCoordinates: Navigeer op coördinaten
+neighborCongregation: Buurgemeente
+neighborCongregations: Buurgemeenten
+neighborCongregationsOnly: Alleen buurgemeenten
+neighborPerson: Persoon uit buurgemeente
+neighborPersons: Personen uit buurgemeente
+neighborPublicSpeaker: Gastspreker uit buurgemeente
+never: Nooit
+new: Nieuw
+newAddress: Nieuw adres
+newAddresses: Nieuwe adressen
+newAnnouncement: Nieuwe mededeling
+newCircuit: Nieuwe kring
+newCongregation: Nieuwe gemeente
+newEvent: Nieuwe gebeurtenis
+newFromCongregation: Nieuw vanuit gemeente
+newFromOther: Nieuw vanuit andere
+newFromPublisher: Nieuw van verkondiger
+newInactivePublishers: Nieuwe inactieve verkondigers
+newLanguage: Nieuwe taal
+newLetterWritingTerritory: Nieuw gebied voor het schrijven van brieven
+newMessage: Nieuw bericht
+newOrUpdated: Nieuw of bijgewerkt
+newPassword: Nieuw wachtwoord
+newPerson: Nieuw persoon
+newPhoneWitnessingTerritory: Nieuw gebied voor telefoongetuigenis
+newRequest: Nieuw verzoek
+newString: Nieuw
+newZealandDollar: Nieuw-Zeelandse dollar
+nextFourWeeksAreScheduled: De komende 4 weken staan ​​gepland.
+nextToAssign: Als eerste toewijzen
+nextWeek: Volgende week
+nilReport: Nul '0' rapport
+no: Nee
+noActiveSharingProblemsDetected: Geen actieve problemen met synchroniseren/delen gedetecteerd.
+noAnswer: Geen antwoord
+noAppointedBrothersWithEmail: Sorry, er zijn geen aangestelde broeders met een e-mailadres toegevoegd aan NWS Desktop. Dit is vereist om synchronisatie in te schakelen.
+noApprovedSpeakers: Geen goedgekeurde sprekers
+noArrangements: Geen velddienstregelingen
+noCampaign: Geen campagne
+noCategory: Geen categorie
+noCircuits: Geen kringen
+noCongregationFieldServiceReportsSubmitted: Er zijn in deze periode geen velddienstrapporten van de gemeente gemarkeerd als 'Ingediend bij het bijkantoor'. Klik op 'Ingediend bij het bijkantoor' voor alle velddienstrapporten van de gemeente in deze periode.
+noCongregations: Geen gemeenten
+noCountrySelectedMessage: Geen land geselecteerd. Klik eerst op Gemeente > Gemeente-informatie en selecteer je land.
+noDataFound: Geen data gevonden
+noDataToRestore: Geen gegevens om te herstellen
+noDateSelected: Geen datum geselecteerd
+noFieldServiceArrangements: Geen velddienstregelingen
+noGroupsMessage: Voor dit rapport zijn groepen vereist, maar je hebt er geen gemaakt. Klik op Gemeente > Groepen en gezinnen > Velddienstgroepen om personen aan groepen toe te voegen en toe te wijzen.
+noGuestCongregations: Geen gastgemeenten
+noInformationToPrintCheckEvents: Geen informatie om af te drukken. Controleer je  gemeentegebeurtenissen.
+noInternetConnectionMessage: Geen internetverbinding. Maak verbinding en probeer het opnieuw.
+noLiteratureRequestsWaitingToBeDelivered: Geen lectuuraanvragen die wachten om te worden afgeleverd
+noLiteratureRequestsWaitingToBeOrdered: Geen lectuuraanvragen die wachten om te worden besteld
+noMeeting: Geen vergadering
+nonAppointedActiveBrothers: Niet-aangestelde actieve broeders
+none: Geen
+noNewAddresses: Geen nieuwe adressen
+nonPublishers: Geen verkondigers
+nonRecurringOnly: Alleen eenmalig
+nonSchool: Niet-ingeschreven
+nonSchoolParts: Niet-school aandelen
+nonSchoolUsageHistory: Historie niet-school aandelen per persoon
+nonStudentSlips: Overig LED onderdeel
+noOutlines: Geen schema's. Voer nummers van schema's in bij Personen > Toewijzen > Gastspreker
+noPersonSelected: Geen persoon geselecteerd
+noPersonsFound: Geen personen gevonden.
+noPersonsSelected: Geen personen geselecteerd. Klik op Personen > selecteer de personen die je wilt exporteren > klik op Personen exporteren.
+noPublicSpeakerEmail: Geen e-mailadres voor openbare spreker gevonden.
+noPublicSpeakerEmailMessage: Klik op Gemeente > Kringen, gemeenten en sprekers om de openbare spreker toe te voegen.
+noPublicTalkCoordinatorFound: Geen e-mailadres van Coördinator Openbare lezingen gevonden.
+noPublicTalkCoordinatorFoundMessage: Klik op Gemeente > Kringen, gemeenten en sprekers om de coördinator voor openbare lezingen toe te voegen.
+noReport: Geen rapport
+noReportsToImport: Geen rapporten om te importeren
+northAmerica: Noord-Amerika
+northAmericaCentral: Noord-Amerika Centraal
+northAmericaEast: Noord-Amerika-Oost
+northAmericaWest: Noord-Amerika West
+norwegianKrone: Noorse kroon
+noSaveButton: Tip: Er is geen Opslaan knop. Alles wordt automatisch opgeslagen!
+notApproved: Niet goedgekeurd
+notAvailable: Niet beschikbaar
+notCompleted: Niet gereed
+notCompletedLast12Months: Niet voltooid in de afgelopen twaalf maanden
+notCompletedLast6Months: Niet voltooid in de afgelopen 6 maanden
+notConnected: Niet verbonden
+notEnabled: Niet aangezet
+notEnoughMemoryError: Onvoldoende geheugen om op te slaan. Selecteer minder gegevens om in één keer op te slaan, of vink 'Combineren' uit.
+noTerritoriesOverdue: Geen gebieden te laat ingeleverd
+noTerritoryAddressNotesFromPublishers: Geen gebied adresnotities van verkondigers
+noTerritoryNotesFromPublishers: Geen gebied notities van verkondigers
+noTerritorySelected: Geen gebied geselecteerd
+notes: Opmerkingen
+notesForCO: Opmerkingen voor KO
+notesFromPublisher: Opmerkingen van verkondiger
+notesName: Notities Naam
+notesSpecialNeeds: Opmerkingen ten aanzien van speciale behoeften
+noThanks: Nee, bedankt.
+notHome: Niet thuis
+notHomeAbbreviation: NT
+notHomeAttempts: Niet thuis pogingen
+notHomeDisplay: Niet thuis weergave
+notification: Melding
+notificationEmails: Meldings-e-mails
+notifications: Meldingen
+notificationsLog: Meldingenlogboek
+notificationsSent: Verzonden meldingen
+notificationsToSend: Meldingen om te verzenden
+notifyingAllElders: Alle gemeenteouderlingen informeren
+notInActiveCampaign: Niet in actieve campagne
+notIncludingAssistant: Exclusief assistent
+notLinked: Niet gekoppeld
+notPioneering: Niet pionierend
+notRequested: Niet aangevraagd
+notSaved: Niet opgeslagen.
+notScheduled: Niet gepland
+notSendIndividually: Je hebt ervoor gekozen om NIET individueel te verzenden. Alle informatie wordt in één bestand verzonden.
+notShared: Niet gedeeld
+notSignedIn: Niet ingeschreven
+notSubmitted: Niet ingezonden
+notWorked: Niet in gewerkt
+notWorkedLast12Months: De afgelopen 12 maanden niet in gewerkt
+notWorkedLast6Months: De afgelopen 6 maanden niet in gewerkt
+notYetConnected: Nog niet verbonden
+noUpcomingCOVisits: Vraag de gegevens aan de Secretaris indien bekend.
+noUpdates: Geen updates
+noVolunteersFound: Geen vrijwilligers gevonden
+noWeekSelected: Geen week geselecteerd
+number: Nummer
+numberOfMeetings: Aantal vergaderingen
+numberOfReports: Aantal rapporten
+nwpApp: NW Publisher-app
+nwpAppDevices: Apparaten
+nwpAppLogs: Logboeken
+nwpAppNotEnabled1: NW Publisher-app niet ingeschakeld
+nwpAppNotEnabled2: Gebruik 'NWS Desktop' om de functie in te schakelen en te configureren.
+nwpAppNotEnabledOnRegion1: De NW Publisher-app is niet ingesteld in deze regio.
+nwpAppNotEnabledOnRegion2: Controleer of de regio correct is, of gebruik 'NWS Desktop' om deze functie voor deze regio in te schakelen.
+nwpAppPersons: Personen
+nwpAppPersonsNotConnected: NW Publisher-app personen die niet verbonden zijn
+nwpAppPersonsWithOldVersion: NW Publisher-app voor personen met een oude versie
+nwpAppRegion: App-regio
+nwpAppSettings: Instellingen
+nwpAppVersion: NW Publisher app-versie
+nwPublisherAppExplanation1: NW Publisher is een gratis app die geïnstalleerd kan worden op Apple iOS-, Google Android- en Amazon-apparaten. Met de app kunnen verkondigers aankomende schema’s, toewijzingen, taken, gemeentegebeurtenissen en mededelingen bekijken, velddienstberichten indienen en nog veel meer.
+nwPublisherAppExplanation2: De gegevens voor de NW Publisher-app worden uitsluitend van en naar de plaatselijke NWS Desktop-gemeente verzonden.
+nwPublisherAppExplanation3: Voordat je de app inschakelt, klik je op Help > NW Publisher-app en zorg je ervoor dat je begrijpt hoe de app werkt, hoe je deze instelt en hoe je eventuele problemen kunt oplossen.
+nwPublisherAppExplanation4: Wij kunnen verkondigers geen individuele ondersteuning bieden.
+nwSchedulerComplianceWithGDPR1: NWS Desktop voldoet aan de AVG van de EU, de AVG van het VK en andere soortgelijke gegevens beschermingsvoorschriften.
+nwSchedulerFile: NWS Desktop bestand
+nwsMobileEnableMessage1: Dit stelt alle aangestelde broeders in staat om NWS Mobile te gebruiken om verbinding te maken met je gemeente.
+nwsMobileEnableMessage2: Waarschuwing: NWS Mobile bevindt zich momenteel in de bètafase. Dit betekent dat er een grotere kans is op problemen of bugs, waaronder gegevensverlies. Schakel NWS Mobile alleen in als de ouderlingen van je gemeente bereid zijn deel te nemen aan de bètatest, bereid en in staat zijn problemen te melden, en weten hoe ze gegevens vanuit een back-up kunnen herstellen in geval van gegevensverlies.
+nwsMobileNewSharingRegionMessage: NWS Mobile is alleen beschikbaar in de nieuwe synchronisatieregios. Klik op Regio wijzigen om naar een van de nieuwe regio's over te schakelen wanneer je er klaar voor bent. We raden je aan eerst de volgende informatie zorgvuldig te lezen: Help > Overzicht delen van gemeenten > synchronisatieregio.
+nwsMobileNotEnabledMessage: NWS Mobile is nog niet geactiveerd voor deze gemeente. Vraag een gemeentebeheerder om NWS Mobile te activeren via NWS Desktop.
+obtainInformationFromSecretary: Vraag inlichtingen bij de Secretaris
+obtainInformationFromServiceOverseer: Vraag gegevens van de Dienstopziener
+offerHelp: Hulp aanbieden
+offerPersonalHelp: Bied persoonlijke hulp aan
+offline: offline
+old: Oud
+oldAppVersion: Oude app-versie
+oldDevice: Oud apparaat
+oldVersion: Oude versie
+on: op
+onceEvery: Eens in de zoveel tijd
+oneDayOnly: Alleen 1 dag
+oneOrTwoYears: 1 of 2 jaar
+onePagePerGroup: Één pagina per groep
+oneUser: 1 gebruiker
+oneYear: 1 jaar
+oneYearFree: 1 jaar gratis
+online: Online
+onlineMeetings: Online vergaderingen
+onlyCongregationAdministratorsCanChangeThis: Sorry, alleen gemeentebeheerders kunnen dit wijzigen.
+onlyCongregationAdministratorsDoThis: Alleen gemeentebeheerders zouden dit moeten doen!
+onlyDelete50Territories: Sorry, je kunt maximaal 50 gebieden tegelijk verwijderen.
+onlyEldersCanEnableCongregationSharing: Waarschuwing: alleen ouderlingen kunnen gemeentesynchronisatie inschakelen.
+onlyOneCongregationAdministrator: Je gemeente heeft slechts 1 gemeentebeheerder. We raden je ten zeerste aan om ten minste 2 gemeentebeheerders te hebben.
+onlyOneCongregationAdministratorShort: Gemeentesynchronisatie heeft slechts 1 beheerder!
+open: Open
+openCongregation: Open gemeente
+openCongregationFromAutomaticBackupMessage: Elke keer dat NWS Desktop wordt afgesloten, wordt er een automatische back-up gemaakt op je lokale computer. Als je NWS Desktop al op deze computer hebt gebruikt, kun je deze gemeente openen vanuit Automatische back-up.
+openCongregationFromFileMessage: Als jij of een andere ouderling al een NWS Desktop gemeente heeft gemaakt en vervolgens een back-up bestand heeft gemaakt, kun je deze gemeente openen vanuit een back-up bestand
+openCongregationFromSharing: Open een gemeente vanuit synchronisatie
+openCongregationFromSharingMessage: Als jij of een andere ouderling al een NWS Desktop gemeente heeft gemaakt en vervolgens Gemeente synchronisatie heeft ingeschakeld, kun je deze gemeente openen vanuit "Gemeente synchronisatie".
+openedCongregation: Gemeente met succes geopend!
+openFullLogs: Open volledige logboeken
+openingComments: Inleiding
+openingCommentsCLM: Inleiding (1 min.)
+openingPrayer: Openingsgebed
+openingSong: Openingslied
+openLog: Logboek openen
+openMapCacheFolder: Open cachefolder
+openNow: Wil je deze nu openen?
+optional: Optioneel
+or: of
+order: Bestellen
+orderBy: Sorteer op
+orDownloadFrom: of downloaden van
+orientation: Oriëntatie
+originalSize: Originele grootte
+orMore: of meer
+orVisit: of bezoek
+other: Overige
+otherComments: Andere opmerkingen
+otherCongregation: Andere gemeente
+otherGroup: Andere groep
+otherGroupCaptains: Andere groepsleiders
+otherGroups: Andere groepen
+otherPublicSpeaker: Andere openbare spreker
+otherRegistrationQuestions: Ik heb andere registratievragen
+otherSheep: Ander schaap
+otherSpeaker: Andere spreker
+outgoingRequest: Uitgaand verzoek
+outgoingRequestReply: Uitgaand verzoek antwoord
+outgoingRequests: Uitgaande verzoeken
+outgoingSpeakers: Gastsprekers
+outline: Schema
+outlineRequested: Lezingschema gevraagd
+outlines: Schema's
+outOfMemoryError: Onvoldoende geheugen fout
+outOfMemoryErrorMessage1: Er is onvoldoende geheugen beschikbaar op je computer tijdens het tekenen van de gebiedsgrens. Probeer het opnieuw.
+outOfMemoryErrorMessageOption1: Optie 1: gebruik een 64-bits Windows-besturingssysteem (aanbevolen)
+outOfMemoryErrorMessageOption2: Optie 2: Wijs meer virtueel geheugen toe aan NWS Desktop
+outOfMemoryErrorMessageOption3: Optie 3: Voordat je nieuwe gebiedsgrenzen tekent, moet je eerst de schermgrootte van NWS Desktop verkleinen
+outOfMemoryErrorMessageOptions: Als je dit probleem nog steeds ondervindt, zijn er drie manieren om dit op te lossen:
+overallBoundaryThickness: Totale grensdikte
+overdue: Te laat
+overseer: Opziener
+overseers: Opzieners
+overview: Overzicht
+overwriteAllSelectedDuties: Geselecteerde taken worden overschreven vanaf deze datum
+overwriteAllSelectedParts: Hiermee worden alle geselecteerde aandelen overschreven en worden toekomstige toewijzingen van geselecteerde aandelen gewist
+panAndZoomControls: Pan- en zoombediening
+paperSize: Papierformaat
+part: Aandeel
+partHistory: Aandeel historie
+partNo: Aandeel nr.
+parts: Aandelen
+partsNotScheduled: Aandelen niet gepland
+partsToAutoAssign: Aandelen om automatisch toe te wijzen
+partType: Soort aandeel
+password: Wachtwoord
+passwordHint: Wachtwoordhint
+passwordIncorrect: Fout wachtwoord. Probeer het opnieuw.
+passwordNotValid2: Het wachtwoord moet 12 tekens of meer bevatten en kleine letters, hoofdletters en cijfers bevatten.
+passwordProtect: Wachtwoordbeveiliging
+passwordProtectMessage: Dit betekent dat elke keer dat je NWS Desktop opent, je je NWS Desktop-wachtwoord moet invoeren. Als je je NWS Desktop-wachtwoord bent vergeten, kun je NWS Desktop mogelijk niet openen.
+passwordRecoveryEmail: E-mailadres voor wachtwoordherstel
+passwordRecoveryEmailMessage: Stel een e-mailadres voor wachtwoordherstel in voor het geval je je wachtwoord vergeet.
+passwordResetMessage: Je wachtwoord is gereset. Een nieuw wachtwoord wordt binnen enkele minuten naar je e-mailadres voor wachtwoordherstel gestuurd. Controleer ook je SPAM- of ongewenste e-mail-mappen.
+passwordsNotMatch: Wachtwoorden komen niet overeen
+paste: Plakken
+pastHistory: Historie
+patientlyWaitUntilMeetingWorkbookDataAvailable: Wacht geduldig tot de gegevens in het vergaderingswerkboek beschikbaar zijn.
+paymentMethod: Betaalmethode
+pdfViewerMustBeInstalledToPreview: Om rapporten te kunnen bekijken, moet een PDF-viewer geïnstalleerd zijn. Zoek op Google naar 'Hoe installeer ik een PDF-viewer' of vraag een vriend om hulp.
+pending: In behandeling
+percentageCompleted: % Percentage voltooid
+period: Periode
+permanentlyDeleteData: Hiermee worden gegevens permanent verwijderd.
+permanentlyRemoveDataFromSharingServer: Hiermee worden alle versleutelde gegevens onmiddellijk en permanent van de Synchronisatie Server verwijderd. Dit heeft gevolgen voor alle gebruikers.
+person: Persoon
+personAlreadyHasAssignmentThisWeekend: Persoon heeft dit weekend al een toewijzing.
+personAlreadyPartOfFamily: Persoon maakt al deel uit van een Gezin. Stel eerst "Gezin" in op "Geen".
+personAlreadyShared: Persoon al gesynchroniseerd.
+personalTerritory: Persoonlijk gebied
+personAssignments: Persoonstoewijzingen
+personData: Persoonsgegevens
+personDetailedInformation: Gedetailleerde persoonsinformatie
+personHasCurrentTerritoryAssignments: Deze persoon heeft huidige gebied toewijzingen. Verwijder eerst deze gebiedstoewijzingen.
+personHasFutureAssignmentsOrDuties: Deze persoon heeft nog toekomstige toewijzingen of taken. Verwijder deze eerst.
+personHasFuturePublicTalks: Deze persoon heeft nog openbare lezingen gepland. Klik eerst op 'Informatie > Geschiedenis' en verwijder deze toewijzingen.
+personHasPartsWhileAway: Deze persoon heeft toewijzingen/taken terwijl hij afwezig is.
+personIdentity: Persoonsidentiteit
+personInformation: Persoonsinformatie
+personInformationCheck: Persoonsinformatie controleren
+personList: Persoonsoverzicht
+personLocationData: Locatiegegevens persoon
+personMissingEmergencyContactInformation: Persoon mist contactgegevens voor noodgevallen
+personMissingPersonalInformation: Persoon die persoonlijke informatie mist
+personNotAssignedGroup: Persoon die niet is toegewezen aan een velddienstgroep
+personPIN: Persoons-PIN
+persons: Personen
+personSetRemoved: Hiermee worden al hun toekomstige toewijzingen en taken verwijderd en wordt hun app-toegang uitgeschakeld.
+personsMissingEmergencyContactInformation: Personen die contactgegevens voor noodgevallen missen
+personsMissingInformation: Personen met ontbrekende informatie
+personsMissingPersonalInformation: Personen die persoonlijke informatie missen
+personsNotAssignedGroup: Personen die niet zijn toegewezen aan een velddienstgroep
+personsSpiritualSummary: Geestelijke samenvatting van personen
+personsToBcc: Personen in Bcc
+personsToCc: Personen in Cc
+personsToEmail: Personen om te e-mailen
+personsWithKingdomHallKey: Personen met sleutel Koninkrijkszaal
+personsWithPrintedPublications: Personen met gedrukte publicaties
+perYear: per jaar
+philippinePeso: Filippijnse peso
+phone: Telefoon
+phoneAbbreviation: Tel
+phoneNumber: Telefoonnummer
+phoneNumbers: Telefoonnummers
+phoneWitnessing: Telefoongetuigenis
+phoneWitnessingAbbreviation: Tel
+phoneWitnessingMaps: Gebieden voor telefoongetuigenis
+pin: PIN
+pinNotMatch: De pincodes komen niet overeen.
+pioneer: Pionier
+pioneerMeeting: Pioniersvergadering
+pioneers: Pioniers
+pioneerSchool: Pioniersschool
+platform: Podiumdienst
+please: alsjeblieft
+pleaseAddSomeCongregationPersons: Voeg a.u.b. enkele gemeenteleden toe.
+pleaseCarefullyCheckAndConfirm: Gelieve deze informatie zorgvuldig te controleren en te bevestigen. Is dit correct?
+pleaseChangeCircuitInPublicSpeakerSharing: Sorry, verander je kring bij Gastsprekers delen.
+pleaseCheckAppLogs: Controleer App-logboeken.
+pleaseCheckInformationMessage: Controleer alle informatie en pas deze indien nodig aan. Stuur daarna terug naar je groepsopziener.
+pleaseConfirm: Bevestig alsjeblieft
+pleaseConnectToYourCongregation: Maak verbinding met je gemeente
+pleaseCreateCongregationPIN1: Maak een 8-cijferige Gemeente pincode aan
+pleaseCreateCongregationSharingPassword: Maak een wachtwoord aan voor Gemeentesynchronisatie
+pleaseDoNotForgetPassword: Vergeet dit wachtwoord niet!
+pleaseDoNotUsejwpubEmail: Ongeldig e-mailadres. Gebruik a.u.b. niet je jwpub e-mailadres.
+pleaseEditLocalPublicTalksUsingPublicTalksLocal: Bewerk openbare lezingen met module Openbare lezingen
+pleaseEnterCongregationPIN: Voer a.u.b. de Gemeente pincode in
+pleaseEnterPassword: Voer het NWS Desktop-wachtwoord in
+pleaseEnterValidEmail: Voer ten minste één geldig e-mailadres in
+pleaseFirstSeeHelpSetupYourOwnSMTPServer: Raadpleeg eerst Help > Je eigen SMTP-server instellen
+pleaseFirstSetupEmail: Stel eerst e-mail in
+pleaseFirstUpdateAndCloseKHS: Werk eerst KHS bij naar de nieuwste versie en sluit vervolgens KHS.
+pleaseIdentifyYourself: Identificeer jezelf a.u.b.
+pleaseSaveImportLog: Sla het importlogboek op en controleer het voor gedetailleerde informatie.
+pleaseSeeHelpPersonalHelp: Zie Help > Persoonlijke hulp voor meer informatie
+pleaseSelect: Selecteer alsjeblieft
+pleaseSelectPerson: Selecteer een persoon.
+pleaseSelectProgramLanguage: Selecteer taal
+pleaseSelectYourCountry: Selecteer alsjeblieft je land
+pleaseSyncAppReservations: Synchroniseer eerst de App-reserveringen voordat je wijzigingen aanbrengt in reserveringen.
+pleaseTryAgain: Controleer je Internetverbinding en probeer het opnieuw. Klik op Help als het probleem aanhoudt.
+pleaseTryTheFollowing: Probeer a.u.b. het volgende:
+pleaseUpdateNWScheduler: Update NWS Desktop.
+pleaseUpdateNWSchedulerMessage1: Als je Gemeente synchronisatie wilt blijven gebruiken, installeer je deze belangrijke update door op Mijn Menu > Updates te klikken. WAARSCHUWING: Totdat je de update uitvoert, worden eventuele wijzigingen die je aanbrengt mogelijk niet gesynchroniseerd. Update zo snel mogelijk.
+pleaseUseAutoAssignResponsibily: Gebruik automatisch toewijzen verantwoord en controleer(!) of elk aandeel is toegewezen aan de meest geschikte persoon.
+pleaseValidateEmail: Er is een verificatie-e-mail naar je e-mailadres verzonden. Verifieer je e-mailadres en log vervolgens in.
+pleaseVisit: Bezoek alsjeblieft
+pleaseWait: Even geduld a.u.b.
+pm: Middag/avond
+portrait: Portretmodus
+positionDown: Positie omlaag
+positions: Posities
+positionUp: Positie omhoog
+postalCode: Postcode
+prayer: Gebed
+prayers: Gebeden
+prepare: Voorbereiden
+prepareCongregationAccounts: De lopende administratie van de gemeenteboekhouding
+prepareKHOCAccounts: De lopende administratie van de boekhouding van het beheercomité
+prepareMonthlyMovementOfLiteratureForms: Maandelijkse lectuurafname-formulieren (S-28)
+prepareVarietyOfTerritories: Reserveer verschillende gebieden om te bewerken
+preview: Voorbeeld
+previous12MonthsNotSubmitted: De voorgaande 12 maandelijkse velddienstberichten van de gemeente zijn niet 'ingediend', dus dit rapport is mogelijk niet correct. Zie Help > Velddienstberichten gemeente voor meer informatie.
+previousMonthsToShowOnSchedule: Aantal vorige maanden op schema tonen
+price: Prijs
+primary: Primair
+primaryCircuit: Eigen kring
+print: Afdrukken
+printed: Afgedrukt
+printedBy: Afgedrukt door
+printedMeetingWorkbook: Gedrukt Werkboek leven-en-dienenvergadering
+printedStudyWatchtower: Gedrukte studie Wachttoren
+printing: Afdrukken
+printingAccess: Let op: Afdruktoegang is automatisch gebaseerd op het bovenstaande.
+printS21PublisherRecordCards: S-21 Verkondigerskaarten afdrukken
+privacyPolicy: Privacybeleid
+privilege: Geestelijke status
+problem: Probleem
+problems: Problemen
+problemsUpdatingMessage: Raadpleeg Help > NWS Desktop bijwerken als je problemen hebt met updaten.
+problemsWithTranslation: Klik als je problemen ondervindt met de vertaling
+processing: Verwerken
+processingPayment: Betaling verwerken
+processReceivedAppData: Verwerk ontvangen app-gegevens
+program: Programma
+programInactivityMessage1: Laat NWS Desktop niet openstaan ​​wanneer je het programma niet gebruikt. Dit kan namelijk problemen veroorzaken met de gegevenssynchronisatie.
+programInactivityMessage2: Open NWS Desktop alleen als je het nodig hebt en sluit het pas als je klaar bent.
+programInactivityMessage3: NWS Desktop zal automatisch opslaan en sluiten in
+programLanguage: Taalinstelling
+programOpenTooLongMessage1a: NWS Desktop is al meer dan 1 uur open
+programOpenTooLongMessage2a: Dit kan veroorzaakt zijn doordat je jouw laptop dicht hebt gedaan of je computer in slaapstand hebt gezet, terwijl NWS Desktop nog open was. Doe dit alsjeblieft niet.
+programOpenTooLongMessage3a: NWS Desktop moet correct worden gesloten en geopend om gegevens correct te synchroniseren, vooral als je de NW Publisher-app of Gemeentesynchronisatie gebruikt.
+programOpenTooLongMessage4a: We raden je *sterk* aan om NWS Desktop nu te sluiten. Wil je NWS Desktop blijven gebruiken, dan kun je het gewoon opnieuw openen.
+programStatus: Programmastatus
+publicNotes: Openbare notities
+publicSpeaker: Openbare spreker
+publicSpeakerCongregations: Gemeenten met gastsprekers
+publicSpeakerHasUpcomingLocalPublicTalks: Deze openbare spreker heeft geplande openbare lezingen in je gemeente. Verwijder eerst deze toewijzingen.
+publicSpeakerInformation: Informatie over openbare sprekers
+publicSpeakerLocalNotes: Plaatselijke openbare spreker
+publicSpeakerRequest: Verzoek om openbare spreker
+publicSpeakerRequests: Verzoeken om openbare sprekers
+publicSpeakers: Openbare sprekers
+publicSpeakersAvailability: Beschikbaarheid van openbare sprekers
+publicSpeakersExchangeHistory: Historie uitwisseling openbare sprekers
+publicSpeakersExchangeSummary: Samenvatting uitwisseling openbare sprekers
+publicSpeakersFuture: Openbare sprekers - gepland
+publicSpeakerSharing: Gastsprekers delen
+publicSpeakerSharingAddRequestedSpeakersAndDates: Voeg eerst enkele aangevraagde sprekers en gevraagde datums toe.
+publicSpeakerSharingAlreadyExists: Sorry, deze kring bestaat al. Probeer je aan te sluiten bij deze kring.
+publicSpeakerSharingAlreadyScheduledPublicTalkWillRemove: Je hebt al een openbare lezing gepland voor dit weekend. Als je een nieuw verzoek maakt, wordt de bestaande openbare lezing verwijderd.
+publicSpeakerSharingApprovedRequests: Goedgekeurde verzoeken worden toegevoegd aan je uitlezingen.
+publicSpeakerSharingApprovedRequestsNeedOutline: Alle goedgekeurde aanvragen moeten een lezingschema hebben.
+publicSpeakerSharingApproveMessage1: Herken en vertrouw je deze gemeente?
+publicSpeakerSharingApproveMessage2: Bevindt deze gemeente zich in deze kring of in de omgeving?
+publicSpeakerSharingCancelledRequests: Geannuleerde verzoeken worden verwijderd uit je uitlezingen.
+publicSpeakerSharingCancellingApprovedIncomingSpeaker: Als je een goedgekeurde spreker annuleert, wordt de plaatselijke openbare lezing verwijderd en wordt de andere gemeente hiervan op de hoogte gesteld.
+publicSpeakerSharingCancellingApprovedOutgoingSpeaker: Als je een goedgekeurde spreker annuleert, wordt de toewijzing voor een uitlezingen verwijderd en wordt de andere gemeente hiervan op de hoogte gesteld.
+publicSpeakerSharingCannotSwap: Sorry, je kunt een geplande lezing met Gastsprekers delen niet ruilen.
+publicSpeakerSharingChangesMadeNotSent: Je hebt wijzigingen aangebracht, maar het verzoek niet verzonden of bijgewerkt.
+publicSpeakerSharingCircuitMissing: Sorry, je moet eerst je kring maken (zie Help > Locaties en Kringen) en dan instellen in Gemeente informatie.
+publicSpeakerSharingCircuitNameFormat: Je kringnaam moet de volgende indeling hebben:
+publicSpeakerSharingCircuitNameFormatLanguageCode: Als je een anderstalige kring bent, kun je de taalcode toevoegen
+publicSpeakerSharingCircuitNameNotValid: Je kringnaam is niet geldig.
+publicSpeakerSharingConfirmCircuitName2: Controleer zorgvuldig of je kringnaam overeenkomt met de kringnaam die je plaatselijke bijkantoor heeft gegeven. Deze is te vinden op jw.org.
+publicSpeakerSharingConfirmCircuitName3: Gelieve GEEN A-, B- of C-toevoegingen op te nemen.
+publicSpeakerSharingConfirmDisable: Wil je Gastsprekers delen nog steeds uitschakelen?
+publicSpeakerSharingConfirmOrCancelRequests: Bevestig of annuleer eerst alle goedgekeurde verzoeken.
+publicSpeakerSharingCongregationNoLongerShared: Deze gemeente wordt niet langer gedeeld. Instelling op "Niet gedeeld"
+publicSpeakerSharingCongregationRequestedDataRemotelyDeleted: Gemeente verzocht om hun gegevens op afstand te verwijderen
+publicSpeakerSharingCongregationUnableToDenyAlreadyApproved1: Kan gemeente niet weigeren omdat deze gemeente al is goedgekeurd en mogelijk openstaande verzoeken heeft.
+publicSpeakerSharingCongregationUnableToDenyAlreadyApproved2: Als je vindt dat deze gemeente moet worden geweigerd of verwijderd, neem dan contact met ons op en vermeld het kring ID, het Gemeente ID en geef een toelichting.
+publicSpeakerSharingContactByPhoneMessage: (Misschien kun je via telefoon of een bericht contact met hen opnemen om te bevestigen dat ze dit verzoek hebben gedaan)
+publicSpeakerSharingDeleteCircuitInstead: Sorry, je bent de enige erkende gemeente in deze kring. Verwijder in plaats daarvan de kring.
+publicSpeakerSharingEnabledMessage: Het delen van gastsprekers is ingeschakeld. Het wijzigen van je gemeente kan problemen veroorzaken voor het delen van gastsprekers.
+publicSpeakerSharingExplanation1: Met Gastsprekers delen kun je de informatie van je plaatselijke Openbare spreker delen met nabijgelegen gemeenten, evenals verzoeken voor Openbare sprekers rechtstreeks vanuit NWS Desktop verzenden en ontvangen.
+publicSpeakerSharingExplanation2: Gastsprekers delen wordt beheerd door alle gemeenten binnen een kring.
+publicSpeakerSharingExplanation3: Voordat je inschakelt, klik je op Help > Gemeente > Gastsprekers delen om er zeker van te zijn dat je begrijpt hoe Gastsprekers delen werkt, hoe je het moet instellen en hoe je eventuele problemen kunt oplossen.
+publicSpeakerSharingFirstAssignCOBEAndPTC: Sorry, je moet eerst de CLVO en Coördinator openbare lezingen toewijzen. (Zie Gemeente > Gemeenteverantwoordelijkheden > Coördinator LVO)
+publicSpeakerSharingFirstEnterCOBEAndPTCDetails: Sorry, je moet eerst je contactgegevens van de CLVO en Coördinator openbare lezingen invoeren. (Zie Personen > Informatie)
+publicSpeakerSharingJoinCircuitAsGuestNoCircuitName: Sorry, je mag niet als gast deelnemen aan een andere kring, tenzij je eerst je eigen kring hebt aangemaakt en de kringnaam hebt opgegeven.
+publicSpeakerSharingJoinCircuitExplanation: Elke gemeente mag lid worden van hun eigen kring en maximaal vijf andere kringen als gasten.
+publicSpeakerSharingJoinCircuitReminder1: Herinnering: je mag je alleen aansluiten bij een kring waar je gemeente deel van uitmaakt, of als deze dichtbij is (zoals aangrenzende kringen).
+publicSpeakerSharingJoinCircuitReminder2: Sluit je NIET aan bij kringen waar je niet in zit of die ver weg zijn.
+publicSpeakerSharingNoDataAvailable: Geen gegevens beschikbaar. De gemeente heeft onlangs geen verbinding gemaakt of gebruikt een oude versie van NWS Desktop.
+publicSpeakerSharingNotApproved: Sorry, je bent nog niet goedgekeurd. Om gemeente informatie te zien moet je eerst zijn goedgekeurd door een van de gemeenten in de kring.
+publicSpeakerSharingNotApprovedAnyRequests: Je hebt geen enkele van hun verzoeken voor een openbare spreker goedgekeurd.
+publicSpeakerSharingNotJoined: Sorry, je bent geen lid van deze kring. Wordt lid van deze kring om gemeente informatie te zien.
+publicSpeakerSharingNotYetApproved: Sorry, je bent nog niet goedgekeurd. Om gemeente informatie te zien, moet je eerst goedgekeurd zijn door een van de gemeenten in de kring.
+publicSpeakerSharingOnlyOneRequestedSpeakerAndDateMessage1: Je hebt slechts één spreker aangevraagd voor één datum.
+publicSpeakerSharingOnlyOneRequestedSpeakerAndDateMessage2: Het is onwaarschijnlijk dat de andere gemeente je verzoek kan goedkeuren. We raden je ten zeerste aan om meerdere sprekers aan te vragen voor meerdere datums. Dit geeft de andere gemeente flexibiliteit bij het goedkeuren van je verzoeken.
+publicSpeakerSharingOutlineAlreadyApproved: Dit schema is al goedgekeurd en verzonden. Als je het schema wijzigt, informeer dan de andere gemeente en openbare spreker.
+publicSpeakerSharingRecommendFirstLeaveAllCircuits: We raden je ten zeerste aan eerst alle gedeelde kringen te verlaten voordat je Gastsprekers delen uitschakelt.
+publicSpeakerSharingRemotelyDeleteData: Wil je dat je openbare sprekersgegevens op afstand worden verwijderd uit buurgemeenten die momenteel met je delen?
+publicSpeakerSharingRemotelyDeleteRecommend: (We raden aan om Nee te selecteren, anders zou je problemen kunnen veroorzaken met gemeenten waar je verzoeken bij hebt.)
+publicSpeakerSharingRequestInPast: Sorry, je kunt in het verleden geen verzoeken voor het delen van gastsprekers maken.
+publicSpeakerSharingRequestPermanentlyCancelled: Dit verzoek is al verzonden en wordt nu definitief geannuleerd. Alle openbare lezingen die verband houden met dit verzoek worden verwijderd.
+publicSpeakerSharingStillHaveRequests: Je hebt nog steeds aanvragen voor deze kring. Je dient eerst alle verzoeken te annuleren of te wijzigen voordat je vertrekt.
+publicSpeakerSharingUnscheduledDates: Sorry, alleen ongeplande datums kunnen worden toegevoegd.
+publicSpeakersInCongregationHaveUpcomingLocalPublicTalks: Sommige openbare sprekers in deze gemeente houden binnenkort een openbare lezing in je gemeente. Verwijder eerst deze toewijzingen.
+publicSpeakersList: Lijst met openbare sprekers
+publicSpeakerUnavailable: Sorry, deze Openbare spreker is niet beschikbaar op deze datum.
+publicTalk: Openbare lezing
+publicTalkAssignments: Toewijzingen openbare lezingen
+publicTalkCoordinator: Coördinator openbare lezingen
+publicTalkCoordinatorsInReport: Overzicht van coördinatoren openbare lezingen
+publicTalkHistory: Openbare lezingen - historie
+publicTalkHistoryByPerson: Historie van openbare lezingen per persoon
+publicTalkOutlineAvailability: Overzicht van beschikbare openbare lezingen
+publicTalks: Openbare lezingen
+publicTalksAway: Uitlezingen
+publicTalkSchedule: Schema openbare lezingen
+publicTalksCombined: Openbare lezingen gecombineerd
+publicTalksLocal: Openbare lezingen
+publicTalksNotScheduled: Openbare lezingen niet gepland
+publicTalkThisWeekend: Openbare lezing dit weekend
+publicWitnessing: Openbaar getuigenis
+publicWitnessingLocation: Locatie voor openbaar getuigenis
+publicWitnessingLocations: Locaties
+publicWitnessingLocationsUtilization: Gebruik van locaties voor openbaar getuigenis
+publicWitnessingNotKeyPerson: Sorry, deze persoon is geen Vereist persoon.
+publicWitnessingPublishersReservations: Reserveringen van verkondigers voor openbaar getuigenis
+publicWitnessingReservation: Reservering voor openbaar getuigenis
+publicWitnessingReservations: Reserveringen voor openbaar getuigenis
+publicWitnessingReservationsUpdated: Reserveringen voor openbaar getuigenis bijgewerkt
+publicWitnessingReservationsWaitingToSend: Openbaar getuigenis-reserveringen wachten op verzending. Verstuur eerst de app-gegevens voordat je gaat synchroniseren.
+publicWitnessingSchedule: Schema openbaar getuigenis
+publicWitnessingSchedules: Schema's voor openbaar getuigenis
+publicWitnessingTemplates: Sjablonen voor openbaar getuigenis
+publisher: Verkondiger
+publisherAbbreviation: VERK
+publisherInformedEmergencyContactMessage: De verkondiger heeft zijn contactpersoon voor noodgevallen geïnformeerd dat deze informatie zal worden gedeeld met de ouderlingen van de gemeente, die in geval van nood contact met hem kunnen opnemen, en dat alle persoonlijke informatie wordt behandeld volgens het privacybeleid
+publisherRecord: Verkondigerskaart
+publisherRecords: Verkondigerskaarten
+publisherReport: Velddienstbericht
+publisherReports: Velddienstberichten
+publisherReportsEditAllGroupsMessage: We raden ten zeerste aan dat ALLEEN de secretaris bewerkingsrechten heeft voor alle groepen.
+publisherRequested: Door verkondiger aangevraagd
+publishers: Verkondigers
+publishersFieldServiceSummary: Verkondigers velddienstoverzicht
+publishersInformation: Informatie van de verkondiger
+publishersStatusUpdated: Van de volgende verkondigers wordt hun status Actief en Geregeld bijgewerkt:
+pullData: Gegevens ophalen
+pullDataLogMessage: Deze gegevens zijn opgehaald. De lokale gegevens van deze persoon worden verwijderd en vervangen door servergegevens. Persoon die de gegevens heeft opgehaald:
+pullDataMessage1: Hiermee worden je huidige LOKALE gegevens overschreven en vervangen door de SYNCHRONISATIE gegevens.
+pullDataMessage2: Let op: je moet dit NIET vaak doen, maar alleen als je lokale gegevens ontbreken of beschadigd zijn. Als dit regelmatig gebeurt, klik dan op Help.
+pulled: Opgehaald
+pullPushDataMessage: Voordat je dit doet, dien je de volgende Help-pagina's zorgvuldig te raadplegen:
+purchase: Aankoop
+pushData: Gegevens verzenden
+pushDataLogMessage: GEGEVENS VERWIJDEREN! De lokale gegevens van iedereen worden verwijderd en vervangen door de gegevens van deze persoon. Persoon die de gegevens heeft verzonden:
+pushDataMessage1: Hiermee worden de SYNCHRONISATIE gegevens overschreven en vervangen door je huidige LOKALE gegevens.
+pushDataMessage2: Let op: je moet dit NIET vaak doen, maar alleen als de gesynchroniseerde gegevens ontbreken of beschadigd zijn. Als dit regelmatig gebeurt, klik dan op Help.
+pushed: Verzonden
+qatariRiyal: Qatarese Riyal
+qualifiedAsUBP: Goedgekeurd als Ongedoopte verkondiger
+quality: Kwaliteit
+quantity: Aantal stuks
+quantityAbbreviation: Aantal
+question: Vraag
+questions: Vragen
+quickStepCreateServiceOverseerVisitEvent: Plan een Dienstopzienerbezoek
+quickStepOptions: Snelle stap-opties
+quickSteps: Snelle stappen
+quickStepSendAppInvitationEmail: Uitnodigingsmail verzenden
+quickStepSendAppInvitationEmailToCO: Verzend uitnodigingsmail naar de kringopziener
+quickStepSendAppInvitationEmailToNotConnectedAppPersons: Verzend uitnodigingsmail naar niet verbonden personen
+quickStepSendAssignedTerritoriesToGroupOverseers: Verzend Toegewezen gebieden groepsleden naar groepsopzieners
+quickStepSendAssignmentSlipsToStudents: Verzend Toewijzingsformulier naar leerlingen
+quickStepSendChairmanOutlinesToChairmen: Verzend Voorzitteroverzicht LED vergadering naar de voorzitter
+quickStepSendCleaningAndGardenCareSchedule: Verzend Schema schoonmaak en tuinonderhoud
+quickStepSendConfirmationRequestsToPublicTalkCoordinators: Verzend Bevestigingsverzoek naar coördinator openbare lezingen
+quickStepSendCongregationDutiesReminders: Verzend Herinnering gemeentetaken
+quickStepSendCongregationDutiesScheduleToThoseWithDuties: Verzend Schema gemeentetaken
+quickStepSendCongregationEmergencyContactListToAllElders: Verzend Gemeente noodcontactlijst naar alle ouderlingen
+quickStepSendCongregationFieldServiceSummaryToAllElders: Verzend Gemeente velddienstoverzicht naar alle ouderlingen
+quickStepSendEmailToAppPersonsWithOldVersion: Verzend een e-mail naar personen met een oude app-versie
+quickStepSendFieldServiceAssignmentReminders: Verzend Herinnering velddiensttoewijzing
+quickStepSendFieldServiceCollectionToGroupOverseers: Verzend Velddienstoverzicht naar groepsopzieners
+quickStepSendFieldServiceGroupReportNotReceivedReminders: Verzend Herinnering velddienstrapport groep niet ontvangen
+quickStepSendGroupEmergencyContactListToGroupOverseers: Verzend Groep noodcontactlijst naar groepsopzieners
+quickStepSendGroupFieldServiceSummaryToGroupOverseers: Verzend Groep velddienstoverzicht naar groepsopzieners
+quickStepSendInvitationEmailToAllNotConnectedSharedPersons: Stuur een uitnodigingsmail naar alle niet verbonden gebruikers
+quickStepSendInvitationEmailToSelectedSharedPerson: Stuur een uitnodigingsmail naar de geselecteerde gebruiker
+quickStepSendLifeAndMinistryMeetingAssignmentReminders: Verzend Herinnering toewijzing LED vergadering
+quickStepSendMaintenanceTaskDetails: Details van onderhoudstaak verzenden
+quickStepSendMissingInformationOrEmergencyContactsToGroupOverseers: Verzend Ontbrekende persoons/noodcontact informatie naar groepsopzieners
+quickStepSendMissingReportsListToGroupOverseers: Verzend Overzicht ontbrekende rapporten naar groepsopzieners
+quickStepSendOverdueTerritoriesReminder: Verzend Herinnering voor gebieden te laat
+quickStepSendPublicSpeakerHospitalityReminder: Verzend Herinnering gastgezin openbare spreker
+quickStepSendPublicTalkReminder: Verzend Herinnering voor openbare lezing
+quickStepSendPublicTalkReminderConfirmationOrInvitation: Verzend een herinnering, bevestiging of uitnodiging
+quickStepSendPublicWitnessingSchedule: Verzend Schema openbaar getuigenis naar te selecteren personen
+quickStepSendPublishersFieldServiceGroup: Stuur verkondigers hun velddienstgroep
+quickStepSendPublishersReportNotReceivedReminders: Verzend Herinnering velddienstrapport inleveren
+quickStepSendSchoolWorksheetsToChairmenAndAuxiliaryCounselors: Verzend School werkbladen naar voorzitter en 2e/3e schoolopziener
+quickStepSendTerritoryCoverageToAllElders: Verzend Overzicht gebiedsbewerking naar alle ouderlingen
+quickStepSendUpcomingMaintenanceTasks: Verzend Aankomende onderhoudstaken
+quickStepSendUpcomingPublicTalkAssignmentsToAppointedBrothers: Verzend Aankomende openbare lezingen naar aangestelde broeders
+quickStepSendVisitingSpeakerInvitationsToPublicTalkCoordinators: Verzend Uitnodiging gastspreker naar coördinator openbare lezingen
+quickStepSendWeekendMeetingAssignmentReminders: Verzend Herinnering toewijzing weekendvergadering
+quickStepSendWeeklyOverviewToAppointedBrothers: Verzend Wekelijks overzicht naar aangestelde broeders
+reactivated: Weer actief
+reactivatedPublishers: Weer actieve verkondigers
+reader: Lezer
+reading: Lezen
+receive: Te ontvangen
+receiveBetaUpdates: Ontvang bèta-updates
+receiveBetaVersionUpdates: Ontvang bètaversie-updates
+receiveBetaVersionUpdatesMessage1: Updates van de bètaversie worden ongeveer een week vóór de standaard updates uitgebracht en stellen je in staat nieuwe functies en updates te testen voordat ze worden vrijgegeven. Beta-releases bevatten eerder bugs of kleine problemen. We stellen je hulp op prijs bij het melden van deze bugs en het doen van suggesties voor nieuwe functies.
+receiveBetaVersionUpdatesMessage2: Let op: aangezien Gemeente synchronisatie is ingeschakeld, zou je er alleen voor moeten kiezen om Beta Version-updates te ontvangen als alle andere Gemeente gebruikers dit ook graag doen, aangezien Gemeente synchronisatie vereist dat alle broeders dezelfde versie van NWS Desktop gebruiken.
+received: Ontvangen
+receivedBy: Ontvangen door
+receiveFromApp: Ontvang van app
+receiveImportAppData: App-gegevens ontvangen en importeren
+receiveNWPAppData: App-gegevens ontvangen
+receiveRequests: Haal verzoeken op
+receiveUpdatedDevices: Ontvang bijgewerkte apparaten
+receiving: Bezig met ontvangen
+receivingNWPAppData: Gegevens ontvangen van de NW Publisher-app
+recent: Recent
+recentActivity: Recente activiteit
+recentAssistant: Recente assistent
+recentDuty: Recente taak
+recentlyCompleted: Onlangs voltooid
+recentNonSchool: Recente niet-school
+recentPart: Recent aandeel
+recentPublicTalk: Recente openbare lezing
+recentSchool: Recente school
+recommendYes: (We raden aan op Ja te klikken)
+reconnect: Maak opnieuw verbinding
+recurring: Terugkerend
+recurringRequest: Terugkerende aanvraag
+reducePDFSizeMessage1: Om je PDF-bestandsgrootte te verkleinen:
+reducePDFSizeMessage2: 1) Verwijder alle grafieken of afbeeldingen
+reducePDFSizeMessage3: 2) Opnieuw opslaan met een lagere resolutie
+reducePDFSizeMessage4: 3) Ga naar https://smallpdf.com/compress-pdf en comprimeer de PDF
+reEnterPassword: Geef het wachtwoord opnieuw in
+refresh: Verversen
+refreshCongregation: Ververs de gemeente
+refreshCongregationsAndSpeakers: Ververs gemeenten en sprekers
+refreshDevices: Apparaten verversen
+refreshInformation: Informatie verversen
+refreshingMeetingData: Vergadergegevens verversen...
+refreshLocalData: Lokale gegevens verversen
+refreshMasterMapMessage: Om de grenzen van de hoofdkaart te verversen, verlaat je het venster Gebieden en keer je terug naar het venster Gebieden
+refreshPerson: Persoon verversen
+refreshRequests: Ververs verzoeken
+refreshRequestsMessage: Hierdoor wordt ook de status van je verzoeken gereset en moet je mogelijk verzoeken opnieuw goedkeuren, opnieuw bevestigen of annuleren.
+refundPolicy: Terugbetalingsbeleid
+region: Regio
+regionChanged: Regio gewijzigd
+registration: Registratie
+registrationAllCongregationSilverFeatures: Alle functies van Gemeente Zilver
+registrationCardSurchangeMessage1: Voor betalingen in 'AUD Australische Dollar' geldt geen toeslag. Voor andere valuta geldt een toeslag van maximaal 3,9% + $ 0,30.
+registrationConfirmationAgreePolicies1: De bovenstaande informatie is correct. Ik heb ook het privacybeleid, de licentieovereenkomst en het restitutiebeleid gelezen en ga hiermee akkoord.
+registrationConfirmationCarefullyCheck: Controleer zorgvuldig of al het bovenstaande correct is, vooral je e-mailadres.
+registrationConfirmationInformationCorrect: De bovenstaande informatie is correct
+registrationConfirmationPaymentOpenInWebBrowser: De betaalpagina wordt geopend in je webbrowser
+registrationConfirmationPleaseEnterFollowingCongregation: Voer je Gemeente ID en e-mailadres PRECIES zoals hieronder in wanneer je betaalt
+registrationConfirmationPleaseEnterFollowingIndividual: Voer je e-mailadres PRECIES zoals hieronder in bij het verrichten van de betaling
+registrationExpiredViewOnly: Registratie Verlopen. Je kunt alleen nog BEKIJKEN. Klik op Mijn Menu > Registratie.
+registrationExtraFeaturesCongregationGold: + Gebiedstoewijzing en adressen
+registrationExtraFeaturesCongregationSilver1: Dit omvat openbare getuigenissen, taalgroepen, literatuurverzoeken en onderhoud.
+registrationFeaturesCongregationGold: Gemeentesynchronisatie, 350 personen, 1000 gebieden
+registrationFeaturesCongregationSilver: Gemeentesynchronisatie, 250 personen, 500 gebieden
+registrationFeaturesIndividual: 250 personen, 100 gebieden
+regular: Geregeld
+regularPioneer: Gewone pionier
+regularPioneerAbbreviation: GP
+regularPioneerHours: Uren gewone pionier
+regularPioneers: Gewone pioniers
+regularPublishers: Geregelde verkondigers
+reinstated: Hersteld
+relationship: Verwantschap
+releaseNotes: Nieuw in deze versie
+reloadEmailTemplates: Herlaad e-mailsjablonen
+reloadLocalData: Lokale gegevens opnieuw laden
+remainingAverage: Resterende gemiddelde
+remainingHours: Resterende uren
+remarks: Opmerkingen
+remarksAbbreviation: Opm.
+reminder: Herinnering
+reminderDismissAuxiliaryClasses: Herinnering: extra klas(sen) aankondigen
+reminderPleaseUpdateMessage2: Herinnering: voer binnen enkele dagen een update uit. Oude versies worden niet ondersteund en kunnen problemen veroorzaken.
+reminderSendPersonAppData: Herinnering: de NW Publisher-app en Velddienst Historie weergeven zijn ingeschakeld. Klik na het indienen op NW Publisher app > App-gegevens verzenden > vervolgens Persoonsgegevens voorbereiden en verzenden.
+remindMeLater: Herinner me er later aan
+remove: Verwijderen
+removeAll: Verwijder alles
+removeAllLabels: Verwijder alle labels
+removed: Verwijderd
+removeDelegate: Gemachtigde verwijderen
+removeDevice: Verwijder apparaat
+removedPublishers: Verwijderde verkondigers
+removePerson: Persoon verwijderen
+removePersonalInformation: Persoonlijke gegevens verwijderen
+removeProblemData: Problematische data verwijderen
+removeSelfAssign: Zelftoewijzing verwijderen
+removeSharedPerson: Gebruiker verwijderen
+removingCurrentAppRegion: Huidige app-regio verwijderen
+renameCircuit: Hernoem kring
+renew: Vernieuwen
+renewAvailableWithinXDaysExpiry: Verlengen is mogelijk binnen X dagen na de vervaldatum
+renewUntil: Verlengen tot
+repeatEvery: Herhaal elke
+replied: Beantwoord
+replyReceived: Antwoord ontvangen
+replyToRequest: Aanvraag beantwoorden
+report: Rapport
+reports: Velddienstrapporten
+reportsDirectlyToBranch: Rapporteert rechtstreeks aan het bijkantoor
+reportsServant: Velddienstrapportendienaar
+request: Verzoek
+requestCancelled: Aanvraag geannuleerd
+requestDetails: Vraag details aan
+requested: Aangevraagd
+requestedDates: Gevraagde datums
+requestEdited: Aanvraag bewerkt
+requestedSpeakers: Gevraagde sprekers
+requestJoin: Verzoek om deelname
+requestLog: Verzoeklogboek
+requestNewLanguage: Nieuwe taal aanvragen
+requestPersonalHelp: Vraag persoonlijke hulp aan
+requests: Aanvragen
+requestSent: Aanvraag verzonden
+requestsReceived: Aanvragen ontvangen
+requestsSent: Aanvragen verzonden
+requestStatus: Verzoek status
+required: Vereist
+resendVerificationCode: Verificatiecode opnieuw verzenden
+reset: Resetten
+resetAddresses: Adressen resetten
+resetCongregationFromSharingMessage: Let op: als er geen andere ouderlingen toegang hebben, neem dan contact met ons op met je Gemeente ID en we kunnen je Gemeente synchronisatie opnieuw instellen.
+resetCongregationSharing: Stel het synchroniseren van gemeenten opnieuw in
+resetCongregationSharingMessage: Als je de ENIGE gemeentebeheerder bent en er geen ander apparaat is aangesloten, moet je Gemeente synchronisatie opnieuw instellen.
+resetDevices: Reset apparaten
+resetPassword: Reset wachtwoord
+resetPIN: PIN opnieuw instellen
+reShare: Opnieuw synchroniseren
+reShared: Opnieuw gesynchroniseerd
+restart: Opnieuw opstarten
+restore: Herstellen
+restoreCongregation: Gemeente herstellen
+restoreCongregationOverwriteExisting: Als je een gemeente herstelt, worden alle bestaande gemeentegegevens overschreven.
+restoreData: Data herstellen
+restoreDataOverwriteExisting: Als je gegevens herstelt, worden alle bestaande gegevens van de geselecteerde gegevenstypen overschreven.
+restoredCongregationFromBackup: Herstelde gemeente vanuit back-up
+restoreSharedCongregationMessage: Deze gemeente wordt momenteel gesynchroniseerd. Zou je willen dat deze herstelde gemeente de huidige gesynchroniseerde gemeente vervangt?
+restoreSharedPersons: Herstel gebruikers
+restoreSuccessful: Je gegevens zijn succesvol hersteld!
+restoring: Herstellen
+result: Resultaat
+retrieve: Ophalen
+retrievedOn: Opgehaald op
+retry: Opnieuw proberen
+returnVisit: Nabezoek
+review: Overzicht en vooruitblik van volgende week
+roles: Rollen
+rural: Landelijk
+s13No: nummer
+s13Note: Wanneer je een nieuw blad begint, gebruik je deze kolom om de datum vast te leggen waarop elk gebied voor het laatst is bewerkt.
+s13Terr: Gebied
+s140ReviewText: Slotopmerkingen (3 min.)
+s21CongregationsPublisherRecord: BERICHT VAN GEMEENTEVERKONDIGER
+s21IfPioneerOrFieldMissionary: (Als (hulp)pionier of veldzendeling)
+s89HeadingLine1: TOEWIJZING
+s89HeadingLine2: LEVEN-EN-DIENENVERGADERING
+s89NoteToStudent: Opmerking voor leerling
+s89NoteToStudentText2024: Je vindt het bronnenmateriaal en de les waar je aan mag werken in het werkboek voor de leven-en-dienenvergadering. Lees de instructies over je aandeel in de Richtlijnen voor de leven-en-dienenvergadering (S-38).
+sampleCongregation: Voorbeeldgemeente
+sampleCongregationOnly: Alleen voorbeeldgemeente
+save: Opslaan
+save10Percent: Bespaar 10%
+save15Percent: Bespaar 15%
+save5Percent: Bespaar 5%
+saveAsCustomTemplate: Opslaan als aangepaste sjabloon
+saveAsDocument: Opslaan als document
+saveAsNewTemplate: Opslaan als nieuw sjabloon
+saveAsPDF: Opslaan als PDF
+saved: Opgeslagen
+savedSuccessfully: Met succes opgeslagen!
+saveImportLogAndClose: Importlogboek opslaan en sluiten
+savePrintAndEmailReports: Rapporten
+saveToFile: Opslaan naar bestand
+saveToTerritory: Opslaan in gebied
+schedule: Planning
+scheduled: Gepland
+scheduledLocalNeeds: Geplande plaatselijke behoeften
+schedules: Planning
+scheduleSettings: Planningsinstellingen
+scheduleVersion: Werkboek voor vergaderingen-versie
+school: School
+schoolPart: School aandeel
+schoolParts: School aandelen
+schoolSummary: School samenvatting
+schoolUsageHistory: Historie schooltoewijzingen per persoon
+schoolWorksheets: School werkbladen
+search: Zoeken
+secondary: Gezinslid
+seconds: seconden
+secretary: Secretaris
+secretaryPrinting: Secretaris afdrukken
+security: Veiligheid
+seeTerritoriesSettings1: Meer instellingen gebied
+select: Selecteer
+selectAddresses: Selecteer adressen
+selectAll: Selecteer alles
+selectAwayCongregationAndTalk: Selecteer gemeente en lezing
+selectBackup: Selecteer back-up
+selectCongregation: Selecteer gemeente
+selectData: Selecteer gegevens
+selectDataFile: Selecteer gegevensbestand
+selectDate: Selecteer een datum
+selected: Geselecteerd
+selectedArea: Filter op gebied
+selectedDate: Geselecteerde datum
+selectedGroup: Geselecteerde groep
+selectedPerson: Filter op persoon
+selectedSpeakerCanGive: Beschikbare lezingschema's
+selectedTerritoryToKML: Geselecteerd gebied naar KML
+selectedType: Filter op type
+selectFile: Selecteer bestand
+selectGroups: Selecteer groepen
+selectInformation: Selecteer informatie
+selectLanguage: Taal selecteren
+selectOutline: Selecteer schema
+selectPaymentMethodAndCurrency: Selecteer de betaalmethode en de valuta.
+selectPerson: Selecteer persoon
+selectPersons: Selecteer personen
+selectPublicSpeaker: Selecteer een openbare spreker
+selectPublicSpeakerAndOutline: Selecteer openbare spreker en schema
+selectPublicSpeakerAndTalk: Selecteer openbare spreker en lezing
+selectPublicSpeakers: Selecteer openbare sprekers
+selectPublicTalk: Selecteer openbare lezing
+selectPublisher: Selecteer verkondiger
+selectRegion: Selecteer regio
+selectReportType: Selecteer rapporttype
+selectRole: Selecteer rol
+selectSchool: Selecteer school
+selectTime: Selecteer tijd
+selectYears: Selecteer Jaren
+self: Zelf
+selfAssigned: Zelf toegewezen
+selfAssignTerritories: Zelf gebieden toewijzen
+send: Verzend
+sendAll: Alles verzenden
+sendAndReceiveNWPAppData: Gegevens verzenden en ontvangen via de NW Publisher-app.
+sendAttachmentAndMaps: Verzend bijlage en kaarten
+sendBcc: Stuur Bcc
+sendCc: Stuur Cc
+sendConfirmation: Bevestiging verzenden
+sendCrashReport: Foutrapport verzenden
+sendEmail: E-mail verzenden
+sendFail: Verzenden mislukt
+sendFrom: Verzenden vanaf
+sendFromGmail1EnterYourNameAndEmail: 1. Voer je naam en e-mailadres in
+sendFromGmail2ClickAuthenticate: 2. Klik op Authenticeren
+sendFromGmail3LoginWithYourGmailAccount: 3. Log in met je Gmail-account
+sendFromGmail4AllowNWSchedulerToSendEmails: 4. Sta NWS Desktop toe om e-mails te verzenden
+sendIndividually: Individueel verzenden
+sending: Bezig met verzenden
+sendingAppData: App-gegevens verzenden
+sendingAppNotifications: App-meldingen verzenden
+sendLater: Verzend later
+sendLog: Logboek verzenden
+sendNow: Nu verzenden
+sendNWPAppData: App-gegevens verzenden
+sendReply: Antwoord verzenden
+sendRequest: Verzend verzoek
+sendTo: Verzenden naar
+sendToAsBCC: Verzenden naar als Bcc
+sendUpdated: Verzenden bijgewerkt
+sendWithNotifications: Verzenden met meldingen
+sendWithoutNotifications: Verzenden zonder meldingen
+sent: Verzonden
+sentBy: Verzonden door
+sentIndividually: Individueel verzonden
+sentSuccessfully: Succesvol verzonden!
+sentTo: Verzonden naar
+separateByGroup: Gescheiden per groep
+separator: Scheidingsteken
+seriousErrorLoading: Sorry! Er is een ernstige fout opgetreden bij het laden van NWS Desktop. Dit betekent meestal dat je installatie corrupt is.
+servant: Dienaar
+serverError: Serverfout
+serverUpdateLog: Server-updatelogboek
+serviceOverseer: Dienstopziener
+serviceOverseerVisit: Bezoek dienstopziener
+serviceTalk: Dienstlezing
+serviceYear: Dienstjaar
+setPassword: Stel een wachtwoord in
+settings: Instellingen
+setupCongregationSharing: Gemeentesynchronisatie instellen
+setupEmail: E-mail instellen
+setupYourOwnSMTPServer: Stel je eigen SMTP-server in
+share: Delen
+shared: Gedeeld
+sharedData: Synchronisatie gegevens
+sharedDataNotFoundSyncBy: Gedeelde gegevens niet gevonden. Eerste synchronisatie door
+sharedInMinistry: In de dienst geweest
+sharedPerson: Gebruiker
+sharedPersonEditEmailMessage: Deze persoon heeft een Gemeente synchronisatie autorisatie. Het wijzigen van dit e-mailadres kan ervoor zorgen dat hij geen toegang meer heeft tot Gemeente synchronisatie.
+sharedPersonInvalidEmail: Sorry, deze persoon heeft geen geldige 'E-mail 1' toegevoegd in NWS Desktop. Dit is nodig om zich correct te identificeren met Gemeente synchronisatie.
+sharedPersonNotExist: Het spijt ons, deze gemeente heeft geen contactpersoon met dit e-mailadres. Controleer of je e-mailadres correct is, of vraag anders een beheerder van de gemeente om je via 'NWS Desktop' als contactpersoon toe te voegen.
+sharedPersonRemotelyDeleteData: Een beheerder van de gemeente heeft je uit deze gemeente verwijderd en je gegevens op afstand gewist. Als je denkt dat dit een fout was, neem dan contact op met een van de beheerders van je plaatselijke gemeente.
+sharedPersons: Gebruikers
+sharedPersonsNotConnected: Gebruikers niet verbonden
+sharedPersonsNotRecentlyConnected: Gebruikers niet recent verbonden
+sharedPersonsReVerifyPeriod: Herverificatieperiode voor gebruikers
+sharing: synchronisatie
+sharingAdministrator: Beheerder gemeentesynchronisatie
+sharingDisablePublisherReportsMessage1: Hierdoor worden alle gecodeerde gegevens van het velddienstbericht van de synchronisatie server verwijderd en wordt het delen van synchroniseren van velddienstberichten in de toekomst voorkomen.
+sharingDisablePublisherReportsMessage2: Als je dit later opnieuw inschakelt, worden velddienstberichten mogelijk niet correct gesynchroniseerd.
+sharingDisablePublisherReportsMessage3: Wij raden je ten zeerste aan dit NIET te doen, tenzij specifiek aangegeven door je plaatselijke gemeente.
+sharingErrors: Fouten bij synchroniseren
+sharingErrorTryAgain: Fout. Probeer het opnieuw.
+sharingLogs: Synchronisatie logboeken
+sharingNotAvailable: Synchroniseren is niet beschikbaar
+sharingPassword: Synchronisatiewachtwoord
+sharingProblems: Problemen met synchroniseren
+sharingProblemsMessage: Lees Help > Problemen met het delen van gegevens binnen de gemeente aandachtig door om problemen met het delen van gegevens binnen de gemeente te diagnosticeren, op te lossen en te voorkomen.
+sharingRegion: Synchronisatieregio
+sharingSettings: Instellingen synchronisatie
+sharingStatus: Synchronisatiestatus
+shepherding: Herderlijk werk
+shepherdingVisits: Herderlijke bezoeken
+shiftFull: Shift vol
+shifts: Shifts
+shiftsPerPublisher: Shifts per verkondiger
+shortDateFormat: Korte datumnotatie
+show: Toon
+showAddresses: Toon adressen
+showAllOutlines: Alle lezingtitels weergeven
+showAllowDataProcessingMessage: Bericht 'Gegevensverwerking toestaan' weergeven
+showAssignmentAndDutyConflicts: Toon toewijzings- en taakconflicten
+showBrothers: Toon broeders
+showCLMTimingOnSchedule: Toon LED-tijd op schema
+showContactDetails: Contactgegevens weergeven
+showContactDetailsOnCLMAssignmentSlips: Contactgegevens weergeven op LED toewijzingsformulier
+showCustomAttendance: Aangepaste aanwezigheid weergeven
+showDayNames: Dagnamen weergeven
+showDetails: Toon details
+showEndTime: Laat eindtijd zien
+showEveryone: Toon iedereen
+showFamilies: Toon gezinnen
+showFieldServiceAssignments: Toon velddiensttoewijzingen
+showFieldServiceSchedule: Velddienstschema weergeven
+showFirstEmergencyContactOnly: Alleen het eerste contact voor noodgevallen weergeven
+showFutureMonths: Toon toekomstige maanden
+showKingdomHall: Toon Koninkrijkszaal
+showLabels: Labels tonen
+showMeetingDates: Vergaderdatums tonen
+showMyContactInformation: Toon mijn contactgegevens
+showMyEmergencyContacts: Toon mijn noodcontacten
+showMyFieldServiceHistory: Toon mijn velddiensthistorie
+showNumbers: Toon cijfers
+showOnlineAttendance: Online aanwezigen weergeven
+showOutlineNumbers: Lezingnummers weergeven
+showPassword: Laat wachtwoord zien
+showPreviousMonths: Toon voorgaande maanden
+showPublicWitnessing: Toon openbaar getuigenis
+showPublisherInformation: Verkondigersinformatie weergeven
+showPublisherLocations: Toon verkondigerslocaties
+showReservedShiftsOnly: Alleen gereserveerde shifts weergeven
+showSisters: Toon zusters
+showStartTime: Laat starttijd zien
+showTerritories: Gebieden tonen
+showTerritoryWorkingNotes: Toon notities
+showTipsOnStartup: Toon tips bij opstarten
+showUnassigned: Niet-toegewezen weergeven
+signedInSuccesfully: Succesvol aangemeld
+simplifyGroupArrangements: Vereenvoudig groepsregelingen
+singaporeDollar: Singaporese dollar
+single: Alleenstaand
+singleParentFamily: Eenoudergezin
+sister: Zuster
+sisters: Zusters
+sixMonthAvg: Gemiddelde 6 maanden
+sixMonths: 6 maanden
+size: Formaat
+slips: overzichten
+smtpPassword: SMTP-wachtwoord
+smtpPort: SMTP-poort
+smtpServer: SMTP-server
+smtpUsername: SMTP-gebruikersnaam
+software: Software
+someCongregationFieldServiceReportsNotSubmitted: Sommige velddienstrapporten van de gemeente in deze periode zijn NIET gemarkeerd als 'Ingediend bij het bijkantoor'. Klik voor nauwkeurige resultaten op 'Ingediend bij het bijkantoor' voor alle velddienstrapporten van de gemeente in deze periode. Begin bij de oudste.
+song: Lied
+songs: Liederen
+sorrySomethingWentWrong: Sorry, er is iets misgegaan.
+sort: Sorteer
+sound: Geluid
+southAfricanRand: Zuid-Afrikaanse rand
+southAmerica: Zuid-Amerika
+spaceAroundBoundary: Ruimte rond de grens
+speaker: Spreker
+speakerConfirmed: Spreker bevestigd
+speakers: Sprekers
+speakersAwayThisWeek: Afwezige sprekers deze week
+speakersPerPage: Sprekers per pagina
+speakersRequested: Gevraagde sprekers
+special: Speciaal
+specialPioneer: Speciale pionier
+specialPioneerAbbreviation: SP
+specialPioneers: Speciale pioniers
+specialTalk: Speciale lezing
+specialWeek: Speciale week
+spiritual: Geestelijk
+spiritualGems: Geestelijke juweeltjes
+spiritualInformation: Geestelijke informatie
+spiritualNotes: Notities
+standard: Standaard
+standardQuality: Standaardkwaliteit
+start: Begin
+startDate: Begindatum
+startingAConversation: Begin een gesprek
+startTime: Starttijd
+stateOrCity: Staat of stad
+stateProvince: Provincie
+status: Status
+stopOfferingHelp: Stop met het bieden van hulp
+street: Straat
+streetBeforeHouseNumber: Straat vóór huisnummer
+student: Leerling
+studentAbbreviation: LL
+studentAndAssistantSlips: Overzichten voor leerlingen en assistenten
+students: Leerlingen
+studentSlips: Leerling toewijzingen
+studentTalk: Lezing
+study: Les
+subject: Onderwerpen
+submitOldCongregationFieldServiceReport1: Je probeert een oud velddienstrapport voor de gemeente in te stellen als 'Ingediend bij het bijkantoor'. Hierdoor wordt de status van alle verkondigers Actief, Inactief en Ongeregeld bijgewerkt zoals op het moment van dit oude velddienstrapport. We raden sterk aan om oudere gemeente velddienstrapporten in omgekeerde datumvolgorde in te stellen als 'Ingediend bij het bijkantoor' en te eindigen met de meest recente maand.
+submitOldCongregationFieldServiceReport2: Zie Help > Gemeentevelddienstrapport voor meer informatie.
+submitPublisherReports: Dien velddienstrapporten in
+submitted: Ingezonden
+submittedToBranch: Ingediend bij het bijkantoor
+submitToBranch: Indienen bij het bijkantoor
+suffix: Achtervoegsel
+suggestion: Suggestie
+summary: Overzicht
+swap: Omwisselen
+swissFranc: Zwitserse Frank
+symbol: Symbool
+syncCongregations: Synchroniseer gemeenten
+syncCongregationsAndSpeakers: Synchroniseer gemeenten en sprekers
+syncing: Synchroniseren
+systemTask: Systeemtaak
+talk: Lezing
+talkNumber: Lezingnummer
+talkOutlines: Lezingschema's
+talksCanGive: Lezingen beschikbaar
+tanzanianShilling: Tanzaniaanse shilling
+task: Taak
+taskCOBEArrangeAuditDescription: De audit moet worden uitgevoerd door de coördinator van het lichaam van ouderlingen of door iemand die door hem is aangewezen. (sfg 1:12) (S27b:50)
+taskCOBEArrangeAuditName: Audit van de boekhouding regelen
+taskCOBEOneYearAfterBaptismDescription: (sfl 3:3.6)
+taskCOBEOneYearAfterBaptismName: Regel dat twee ouderlingen (onder wie de groepsopziener) een jaar nadat een verkondiger gedoopt is met hem samenkomen
+taskGroupOverseerReviewGroupActivityDescription: Bespreek samen met de groepsassistent regelmatig hoe het gaat met de velddienstactiviteit van de verkondigers in de groep en stel vast wat er goed gaat en waar ruimte is voor verbetering (sfg 1:19.3)
+taskGroupOverseerReviewGroupActivityName: Bespreek samen met de groepsassistent de velddienstactiviteit van de verkondigers in de groep
+tasks: Mijn Taken
+taskSecretaryDPANewlyBaptizedDescription: (sfl 4:2.6)
+taskSecretaryDPANewlyBaptizedName: Verstrek Geneeskundige wilsverklaring en machtiging en bijbehorend materiaal aan de pas gedoopte verkondiger.
+taskSecretaryOneYearAfterBaptismDescription1: (sfl 4:2.7)
+taskSecretaryOneYearAfterBaptismName1: Breng de coördinator van het lichaam van ouderlingen op de hoogte dat een verkondiger een jaar geleden is gedoopt
+taskSecretaryServiceOverseerReviewRPActivityDescription: Beschouw de velddienstactiviteit en urencompensatie van alle gewone pioniers (sfg 14:5).
+taskSecretaryServiceOverseerReviewRPActivityName: Beschouw de velddienstactiviteit van gewone pioniers - halverwege het dienstjaar
+taskServiceCommitteeReviewDisasterPreparationsPlanDescription: De ouderlingen moeten ieder jaar de plaatselijke regelingen bij rampen doornemen tijdens een ouderlingenvergadering (sfg 11:3.4).
+taskServiceCommitteeReviewDisasterPreparationsPlanName: Neem de plaatselijke regelingen door i.v.m. een noodsituatie/ramp en het Beveiligingsplan Koninkrijkszaal
+taskServiceCommitteeReviewRPActivityDescription: Het dienstcomité moet samenkomen om de activiteit van de gewone pioniers die minder dan 600 uur hebben gehaald te beschouwen en te beslissen of ze ervoor in aanmerking komen te blijven pionieren (sfg 14:6).
+taskServiceCommitteeReviewRPActivityName: Beschouw de velddienstactiviteit van gewone pioniers - einde dienstjaar
+taskServiceOverseerVisitFSGroupDescription: Bezoek elk maand een andere velddienstgroep (sfg 1:17)
+taskServiceOverseerVisitFSGroupName: Bezoek een andere velddienstgroep
+technicalDetails: Technische details
+template: Sjabloon
+templateName: Sjabloonnaam
+templateNotExist: Sjabloon bestaat niet.
+templates: Sjablonen
+temporaryAccommodationsForDisasterVictims: Tijdelijke huisvesting voor slachtoffers van rampen
+territories: Gebieden
+territoriesAndAddresses: Gebieden en adressen
+territoriesAssigned: Toegewezen gebieden
+territoriesCompleted: Gebieden voltooid
+territoriesList: Gebieden (lijst)
+territoriesListAndMap: Gebieden (lijst en kaart)
+territoriesNotCompletedDuringPastServiceYear: Gebieden die het afgelopen dienstjaar niet zijn voltooid
+territoriesNotWorkedDuringPastServiceYear: Gebieden die het afgelopen dienstjaar niet zijn bewerkt
+territoriesOverdue: Gebieden te laat
+territory: Gebied
+territoryAddAddressInstructions: Klik met de rechtermuisknop om een ​​adres toe te voegen
+territoryAddApartmentNumberRangeMessage: Dit zal appartementnummers van 1 tot ... toevoegen
+territoryAddBoundaryInstructions: Klik om een ​​punt toe te voegen, dubbelklik om te voltooien
+territoryAddRemoveLabelsInstructions1: Klik met de rechtermuisknop om een ​​label toe te voegen, dubbelklik op een label om het te verwijderen
+territoryAddress: Gebiedsadres
+territoryAddressApartment: Gebiedsadres Appartement
+territoryAddressApartments: Gebiedsadressen Appartementen
+territoryAddressCongregationLanguageAutomaticallyAdded: Je gemeentetaal wordt automatisch toegevoegd.
+territoryAddresses: Gebied adressen
+territoryAddressLanguageEnableMessage: Lees zorgvuldig Georganiseerd (od) Hoofdstuk 9, alinea’s 35-41, voordat je deze functie inschakelt.
+territoryArea: Gebied
+territoryAreas: Gebieden
+territoryAssignment: Gebiedstoewijzing
+territoryAssignmentBeforeBranchDataRetentionPolicy1: Gebiedtoewijzing bestand eerder dan het inleverbeleid van het bijkantoor toestaat.
+territoryAssignmentRecords: Gebiedsadministratie
+territoryAssignments: Gebiedstoewijzingen
+territoryAssignmentsFieldServiceGroupMaxMessage1: Deze velddienstgroep heeft al het maximale aantal gebieden in bezit. Vraag ze alsjeblieft eerst hun andere gebieden te voltooien. Maximaal:
+territoryAssignmentsMaxSelfAssign: Je hebt het maximale aantal gebieden bereikt dat je in één keer aan jezelf kunt toewijzen. Maximaal:
+territoryAssignmentsPublisherMaxMessage1: Deze verkondiger heeft al het maximale aantal toegewezen gebieden in bezit. Vraag ze alsjeblieft eerst hun andere gebieden te voltooien. Maximaal:
+territoryBoundary: Gebiedsgrens
+territoryBoundaryOpacity: Dekking van gebiedsgrens
+territoryBoundaryThickness: Dikte van de gebiedsgrens
+territoryCampaign: Gebied voor campagne
+territoryCampaigns: Gebied voor campagnes
+territoryCannotCreateTerritory: Kan gebied niet maken. Geen adressen om te converteren.
+territoryCard: Gebiedskaart
+territoryCards: Gebiedskaarten
+territoryCategories: Gebiedscategorieën
+territoryCategory: Gebiedscategorie
+territoryCoverage: Gebiedsbewerking
+territoryCurrentlyAssignedWarning: Dit gebied is momenteel toegewezen. Door wijzigingen aan te brengen, worden mogelijk recente wijzigingen overschreven die zijn aangebracht door de persoon die in het gebied werkt.
+territoryEditBoundaryInstructions: Klik op een lijn om een ​​punt toe te voegen, dubbelklik op een punt om te verwijderen. Klik op Bewerken om te voltooien
+territoryExceedAddressAndApartmentLimit: Sorry, elk gebied kan maximaal 500 gecombineerde adressen en appartementen hebben.
+territoryExceedAddressLimit: Sorry, elk gebied kan maximaal 250 adressen hebben.
+territoryExceedAddressLimitFreeTrial: Sorry, tijdens de gratis proefperiode kun je maximaal 40 adressen toevoegen. Dit zou voldoende moeten zijn om de functie Gebiedsadres volledig te testen.
+territoryExceedBoundaryLimitFreeTrial: Sorry, tijdens de gratis proefperiode kun je maximaal 10 gebiedsgrenzen toevoegen. Dit zou voldoende moeten zijn om de functie Gebiedsgrens volledig te testen.
+territoryFirstAddTerritoryBoundary: Voeg eerst een gebiedsgrens toe voordat je adressen toevoegt.
+territoryFontSize: Gebiedskaart lettergrootte
+territoryImportPhoneNumbersError: Het geselecteerde gebiedstype moet zijn ingesteld op Telefoongetuigenis om telefoonnummers te importeren
+territoryInformation: Gebiedsinformatie
+territoryLabel: Gebiedslabel
+territoryLabels: Gebiedsaanduidingen
+territoryLocateMultipleAddressesMessage: Je probeert coördinaten voor meerdere adressen te vinden. Eventuele fouten worden niet getoond. Zoek één adres om foutmeldingen te zien.
+territoryLocationNotFound: Sorry, deze locatie kon niet worden gevonden. Kan locatie niet toevoegen.
+territoryLocationNotWithinTerritory1: Deze locatie ligt niet binnen de grens van dit gebied.
+territoryMapImageError1: De afbeelding van de gebiedskaart is beschadigd of verwijderd.
+territoryMapImageError2: Probeer de kaartafbeelding te verwijderen en opnieuw toe te voegen. Zie Help > Gebied > Gebiedskaart (afgedrukt) voor meer informatie.
+territoryMasterMapBoundaryAlreadyExists: De grens van het Gemeente gebied bestaat al. Bij het importeren wordt de bestaande grens overschreven.
+territoryMasterMapBoundaryNotExist: De grens van het Gemeentegebied bestaat niet. Maak of importeer eerst je Gemeentegrens.
+territoryMasterMapSaveError: Kan hoofdgebiedskaart niet opslaan.
+territoryMasterMapSaveMessage: Dit kan lang duren. Grotere formaten en hogere kwaliteit zullen veel langer duren. Heb even geduld.
+territoryNotes: Gebiedsnotities
+territoryNotFindAddress: Sorry, kon geen adres vinden op deze locatie
+territoryNotReset: Dit gebied is niet gereset. We raden aan om op Adressen > Adressen resetten te klikken.
+territoryNotResetAssignAnyway: Wil je toch toewijzen?
+territoryNotResetCompleteAnyway: Wil je toch voltooien?
+territoryRequest: Verzoek om gebied
+territoryServant: Gebiedsdienaar
+territorySettings: Gebiedsinstellingen
+test: Test
+testedOK: Test succesvol!
+testimonialMessage1: Wees zo specifiek mogelijk.
+testimonialMessage2: Gebruik dit formulier NIET voor problemen, vragen of suggesties.
+testimonialMessage3: Klik in plaats daarvan
+testimonialMessage4: Ik sta toe dat mijn positieve recensie of ervaring wordt gedeeld met anderen en op de NW Scheduler-website wordt geplaatst met mijn land, provincie en voornaam.
+testimonialMessageTitle: Wil je een positieve recensie of getuigenis geven op onze website?
+testimonialsAndReviews: Ervaringen en reviews
+testInternetConnection: Internetverbinding testen
+text: Tekst
+thankYou: Dank je!
+theme: Thema
+themeBlue: Blauw
+themeCharcoal: Houtskool
+themeColor: Themakleur
+themeGreen: Groen
+themeMarine: Marine-blauw
+themeMode: Thema-modus
+themeModeDark: Donker
+themeModeLight: Licht
+themeModeSystem: Systeem
+themeNature: Natuur
+themeOrange: Oranje
+themeOriginal: Origineel
+themePurple: Purper
+themeRadiant: Stralend
+themeRoyal: Koninklijk
+themeSteel: Staal
+themeTurquoise: Turquoise
+thisMayTakeLongTime: Dit kan lang duren om te verwerken. We raden aan om 'Één bestand per groep' aan te vinken.
+threeMonthAvg: Gemiddelde 3 maanden
+threeMonths: 3 maanden
+tickShowAllOutlines: Vink hieronder "Alle lezingtitels weergeven" aan
+time: Tijd
+timeFormat: Tijdnotatie
+timeOfDay: Tijdstip
+timeZone: Tijdzone
+timing: timing
+tipMoney: Tip
+tips: Tips
+title: Titel
+to: Naar
+toBeGivenIn: Te houden in
+toCSVFiles: Naar CSV bestanden
+toDate: Datum t/m
+today: Vandaag
+toLearnMorePleaseClick: Klik voor meer informatie op
+toNWSchedulerFile: Naar NWS Desktop-bestand
+tooManySpeakersAwayThisWeek: Te veel sprekers weg deze week
+toPDFFile: Naar PDF-bestand
+toPDFFiles: Naar PDF-bestanden
+toShareCongregation: Voer de volgende stappen uit om de gemeente te synchroniseren:
+toSpeaker: Naar Spreker
+total: Totaal
+totalAreas: Totaal oppervlakten
+totalAttendance: Totaal aanwezigen
+totalNumberOfTerritories: Totaal aantal gebieden
+totalPublishers: Totaal verkondigers
+totalRecords: Totaal aantal records
+totals: Totalen
+totalStudents: Totaal leerlingen
+totalTerritories: Totaal gebieden
+tracts: Traktaten/folders
+transfer: Overdracht
+transferPersons: Personen overdragen
+translationOrLanguages: Vertaling of talen
+treasuresFromGodsWord: Schatten uit Gods woord
+treasuresFromGodsWordShort: Schatten
+treasuresTalk: Schatten uit Gods woord
+trinidadTobagoDollar: Trinidad en Tobago-dollar
+twelveHourTime: 12 uur
+twelveMonthAvg: Gemiddelde 12 maanden
+twelveMonths: 12 maanden
+twentyFourHourTime: 24 uur
+twoYears: 2 jaar
+type: Type
+unableToDecrypt: Kan niet decoderen
+unassigned: Niet toegewezen
+unavailable: Niet beschikbaar
+unbaptized: Ongedoopt
+unbaptizedPublisher: Ongedoopte verkondiger
+unbaptizedPublisherAbbreviation: Ong. Verk.
+unbaptizedPublishers: Ongedoopte verkondigers
+unbelievingSpouse: Andersdenkende partner
+undoSubmit: Inzending ongedaan maken
+unitedArabEmiratesDirham: Dirham uit de Verenigde Arabische Emiraten
+unitedStatesDollar: Amerikaanse dollar
+unknown: Onbekend
+unlink: Ontkoppelen
+unregistered: niet ingeschreven
+unselectAll: Deselecteer alles
+unsent: Niet verzonden
+untested: Niet getest
+upcomingCircuitOverseerVisit: Aankomend bezoek van de kringopziener op
+upcomingPublicSpeakers: Komende openbare sprekers
+update: Update
+updateConfirmation: Bevestiging bijwerken
+updated: Geüpdatet
+updateData: Gegevens bijwerken
+updatedBy: Bijgewerkt door
+updatedPleaseRestart: Bijgewerkt! Start het programma opnieuw op
+updatedSharedCongregation: Gemeente synchronisatie bijgewerkt
+updatedSharedPerson: Bijgewerkte gebruiker
+updateMajorAvailable: Nieuwe grote update beschikbaar
+updateMajorMessage: Dit is een belangrijke update. Lees het overzicht èn de release-opmerkingen van deze grote update zorgvuldig door VOORDAT je de update uitvoert, anders kun je problemen veroorzaken voor jezelf en de hele gemeente.
+updateMajorQuestion: Heb je het overzicht én de release-opmerkingen van deze grote update zorgvuldig gelezen?
+updateMinorAvailable: Nieuwe kleine update beschikbaar
+updateMinorExplanation1: Kleine updates repareren bugs en updaten vertalingen. Als je problemen of bugs hebt, installeer dan de nieuwste kleine update. Ook als iedereen gegevens- of synchronisatieproblemen heeft, moeten alle ouderlingen de nieuwste kleine update installeren.
+updateNow: Nu updaten
+updateReply: Antwoord bijwerken
+updateRequest: Verzoek bijwerken
+updates: Updates
+updating: Updaten
+updatingCLMSchedule: LED-schema bijwerken
+updatingPublicTalkOutlines: Titels van openbare lezingen bijwerken
+updatingTranslationsAndLanguages: Vertalingen en talen bijwerken
+upgrade: Upgrade
+upgradeRenew: Upgraden en vernieuwen
+upgradeRenewUntil: Upgraden en verlengen tot
+upgradeUntil: Upgrade tot
+upload: Uploaden
+uploaded: Geüpload
+urlTooLongToConvertToQRCode: URL is te lang om te converteren naar een QR-code
+uruguayanPeso: Uruguayaanse peso
+useActualLastCompletedDate: Werkelijke "Laatst voltooide" datum gebruiken
+useCongregationEmail: Gebruik de e-mail van de gemeente
+usedToAuthenticate: Dit wordt gebruikt om te authenticeren, dus onthoud je selectie.
+user: Gebruiker
+userAccess: Gebruikerstoegang
+userAccessChangedMessage: Gebruikerstoegang gewijzigd. Vergeet niet op te slaan.
+userAccessClickCongregationSharingUserAccess: Klik op Gemeentesynchronisatie > Gebruikers
+userAccessContactCongregationAdministrator: Neem contact op met een gemeentebeheerder
+userAccessIfNeedAccess: Als je toegang nodig hebt:
+userAccessNoAccess: Gebruikerstoegang: Geen toegang
+userAccessNone: Gebruikerstoegang: Geen
+userAccessPleaseSeeHelp: Zie Help > Gebruikerstoegang voor meer informatie
+userAccessSeeHelp: Zie Help > Gebruikerstoegang
+userAccessSorryNoAccess: Sorry, je hebt hier geen toegang toe
+userAccessSorryNoAccessEmail: Sorry, je hebt geen toegang tot e-mail
+userAccessViewOnly: Gebruikerstoegang: alleen bekijken
+userCreated: Gebruiker gemaakt
+userInterface: Gebruikersinterface
+users: Gebruikers
+userTasks: Gebruikerstaken
+useSavedPassword: Gebruik opgeslagen wachtwoord
+usualNumber: Gebruikelijk aantal
+validPasswordRecoveryEmailNotFound: Er is geen geldige e-mail voor wachtwoordherstel gevonden.
+verificationCode: Verificatie code
+verificationCodeSent: Er is zojuist een verificatiecode naar je e-mailadres verzonden.
+verify: Verifiëren
+verifyYourDevice: Verifieer je apparaat
+version: Versie
+versionTooOldMessage: Deze versie van NWS Mobile is verouderd. Update naar de nieuwste versie van NWS Mobile.
+video: Video
+videosDVDs: Dvd's
+videoTutorials: Video uitleg
+view: Bekijken
+viewAllFeatures: Bekijk alle functies
+viewAndSubmitGroupReports: Groepsrapporten bekijken en indienen
+viewOnline: Bekijk online
+viewPublisherReports: Verkondigerskaarten bekijken
+viewRequest: Verzoek bekijken
+visiting: Een bezoek aan
+visitingSpeakerInvitations: Uitnodigingen voor gastsprekers
+visitingSpeakersOnly: Alleen gastsprekers
+visitWebsiteForMoreInformation: Bezoek onze website voor meer informatie
+visitWebsiteHelpInstallingUpdating: Bezoek onze website en klik op Help > NWS Desktop installeren of updaten
+waiting: Aan het wachten
+waitingForResponse: Wachten op een antwoord
+waitingToImport: Wachten om te importeren
+warning: Waarschuwing
+watchtower: Wachttoren
+watchtowerReader: Wachttoren-lezer
+watchtowerReaderAbbreviation: WT Lezer
+watchtowerStudyConductor: Wachttoren-studieleider
+website: Website
+week: Week
+weekend: Weekend
+weekendAssignments: Weekend toewijzingen
+weekendAssignmentsNotScheduled: Weekendtoewijzingen niet toegewezen
+weekendAssignmentsPersonList: Persoonsoverzicht weekendtoewijzingen
+weekendCleaning: Weekendschoonmaak
+weekendDuties: Weekendtaken
+weekendMeeting: Weekendvergadering
+weekendMeetingDay: Weekend vergaderdag
+weekendMeetingSchedule: Weekendvergaderschema
+weekendMeetingSchedules: Schema's voor weekendvergaderingen
+weekendMeetingTime: Weekend vergadertijd
+weekendOf: Weekend van
+weeklyOverview: Wekelijks overzicht
+weeks: Weken
+weeksToAutoAssign: Weken voor automatische toewijzing
+weekTemplate: Weeksjabloon
+weekView: Weekoverzicht
+welcome: Welkom bij
+whatWouldYouLikeToDo: Wat zou je willen doen?
+whyHaveToRegister: Waarom moet ik me registreren?
+widow: Weduwe/Weduwnaar
+wife: Vrouw
+with: met
+withPerson: met
+work: Werk
+workingOfflineMessage1: Offline werken kan leiden tot gegevensverlies voor jezelf en anderen. We raden je ten zeerste aan je internetverbinding te herstellen.
+workingOfflineMessage2: Werk alleen offline als je daar een zeer goede reden voor hebt (bijvoorbeeld alleen om gegevens te bekijken) en je precies begrijpt wat je doet.
+workOffline: Werk offline
+workPhoneAbbreviation: (w)
+wouldYouLikeToDoThis: Zou je dit willen doen?
+wouldYouLikeToRemoveImportedMeetingData: Wil je deze geïmporteerde EPUB-vergaderingsgegevens verwijderen?
+year: Jaar
+years: Jaren
+yes: Ja
+yesterday: Gisteren
+youHaveNoCongregationResponsibilities: Je hebt geen gemeenteverantwoordelijkheden.
+youHaveNoQuickSteps: Je hebt geen snelle stappen.
+youHaveNoTasks: Je hebt geen taken.
+youHaveSelectedSharingRegion: Je hebt Synchronisatie regio geselecteerd
+youHaveTheFollowingOptions: Je hebt de volgende opties:
+yourEmail: Je e-mailadres
+yourName: Je naam
+zeroHourReports: 0-uur rapporten
+
+

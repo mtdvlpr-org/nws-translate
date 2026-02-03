@@ -63,11 +63,11 @@ const normalizeTranslationLine = (
 ): NWSTranslationLine => {
   if (isNWPTranslationLine(line)) {
     const key = line.match(/^"([^"]+)"/)?.[1];
-    const value = line.match(/:"([^"]+)"/)?.[1];
-    return `${key}: ${value}`;
+    const value = line.match(/: "([^"]+)"/)?.[1];
+    return `${key}: ${value || "<empty>"}`;
   }
 
-  return line;
+  return (line.endsWith("\r") ? line.slice(0, -1) : line) as NWSTranslationLine;
 };
 
 export const parseTranslationFile = (file: TranslationFile): ProgramUIFile => {
@@ -79,9 +79,13 @@ export const parseTranslationFile = (file: TranslationFile): ProgramUIFile => {
 
   lines.forEach((line) => {
     const [key, ...rest] = line.trim().split(KEY_VALUE_SEPARATOR);
-    const value = rest.join(KEY_VALUE_SEPARATOR);
 
-    if (key) programUI[key] = value ?? ""; // Value can be empty in NWP translation file
+    // Some strings end with a colon and space (": "), keep it in the value
+    const value = line.endsWith(KEY_VALUE_SEPARATOR)
+      ? rest.join(KEY_VALUE_SEPARATOR) + " "
+      : rest.join(KEY_VALUE_SEPARATOR);
+
+    if (key && value) programUI[key] = value === "<empty>" ? "" : value; // Value can be empty in NWP translation file
   });
 
   return programUI;
@@ -93,9 +97,9 @@ export const serializeTranslationFile = (
   const isNWP = isNWPProgramUIFile(record);
   return Object.entries(record)
     .map(
-      ([key, value]): TranslationLine =>
+      ([key, value], i): TranslationLine =>
         isNWP
-          ? `"${key}"${KEY_VALUE_SEPARATOR}"${value}",`
+          ? `"${key}"${KEY_VALUE_SEPARATOR}"${value}"${i < Object.keys(record).length - 1 ? "," : ""}`
           : `${key}: ${value}`,
     )
     .join(LINE_SEPARATOR);

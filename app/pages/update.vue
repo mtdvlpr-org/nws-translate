@@ -1,5 +1,5 @@
 <template>
-  <UPage class="px-4">
+  <UPage>
     <UPageHeader :title="title" :description="description" />
 
     <UPageBody>

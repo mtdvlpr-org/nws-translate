@@ -25,7 +25,9 @@
     </UHeader>
 
     <UMain>
-      <NuxtPage />
+      <UContainer>
+        <NuxtPage />
+      </UContainer>
     </UMain>
 
     <USeparator icon="i-simple-icons-nuxtdotjs" />

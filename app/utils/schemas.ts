@@ -7,7 +7,7 @@ export const translationFileSchema = z.custom<TranslationFile>(
     /^("?[a-zA-Z_\d]+"?: "?.*?"?,?\n)+("?[a-zA-Z_\d]+"?: "?.*?"?,?\n*)$/.test(
       val,
     ),
-  "Kan waarde niet parseren.",
+  "Kan waarde niet valideren.",
 );
 
 export const programUISchema = z.record(z.string(), z.string());

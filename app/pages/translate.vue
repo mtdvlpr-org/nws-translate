@@ -1,5 +1,5 @@
 <template>
-  <UPage class="px-4">
+  <UPage>
     <template #left>
       <UPageAside>
         <template #top>

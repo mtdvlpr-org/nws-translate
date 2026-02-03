@@ -55,6 +55,10 @@ const state = reactive<Partial<Schema>>({
   translations: model.value,
 });
 
+watch(model, (newVal) => {
+  state.translations = newVal;
+});
+
 const { showSuccess } = useFlash();
 
 const handleSubmit = (event: FormSubmitEvent<Schema>) => {

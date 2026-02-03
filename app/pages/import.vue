@@ -1,11 +1,26 @@
 <template>
-  <UPage class="px-4">
+  <UPage>
     <UPageHeader :title="title" :description="description" />
     <UPageBody>
       <UPageCard title="Vertaling">
         <TranslationFileForm v-model="translationsString" required />
       </UPageCard>
       <UPageCard title="Origineel">
+        <div class="flex gap-4">
+          <UButton
+            loading-auto
+            class="w-fit"
+            color="neutral"
+            label="Vul automatisch in"
+            @click="autoFillOriginals"
+          />
+          <UButton
+            class="w-fit"
+            color="error"
+            label="Reset"
+            @click="originalsString = undefined"
+          />
+        </div>
         <TranslationFileForm
           v-model="originalsString"
           :field="{
@@ -34,4 +49,24 @@ const { originalsString, translationsString } = storeToRefs(importStore);
 watch(translationsString, (newVal) => {
   importStore.translations = parseTranslationFile(newVal);
 });
+
+const { showError } = useFlash();
+const loadingOriginals = ref(false);
+
+const autoFillOriginals = async () => {
+  loadingOriginals.value = true;
+  try {
+    const strings = await $fetch<string>(
+      "https://docs.google.com/feeds/download/documents/export/Export?exportFormat=txt&id=1KOm9MTLrWv_lll6f1YvnlWlq3srXYVKMSo2a9KZ39a8",
+      { responseType: "text" },
+    );
+    originalsString.value = strings.trim().replaceAll("\r", "");
+  } catch {
+    showError({
+      description:
+        "Er is een fout opgetreden bij het ophalen van de originele teksten.",
+    });
+  }
+  loadingOriginals.value = false;
+};
 </script>
