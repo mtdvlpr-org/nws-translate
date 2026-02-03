@@ -37,7 +37,8 @@
           icon: 'i-lucide:refresh-cw',
           title: '2. Vertalen',
           to: '/translate',
-          description: 'Vertaal de teksten.',
+          description:
+            'Vertaal de teksten. Zoek makkelijk naar terugkerende termen.',
         },
         {
           icon: 'i-lucide:refresh-cw',
