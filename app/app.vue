@@ -63,7 +63,7 @@ useHead({
 });
 
 const title = "NWS Translate";
-const description = "Een tool om de teksten van NWS te vertalen.";
+const description = "Een tool om New World Scheduler te vertalen.";
 
 useSeoMeta({
   description,

@@ -1,5 +1,6 @@
 {
   "name": "nws-translate",
+  "description": "Een tool om New World Scheduler te vertalen.",
   "private": true,
   "type": "module",
   "scripts": {

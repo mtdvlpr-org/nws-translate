@@ -7,7 +7,7 @@
         {
           label: 'Begin met vertalen',
           to: hasTranslations ? '/translate' : '/import',
-          icon: 'i-lucide:file-input',
+          icon: 'i-lucide:languages',
           size: 'xl',
         },
         {
@@ -60,7 +60,7 @@
 </template>
 <script setup lang="ts">
 const title = "NWS Translate";
-const description = "Een tool om de teksten van NWS te vertalen.";
+const description = "Een tool om New World Scheduler te vertalen.";
 
 const importStore = useImportStore();
 const hasTranslations = computed(() => !!importStore.translationsString);
