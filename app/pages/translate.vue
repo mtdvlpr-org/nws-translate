@@ -3,7 +3,18 @@
     <template #left>
       <UPageAside>
         <template #top>
-          <UInput v-model="search" placeholder="Filter..." />
+          <UInput v-model="search" placeholder="Filter...">
+            <template v-if="search?.length" #trailing>
+              <UButton
+                size="sm"
+                variant="link"
+                color="neutral"
+                icon="i-lucide-circle-x"
+                aria-label="Verwijder filter"
+                @click="search = ''"
+              />
+            </template>
+          </UInput>
         </template>
         <UPageLinks :links="links" />
       </UPageAside>
@@ -12,12 +23,18 @@
     <UPageHeader :title="title" :description="description" />
 
     <UPageBody>
+      <UInputMenu
+        virtualize
+        :items="menuItems"
+        placeholder="Zoeken..."
+        :filter-fields="['value', 'text', 'reference']"
+      />
       <NuxtPage />
     </UPageBody>
   </UPage>
 </template>
 <script setup lang="ts">
-import type { PageAnchor } from "@nuxt/ui";
+import type { InputMenuItem } from "@nuxt/ui";
 
 const title = "Vertalen";
 const description = "Vertaal op deze pagina de teksten.";
@@ -33,7 +50,7 @@ const importStore = useImportStore();
 
 const search = ref("");
 
-const links = computed((): PageAnchor[] =>
+const links = computed((): PageLink[] =>
   importStore.keys
     .filter((key) => {
       if (!search.value || search.value.trim().length < 3) return true;
@@ -52,4 +69,26 @@ const links = computed((): PageAnchor[] =>
       to: `/translate/${key}`,
     })),
 );
+
+const menuItems = computed((): InputMenuItem[] =>
+  links.value.map((link) => ({
+    label: link.label,
+    onSelect: () => {
+      navigateTo(link.to);
+    },
+    reference: importStore.references[link.label],
+    text: importStore.translations[link.label],
+    value: link.label,
+  })),
+);
+
+const pageStore = usePageStore();
+
+watchImmediate(links, (links) => {
+  pageStore.pageLinks = links;
+});
+
+onBeforeUnmount(() => {
+  pageStore.pageLinks = [];
+});
 </script>

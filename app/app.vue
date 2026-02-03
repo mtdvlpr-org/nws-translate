@@ -13,6 +13,14 @@
           class="-mx-2.5"
           orientation="vertical"
         />
+        <template v-if="pageLinks.length">
+          <USeparator class="my-2" />
+          <UNavigationMenu
+            class="-mx-2.5"
+            :items="pageLinks"
+            orientation="vertical"
+          />
+        </template>
       </template>
     </UHeader>
 
@@ -65,6 +73,9 @@ useSeoMeta({
       ? `${title} • NWS Translate`
       : "NWS Translate",
 });
+
+const pageStore = usePageStore();
+const pageLinks = computed(() => pageStore.pageLinks);
 
 const items: NavigationMenuItem[] = [
   {
