@@ -78,7 +78,9 @@ export const parseTranslationFile = (file: TranslationFile): ProgramUIFile => {
   const programUI: ProgramUIFile = {};
 
   lines.forEach((line) => {
-    const [key, value] = line.trim().split(KEY_VALUE_SEPARATOR);
+    const [key, ...rest] = line.trim().split(KEY_VALUE_SEPARATOR);
+    const value = rest.join(KEY_VALUE_SEPARATOR);
+
     if (key) programUI[key] = value ?? ""; // Value can be empty in NWP translation file
   });
 
