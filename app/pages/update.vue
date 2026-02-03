@@ -2,13 +2,27 @@
   <UPage>
     <UPageHeader :title="title" :description="description" />
 
+    <UAlert
+      v-if="!importStore.translationsString"
+      color="warning"
+      variant="subtle"
+      title="Geen keys gevonden"
+      description="Importeer eerst teksten vanuit Google Docs om te kunnen vertalen."
+      :actions="[
+        { label: 'Ga naar Importeren', variant: 'link', to: '/import' },
+      ]"
+    />
+
     <UPageBody>
       <UPageCard title="Nieuwe teksten">
         <TranslationFileForm
           v-model="newTranslationsString"
           no-toast
           required
-          :submit="{ label: 'Teksten inladen' }"
+          :submit="{
+            label: 'Teksten inladen',
+            disabled: !importStore.translationsString,
+          }"
         />
       </UPageCard>
       <UPageCard v-if="newTranslationsString" title="Veranderingen">

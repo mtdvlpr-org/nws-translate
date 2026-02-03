@@ -5,8 +5,8 @@
       :description="description"
       :links="[
         {
-          label: 'Begin met importeren',
-          to: '/import',
+          label: 'Begin met vertalen',
+          to: hasTranslations ? '/translate' : '/import',
           icon: 'i-lucide:file-input',
           size: 'xl',
         },
@@ -61,4 +61,7 @@
 <script setup lang="ts">
 const title = "NWS Translate";
 const description = "Een tool om de teksten van NWS te vertalen.";
+
+const importStore = useImportStore();
+const hasTranslations = computed(() => !!importStore.translationsString);
 </script>

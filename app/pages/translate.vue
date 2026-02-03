@@ -23,13 +23,26 @@
     <UPageHeader :title="title" :description="description" />
 
     <UPageBody>
-      <UInputMenu
-        virtualize
-        :items="menuItems"
-        placeholder="Zoeken..."
-        :filter-fields="['value', 'text', 'reference']"
+      <template v-if="menuItems.length">
+        <UInputMenu
+          v-if="menuItems.length"
+          virtualize
+          :items="menuItems"
+          placeholder="Zoeken..."
+          :filter-fields="['value', 'text', 'reference']"
+        />
+        <NuxtPage />
+      </template>
+      <UAlert
+        v-else
+        color="warning"
+        variant="subtle"
+        title="Geen keys gevonden"
+        description="Importeer eerst teksten vanuit Google Docs om te kunnen vertalen."
+        :actions="[
+          { label: 'Ga naar Importeren', variant: 'link', to: '/import' },
+        ]"
       />
-      <NuxtPage />
     </UPageBody>
   </UPage>
 </template>
