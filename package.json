@@ -1,0 +1,68 @@
+{
+  "name": "nws-translate",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare:husky": "node .husky/install.mjs",
+    "prepare:nuxt": "nuxt prepare",
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "nuxt preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "typecheck": "nuxt typecheck",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "test:unit": "vitest --project unit",
+    "test:nuxt": "vitest --project nuxt",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "postinstall": "pnpm prepare:husky && pnpm prepare:nuxt"
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "^1.2.87",
+    "@iconify-json/simple-icons": "^1.2.68",
+    "@nuxt/test-utils": "3.23.0",
+    "@nuxt/ui": "^4.4.0",
+    "@pinia/nuxt": "^0.11.3",
+    "@vueuse/nuxt": "^14.2.0",
+    "@vueuse/router": "^14.2.0",
+    "nuxt": "^4.3.0",
+    "pinia": "^3.0.4",
+    "pinia-plugin-persistedstate": "^4.7.1",
+    "tailwindcss": "^4.1.18",
+    "v-code-diff": "^1.13.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^1.13.0",
+    "@pinia/testing": "^1.0.3",
+    "@playwright/test": "^1.58.1",
+    "@types/eslint-plugin-security": "^3.0.1",
+    "@types/node": "^22.19.7",
+    "@vitest/coverage-v8": "^3.2.4",
+    "@vitest/eslint-plugin": "^1.6.6",
+    "@vue/test-utils": "^2.4.6",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-perfectionist": "^5.4.0",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-security": "^3.0.1",
+    "happy-dom": "^20.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "playwright-core": "^1.58.1",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4",
+    "vue-tsc": "^3.2.4"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  },
+  "engines": {
+    "node": ">=22.18.0",
+    "pnpm": ">=10.26.2"
+  },
+  "packageManager": "pnpm@10.28.2"
+}
