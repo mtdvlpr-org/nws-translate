@@ -34,7 +34,7 @@
             'Importeer de originele en vertaalde NWS teksten vanuit Google Docs bestanden.',
         },
         {
-          icon: 'i-lucide:refresh-cw',
+          icon: 'i-lucide:languages',
           title: '2. Vertalen',
           to: '/translate',
           description:
