@@ -6,7 +6,7 @@
     "prepare:husky": "node .husky/install.mjs",
     "prepare:nuxt": "nuxt prepare",
     "dev": "nuxt dev",
-    "build": "nuxt build",
+    "build": "nuxt generate",
     "preview": "nuxt preview",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
