@@ -111,5 +111,12 @@ onMounted(() => {
   ) {
     uiStore.translations = parseTranslationFile(uiStore.translationsString);
   }
+
+  if (
+    Object.keys(uiStore.nwpTranslations ?? {}).length === 0 &&
+    !!uiStore.nwpString
+  ) {
+    uiStore.nwpTranslations = parseTranslationFile(uiStore.nwpString);
+  }
 });
 </script>

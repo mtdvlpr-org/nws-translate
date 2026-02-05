@@ -26,6 +26,7 @@
         <UPageGrid>
           <SongForm
             v-for="song in translationStore.originals.songs"
+            :id="`song-${song.number}`"
             :key="song.number"
             :song="song"
           />

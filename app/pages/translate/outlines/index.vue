@@ -20,6 +20,7 @@
         <UPageGrid>
           <OutlineForm
             v-for="outline in translationStore.originals.outlines"
+            :id="`outline-${outline.number}`"
             :key="outline.number"
             :outline="outline"
           />

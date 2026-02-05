@@ -41,6 +41,13 @@ export const useTranslationStore = defineStore("translation", {
           : undefined,
       };
     },
+    async fixInconsistentTips(heading: string, tips: { index: number }[]) {
+      tips.forEach((t) => {
+        if (!this.tips.translations?.[t.index]) return;
+        this.tips.translations![t.index]!.heading = heading;
+      });
+      await new Promise((resolve) => setTimeout(resolve, 100));
+    },
     setOriginals({
       literature,
       outlines,
@@ -86,6 +93,39 @@ export const useTranslationStore = defineStore("translation", {
     },
   },
   getters: {
+    inconsistentTips(state) {
+      if (!state.tips.originals?.length) return [];
+      const headings: Record<string, { index: number; translation: string }[]> =
+        {};
+
+      state.tips.originals.forEach((tip, index) => {
+        if (headings[tip.heading]) {
+          headings[tip.heading]!.push({
+            index,
+            translation: state.tips.translations?.[index]?.heading ?? "",
+          });
+        } else {
+          headings[tip.heading] = [
+            {
+              index,
+              translation: state.tips.translations?.[index]?.heading ?? "",
+            },
+          ];
+        }
+      });
+
+      return Object.entries(headings)
+        .filter(
+          ([, tips]) =>
+            tips.length > 1 &&
+            tips.some((t) => t.translation !== tips[0]?.translation),
+        )
+        .map(([heading, tips]) => ({
+          heading,
+          tips: tips,
+          translations: [...new Set(tips.map((t) => t.translation))],
+        }));
+    },
     originals(state) {
       return {
         literature: state.literature.originals,

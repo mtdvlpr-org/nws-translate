@@ -16,6 +16,32 @@
       <UPageGrid>
         <UPageCard v-for="(card, index) in cards" :key="index" v-bind="card" />
       </UPageGrid>
+      <div
+        v-if="uiStore.uiInconsistencies.length > 0"
+        class="flex flex-col gap-8"
+      >
+        <p>{{ uiStore.uiInconsistencies.length }} UI inconsistentie(s):</p>
+        <UAlert
+          v-for="term in uiStore.uiInconsistencies"
+          :key="term.key"
+          color="warning"
+          variant="subtle"
+          :title="`Inconsistentie voor: ${term.key}`"
+          :description="`NWS: ${term.nws} • NWP: ${term.nwp}`"
+          :actions="[
+            {
+              label: 'Open NWS term',
+              variant: 'link',
+              to: `/translate/nws/${term.key}`,
+            },
+            {
+              label: 'Open NWP term',
+              variant: 'link',
+              to: `/translate/nwp/${term.key}`,
+            },
+          ]"
+        />
+      </div>
     </UPageBody>
   </UPage>
 </template>
@@ -27,7 +53,7 @@ const translationStore = useTranslationStore();
 const cards = computed((): PageCardProps[] => {
   return [
     {
-      description: `${uiStore.keys.length} records.`,
+      description: `${uiStore.keys.length} records. ${uiStore.inconsistentNWS.length > 0 ? `${uiStore.inconsistentNWS.flatMap((i) => i.others).length} inconsistentie(s).` : ""}`,
       icon: "i-lucide:monitor",
       title: "NWS UI",
       to: "/translate/nws",
@@ -57,7 +83,7 @@ const cards = computed((): PageCardProps[] => {
       to: "/translate/songs",
     },
     {
-      description: `${translationStore.originals.tips?.length ?? 0} records.`,
+      description: `${translationStore.originals.tips?.length ?? 0} records. ${translationStore.inconsistentTips.length > 0 ? `${translationStore.inconsistentTips.length} inconsistentie(s).` : ""}`,
       icon: "i-lucide:lightbulb",
       title: "Tips",
       to: "/translate/tips",

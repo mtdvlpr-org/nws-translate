@@ -7,9 +7,9 @@
     />
 
     <UPageBody>
-      <template v-if="inconsistentHeadings.length">
+      <template v-if="translationStore.inconsistentTips.length">
         <UAlert
-          v-for="h in inconsistentHeadings"
+          v-for="h in translationStore.inconsistentTips"
           :key="h.heading"
           variant="soft"
           color="warning"
@@ -19,7 +19,7 @@
             h.translations.map((t) => ({
               label: t,
               onClick: () => {
-                fixInconsistentHeading(t, h.tips);
+                fixInconsistentTips(t, h.tips);
               },
             }))
           "
@@ -35,6 +35,7 @@
       <template v-else>
         <TipForm
           v-for="(tip, i) in translationStore.originals.tips"
+          :id="`tip-${i}`"
           :key="i"
           :index="i"
           :tip="tip"
@@ -46,50 +47,14 @@
 <script setup lang="ts">
 const translationStore = useTranslationStore();
 
-const inconsistentHeadings = computed(() => {
-  if (!translationStore.originals.tips?.length) return [];
-  const headings: Record<string, { index: number; translation: string }[]> = {};
-
-  translationStore.originals.tips.forEach((tip, index) => {
-    if (headings[tip.heading]) {
-      headings[tip.heading]!.push({
-        index,
-        translation: translationStore.translations.tips?.[index]?.heading ?? "",
-      });
-    } else {
-      headings[tip.heading] = [
-        {
-          index,
-          translation:
-            translationStore.translations.tips?.[index]?.heading ?? "",
-        },
-      ];
-    }
-  });
-  return Object.entries(headings)
-    .filter(
-      ([, tips]) =>
-        tips.length > 1 &&
-        tips.some((t) => t.translation !== tips[0]?.translation),
-    )
-    .map(([heading, tips]) => ({
-      heading,
-      tips: tips,
-      translations: [...new Set(tips.map((t) => t.translation))],
-    }));
-});
-
 const loading = ref(false);
 
-const fixInconsistentHeading = async (
+const fixInconsistentTips = async (
   heading: string,
   tips: { index: number }[],
 ) => {
   loading.value = true;
-  tips.forEach((t) => {
-    translationStore.translations.tips![t.index]!.heading = heading;
-  });
-  await new Promise((resolve) => setTimeout(resolve, 100));
+  await translationStore.fixInconsistentTips(heading, tips);
   loading.value = false;
 };
 

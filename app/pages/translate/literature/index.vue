@@ -20,6 +20,7 @@
         <UPageGrid>
           <LiteratureForm
             v-for="item in translationStore.originals.literature"
+            :id="`literature-${item.id}`"
             :key="item.id"
             :item="item"
           />

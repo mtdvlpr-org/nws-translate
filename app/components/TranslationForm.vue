@@ -2,10 +2,11 @@
   <UForm
     :state="state"
     :schema="schema"
-    class="flex flex-col gap-4"
+    class="flex flex-col gap-4 justify-between"
     @submit="onSubmit"
   >
     <UFormField
+      v-if="original && translationKey"
       :label="original ? 'Origineel' : 'Key'"
       :description="original ? translationKey : undefined"
     >
@@ -17,7 +18,13 @@
         :model-value="original || translationKey"
       />
     </UFormField>
-    <UFormField label="Vertaling" name="translation">
+    <UFormField
+      label="Vertaling"
+      name="translation"
+      :description="
+        original && translationKey ? undefined : original || translationKey
+      "
+    >
       <UTextarea
         v-model="state.translation"
         :rows="1"
