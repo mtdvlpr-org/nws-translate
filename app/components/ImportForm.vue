@@ -27,7 +27,7 @@
       <UTextarea
         v-model="state.nwp"
         class="w-full"
-        placeholder='"____v360____": "",&#10;"____GENERAL____": "",&#10;...'
+        placeholder='"____v360____": "",&#10;"____GENERAL____": "",&#10;"help": "Help",&#10;...'
       />
     </UFormField>
     <UFormField
