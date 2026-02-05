@@ -3,6 +3,16 @@
     <UPageHeader :title="title" :description="description" />
 
     <UPageBody>
+      <UAlert
+        v-if="cards.every((card) => card.description === '0 records.')"
+        color="warning"
+        variant="subtle"
+        title="Geen teksten gevonden"
+        :actions="[
+          { label: 'Ga naar Importeren', variant: 'link', to: '/import' },
+        ]"
+        description="Importeer eerst teksten vanuit Google Docs of een .json-bestand om te kunnen vertalen."
+      />
       <UPageGrid>
         <UPageCard v-for="(card, index) in cards" :key="index" v-bind="card" />
       </UPageGrid>
@@ -29,25 +39,25 @@ const cards = computed((): PageCardProps[] => {
       to: "/translate/nwp",
     },
     {
-      description: `${translationStore.originals.literature?.length} records.`,
+      description: `${translationStore.originals.literature?.length ?? 0} records.`,
       icon: "i-lucide:book-open",
       title: "Lectuur",
       to: "/translate/literature",
     },
     {
-      description: `${translationStore.originals.outlines?.length} records.`,
+      description: `${translationStore.originals.outlines?.length ?? 0} records.`,
       icon: "i-lucide:file-text",
       title: "Lezingen",
       to: "/translate/outlines",
     },
     {
-      description: `${translationStore.originals.songs?.length} records.`,
+      description: `${translationStore.originals.songs?.length ?? 0} records.`,
       icon: "i-lucide:music",
       title: "Liederen",
       to: "/translate/songs",
     },
     {
-      description: `${translationStore.originals.tips?.length} records.`,
+      description: `${translationStore.originals.tips?.length ?? 0} records.`,
       icon: "i-lucide:lightbulb",
       title: "Tips",
       to: "/translate/tips",

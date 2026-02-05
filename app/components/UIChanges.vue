@@ -46,7 +46,9 @@ const remoteTranslations = computed(() => {
 
 const translations = computed(() => {
   return JSON.stringify(
-    props.type === "NWS" ? uiStore.translations : uiStore.nwpTranslations,
+    props.type === "NWS"
+      ? uiStore.translations
+      : (uiStore.nwpTranslations ?? {}),
     null,
     2,
   );
