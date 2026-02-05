@@ -6,17 +6,15 @@
     @submit="handleSubmit"
   >
     <UFormField
-      :required
-      label="Online"
       name="translations"
+      :required="required"
+      :label="`${type} UI`"
       description="Plak tekst uit het Google Docs bestand."
-      v-bind="field"
     >
       <UTextarea
         v-model="state.translations"
         class="w-full"
-        placeholder="about: About&#10;about1: New World Scheduler..."
-        v-bind="textarea"
+        :placeholder="placeholder"
       />
     </UFormField>
     <UButton class="w-fit" type="submit" label="Opslaan" v-bind="submit" />
@@ -24,22 +22,21 @@
 </template>
 
 <script setup lang="ts">
-import type {
-  ButtonProps,
-  FormFieldProps,
-  FormSubmitEvent,
-  TextareaProps,
-} from "@nuxt/ui";
+import type { ButtonProps, FormSubmitEvent } from "@nuxt/ui";
 
 import { z } from "zod";
 
 const props = defineProps<{
-  field?: FormFieldProps;
-  noToast?: boolean;
   required?: boolean;
   submit?: ButtonProps;
-  textarea?: TextareaProps;
+  type: "NWP" | "NWS";
 }>();
+
+const placeholder = computed(() => {
+  return props.type === "NWP"
+    ? '____v360____: "",\n____GENERAL____: "",\n"help": "Help",\n...'
+    : "about: About\nabout1: New World Scheduler...";
+});
 
 const model = defineModel<TranslationFile>();
 
@@ -59,11 +56,7 @@ watch(model, (newVal) => {
   state.translations = newVal;
 });
 
-const { showSuccess } = useFlash();
-
 const handleSubmit = (event: FormSubmitEvent<Schema>) => {
   model.value = event.data.translations;
-  if (props.noToast) return;
-  showSuccess({ description: "Succesvol opgeslagen." });
 };
 </script>

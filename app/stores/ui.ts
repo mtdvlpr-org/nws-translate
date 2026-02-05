@@ -1,24 +1,34 @@
 type State = {
-  originalsString: TranslationFile | undefined;
+  nwpString: TranslationFile | undefined;
+  nwpTranslations: ProgramUIFile | undefined;
+  originalsString: TranslationFile;
   translations: ProgramUIFile;
   translationsString: TranslationFile;
 };
 
-export const useImportStore = defineStore("import", {
+export const useUIStore = defineStore("ui", {
   actions: {},
   getters: {
     keys(): string[] {
-      const store = useImportStore();
+      const store = useUIStore();
       return [
         ...new Set(
           Object.keys(store.translations).concat(Object.keys(store.references)),
         ),
       ];
     },
+    nwpKeys(state): string[] {
+      return Object.keys(state.nwpTranslations ?? {}).filter(
+        (key) => !key.startsWith("____"),
+      );
+    },
     references(state): ProgramUIFile {
       return state.originalsString
         ? parseTranslationFile(state.originalsString)
         : {};
+    },
+    remoteNWP(state): ProgramUIFile {
+      return state.nwpString ? parseTranslationFile(state.nwpString) : {};
     },
     remoteTranslations(state): ProgramUIFile {
       return state.translationsString
@@ -28,7 +38,9 @@ export const useImportStore = defineStore("import", {
   },
   persist: true,
   state: (): State => ({
-    originalsString: undefined,
+    nwpString: undefined,
+    nwpTranslations: undefined,
+    originalsString: "",
     translations: {},
     translationsString: "",
   }),

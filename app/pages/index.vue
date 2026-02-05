@@ -24,35 +24,35 @@
     <UPageSection
       id="features"
       title="Alles wat je nodig hebt om NWS efficiënt te vertalen"
-      description="Importeer de teksten van NWS, verwerk updates en exporteer de vertalingen naar Google Docs of een ProgramUI.json bestand."
+      description="Vertaal NWS UI, NWP UI, lectuur, lezingen, liederen en tips met één tool."
       :features="[
         {
           icon: 'i-lucide:file-input',
           title: '1. Importeren',
           to: '/import',
           description:
-            'Importeer de originele en vertaalde NWS teksten vanuit Google Docs bestanden.',
+            'Importeer de originele en vertaalde teksten vanuit Google Docs en .json-bestanden.',
         },
         {
           icon: 'i-lucide:languages',
           title: '2. Vertalen',
           to: '/translate',
           description:
-            'Vertaal de teksten. Zoek makkelijk naar terugkerende termen.',
+            'Vertaal de teksten met een simpele interface, zoekfunctie en meer.',
         },
         {
           icon: 'i-lucide:refresh-cw',
           title: '3. Update',
           to: '/update',
           description:
-            'Verwerk updates die in de Google Docs bestanden zijn aangebracht.',
+            'Zie precies welke veranderingen zijn aangebracht en verwerk ze met één klik.',
         },
         {
           icon: 'i-lucide:file-output',
           title: '4. Exporteren',
           to: '/export',
           description:
-            'Exporteer de lokale vertalingen naar Google Docs of een ProgramUI.json bestand.',
+            'Exporteer de lokale vertalingen naar Google Docs of een .json-bestand.',
         },
       ]"
     />
@@ -62,6 +62,6 @@
 const title = "NWS Translate";
 const description = "Een tool om New World Scheduler te vertalen.";
 
-const importStore = useImportStore();
-const hasTranslations = computed(() => !!importStore.translationsString);
+const uiStore = useUIStore();
+const hasTranslations = computed(() => !!uiStore.translationsString);
 </script>

@@ -6,13 +6,13 @@ import {
   isNWPTranslationFile,
   parseTranslationFile,
   serializeTranslationFile,
-} from "./../../app/utils/nws";
+} from "./../../app/utils/ui";
 import {
   NWPProgramUIFileMock,
   NWPTranslationFileMock,
   NWSProgramUIFileMock,
   NWSTranslationFileMock,
-} from "./../mocks/nws";
+} from "./../mocks/ui";
 
 describe("isNWPProgramUIFile", () => {
   it("should return true if the file is a NWP program UI file", () => {
@@ -64,7 +64,7 @@ describe("serializeTranslationFile", () => {
 
 describe("parse and serialize", () => {
   it("should return the same string for English NWS file", async () => {
-    const text = await readFile("./test/fixtures/nws/E.txt", "utf-8");
+    const text = await readFile("./test/fixtures/nws/E/ui.txt", "utf-8");
 
     expect(serializeTranslationFile(parseTranslationFile(text))).toBe(
       text.trim().replaceAll("\r", ""),
@@ -72,7 +72,7 @@ describe("parse and serialize", () => {
   });
 
   it("should return the same string for Dutch NWS file", async () => {
-    const text = await readFile("./test/fixtures/nws/O.txt", "utf-8");
+    const text = await readFile("./test/fixtures/nws/O/ui.txt", "utf-8");
 
     expect(serializeTranslationFile(parseTranslationFile(text))).toBe(
       text.trim().replaceAll("\r", ""),
@@ -80,7 +80,7 @@ describe("parse and serialize", () => {
   });
 
   it("should return the same string for Dutch NWP file", async () => {
-    const text = await readFile("./test/fixtures/nwp/O.txt", "utf-8");
+    const text = await readFile("./test/fixtures/nwp/O/ui.txt", "utf-8");
 
     expect(serializeTranslationFile(parseTranslationFile(text))).toBe(
       text.trim().replaceAll("\r", ""),

@@ -3,7 +3,7 @@
     <UPageHeader :title="title" :description="description" />
 
     <UAlert
-      v-if="!importStore.translationsString"
+      v-if="!stringValue"
       color="warning"
       variant="subtle"
       title="Geen keys gevonden"
@@ -14,14 +14,19 @@
     />
 
     <UPageBody>
+      <URadioGroup
+        v-model="type"
+        :items="['NWP', 'NWS']"
+        legend="Welke UI wil je updaten?"
+      />
       <UPageCard title="Nieuwe teksten">
         <TranslationFileForm
           v-model="newTranslationsString"
-          no-toast
           required
+          :type="type"
           :submit="{
             label: 'Teksten inladen',
-            disabled: !importStore.translationsString,
+            disabled: !stringValue,
           }"
         />
       </UPageCard>
@@ -38,7 +43,7 @@
         v-if="newTranslationsString && isDifferent"
         title="Vertaal de veranderde teksten"
       >
-        <TranslationForm
+        <NWSTranslationForm
           v-for="t in changedText"
           :key="t.key"
           :new-value="t.value"
@@ -57,24 +62,19 @@
   </UPage>
 </template>
 <script setup lang="ts">
-const title = "Update";
-const description =
-  "Importeer op deze pagina een update van het Google Docs bestand.";
+const uiStore = useUIStore();
+const type = ref<"NWP" | "NWS">("NWS");
 
-useSeoMeta({
-  description,
-  ogDescription: description,
-  ogTitle: title,
-  title,
+const stringValue = computed(() => {
+  return type.value === "NWS" ? uiStore.translationsString : uiStore.nwpString;
 });
 
-const isDifferent = computed(() => {
-  return newTranslations.value !== oldTranslations.value;
-});
-
-const importStore = useImportStore();
 const oldTranslations = computed(() => {
-  return JSON.stringify(importStore.translations, null, 2);
+  return JSON.stringify(
+    type.value === "NWS" ? uiStore.translations : uiStore.nwpTranslations,
+    null,
+    2,
+  );
 });
 
 const newTranslationsString = ref("");
@@ -86,12 +86,18 @@ const newTranslations = computed(() => {
   );
 });
 
+const isDifferent = computed(() => {
+  return newTranslations.value !== oldTranslations.value;
+});
+
 const changedText = computed(() => {
   const parsed = JSON.parse(newTranslations.value);
 
   return Object.keys(parsed)
     .filter((key) => {
-      return parsed[key] !== importStore.translations[key];
+      return type.value === "NWS"
+        ? parsed[key] !== uiStore.translations[key]
+        : parsed[key] !== uiStore.nwpTranslations?.[key];
     })
     .map((key) => ({ key, value: parsed[key] }));
 });
@@ -101,19 +107,43 @@ const savedKeys = ref<Set<string>>(new Set());
 const { showSuccess } = useFlash();
 
 const finishUpdate = () => {
-  importStore.translationsString = newTranslationsString.value;
+  if (type.value === "NWS") {
+    uiStore.translationsString = newTranslationsString.value;
+  } else {
+    uiStore.nwpString = newTranslationsString.value;
+  }
+
   const parsed = JSON.parse(newTranslations.value);
   const newKeys = Object.keys(parsed).filter(
     (key) => !savedKeys.value.has(key),
   );
 
-  newKeys.forEach((key) => {
-    importStore.translations[key] = parsed[key];
-  });
+  if (type.value === "NWS") {
+    newKeys.forEach((key) => {
+      uiStore.translations[key] = parsed[key];
+    });
+  } else {
+    newKeys.forEach((key) => {
+      if (uiStore.nwpTranslations) {
+        uiStore.nwpTranslations[key] = parsed[key];
+      }
+    });
+  }
 
-  showSuccess({ description: "Update afgerond." });
+  showSuccess({ description: "Update afgerond.", id: "update-finish" });
 
   newTranslationsString.value = "";
   savedKeys.value.clear();
 };
+
+const title = "Update";
+const description =
+  "Importeer op deze pagina een UI update van een NWS of NWP Google Docs bestand.";
+
+useSeoMeta({
+  description,
+  ogDescription: description,
+  ogTitle: title,
+  title,
+});
 </script>

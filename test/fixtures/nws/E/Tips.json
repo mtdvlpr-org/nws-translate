@@ -1,0 +1,157 @@
+[
+  {
+    "heading": "Field Service Reports",
+    "text": "To see who hasn't submitted their Field Service Report yet, either check the Me view, or Congregation > Congregation Field Service Report > Publishers",
+    "url": "https://nwscheduler.com/how-to/jw-secretary/congregation-field-service-report/"
+  },
+  {
+    "heading": "Public Talks",
+    "text": "To send a Public Talk Reminder, Invitation, or Confirmation email, simply click Schedule > Public Talks - Local > select the week and click the button next to the Speakers name",
+    "url": "https://nwscheduler.com/how-to/schedule/schedule-public-talks-local/"
+  },
+  {
+    "heading": "Public Talks",
+    "text": "When scheduling Public Talks, hover over a speaker's name to see their contact details",
+    "url": "https://nwscheduler.com/how-to/schedule/schedule-public-talks-local/"
+  },
+  {
+    "heading": "Public Talks",
+    "text": "The Public Talks - Away schedule shows the Weekend date, not the Meeting date. To set the Meeting Date, see Congregation > Neighbor Congregations",
+    "url": "https://nwscheduler.com/how-to/schedule/schedule-public-talks-away/"
+  },
+  {
+    "heading": "Public Talks",
+    "text": "The COBE or Public Talk Coordinator can add private Notes when scheduling Public Talks. Simply select the week, and enter notes up the top",
+    "url": "https://nwscheduler.com/how-to/schedule/schedule-public-talks-local/"
+  },
+  {
+    "heading": "Public Talks",
+    "text": "Public Talk scheduling has a Local view, an Away view, and a Combined view",
+    "url": "https://nwscheduler.com/how-to/schedule/schedule-public-talks-local/"
+  },
+  {
+    "heading": "Congregation Sharing",
+    "text": "If data is missing, not updating, or has not synced correctly, please see Congregation Sharing Help > Congregation Sharing Data or Syncing Problems, and carefully follow the instructions. There is usually no need to contact us",
+    "url": "https://nwscheduler.com/how-to/congregation-sharing/congregation-sharing-data-or-syncing-problems/"
+  },
+  {
+    "heading": "Congregation Sharing",
+    "text": "The Congregation Sharing Logs provide a comprehensive log of all Sharing activity in the last 14 days, including what data was shared, by whom and when",
+    "url": "https://nwscheduler.com/how-to/congregation-sharing/congregation-sharing-help/"
+  },
+  {
+    "heading": "Congregation Sharing",
+    "text": "If you cannot connect to Congregation Sharing, please see Congregation Sharing Help > Common Sharing Questions and Problems, and carefully follow the instructions. There is usually no need to contact us",
+    "url": "https://nwscheduler.com/how-to/congregation-sharing/common-congregation-sharing-questions-answers/"
+  },
+  {
+    "heading": "Congregation Sharing",
+    "text": "If any brother has Sharing problems or doesn't see all the data, the Push and Pull buttons can resolve the problem quickly and easily",
+    "url": "https://nwscheduler.com/how-to/congregation-sharing/congregation-sharing-data-or-syncing-problems/"
+  },
+  {
+    "heading": "NW Publisher app",
+    "text": "If data is missing or different on the NW Publisher app compared to NW Scheduler, please see App Help > Common App Questions and Problems, and carefully follow the instructions. There is usually no need to contact us",
+    "url": "https://nwscheduler.com/how-to/jw-scheduler-app/solve-jw-scheduler-app-problems/"
+  },
+  {
+    "heading": "NW Publisher app",
+    "text": "Data from NW Publisher app is not automatically imported into NW Scheduler. You need to Import App Data",
+    "url": "https://nwscheduler.com/how-to/jw-scheduler-app/app-members/"
+  },
+  {
+    "heading": "NW Publisher app",
+    "text": "Automatically updating NW Publisher app on mobile devices is handled by the Device App Store (Apple, Google and Amazon), not NW Scheduler",
+    "url": "https://nwscheduler.com/how-to/jw-scheduler-app/solve-jw-scheduler-app-problems/"
+  },
+  {
+    "heading": "NW Publisher app",
+    "text": "If some app notifications are not being sent or received, please see App Help > Common App Questions and Problems, and carefully follow the instructions. There is usually no need to contact us",
+    "url": "https://nwscheduler.com/how-to/jw-scheduler-app/solve-jw-scheduler-app-problems/"
+  },
+  {
+    "heading": "NW Publisher app",
+    "text": "Data from NW Scheduler is not automatically sent to NW Publisher app. You need to Send App Data",
+    "url": "https://nwscheduler.com/how-to/jw-scheduler-app/app-send-and-receive-data/"
+  },
+  {
+    "heading": "NW Publisher app",
+    "text": "If publishers use NW Publisher on multiple devices, they may receive multiple reminders or notifications (especially Field Service Report reminders)",
+    "url": "https://nwscheduler.com/how-to/jw-scheduler-app/solve-jw-scheduler-app-problems/"
+  },
+  {
+    "heading": "Features",
+    "text": "Not all NW Scheduler data can be accessed via the NW Publisher app as that would involve storing ALL data permanently on online storage servers. NW Publisher app is designed for publishers, not appointed brothers",
+    "url": "https://nwscheduler.com/frequently-asked-questions/"
+  },
+  {
+    "heading": "Help and Support",
+    "text": "You can search our Help and Support pages by using the search function: Search bar with magnifying glass icon (next to Video Tutorials link)",
+    "url": "https://nwscheduler.com/support/"
+  },
+  {
+    "heading": "Help and Support",
+    "text": "You can view Video Tutorials for the most common features of NW Scheduler by visiting our website",
+    "url": "https://nwscheduler.com/video-tutorials/"
+  },
+  {
+    "heading": "Quick Steps",
+    "text": "Quick Steps (found on the Me view) allow you to send the most common Emails that relate to your Congregation Responsilibities with a single click",
+    "url": "https://nwscheduler.com/video-tutorials/"
+  },
+  {
+    "heading": "Assignments and Duties",
+    "text": "When assigning talks, assignments or duties, a warning symbol will display if a person already has an assignment or will be away. Hover over the warning icon to see detailed information",
+    "url": "https://nwscheduler.com/support/#schedule"
+  },
+  {
+    "heading": "Features",
+    "text": "NW Scheduler is not a messaging application. Please use a messaging service to send messages, for example: SMS, WhatsApp, Signal, etc.",
+    "url": "https://nwscheduler.com/how-to/congregation/congregation-information-board/"
+  },
+  {
+    "heading": "Features",
+    "text": "We will not be adding Congregation Accounts to NW Scheduler. Many branches already have online JW.org Accounting functionality",
+    "url": "https://nwscheduler.com/frequently-asked-questions/"
+  },
+  {
+    "heading": "Features",
+    "text": "When requesting new features or making suggestions, please be as specific as possible and include multiple screenshots",
+    "url": "https://nwscheduler.com/support-contact-us/"
+  },
+  {
+    "heading": "Printing",
+    "text": "To print a list of persons based on ANY criteria, under Save and Print, select Persons > Persons List then set your criteria",
+    "url": "https://nwscheduler.com/how-to/schedules-and-reports/members-reports/"
+  },
+  {
+    "heading": "Circuit Overseer Visit",
+    "text": "To prepare, save or print all information for the Circuit Overseer, simply click Printing > Save and Print > Circuit Overseer",
+    "url": "https://nwscheduler.com/how-to/schedules-and-reports/circuit-overseer-schedules-and-reports/"
+  },
+  {
+    "heading": "Circuit Overseer Visit",
+    "text": "To prepare the Publisher Records for the Circuit Overseer, simply click Printing > Save and Print > Circuit Overseer > S-21 for Circuit Overseer",
+    "url": "https://nwscheduler.com/how-to/schedules-and-reports/circuit-overseer-schedules-and-reports/"
+  },
+  {
+    "heading": "Backups",
+    "text": "NW Scheduler creates an Automatic Backup each time the program is closed. These can be opened by clicking Congregation > Restore Data. However, you should still regularly make a manual backup to store offsite.",
+    "url": "https://nwscheduler.com/how-to/getting-started/backup-and-restore-data"
+  },
+  {
+    "heading": "Backups",
+    "text": "When restoring data from backup, you can select which backup to use AND which data to restore. Publisher reports can be restored by person or by month",
+    "url": "https://nwscheduler.com/how-to/getting-started/backup-and-restore-data"
+  },
+  {
+    "heading": "Updating",
+    "text": "NW Scheduler releases major updates every 2-3 months. Build updates are released regularly to fix bugs. You only need to install a Build update if you have a problem",
+    "url": "https://nwscheduler.com/how-to/update-jw-scheduler/"
+  },
+  {
+    "heading": "Updating",
+    "text": "Major NW Scheduler updates are first released for Beta Testing on the 21st, then for general release around the 26th. This allows time for everyone to download the new version before the start of the new month",
+    "url": "https://nwscheduler.com/how-to/update-jw-scheduler/"
+  }
+]

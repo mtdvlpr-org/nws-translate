@@ -30,21 +30,13 @@ export type NWSTranslationFile = string;
  */
 export type NWSTranslationLine = `${string}: ${string}`;
 
-/**
- * ProgramUI.json file structure.
- * @example
- * {
- *   "key": "Value 1",
- *   "key2": "Value 2"
- * }
- */
-export type ProgramUIFile = Record<string, string>;
-
 export type TranslationFile = NWPTranslationFile | NWSTranslationFile;
 
 export type TranslationLine = NWPTranslationLine | NWSTranslationLine;
 
-export const isNWPTranslationFile = (file: TranslationFile): boolean => {
+export const isNWPTranslationFile = (
+  file: TranslationFile,
+): file is NWPTranslationFile => {
   return file.includes(`"${NWP_KEY}"`);
 };
 
@@ -79,6 +71,11 @@ export const parseTranslationFile = (file: TranslationFile): ProgramUIFile => {
 
   lines.forEach((line) => {
     const [key, ...rest] = line.trim().split(KEY_VALUE_SEPARATOR);
+
+    if (key?.endsWith(":") && rest.length === 0) {
+      programUI[key.slice(0, -1)] = "";
+      return;
+    }
 
     // Some strings end with a colon and space (": "), keep it in the value
     const value = line.endsWith(KEY_VALUE_SEPARATOR)

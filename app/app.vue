@@ -102,16 +102,14 @@ const items: NavigationMenuItem[] = [
   },
 ];
 
-const importStore = useImportStore();
+const uiStore = useUIStore();
 
 onMounted(() => {
   if (
-    Object.keys(importStore.translations).length === 0 &&
-    Object.keys(importStore.remoteTranslations).length > 0
+    Object.keys(uiStore.translations).length === 0 &&
+    Object.keys(uiStore.remoteTranslations).length > 0
   ) {
-    importStore.translations = parseTranslationFile(
-      importStore.translationsString,
-    );
+    uiStore.translations = parseTranslationFile(uiStore.translationsString);
   }
 });
 </script>

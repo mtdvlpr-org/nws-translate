@@ -12,7 +12,7 @@ export default withNuxt(
   perfectionist.configs["recommended-natural"],
 
   // General rules
-  { rules: { "no-console": ["error"] } },
+  //{ rules: { "no-console": ["error"] } },
 
   // Vue specific rules
   {

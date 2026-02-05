@@ -1,0 +1,366 @@
+[
+  {
+    "id": 100001,
+    "categoryName": "AnnualItems",
+    "itemNumber": "6922",
+    "symbol": "es",
+    "title": "Bestudeer dagelijks de Schrift"
+  },
+  {
+    "id": 100002,
+    "categoryName": "AnnualItems",
+    "itemNumber": "7022",
+    "symbol": "eslp",
+    "title": "Bestudeer dagelijks de Schrift (grote letteruitgave)"
+  },
+  {
+    "id": 100003,
+    "categoryName": "Bibles",
+    "itemNumber": "5140",
+    "symbol": "nwt",
+    "title": "Nieuwewereldvertaling van de Bijbel"
+  },
+  {
+    "id": 100004,
+    "categoryName": "Bibles",
+    "itemNumber": "5141",
+    "symbol": "nwtls",
+    "title": "Nieuwewereldvertaling van de Bijbel (groot formaat)"
+  },
+  {
+    "id": 100005,
+    "categoryName": "Bibles",
+    "itemNumber": "5142",
+    "symbol": "nwtpkt",
+    "title": "Nieuwewereldvertaling van de Bijbel (klein formaat)"
+  },
+  {
+    "id": 100006,
+    "categoryName": "Bibles",
+    "itemNumber": "5144",
+    "symbol": "nwtsty1",
+    "title": "Studie-uitgave (Mattheüs tot Handelingen)"
+  },
+  {
+    "id": 100007,
+    "categoryName": "Books",
+    "itemNumber": "5445",
+    "symbol": "lff",
+    "title": "Voor eeuwig gelukkig!-boek"
+  },
+  {
+    "id": 100008,
+    "categoryName": "Books",
+    "itemNumber": "5341",
+    "symbol": "sjj",
+    "title": "Zing met vreugde voor Jehovah"
+  },
+  {
+    "id": 100009,
+    "categoryName": "Books",
+    "itemNumber": "5441",
+    "symbol": "sjjls",
+    "title": "Zing met vreugde (groot formaat)"
+  },
+  {
+    "id": 100010,
+    "categoryName": "Books",
+    "itemNumber": "5442",
+    "symbol": "sjjyls",
+    "title": "Zing met vreugde (alleen tekst)"
+  },
+  {
+    "id": 100011,
+    "categoryName": "Books",
+    "itemNumber": "5331",
+    "symbol": "cl",
+    "title": "Nader dicht tot Jehovah"
+  },
+  {
+    "id": 100012,
+    "categoryName": "Books",
+    "itemNumber": "5422",
+    "symbol": "kr",
+    "title": "God's Koninkrijk regeert!"
+  },
+  {
+    "id": 100013,
+    "categoryName": "Books",
+    "itemNumber": "5411",
+    "symbol": "it",
+    "title": "Inzicht in de Schrift (2 delen)"
+  },
+  {
+    "id": 100014,
+    "categoryName": "Books",
+    "itemNumber": "5419",
+    "symbol": "ia",
+    "title": "Volg hun geloof na"
+  },
+  {
+    "id": 100015,
+    "categoryName": "Books",
+    "itemNumber": "5413",
+    "symbol": "jv",
+    "title": "Jehovah’s Getuigen — Verkondigers van Gods koninkrijk"
+  },
+  {
+    "id": 100016,
+    "categoryName": "Books",
+    "itemNumber": "5425",
+    "symbol": "jy",
+    "title": "Jezus: De weg, de waarheid, het leven"
+  },
+  {
+    "id": 100017,
+    "categoryName": "Books",
+    "itemNumber": "5415",
+    "symbol": "lr",
+    "title": "Lessen van de Grote Onderwijzer"
+  },
+  {
+    "id": 100018,
+    "categoryName": "Books",
+    "itemNumber": "5427",
+    "symbol": "lfb",
+    "title": "Leer van de verhalen uit de Bijbel"
+  },
+  {
+    "id": 100019,
+    "categoryName": "Books",
+    "itemNumber": "5332",
+    "symbol": "od",
+    "title": "Georganiseerd om Jehovah’s wil te doen"
+  },
+  {
+    "id": 100020,
+    "categoryName": "Books",
+    "itemNumber": "5435",
+    "symbol": "rr",
+    "title": "De zuivere aanbidding van Jehovah eindelijk hersteld!"
+  },
+  {
+    "id": 100021,
+    "categoryName": "Books",
+    "itemNumber": "5444",
+    "symbol": "rrlp",
+    "title": "De zuivere aanbidding van Jehovah eindelijk hersteld!—Grote letter"
+  },
+  {
+    "id": 100022,
+    "categoryName": "Books",
+    "itemNumber": "5339",
+    "symbol": "yp1",
+    "title": "Wat jonge mensen vragen — Praktische antwoorden, Deel 1"
+  },
+  {
+    "id": 100023,
+    "categoryName": "Books",
+    "itemNumber": "5336",
+    "symbol": "yp2",
+    "title": "Wat jonge mensen vragen — Praktische antwoorden, Deel 2"
+  },
+  {
+    "id": 100024,
+    "categoryName": "BrochuresAndBooklets",
+    "itemNumber": "65445",
+    "symbol": "lffi",
+    "title": "Voor eeuwig gelukkig! — Introductielessen Bijbelcursus"
+  },
+  {
+    "id": 100025,
+    "categoryName": "BrochuresAndBooklets",
+    "itemNumber": "6657",
+    "symbol": "ll",
+    "title": "Luister naar God en leef voor altijd"
+  },
+  {
+    "id": 100026,
+    "categoryName": "BrochuresAndBooklets",
+    "itemNumber": "6647",
+    "symbol": "la",
+    "title": "Een voldoening schenkend leven — Hoe u dit kunt bereiken"
+  },
+  {
+    "id": 100027,
+    "categoryName": "BrochuresAndBooklets",
+    "itemNumber": "6684",
+    "symbol": "ypq",
+    "title": "10 vragen van jongeren"
+  },
+  {
+    "id": 100028,
+    "categoryName": "BrochuresAndBooklets",
+    "itemNumber": "6667",
+    "symbol": "th",
+    "title": "Leg je toe op voorlezen en onderwijzen"
+  },
+  {
+    "id": 100029,
+    "categoryName": "BrochuresAndBooklets",
+    "itemNumber": "6658",
+    "symbol": "ld",
+    "title": "Luister naar God"
+  },
+  {
+    "id": 100030,
+    "categoryName": "BrochuresAndBooklets",
+    "itemNumber": "6663",
+    "symbol": "mb",
+    "title": "Mijn eerste Bijbellessen"
+  },
+  {
+    "id": 100031,
+    "categoryName": "BrochuresAndBooklets",
+    "itemNumber": "6671",
+    "symbol": "rj",
+    "title": "Kom terug bij Jehovah"
+  },
+  {
+    "id": 100032,
+    "categoryName": "BrochuresAndBooklets",
+    "itemNumber": "6630",
+    "symbol": "sp",
+    "title": "Geesten van de doden — Kunnen ze u helpen of schaden? Bestaan ze werkelijk?"
+  },
+  {
+    "id": 100033,
+    "categoryName": "BrochuresAndBooklets",
+    "itemNumber": "6655",
+    "symbol": "lf",
+    "title": "Vijf belangrijke vragen over het ontstaan van het leven"
+  },
+  {
+    "id": 100034,
+    "categoryName": "BrochuresAndBooklets",
+    "itemNumber": "6654",
+    "symbol": "lc",
+    "title": "Is het leven geschapen?"
+  },
+  {
+    "id": 100035,
+    "categoryName": "BrochuresAndBooklets",
+    "itemNumber": "6665",
+    "symbol": "hf",
+    "title": "Adviezen voor een gelukkig gezin"
+  },
+  {
+    "id": 100036,
+    "categoryName": "BrochuresAndBooklets",
+    "itemNumber": "6648",
+    "symbol": "ol",
+    "title": "The Road to Everlasting Life—Have You Found It? (For Africans)"
+  },
+  {
+    "id": 100037,
+    "categoryName": "BrochuresAndBooklets",
+    "itemNumber": "6653",
+    "symbol": "ph",
+    "title": "The Pathway to Peace and Happiness (For Buddhists) ("
+  },
+  {
+    "id": 100038,
+    "categoryName": "BrochuresAndBooklets",
+    "itemNumber": "6639",
+    "symbol": "pc",
+    "title": "Lasting Peace and Happiness—How to Find Them (For Chinese)"
+  },
+  {
+    "id": 100039,
+    "categoryName": "BrochuresAndBooklets",
+    "itemNumber": "6662",
+    "symbol": "hl",
+    "title": "Hoe kunt u een gelukkig leven hebben? (voor Joden)"
+  },
+  {
+    "id": 100040,
+    "categoryName": "BrochuresAndBooklets",
+    "itemNumber": "6656",
+    "symbol": "rk",
+    "title": "Echt geloof leidt tot een gelukkig leven (voor Moslims)"
+  },
+  {
+    "id": 100041,
+    "categoryName": "Tracts",
+    "itemNumber": "7130",
+    "symbol": "T-30",
+    "title": "Hoe denkt u over de Bijbel?"
+  },
+  {
+    "id": 100042,
+    "categoryName": "Tracts",
+    "itemNumber": "7131",
+    "symbol": "T-31",
+    "title": "Hoe denkt u over de toekomst?"
+  },
+  {
+    "id": 100043,
+    "categoryName": "Tracts",
+    "itemNumber": "7132",
+    "symbol": "T-32",
+    "title": "Wat is het geheim van een gelukkig gezin?"
+  },
+  {
+    "id": 100044,
+    "categoryName": "Tracts",
+    "itemNumber": "7133",
+    "symbol": "T-33",
+    "title": "Wie heeft de macht over de wereld?"
+  },
+  {
+    "id": 100045,
+    "categoryName": "Tracts",
+    "itemNumber": "7134",
+    "symbol": "T-34",
+    "title": "Komt er ooit een eind aan pijn en verdriet?"
+  },
+  {
+    "id": 100046,
+    "categoryName": "Tracts",
+    "itemNumber": "7135",
+    "symbol": "T-35",
+    "title": "Zullen de doden weer leven?"
+  },
+  {
+    "id": 100047,
+    "categoryName": "Tracts",
+    "itemNumber": "7136",
+    "symbol": "T-36",
+    "title": "Wat is het Koninkrijk van God?"
+  },
+  {
+    "id": 100048,
+    "categoryName": "Tracts",
+    "itemNumber": "7137",
+    "symbol": "T-37",
+    "title": "Waar vind je het antwoord op levensvragen?"
+  },
+  {
+    "id": 100049,
+    "categoryName": "Other",
+    "itemNumber": "",
+    "symbol": "",
+    "title": "Wachttoren (studie)"
+  },
+  {
+    "id": 100050,
+    "categoryName": "Other",
+    "itemNumber": "",
+    "symbol": "",
+    "title": "Werkboek voor vergaderingen"
+  },
+  {
+    "id": 100051,
+    "categoryName": "Other",
+    "itemNumber": "",
+    "symbol": "",
+    "title": "Wachttoren (studie) - grote letteruitgave"
+  },
+  {
+    "id": 100052,
+    "categoryName": "Other",
+    "itemNumber": "",
+    "symbol": "",
+    "title": "Werkboek voor vergaderingen - grote letteruitgave"
+  }
+]

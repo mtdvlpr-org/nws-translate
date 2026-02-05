@@ -20,7 +20,11 @@
       </UPageAside>
     </template>
 
-    <UPageHeader :title="title" :description="description" />
+    <UPageHeader
+      :title="title"
+      headline="Vertalen"
+      :description="description"
+    />
 
     <UPageBody>
       <template v-if="menuItems.length">
@@ -29,7 +33,7 @@
           virtualize
           :items="menuItems"
           placeholder="Zoeken..."
-          :filter-fields="['value', 'text', 'reference']"
+          :filter-fields="['value', 'text']"
         />
         <NuxtPage />
       </template>
@@ -49,37 +53,24 @@
 <script setup lang="ts">
 import type { InputMenuItem } from "@nuxt/ui";
 
-const title = "Vertalen";
-const description = "Vertaal op deze pagina de teksten.";
-
-useSeoMeta({
-  description,
-  ogDescription: description,
-  ogTitle: title,
-  title,
-});
-
-const importStore = useImportStore();
+const uiStore = useUIStore();
 
 const search = ref("");
 
 const links = computed((): PageLink[] =>
-  importStore.keys
+  uiStore.nwpKeys
     .filter((key) => {
       if (!search.value || search.value.trim().length < 3) return true;
       const normalizedKey = key.toLowerCase();
       const normalizedSearch = search.value.toLowerCase();
       return (
         normalizedKey.includes(normalizedSearch) ||
-        importStore.translations[key]
-          ?.toLowerCase()
-          .includes(normalizedSearch) ||
-        importStore.references[key]?.toLowerCase().includes(normalizedSearch)
+        uiStore.nwpTranslations?.[key]?.toLowerCase().includes(normalizedSearch)
       );
     })
     .map((key) => ({
       label: key,
-      to: `/translate/${key}`,
+      to: `/translate/nwp/${key}`,
     })),
 );
 
@@ -89,8 +80,7 @@ const menuItems = computed((): InputMenuItem[] =>
     onSelect: () => {
       navigateTo(link.to);
     },
-    reference: importStore.references[link.label],
-    text: importStore.translations[link.label],
+    text: uiStore.nwpTranslations?.[link.label],
     value: link.label,
   })),
 );
@@ -103,5 +93,15 @@ watchImmediate(links, (links) => {
 
 onBeforeUnmount(() => {
   pageStore.pageLinks = [];
+});
+
+const title = "NWP UI";
+const description = "Vertaal op deze pagina de NWP UI.";
+
+useSeoMeta({
+  description,
+  ogDescription: description,
+  ogTitle: title,
+  title,
 });
 </script>
