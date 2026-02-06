@@ -50,7 +50,7 @@ export const useUIStore = defineStore("ui", {
                   .toLowerCase()
                   .includes(state.translations[key]?.toLowerCase() ?? ""),
             ),
-          translation: state.translations[key] ?? "",
+          translation: state.translations[key] || "<LEGE VERTALING>",
         }))
         .filter(({ others }) => others.length > 0);
     },
@@ -60,6 +60,12 @@ export const useUIStore = defineStore("ui", {
           Object.keys(state.translations).concat(Object.keys(this.references)),
         ),
       ];
+    },
+    missingNWP(state): string[] {
+      return this.nwpKeys.filter((key) => !state.nwpTranslations?.[key]);
+    },
+    missingNWS(state): string[] {
+      return this.keys.filter((key) => !state.translations[key]);
     },
     nwpKeys(state): string[] {
       return Object.keys(state.nwpTranslations ?? {}).filter(
@@ -84,8 +90,8 @@ export const useUIStore = defineStore("ui", {
         .filter((key) => this.keys.includes(key))
         .map((key) => ({
           key,
-          nwp: state.nwpTranslations?.[key] ?? "",
-          nws: state.translations[key] ?? "",
+          nwp: state.nwpTranslations?.[key] || "<LEGE VERTALING>",
+          nws: state.translations[key] || "<LEGE VERTALING>",
         }))
         .filter(({ nwp, nws }) => nwp !== nws);
     },

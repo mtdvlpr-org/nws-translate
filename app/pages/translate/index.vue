@@ -14,7 +14,14 @@
         description="Importeer eerst teksten vanuit Google Docs of een .json-bestand om te kunnen vertalen."
       />
       <UPageGrid>
-        <UPageCard v-for="(card, index) in cards" :key="index" v-bind="card" />
+        <UPageCard
+          v-for="(card, index) in cards"
+          :key="index"
+          v-bind="card"
+          :highlight="card.inconsistent > 0 || card.missing > 0"
+          :highlight-color="card.missing > 0 ? 'error' : 'warning'"
+          :description="`${card.count} records.${card.missing > 0 ? ` ${card.missing} ontbrekende vertaling(en).` : ''}${card.inconsistent > 0 ? ` ${card.inconsistent} mogelijke inconsistentie(s).` : ''}`"
+        />
       </UPageGrid>
       <template v-if="uiStore.uiInconsistencies.length > 0">
         <p>{{ uiStore.uiInconsistencies.length }} UI inconsistentie(s):</p>
@@ -47,46 +54,64 @@ import type { PageCardProps } from "@nuxt/ui";
 const uiStore = useUIStore();
 const translationStore = useTranslationStore();
 
-const cards = computed((): PageCardProps[] => {
-  return [
-    {
-      description: `${uiStore.keys.length} records. ${uiStore.inconsistentNWS.length > 0 ? `${uiStore.inconsistentNWS.length} mogelijke inconsistentie(s).` : ""}`,
-      icon: "i-lucide:monitor",
-      title: "NWS UI",
-      to: "/translate/nws",
-    },
-    {
-      description: `${uiStore.nwpKeys.length} records.`,
-      icon: "i-lucide:smartphone",
-      title: "NWP UI",
-      to: "/translate/nwp",
-    },
-    {
-      description: `${translationStore.originals.literature?.length ?? 0} records.`,
-      icon: "i-lucide:book-open",
-      title: "Lectuur",
-      to: "/translate/literature",
-    },
-    {
-      description: `${translationStore.originals.outlines?.length ?? 0} records.`,
-      icon: "i-lucide:file-text",
-      title: "Lezingen",
-      to: "/translate/outlines",
-    },
-    {
-      description: `${translationStore.originals.songs?.length ?? 0} records.`,
-      icon: "i-lucide:music",
-      title: "Liederen",
-      to: "/translate/songs",
-    },
-    {
-      description: `${translationStore.originals.tips?.length ?? 0} records. ${translationStore.inconsistentTips.length > 0 ? `${translationStore.inconsistentTips.length} inconsistentie(s).` : ""}`,
-      icon: "i-lucide:lightbulb",
-      title: "Tips",
-      to: "/translate/tips",
-    },
-  ];
-});
+const cards = computed(
+  (): (PageCardProps & {
+    count: number;
+    inconsistent: number;
+    missing: number;
+  })[] => {
+    return [
+      {
+        count: uiStore.keys.length,
+        icon: "i-lucide:monitor",
+        inconsistent: uiStore.inconsistentNWS.length,
+        missing: uiStore.missingNWS.length,
+        title: "NWS UI",
+        to: "/translate/nws",
+      },
+      {
+        count: uiStore.nwpKeys.length,
+        icon: "i-lucide:smartphone",
+        inconsistent: 0,
+        missing: uiStore.missingNWP.length,
+        title: "NWP UI",
+        to: "/translate/nwp",
+      },
+      {
+        count: translationStore.originals.literature?.length ?? 0,
+        icon: "i-lucide:book-open",
+        inconsistent: 0,
+        missing: translationStore.missingLiterature.length,
+        title: "Lectuur",
+        to: "/translate/literature",
+      },
+      {
+        count: translationStore.originals.outlines?.length ?? 0,
+        icon: "i-lucide:file-text",
+        inconsistent: 0,
+        missing: translationStore.missingOutlines.length,
+        title: "Lezingen",
+        to: "/translate/outlines",
+      },
+      {
+        count: translationStore.originals.songs?.length ?? 0,
+        icon: "i-lucide:music",
+        inconsistent: 0,
+        missing: translationStore.missingSongs.length,
+        title: "Liederen",
+        to: `/translate/songs`,
+      },
+      {
+        count: translationStore.originals.tips?.length ?? 0,
+        icon: "i-lucide:lightbulb",
+        inconsistent: translationStore.inconsistentTips.length,
+        missing: translationStore.missingTips.length,
+        title: "Tips",
+        to: "/translate/tips",
+      },
+    ];
+  },
+);
 
 const title = "Vertalen";
 const description = "Kies een groep records om te vertalen.";

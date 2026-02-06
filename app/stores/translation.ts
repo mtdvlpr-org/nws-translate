@@ -99,16 +99,21 @@ export const useTranslationStore = defineStore("translation", {
         {};
 
       state.tips.originals.forEach((tip, index) => {
+        // If the translation is missing, skip it
+        if (!state.tips.translations?.[index]?.heading) return;
+
         if (headings[tip.heading]) {
           headings[tip.heading]!.push({
             index,
-            translation: state.tips.translations?.[index]?.heading ?? "",
+            translation:
+              state.tips.translations?.[index]?.heading || "<LEGE VERTALING>",
           });
         } else {
           headings[tip.heading] = [
             {
               index,
-              translation: state.tips.translations?.[index]?.heading ?? "",
+              translation:
+                state.tips.translations?.[index]?.heading || "<LEGE VERTALING>",
             },
           ];
         }
@@ -125,6 +130,35 @@ export const useTranslationStore = defineStore("translation", {
           tips: tips,
           translations: [...new Set(tips.map((t) => t.translation))],
         }));
+    },
+    missingLiterature(state) {
+      return (
+        state.literature.originals?.filter(
+          (o) => !state.literature.translations?.some((t) => t.id === o.id),
+        ) ?? []
+      );
+    },
+    missingOutlines(state) {
+      return (
+        state.outlines.originals?.filter(
+          (o) =>
+            !state.outlines.translations?.some((t) => t.number === o.number),
+        ) ?? []
+      );
+    },
+    missingSongs(state) {
+      return (
+        state.songs.originals?.filter(
+          (o) => !state.songs.translations?.some((t) => t.number === o.number),
+        ) ?? []
+      );
+    },
+    missingTips(state) {
+      return (
+        state.tips.originals?.filter(
+          (t, i) => !state.tips.translations?.[i]?.heading,
+        ) ?? []
+      );
     },
     originals(state) {
       return {

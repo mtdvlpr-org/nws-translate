@@ -18,7 +18,7 @@
           variant="soft"
           color="warning"
           :title="`Inconsistentie in de titel: ${h.heading}`"
-          description="Kies de juiste vertaling voor deze titel:"
+          description="Kies de juiste vertaling voor deze titel."
           :actions="
             h.translations.map((t) => ({
               label: t,
