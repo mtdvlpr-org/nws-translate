@@ -105,15 +105,13 @@ export const useTranslationStore = defineStore("translation", {
         if (headings[tip.heading]) {
           headings[tip.heading]!.push({
             index,
-            translation:
-              state.tips.translations?.[index]?.heading || "<LEGE VERTALING>",
+            translation: state.tips.translations[index].heading,
           });
         } else {
           headings[tip.heading] = [
             {
               index,
-              translation:
-                state.tips.translations?.[index]?.heading || "<LEGE VERTALING>",
+              translation: state.tips.translations[index].heading,
             },
           ];
         }
@@ -142,7 +140,10 @@ export const useTranslationStore = defineStore("translation", {
       return (
         state.outlines.originals?.filter(
           (o) =>
-            !state.outlines.translations?.some((t) => t.number === o.number),
+            !!o.title &&
+            !state.outlines.translations?.some(
+              (t) => t.number === o.number && !!t.title && !!t.updated,
+            ),
         ) ?? []
       );
     },
