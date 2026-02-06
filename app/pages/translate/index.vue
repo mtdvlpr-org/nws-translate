@@ -16,17 +16,14 @@
       <UPageGrid>
         <UPageCard v-for="(card, index) in cards" :key="index" v-bind="card" />
       </UPageGrid>
-      <div
-        v-if="uiStore.uiInconsistencies.length > 0"
-        class="flex flex-col gap-8"
-      >
+      <template v-if="uiStore.uiInconsistencies.length > 0">
         <p>{{ uiStore.uiInconsistencies.length }} UI inconsistentie(s):</p>
         <UAlert
           v-for="term in uiStore.uiInconsistencies"
           :key="term.key"
           color="warning"
           variant="subtle"
-          :title="`Inconsistentie voor: ${term.key}`"
+          :title="`Inconsistentie in de key: ${term.key}`"
           :description="`NWS: ${term.nws} • NWP: ${term.nwp}`"
           :actions="[
             {
@@ -41,7 +38,7 @@
             },
           ]"
         />
-      </div>
+      </template>
     </UPageBody>
   </UPage>
 </template>
@@ -53,7 +50,7 @@ const translationStore = useTranslationStore();
 const cards = computed((): PageCardProps[] => {
   return [
     {
-      description: `${uiStore.keys.length} records. ${uiStore.inconsistentNWS.length > 0 ? `${uiStore.inconsistentNWS.flatMap((i) => i.others).length} inconsistentie(s).` : ""}`,
+      description: `${uiStore.keys.length} records. ${uiStore.inconsistentNWS.length > 0 ? `${uiStore.inconsistentNWS.length} mogelijke inconsistentie(s).` : ""}`,
       icon: "i-lucide:monitor",
       title: "NWS UI",
       to: "/translate/nws",

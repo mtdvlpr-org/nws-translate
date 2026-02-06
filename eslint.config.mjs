@@ -1,6 +1,7 @@
 import vitest from "@vitest/eslint-plugin";
+import eslintConfigPrettier from "eslint-config-prettier/flat";
 import perfectionist from "eslint-plugin-perfectionist";
-import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
+//import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 import security from "eslint-plugin-security";
 
 // @ts-check
@@ -42,8 +43,10 @@ export default withNuxt(
   },
 
   // Prettier
-  eslintPluginPrettierRecommended,
-  { rules: { "prettier/prettier": ["error", { endOfLine: "auto" }] } },
+  eslintConfigPrettier,
+  // Causing issues: https://github.com/prettier/eslint-plugin-prettier/issues/65
+  //eslintPluginPrettierRecommended,
+  //{ rules: { "prettier/prettier": ["error", { endOfLine: "auto" }] } },
 ).overrideRules({
   "security/detect-object-injection": "off",
   "vue/attributes-order": [

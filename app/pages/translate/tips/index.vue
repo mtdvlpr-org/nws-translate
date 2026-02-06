@@ -8,6 +8,10 @@
 
     <UPageBody>
       <template v-if="translationStore.inconsistentTips.length">
+        <p>
+          {{ translationStore.inconsistentTips.length }} inconsistentie(s)
+          gevonden:
+        </p>
         <UAlert
           v-for="h in translationStore.inconsistentTips"
           :key="h.heading"
