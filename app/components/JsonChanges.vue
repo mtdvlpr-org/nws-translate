@@ -18,7 +18,7 @@ const props = defineProps<{
   type: "literature" | "outlines" | "songs" | "tips";
 }>();
 
-const translationStore = useTranslationStore();
+const jsonStore = useJsonStore();
 
 const label = computed(() => {
   switch (props.type) {
@@ -36,11 +36,11 @@ const label = computed(() => {
 });
 
 const inputTranslations = computed(() => {
-  return JSON.stringify(translationStore.input[props.type], null, 2);
+  return JSON.stringify(jsonStore.input[props.type], null, 2);
 });
 
 const translations = computed(() => {
-  return JSON.stringify(translationStore.translations[props.type], null, 2);
+  return JSON.stringify(jsonStore.translations[props.type], null, 2);
 });
 
 const isDifferent = computed(() => {
@@ -48,6 +48,6 @@ const isDifferent = computed(() => {
 });
 
 const resetUI = () => {
-  translationStore.setTranslations({ ...translationStore.input });
+  jsonStore.setTranslations({ ...jsonStore.input });
 };
 </script>

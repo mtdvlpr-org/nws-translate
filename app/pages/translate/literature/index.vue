@@ -19,7 +19,7 @@
       <template v-else>
         <UPageGrid>
           <LiteratureForm
-            v-for="item in translationStore.originals.literature"
+            v-for="item in jsonStore.originals.literature"
             :id="`literature-${item.id}`"
             :key="item.id"
             :item="item"
@@ -30,7 +30,7 @@
   </UPage>
 </template>
 <script setup lang="ts">
-const translationStore = useTranslationStore();
+const jsonStore = useJsonStore();
 
 const loading = ref(false);
 

@@ -11,7 +11,7 @@ type State = {
   tips: { input?: Tips; originals?: Tips; translations?: Tips };
 };
 
-export const useTranslationStore = defineStore("translation", {
+export const useJsonStore = defineStore("json", {
   actions: {
     async fixInconsistentTips(heading: string, tips: { index: number }[]) {
       tips.forEach((t) => {

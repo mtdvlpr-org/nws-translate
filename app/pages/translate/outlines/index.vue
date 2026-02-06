@@ -28,7 +28,7 @@
       <template v-else>
         <UPageGrid>
           <OutlineForm
-            v-for="outline in translationStore.originals.outlines"
+            v-for="outline in jsonStore.originals.outlines"
             :id="`outline-${outline.number}`"
             :key="outline.number"
             :outline="outline"
@@ -39,7 +39,7 @@
   </UPage>
 </template>
 <script setup lang="ts">
-const translationStore = useTranslationStore();
+const jsonStore = useJsonStore();
 
 const loading = ref(false);
 const jwpubFile = ref<File | null>(null);
@@ -59,12 +59,12 @@ const importOutlines = async () => {
     });
 
     const outlines =
-      translationStore.outlines.translations?.map((outline) => ({
+      jsonStore.outlines.translations?.map((outline) => ({
         ...outline,
         ...(parsedOutlines.find((o) => o.number === outline.number) ?? {}),
       })) ?? [];
 
-    translationStore.setTranslations({ outlines }, "outlines");
+    jsonStore.setTranslations({ outlines }, "outlines");
   } catch {
     showError({
       description:

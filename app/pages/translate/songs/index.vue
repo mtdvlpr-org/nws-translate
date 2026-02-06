@@ -25,7 +25,7 @@
       <template v-else>
         <UPageGrid>
           <SongForm
-            v-for="song in translationStore.originals.songs"
+            v-for="song in jsonStore.originals.songs"
             :id="`song-${song.number}`"
             :key="song.number"
             :song="song"
@@ -36,7 +36,7 @@
   </UPage>
 </template>
 <script setup lang="ts">
-const translationStore = useTranslationStore();
+const jsonStore = useJsonStore();
 
 const loading = ref(false);
 const { showError, showSuccess } = useFlash();
@@ -61,7 +61,7 @@ const translateSongs = async () => {
       }),
     );
 
-    translationStore.setTranslations({ songs }, "songs");
+    jsonStore.setTranslations({ songs }, "songs");
     showSuccess({
       description: "Liederen zijn geüpdatet.",
       id: "songs-updated",

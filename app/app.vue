@@ -103,7 +103,7 @@ const items: NavigationMenuItem[] = [
 ];
 
 const uiStore = useUIStore();
-const translationStore = useTranslationStore();
+const jsonStore = useJsonStore();
 
 onMounted(() => {
   if (
@@ -120,9 +120,9 @@ onMounted(() => {
     uiStore.nwpTranslations = parseTranslationFile(uiStore.nwpString);
   }
 
-  typedKeys(translationStore.input).forEach((key) => {
-    if (translationStore.input[key] && !translationStore.translations[key]) {
-      translationStore.setTranslations(translationStore.input, key);
+  typedKeys(jsonStore.input).forEach((key) => {
+    if (jsonStore.input[key] && !jsonStore.translations[key]) {
+      jsonStore.setTranslations(jsonStore.input, key);
     }
   });
 });

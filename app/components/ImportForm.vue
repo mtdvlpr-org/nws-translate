@@ -6,40 +6,46 @@
     @error="onError"
     @submit="onSubmit"
   >
-    <UFormField
-      required
-      name="ui"
-      label="NWS UI"
-      description="Plak tekst uit het Google Docs bestand."
-    >
-      <UTextarea
-        v-model="state.ui"
-        class="w-full"
-        placeholder="about: About&#10;about1: New World Scheduler..."
-      />
-    </UFormField>
-    <UFormField
-      v-if="!noNwp"
-      name="nwp"
-      label="NWP UI"
-      description="Plak tekst uit het Google Docs bestand."
-    >
-      <UTextarea
-        v-model="state.nwp"
-        class="w-full"
-        placeholder='"____v360____": "",&#10;"____GENERAL____": "",&#10;"help": "Help",&#10;...'
-      />
-    </UFormField>
-    <UFormField
-      v-for="file in jsonFiles"
-      :key="file.key"
-      :name="file.key"
-      :label="file.label"
-      :error="errors[file.key]"
-      description="Plak tekst uit het lokale .json-bestand (Literature, Outlines, Songs, Tips)."
-    >
-      <UTextarea v-model="state[file.key]" class="w-full" />
-    </UFormField>
+    <fieldset>
+      <legend>UI</legend>
+      <UFormField
+        required
+        name="ui"
+        label="NWS UI"
+        description="Plak tekst uit het Google Docs bestand."
+      >
+        <UTextarea
+          v-model="state.ui"
+          class="w-full"
+          placeholder="about: About&#10;about1: New World Scheduler..."
+        />
+      </UFormField>
+      <UFormField
+        v-if="!noNwp"
+        name="nwp"
+        label="NWP UI"
+        description="Plak tekst uit het Google Docs bestand."
+      >
+        <UTextarea
+          v-model="state.nwp"
+          class="w-full"
+          placeholder='"____v360____": "",&#10;"____GENERAL____": "",&#10;"help": "Help",&#10;...'
+        />
+      </UFormField>
+    </fieldset>
+    <fieldset>
+      <legend>JSON-bestanden</legend>
+      <UFormField
+        v-for="file in jsonFiles"
+        :key="file.key"
+        :name="file.key"
+        :label="file.label"
+        :error="errors[file.key]"
+        description="Plak tekst uit het lokale .json-bestand (Literature, Outlines, Songs, Tips)."
+      >
+        <UTextarea v-model="state[file.key]" class="w-full" />
+      </UFormField>
+    </fieldset>
     <UButton class="w-fit" type="submit" label="Opslaan" />
   </UForm>
 </template>

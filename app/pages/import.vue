@@ -46,17 +46,17 @@ import type { Output } from "~/components/ImportForm.vue";
 const uiStore = useUIStore();
 const { nwpString, originalsString, translationsString } = storeToRefs(uiStore);
 
-const translationStore = useTranslationStore();
+const jsonStore = useJsonStore();
 
 const originals = ref<Output>({
   nwp: nwpString.value,
   ui: originalsString.value,
-  ...translationStore.originals,
+  ...jsonStore.originals,
 });
 const translations = ref<Output>({
   nwp: nwpString.value,
   ui: translationsString.value,
-  ...translationStore.input,
+  ...jsonStore.input,
 });
 
 const { showSuccess } = useFlash();
@@ -75,7 +75,7 @@ watch(nwpString, (nwp) => {
 
 watch(originals, (val) => {
   originalsString.value = val.ui;
-  translationStore.setOriginals(val);
+  jsonStore.setOriginals(val);
   showSuccess({
     description: "Originele teksten zijn opgeslagen.",
     id: "originals-import",
@@ -92,8 +92,8 @@ watch(translations, (val) => {
   uiStore.nwpTranslations = val.nwp ? parseTranslationFile(val.nwp) : undefined;
 
   // JSON
-  translationStore.setInput(val);
-  translationStore.setTranslations(val);
+  jsonStore.setInput(val);
+  jsonStore.setTranslations(val);
 
   showSuccess({
     description: "Vertalingen zijn opgeslagen.",

@@ -52,7 +52,7 @@
 <script setup lang="ts">
 import type { PageCardProps } from "@nuxt/ui";
 const uiStore = useUIStore();
-const translationStore = useTranslationStore();
+const jsonStore = useJsonStore();
 
 const cards = computed(
   (): (PageCardProps & {
@@ -78,34 +78,34 @@ const cards = computed(
         to: "/translate/nwp",
       },
       {
-        count: translationStore.originals.literature?.length ?? 0,
+        count: jsonStore.originals.literature?.length ?? 0,
         icon: "i-lucide:book-open",
         inconsistent: 0,
-        missing: translationStore.missingLiterature.length,
+        missing: jsonStore.missingLiterature.length,
         title: "Lectuur",
         to: "/translate/literature",
       },
       {
-        count: translationStore.originals.outlines?.length ?? 0,
+        count: jsonStore.originals.outlines?.length ?? 0,
         icon: "i-lucide:file-text",
         inconsistent: 0,
-        missing: translationStore.missingOutlines.length,
+        missing: jsonStore.missingOutlines.length,
         title: "Lezingen",
         to: "/translate/outlines",
       },
       {
-        count: translationStore.originals.songs?.length ?? 0,
+        count: jsonStore.originals.songs?.length ?? 0,
         icon: "i-lucide:music",
         inconsistent: 0,
-        missing: translationStore.missingSongs.length,
+        missing: jsonStore.missingSongs.length,
         title: "Liederen",
         to: `/translate/songs`,
       },
       {
-        count: translationStore.originals.tips?.length ?? 0,
+        count: jsonStore.originals.tips?.length ?? 0,
         icon: "i-lucide:lightbulb",
-        inconsistent: translationStore.inconsistentTips.length,
-        missing: translationStore.missingTips.length,
+        inconsistent: jsonStore.inconsistentTips.length,
+        missing: jsonStore.missingTips.length,
         title: "Tips",
         to: "/translate/tips",
       },

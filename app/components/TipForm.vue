@@ -36,11 +36,9 @@ const props = defineProps<{
   tip: Tip;
 }>();
 
-const translationStore = useTranslationStore();
+const jsonStore = useJsonStore();
 
-const translation = computed(
-  () => translationStore.translations.tips?.[props.index],
-);
+const translation = computed(() => jsonStore.translations.tips?.[props.index]);
 
 const schema = z.object({
   heading: z.string().nonempty(),
@@ -57,11 +55,11 @@ const state = reactive<Partial<Schema>>({
 const { showSuccess } = useFlash();
 
 function onSubmit(event: FormSubmitEvent<Schema>) {
-  const tips = translationStore.translations.tips?.map((tip, i) =>
+  const tips = jsonStore.translations.tips?.map((tip, i) =>
     i === props.index ? { ...tip, ...event.data } : tip,
   );
 
-  translationStore.setTranslations({ tips }, "tips");
+  jsonStore.setTranslations({ tips }, "tips");
   showSuccess({ description: "Tip opgeslagen.", id: "tip-saved" });
 }
 </script>

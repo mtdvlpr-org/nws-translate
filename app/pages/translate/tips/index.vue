@@ -7,13 +7,12 @@
     />
 
     <UPageBody>
-      <template v-if="translationStore.inconsistentTips.length">
+      <template v-if="jsonStore.inconsistentTips.length">
         <p>
-          {{ translationStore.inconsistentTips.length }} inconsistentie(s)
-          gevonden:
+          {{ jsonStore.inconsistentTips.length }} inconsistentie(s) gevonden:
         </p>
         <UAlert
-          v-for="h in translationStore.inconsistentTips"
+          v-for="h in jsonStore.inconsistentTips"
           :key="h.heading"
           variant="soft"
           color="warning"
@@ -38,7 +37,7 @@
       </template>
       <template v-else>
         <TipForm
-          v-for="(tip, i) in translationStore.originals.tips"
+          v-for="(tip, i) in jsonStore.originals.tips"
           :id="`tip-${i}`"
           :key="i"
           :index="i"
@@ -49,7 +48,7 @@
   </UPage>
 </template>
 <script setup lang="ts">
-const translationStore = useTranslationStore();
+const jsonStore = useJsonStore();
 
 const loading = ref(false);
 
@@ -58,7 +57,7 @@ const fixInconsistentTips = async (
   tips: { index: number }[],
 ) => {
   loading.value = true;
-  await translationStore.fixInconsistentTips(heading, tips);
+  await jsonStore.fixInconsistentTips(heading, tips);
   loading.value = false;
 };
 

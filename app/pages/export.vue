@@ -30,7 +30,7 @@
 </template>
 <script setup lang="ts">
 const uiStore = useUIStore();
-const translationStore = useTranslationStore();
+const jsonStore = useJsonStore();
 
 const { showError } = useFlash();
 
@@ -55,30 +55,28 @@ const { showError } = useFlash();
 const jsonFiles = computed(() => {
   return [
     {
-      changed: translationStore.changedGroups.includes("literature"),
-      data: translationStore.translations.literature,
+      changed: jsonStore.changedGroups.includes("literature"),
+      data: jsonStore.translations.literature,
       name: "Literature",
     },
     {
-      changed: translationStore.changedGroups.includes("outlines"),
-      data: translationStore.translations.outlines,
+      changed: jsonStore.changedGroups.includes("outlines"),
+      data: jsonStore.translations.outlines,
       name: "Outlines",
     },
     {
-      changed:
-        JSON.stringify(uiStore.translations) !==
-        JSON.stringify(uiStore.remoteTranslations),
+      changed: false, // Don't include in zip file
       data: uiStore.translations,
       name: "ProgramUI",
     },
     {
-      changed: translationStore.changedGroups.includes("songs"),
-      data: translationStore.translations.songs,
+      changed: jsonStore.changedGroups.includes("songs"),
+      data: jsonStore.translations.songs,
       name: "Songs",
     },
     {
-      changed: translationStore.changedGroups.includes("tips"),
-      data: translationStore.translations.tips,
+      changed: jsonStore.changedGroups.includes("tips"),
+      data: jsonStore.translations.tips,
       name: "Tips",
     },
   ];

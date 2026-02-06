@@ -25,10 +25,10 @@ const props = defineProps<{
   item: LiteratureItem;
 }>();
 
-const translationStore = useTranslationStore();
+const jsonStore = useJsonStore();
 
 const translation = computed(() =>
-  translationStore.translations.literature?.find((s) => s.id === props.item.id),
+  jsonStore.translations.literature?.find((s) => s.id === props.item.id),
 );
 
 const schema = z.object({
@@ -44,11 +44,11 @@ const state = reactive<Partial<Schema>>({
 const { showSuccess } = useFlash();
 
 function onSubmit(event: FormSubmitEvent<Schema>) {
-  const literature = translationStore.translations.literature?.map((item) =>
+  const literature = jsonStore.translations.literature?.map((item) =>
     item.id === props.item.id ? { ...item, ...event.data } : item,
   );
 
-  translationStore.setTranslations({ literature }, "literature");
+  jsonStore.setTranslations({ literature }, "literature");
   showSuccess({ description: "Lectuurartikel opgeslagen.", id: "item-saved" });
 }
 </script>

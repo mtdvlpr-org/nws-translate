@@ -24,12 +24,10 @@ const props = defineProps<{
   song: Song;
 }>();
 
-const translationStore = useTranslationStore();
+const jsonStore = useJsonStore();
 
 const translation = computed(() =>
-  translationStore.translations.songs?.find(
-    (s) => s.number === props.song.number,
-  ),
+  jsonStore.translations.songs?.find((s) => s.number === props.song.number),
 );
 
 const schema = z.object({
@@ -45,11 +43,11 @@ const state = reactive<Partial<Schema>>({
 const { showSuccess } = useFlash();
 
 function onSubmit(event: FormSubmitEvent<Schema>) {
-  const songs = translationStore.translations.songs?.map((song) =>
+  const songs = jsonStore.translations.songs?.map((song) =>
     song.number === props.song.number ? { ...song, ...event.data } : song,
   );
 
-  translationStore.setTranslations({ songs }, "songs");
+  jsonStore.setTranslations({ songs }, "songs");
   showSuccess({ description: "Lied opgeslagen.", id: "song-saved" });
 }
 </script>

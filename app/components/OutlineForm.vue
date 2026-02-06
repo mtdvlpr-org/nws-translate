@@ -42,10 +42,10 @@ const props = defineProps<{
   outline: Outline;
 }>();
 
-const translationStore = useTranslationStore();
+const jsonStore = useJsonStore();
 
 const translation = computed(() =>
-  translationStore.translations.outlines?.find(
+  jsonStore.translations.outlines?.find(
     (s) => s.number === props.outline.number,
   ),
 );
@@ -67,13 +67,13 @@ const state = reactive<Partial<Schema>>({
 const { showSuccess } = useFlash();
 
 function onSubmit(event: FormSubmitEvent<Schema>) {
-  const outlines = translationStore.translations.outlines?.map((outline) =>
+  const outlines = jsonStore.translations.outlines?.map((outline) =>
     outline.number === props.outline.number
       ? { ...outline, ...event.data }
       : outline,
   );
 
-  translationStore.setTranslations({ outlines }, "outlines");
+  jsonStore.setTranslations({ outlines }, "outlines");
   showSuccess({ description: "Schema opgeslagen.", id: "outline-saved" });
 }
 </script>
