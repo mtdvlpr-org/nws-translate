@@ -1,52 +1,40 @@
 export type TranslationKey = keyof State;
 
 type State = {
-  literature: { originals?: Literature; translations?: Literature };
-  outlines: { originals?: Outlines; translations?: Outlines };
-  songs: { originals?: Songs; translations?: Songs };
-  tips: { originals?: Tips; translations?: Tips };
+  literature: {
+    input?: Literature;
+    originals?: Literature;
+    translations?: Literature;
+  };
+  outlines: { input?: Outlines; originals?: Outlines; translations?: Outlines };
+  songs: { input?: Songs; originals?: Songs; translations?: Songs };
+  tips: { input?: Tips; originals?: Tips; translations?: Tips };
 };
 
 export const useTranslationStore = defineStore("translation", {
   actions: {
-    encodeOriginals() {
-      return {
-        literature: this.literature.originals
-          ? JSON.stringify(this.literature.originals, null, 2)
-          : undefined,
-        outlines: this.outlines.originals
-          ? JSON.stringify(this.outlines.originals, null, 2)
-          : undefined,
-        songs: this.songs.originals
-          ? JSON.stringify(this.songs.originals, null, 2)
-          : undefined,
-        tips: this.tips.originals
-          ? JSON.stringify(this.tips.originals, null, 2)
-          : undefined,
-      };
-    },
-    encodeTranslations() {
-      return {
-        literature: this.literature.translations
-          ? JSON.stringify(this.literature.translations, null, 2)
-          : undefined,
-        outlines: this.outlines.translations
-          ? JSON.stringify(this.outlines.translations, null, 2)
-          : undefined,
-        songs: this.songs.translations
-          ? JSON.stringify(this.songs.translations, null, 2)
-          : undefined,
-        tips: this.tips.translations
-          ? JSON.stringify(this.tips.translations, null, 2)
-          : undefined,
-      };
-    },
     async fixInconsistentTips(heading: string, tips: { index: number }[]) {
       tips.forEach((t) => {
         if (!this.tips.translations?.[t.index]) return;
         this.tips.translations![t.index]!.heading = heading;
       });
       await new Promise((resolve) => setTimeout(resolve, 100));
+    },
+    setInput({
+      literature,
+      outlines,
+      songs,
+      tips,
+    }: {
+      literature?: Literature;
+      outlines?: Outlines;
+      songs?: Songs;
+      tips?: Tips;
+    }) {
+      this.literature = { ...this.literature, input: literature };
+      this.outlines = { ...this.outlines, input: outlines };
+      this.songs = { ...this.songs, input: songs };
+      this.tips = { ...this.tips, input: tips };
     },
     setOriginals({
       literature,
@@ -93,6 +81,19 @@ export const useTranslationStore = defineStore("translation", {
     },
   },
   getters: {
+    changedGroups(state) {
+      const groups: (keyof State)[] = [];
+      typedKeys(state).forEach((group) => {
+        if (
+          state[group] &&
+          JSON.stringify(state[group].input) !==
+            JSON.stringify(state[group].translations)
+        ) {
+          groups.push(group);
+        }
+      });
+      return groups;
+    },
     inconsistentTips(state) {
       if (!state.tips.originals?.length) return [];
       const headings: Record<string, { index: number; translation: string }[]> =
@@ -128,6 +129,14 @@ export const useTranslationStore = defineStore("translation", {
           tips: tips,
           translations: [...new Set(tips.map((t) => t.translation))],
         }));
+    },
+    input(state) {
+      return {
+        literature: state.literature.input,
+        outlines: state.outlines.input,
+        songs: state.songs.input,
+        tips: state.tips.input,
+      };
     },
     missingLiterature(state) {
       return (
@@ -180,9 +189,17 @@ export const useTranslationStore = defineStore("translation", {
   },
   persist: true,
   state: (): State => ({
-    literature: { originals: undefined, translations: undefined },
-    outlines: { originals: undefined, translations: undefined },
-    songs: { originals: undefined, translations: undefined },
-    tips: { originals: undefined, translations: undefined },
+    literature: {
+      input: undefined,
+      originals: undefined,
+      translations: undefined,
+    },
+    outlines: {
+      input: undefined,
+      originals: undefined,
+      translations: undefined,
+    },
+    songs: { input: undefined, originals: undefined, translations: undefined },
+    tips: { input: undefined, originals: undefined, translations: undefined },
   }),
 });

@@ -50,10 +50,14 @@ const translateSongs = async () => {
       "https://b.jw-cdn.org/apis/pub-media/GETPUBMEDIALINKS?pub=sjjm&langwritten=O&fileformat=MP3",
     );
 
+    const overwrites: Record<number, string> = {
+      160: "Goed nieuws!",
+    };
+
     const songs = res.files.O.MP3.filter((s) => s.track <= 500).map(
       (song): Song => ({
         number: song.track.toString(),
-        title: song.title.replace(/^\d+\. /, ""),
+        title: overwrites[song.track] ?? song.title.replace(/^\d+\. /, ""),
       }),
     );
 

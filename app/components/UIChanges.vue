@@ -1,5 +1,5 @@
 <template>
-  <UPageCard :title="`${type} UI veranderingen`">
+  <UPageCard v-if="isDifferent" :title="`${type} UI veranderingen`">
     <template v-if="isDifferent">
       <DiffViewer :new-string="translations" :old-string="remoteTranslations" />
       <UButton

@@ -103,6 +103,7 @@ const items: NavigationMenuItem[] = [
 ];
 
 const uiStore = useUIStore();
+const translationStore = useTranslationStore();
 
 onMounted(() => {
   if (
@@ -118,5 +119,11 @@ onMounted(() => {
   ) {
     uiStore.nwpTranslations = parseTranslationFile(uiStore.nwpString);
   }
+
+  typedKeys(translationStore.input).forEach((key) => {
+    if (translationStore.input[key] && !translationStore.translations[key]) {
+      translationStore.setTranslations(translationStore.input, key);
+    }
+  });
 });
 </script>

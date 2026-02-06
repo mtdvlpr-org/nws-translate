@@ -20,7 +20,6 @@
           accept="application/json"
           :disabled="originalFiles.length > 0"
           label="Importeer vanuit lokale bestanden"
-          @change="loadFiles(originalFiles, 'original')"
         />
         <ImportForm v-model="originals" no-nwp />
       </UPageCard>
@@ -35,7 +34,6 @@
           accept="application/json"
           :disabled="translationFiles.length > 0"
           label="Importeer vanuit lokale bestanden"
-          @change="loadFiles(translationFiles, 'translation')"
         />
         <ImportForm v-model="translations" />
       </UPageCard>
@@ -58,7 +56,7 @@ const originals = ref<Output>({
 const translations = ref<Output>({
   nwp: nwpString.value,
   ui: translationsString.value,
-  ...translationStore.translations,
+  ...translationStore.input,
 });
 
 const { showSuccess } = useFlash();
@@ -94,6 +92,7 @@ watch(translations, (val) => {
   uiStore.nwpTranslations = val.nwp ? parseTranslationFile(val.nwp) : undefined;
 
   // JSON
+  translationStore.setInput(val);
   translationStore.setTranslations(val);
 
   showSuccess({
@@ -179,9 +178,21 @@ const loadFile = async (file: File, type: "original" | "translation") => {
   }
 };
 
-const loadFiles = async (files: File[], type: "original" | "translation") => {
-  if (files.length === 0) return;
+watch(originalFiles, (files) => {
+  loadFiles(files, "original");
+});
+
+watch(translationFiles, (files) => {
+  loadFiles(files, "translation");
+});
+
+const loadFiles = async (
+  files: File[] | null | undefined,
+  type: "original" | "translation",
+) => {
+  if (!files || files.length === 0) return;
   if (files.some((file) => file.type !== "application/json")) {
+    console.log("some not json");
     if (type === "original") {
       originalFiles.value = originalFiles.value.filter(
         (file) => file.type === "application/json",
