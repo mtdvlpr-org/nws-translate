@@ -23,7 +23,7 @@
       <UInput v-model="state.updated" class="w-full" />
     </UFormField>
     <UFormField
-      v-if="outline.notes"
+      v-if="outline.notes || state.notes"
       name="notes"
       label="Opmerking"
       :description="outline.notes"

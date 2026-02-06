@@ -20,6 +20,7 @@
           accept="application/json"
           :disabled="originalFiles.length > 0"
           label="Importeer vanuit lokale bestanden"
+          @change="loadFiles(originalFiles, 'original')"
         />
         <ImportForm v-model="originals" no-nwp />
       </UPageCard>
@@ -34,6 +35,7 @@
           accept="application/json"
           :disabled="translationFiles.length > 0"
           label="Importeer vanuit lokale bestanden"
+          @change="loadFiles(translationFiles, 'translation')"
         />
         <ImportForm v-model="translations" />
       </UPageCard>
@@ -104,14 +106,6 @@ const { showError } = useFlash();
 
 const originalFiles = ref<File[]>([]);
 const translationFiles = ref<File[]>([]);
-
-watch(originalFiles, (val) => {
-  loadFiles(val, "original");
-});
-
-watch(translationFiles, (val) => {
-  loadFiles(val, "translation");
-});
 
 const supportedFiles = [
   "Literature.json",

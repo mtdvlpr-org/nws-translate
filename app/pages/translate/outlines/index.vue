@@ -7,6 +7,15 @@
     />
 
     <UPageBody>
+      <UFileUpload
+        v-model="jwpubFile"
+        :file-delete="false"
+        accept=".jwpub,.JWPUB"
+        class="w-full min-h-48"
+        :disabled="!!jwpubFile"
+        label="Importeer vanuit S-34 formulier."
+        @change="importOutlines"
+      />
       <template v-if="loading">
         <UPageGrid>
           <div v-for="i in 12" :key="i" class="grid gap-2">
@@ -33,6 +42,39 @@
 const translationStore = useTranslationStore();
 
 const loading = ref(false);
+const jwpubFile = ref<File | null>(null);
+
+const { showError } = useFlash();
+
+const importOutlines = async () => {
+  if (!jwpubFile.value) return;
+
+  loading.value = true;
+  try {
+    const body = new FormData();
+    body.append("file", jwpubFile.value);
+    const parsedOutlines = await $fetch<Outline[]>("/api/outlines", {
+      body,
+      method: "POST",
+    });
+
+    const outlines =
+      translationStore.outlines.translations?.map((outline) => ({
+        ...outline,
+        ...(parsedOutlines.find((o) => o.number === outline.number) ?? {}),
+      })) ?? [];
+
+    translationStore.setTranslations({ outlines }, "outlines");
+  } catch {
+    showError({
+      description:
+        "Er is een fout opgetreden bij het importeren van de lezingen.",
+      id: "import-outlines-error",
+    });
+  }
+  loading.value = false;
+  jwpubFile.value = null;
+};
 
 const title = "Lezingen";
 const description = "Vertaal op deze pagina de lezingen.";

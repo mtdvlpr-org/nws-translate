@@ -11,6 +11,9 @@ export default defineNuxtConfig({
     "@nuxt/test-utils",
   ],
   css: ["~/assets/css/main.css"],
+  runtimeConfig: {
+    jwpubKey: process.env.JWPUB_KEY,
+  },
   compatibilityDate: "2026-01-15",
   piniaPluginPersistedstate: {
     storage: "localStorage",
