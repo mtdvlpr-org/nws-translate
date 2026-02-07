@@ -6,7 +6,7 @@
     @error="onError"
     @submit="onSubmit"
   >
-    <fieldset>
+    <fieldset class="flex flex-col gap-4">
       <legend>UI</legend>
       <UFormField
         required
@@ -33,7 +33,7 @@
         />
       </UFormField>
     </fieldset>
-    <fieldset>
+    <fieldset class="flex flex-col gap-4">
       <legend>JSON-bestanden</legend>
       <UFormField
         v-for="file in jsonFiles"
