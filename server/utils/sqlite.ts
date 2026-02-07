@@ -35,6 +35,7 @@ export const queryDatabase = <T extends Record<string, unknown>>(
   query: string,
 ): T[] => {
   try {
+    console.log("Executing query...");
     const result = db.exec(query);
     const rows = result.flatMap((execResult) => {
       return execResult.values.map((rowValues) => {

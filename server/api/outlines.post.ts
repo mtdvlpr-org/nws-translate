@@ -16,6 +16,8 @@ export default defineEventHandler(async (event) => {
     });
   }
 
+  console.log("File received");
+
   const database = await getJWPUBDatabase(await file.arrayBuffer());
   const outlines = queryDatabase<{ Title: string }>(
     database,
