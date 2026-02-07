@@ -4,9 +4,9 @@ import type { Database } from "sql.js";
 import { inflate } from "pako";
 
 /**
- * Extracts the database from a remote JWPUB file.
+ * Extracts the database from a .jwpub file.
  *
- * @param url The URL of the publication JWPUB file.
+ * @param buffer The buffer of the .jwpub file.
  * @returns The loaded database.
  */
 export const getJWPUBDatabase = async (
@@ -31,15 +31,8 @@ export const getJWPUBDatabase = async (
 
     return loadDatabase(sqlDb);
   } catch (e) {
-    if (e instanceof Error && "fatal" in e) {
-      throw e;
-    }
-    throw new Error(
-      `Failed to get database from URL: ${e instanceof Error ? e.message : String(e)}`,
-      {
-        cause: e,
-      },
-    );
+    console.error(e);
+    throw new Error("Failed to get database from .jwpub file", { cause: e });
   }
 };
 

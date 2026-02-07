@@ -14,21 +14,22 @@ export const extractZipFiles = async (
     const appZip = new JSZip();
     return await appZip.loadAsync(data);
   } catch (e) {
-    throw new Error(
-      `Failed to extract zip files: ${e instanceof Error ? e.message : String(e)}`,
-      {
-        cause: e,
-      },
-    );
+    console.error(e);
+    throw new Error("Failed to extract zip files", { cause: e });
   }
 };
 
 export const createZipFile = async (
   files: { data: z.core.util.JSONType; name: string }[],
 ) => {
-  const zip = new JSZip();
-  files.forEach((file) => {
-    zip.file(file.name, JSON.stringify(file.data, null, 2));
-  });
-  return await zip.generateAsync({ type: "nodebuffer" });
+  try {
+    const zip = new JSZip();
+    files.forEach((file) => {
+      zip.file(file.name, JSON.stringify(file.data, null, 2));
+    });
+    return await zip.generateAsync({ type: "nodebuffer" });
+  } catch (e) {
+    console.error(e);
+    throw new Error("Failed to create zip file", { cause: e });
+  }
 };

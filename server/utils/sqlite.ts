@@ -8,12 +8,20 @@ import initSqlJs, { type Database } from "sql.js";
 export const loadDatabase = async (
   data: ArrayLike<number> | Buffer,
 ): Promise<Database> => {
-  const SQL = await initSqlJs({
-    locateFile: () =>
-      new URL("./../../public/sql-wasm.wasm", import.meta.url).toString(),
-  });
-  const db = new SQL.Database(data);
-  return db;
+  try {
+    console.log("Initializing SQL...");
+    const SQL = await initSqlJs({
+      locateFile: () =>
+        new URL("./../../public/sql-wasm.wasm", import.meta.url).toString(),
+    });
+    console.log("SQL initialized");
+    const db = new SQL.Database(data);
+    console.log("Database loaded");
+    return db;
+  } catch (e) {
+    console.error(e);
+    throw new Error("Failed to load database", { cause: e });
+  }
 };
 
 /**
@@ -40,12 +48,8 @@ export const queryDatabase = <T extends Record<string, unknown>>(
 
     return rows;
   } catch (e) {
-    throw new Error(
-      `SQL query failed: ${e instanceof Error ? e.message : String(e)}`,
-      {
-        cause: e,
-      },
-    );
+    console.error(e);
+    throw new Error("SQL query failed", { cause: e });
   }
 };
 
