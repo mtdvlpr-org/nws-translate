@@ -61,6 +61,8 @@
     "lint-staged": "^16.2.7",
     "playwright-core": "^1.58.1",
     "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vite-plugin-static-copy": "^3.2.0",
     "vitest": "^3.2.4",
     "vue-tsc": "^3.2.4"
   },

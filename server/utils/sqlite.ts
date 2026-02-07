@@ -9,7 +9,10 @@ export const loadDatabase = async (
   data: ArrayLike<number> | Buffer,
 ): Promise<Database> => {
   console.debug(`Loading database from data...`);
-  const SQL = await initSqlJs();
+  const SQL = await initSqlJs({
+    locateFile: () =>
+      new URL("./../../public/sql-wasm.wasm", import.meta.url).toString(),
+  });
   const db = new SQL.Database(data);
   return db;
 };
