@@ -1,4 +1,5 @@
 export default defineEventHandler(async (event) => {
+  console.log("Getting outlines...");
   const [file] = await receiveFiles(event, {
     ensure: {
       maxSize: "128MB",
