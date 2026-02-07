@@ -8,7 +8,6 @@ import initSqlJs, { type Database } from "sql.js";
 export const loadDatabase = async (
   data: ArrayLike<number> | Buffer,
 ): Promise<Database> => {
-  console.debug(`Loading database from data...`);
   const SQL = await initSqlJs({
     locateFile: () =>
       new URL("./../../public/sql-wasm.wasm", import.meta.url).toString(),
@@ -28,7 +27,6 @@ export const queryDatabase = <T extends Record<string, unknown>>(
   query: string,
 ): T[] => {
   try {
-    console.debug(query);
     const result = db.exec(query);
     const rows = result.flatMap((execResult) => {
       return execResult.values.map((rowValues) => {
@@ -40,7 +38,6 @@ export const queryDatabase = <T extends Record<string, unknown>>(
       });
     });
 
-    console.debug(JSON.stringify(rows));
     return rows;
   } catch (e) {
     throw new Error(

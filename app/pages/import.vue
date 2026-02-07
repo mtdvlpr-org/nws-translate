@@ -192,7 +192,6 @@ const loadFiles = async (
 ) => {
   if (!files || files.length === 0) return;
   if (files.some((file) => file.type !== "application/json")) {
-    console.log("some not json");
     if (type === "original") {
       originalFiles.value = originalFiles.value.filter(
         (file) => file.type === "application/json",

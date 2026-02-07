@@ -1,10 +1,10 @@
 <template>
   <CodeDiff
     hide-header
-    :context="0"
     :theme="theme"
     language="json"
     no-diff-line-feed
+    :context="context ?? 0"
     :new-string="newString"
     :old-string="oldString"
     output-format="line-by-line"
@@ -14,6 +14,7 @@
 import { CodeDiff } from "v-code-diff";
 
 defineProps<{
+  context?: number;
   newString: string;
   oldString: string;
 }>();

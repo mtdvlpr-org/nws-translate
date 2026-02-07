@@ -10,7 +10,6 @@ import JSZip from "jszip";
 export const extractZipFiles = async (
   data: ArrayBuffer | Blob | Buffer | string | Uint8Array<ArrayBufferLike>,
 ) => {
-  console.debug(`Extracting zip files from data...`);
   try {
     const appZip = new JSZip();
     return await appZip.loadAsync(data);

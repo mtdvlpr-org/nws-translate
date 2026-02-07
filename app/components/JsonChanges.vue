@@ -1,7 +1,11 @@
 <template>
   <UPageCard v-if="isDifferent" :title="label">
     <template v-if="isDifferent">
-      <DiffViewer :new-string="translations" :old-string="inputTranslations" />
+      <DiffViewer
+        :context="1"
+        :new-string="translations"
+        :old-string="inputTranslations"
+      />
       <UButton
         class="w-fit"
         color="error"
