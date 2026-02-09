@@ -19,16 +19,6 @@ export default defineNuxtConfig({
     jwpubKey: process.env.JWPUB_KEY,
   },
   compatibilityDate: "2026-01-15",
-  routeRules: {
-    "/api/outlines": {
-      // Mark as long-running operation
-      cache: false,
-    },
-    "/api/export": {
-      // Mark as long-running operation
-      cache: false,
-    },
-  },
   piniaPluginPersistedstate: {
     storage: "localStorage",
     debug: true,
