@@ -15,7 +15,10 @@ export const getJWPUBDatabase = async (
   try {
     const outerZip = await extractZipFiles(buffer);
     if (!outerZip.files["contents"]) {
-      throw new Error("No contents file found in the JWPUB file");
+      throw createError({
+        message: "No contents file found in the JWPUB file",
+        status: 400,
+      });
     }
 
     const innerZip = await extractZipFiles(
@@ -25,14 +28,22 @@ export const getJWPUBDatabase = async (
     const dbFile = Object.keys(innerZip.files).find((file) =>
       file.endsWith(".db"),
     );
-    if (!dbFile) throw new Error("No database file found in the JWPUB file");
+    if (!dbFile)
+      throw createError({
+        message: "No database file found in the JWPUB file",
+        status: 400,
+      });
 
     const sqlDb = await innerZip.files[dbFile]!.async("uint8array");
 
     return loadDatabase(sqlDb);
   } catch (e) {
     console.error(e);
-    throw new Error("Failed to get database from .jwpub file", { cause: e });
+    throw createError({
+      cause: e,
+      message: "Failed to get database from .jwpub file",
+      status: 500,
+    });
   }
 };
 
@@ -52,11 +63,17 @@ export const parseJWPUB = async (db: Database) => {
     }
 
     if (!header) {
-      throw new Error("No header found for: " + htmlDoc.toString());
+      throw createError({
+        message: "No header found for: " + htmlDoc.toString(),
+        status: 400,
+      });
     }
 
     if (!header.includes("Nr.")) {
-      throw new Error("Invalid header: " + header);
+      throw createError({
+        message: "Invalid header: " + header,
+        status: 400,
+      });
     }
 
     const [, numberStr, ...titleParts] = header.split(/\s+/);
@@ -64,7 +81,10 @@ export const parseJWPUB = async (db: Database) => {
     const number = parseInt(numberStr || "0");
 
     if (!numberStr || isNaN(number)) {
-      throw new Error(`Invalid number (${numberStr}) for header: ${header}`);
+      throw createError({
+        message: `Invalid number (${numberStr}) for header: ${header}`,
+        status: 400,
+      });
     }
 
     const paragraphs = htmlDoc.querySelectorAll("div > p");
@@ -100,11 +120,17 @@ export const parseJWPUB = async (db: Database) => {
     }
 
     if (!updatedStr) {
-      throw new Error("No updated string found for: " + header);
+      throw createError({
+        message: "No updated string found for: " + header,
+        status: 400,
+      });
     }
 
     if (!updatedStr.includes("Nr.")) {
-      throw new Error("Invalid updated string: " + updatedStr);
+      throw createError({
+        message: "Invalid updated string: " + updatedStr,
+        status: 400,
+      });
     }
 
     updatedStr = updatedStr
@@ -116,11 +142,17 @@ export const parseJWPUB = async (db: Database) => {
     const updated = updatedStr.includes("herzien") ? revised : original;
 
     if (!updated) {
-      throw new Error("No updated date found for: " + updatedStr);
+      throw createError({
+        message: "No updated date found for: " + updatedStr,
+        status: 400,
+      });
     }
 
     if (!/^\d{1,2}\/\d{2}$/.test(updated)) {
-      throw new Error(`Invalid updated date (${updated}): ` + updatedStr);
+      throw createError({
+        message: `Invalid updated date (${updated}): ` + updatedStr,
+        status: 400,
+      });
     }
 
     return { number, title, updated };
@@ -156,7 +188,10 @@ const generateSHA256Rounds = async (text: string) => {
 
 const xorBuffers = (buf1: Uint8Array, buf2: Uint8Array) => {
   if (buf1.length !== buf2.length) {
-    throw new Error("Buffers must be same length");
+    throw createError({
+      message: "Buffers must be same length",
+      status: 400,
+    });
   }
 
   return buf1.map((byte, i) => byte ^ buf2[i % buf2.length]!);
@@ -212,7 +247,10 @@ const getPubCard = (db: Database) => {
   );
 
   if (publicationTable.length === 0) {
-    throw new Error("The file selected is not a valid JWPUB file.");
+    throw createError({
+      message: "The file selected is not a valid JWPUB file.",
+      status: 400,
+    });
   }
 
   return publicationTable[0]?.values[0]?.join("_") ?? "";

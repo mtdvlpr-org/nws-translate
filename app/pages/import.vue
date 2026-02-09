@@ -171,7 +171,10 @@ const loadFile = async (file: File, type: "original" | "translation") => {
         }
         break;
       default:
-        throw new Error(`Unsupported file: ${file.name}`);
+        throw createError({
+          message: `Unsupported file: ${file.name}`,
+          status: 400,
+        });
     }
   } catch (e) {
     console.error(e);

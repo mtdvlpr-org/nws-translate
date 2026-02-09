@@ -20,7 +20,7 @@ export const loadDatabase = async (
     return db;
   } catch (e) {
     console.error(e);
-    throw new Error("Failed to load database", { cause: e });
+    throw createError({ cause: e, message: "Failed to load database" });
   }
 };
 
@@ -50,7 +50,7 @@ export const queryDatabase = <T extends Record<string, unknown>>(
     return rows;
   } catch (e) {
     console.error(e);
-    throw new Error("SQL query failed", { cause: e });
+    throw createError({ cause: e, message: "SQL query failed" });
   }
 };
 
@@ -65,6 +65,7 @@ export const queryDatabaseSingle = <T extends Record<string, unknown>>(
   query: string,
 ): T => {
   const result = queryDatabase<T>(db, query);
-  if (result.length === 0) throw new Error("No result found for query");
+  if (result.length === 0)
+    throw createError({ message: "No result found for query" });
   return result[0]!;
 };

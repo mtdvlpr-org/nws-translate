@@ -30,15 +30,20 @@ export async function receiveFiles(
     const form = await readFormData(event);
     const files = form.getAll(options.formKey!) as File[];
 
-    if (!files?.length) throw new Error("No files received");
+    if (!files?.length)
+      throw createError({ message: "No files received", status: 400 });
 
     if (!options.multiple && files.length > 1)
-      throw new Error("Multiple files are not allowed");
+      throw createError({
+        message: "Multiple files are not allowed",
+        status: 400,
+      });
 
     if (typeof options.multiple === "number" && files.length > options.multiple)
-      throw new Error(
-        `Number of files exceeded. Maximum allowed: ${options.multiple}`,
-      );
+      throw createError({
+        message: `Number of files exceeded. Maximum allowed: ${options.multiple}`,
+        status: 400,
+      });
 
     if (options.ensure?.maxSize || options.ensure?.types?.length) {
       for (const file of files) {
@@ -48,7 +53,11 @@ export async function receiveFiles(
     return files;
   } catch (e) {
     console.error(e);
-    throw new Error("Error receiving files", { cause: e });
+    throw createError({
+      cause: e,
+      message: "Error receiving files",
+      statusCode: 500,
+    });
   }
 }
 

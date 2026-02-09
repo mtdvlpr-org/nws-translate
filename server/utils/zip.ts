@@ -15,7 +15,7 @@ export const extractZipFiles = async (
     return await appZip.loadAsync(data);
   } catch (e) {
     console.error(e);
-    throw new Error("Failed to extract zip files", { cause: e });
+    throw createError({ cause: e, message: "Failed to extract zip files" });
   }
 };
 
@@ -30,6 +30,6 @@ export const createZipFile = async (
     return await zip.generateAsync({ type: "nodebuffer" });
   } catch (e) {
     console.error(e);
-    throw new Error("Failed to create zip file", { cause: e });
+    throw createError({ cause: e, message: "Failed to create zip file" });
   }
 };
