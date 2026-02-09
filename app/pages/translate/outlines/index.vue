@@ -53,7 +53,7 @@ const importOutlines = async () => {
   try {
     const body = new FormData();
     body.append("file", jwpubFile.value);
-    const parsedOutlines = await $fetch<Outline[]>("/api/outlines", {
+    const parsedOutlines = await $fetch<Outline[]>("/api/outlines/stream", {
       body,
       method: "POST",
     });

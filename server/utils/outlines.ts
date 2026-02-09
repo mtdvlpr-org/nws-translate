@@ -1,19 +1,11 @@
-export default defineEventHandler(async (event) => {
-  event.node.req.setTimeout(1 * 60 * 60 * 1000);
-  console.log("Getting outlines...");
-  const database = await processFileUpload(event, {
-    maxSize: 256 * 1024 * 1024,
-    processor: async (fileStream) => {
-      console.log("Processing file stream...");
-      return await getJWPUBDatabase(fileStream);
-    },
-  });
+import type { Database } from "sql.js";
 
-  const outlines = queryDatabase<{ Title: string }>(
-    database,
-    "SELECT Title FROM Document",
+export const getOutlinesFromJWPUB = async (db: Database) => {
+  const outlines = queryDatabase<{ Content: BufferSource; Title: string }>(
+    db,
+    "SELECT Title, Content FROM Document",
   );
-  const htmlOutlines = await parseJWPUB(database);
+  const htmlOutlines = await parseOutlines(db, outlines);
   const parsedOutlines = outlines
     .map((outline) => {
       const [number, ...title] = outline.Title.split(". ");
@@ -31,6 +23,5 @@ export default defineEventHandler(async (event) => {
         htmlOutline.number === parsedOutlines[index]?.number &&
         htmlOutline.title === parsedOutlines[index]?.title,
     );
-
   return match ? htmlOutlines : parsedOutlines;
-});
+};

@@ -12,7 +12,9 @@ import unzipper from "unzipper";
  * @param stream The readable stream of the .jwpub file.
  * @returns The loaded database.
  */
-export const getJWPUBDatabase = async (stream: Readable): Promise<Database> => {
+export const getJWPUBDatabaseFromStream = async (
+  stream: Readable,
+): Promise<Database> => {
   try {
     const dbBuffer = await pipeline(
       stream,
@@ -39,8 +41,49 @@ export const getJWPUBDatabase = async (stream: Readable): Promise<Database> => {
   }
 };
 
-export const parseJWPUB = async (db: Database) => {
-  const htmlDocs = await getHTMLDocs(db);
+export const getJWPUBDatabaseFromBuffer = async (
+  buffer: ArrayBuffer,
+): Promise<Database> => {
+  try {
+    const outerZip = await extractZipFiles(buffer);
+    if (!outerZip.files["contents"]) {
+      throw createError({
+        message: "No contents file found in the JWPUB file",
+        status: 400,
+      });
+    }
+
+    const innerZip = await extractZipFiles(
+      await outerZip.files["contents"]!.async("uint8array"),
+    );
+
+    const dbFile = Object.keys(innerZip.files).find((file) =>
+      file.endsWith(".db"),
+    );
+    if (!dbFile)
+      throw createError({
+        message: "No database file found in the JWPUB file",
+        status: 400,
+      });
+
+    const sqlDb = await innerZip.files[dbFile]!.async("uint8array");
+
+    return loadDatabase(sqlDb);
+  } catch (e) {
+    console.error(e);
+    throw createError({
+      cause: e,
+      message: "Failed to get database from .jwpub file",
+      status: 500,
+    });
+  }
+};
+
+export const parseOutlines = async (
+  db: Database,
+  outlines: { Content: BufferSource }[],
+) => {
+  const htmlDocs = await getDocsFromOutlines(db, outlines);
   return htmlDocs.map((htmlDoc) => {
     // "Nr. {nr} {title}"
     let header = htmlDoc.querySelector("header > h1 strong")?.textContent;
@@ -264,22 +307,39 @@ const getDocs = async (db: Database, key: string, iv: string) => {
 
   for (const row of data.at(0)!.values) {
     const content = row.at(0) as BufferSource;
-    const text = await getRawContent(content, key, iv);
-    const htmlDoc = parseHTML(text);
-
-    htmlDoc.querySelectorAll("rt").forEach((rt) => rt.remove());
-
-    files.push(htmlDoc);
+    files.push(await getDoc(content, key, iv));
   }
 
   return files;
 };
 
-const getHTMLDocs = async (db: Database) => {
+const getDoc = async (content: BufferSource, key: string, iv: string) => {
+  const text = await getRawContent(content, key, iv);
+  const htmlDoc = parseHTML(text);
+
+  htmlDoc.querySelectorAll("rt").forEach((rt) => rt.remove());
+
+  return htmlDoc;
+};
+
+export const getHTMLDocs = async (db: Database) => {
   const pubCard = getPubCard(db);
 
   const { iv, key } = await getPubKeyIv(pubCard);
 
   const files = await getDocs(db, key, iv);
   return files;
+};
+
+const getDocsFromOutlines = async (
+  db: Database,
+  contents: { Content: BufferSource }[],
+) => {
+  const pubCard = getPubCard(db);
+
+  const { iv, key } = await getPubKeyIv(pubCard);
+
+  return await Promise.all(
+    contents.map((content) => getDoc(content.Content, key, iv)),
+  );
 };
