@@ -1,4 +1,6 @@
 export default defineEventHandler(async (event) => {
+  event.node.req.setTimeout(1 * 60 * 60 * 1000);
+  console.log("Getting outlines...");
   const database = await processFileUpload(event, {
     maxSize: 256 * 1024 * 1024,
     processor: async (fileStream) => {
