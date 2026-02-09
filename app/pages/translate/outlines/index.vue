@@ -7,15 +7,17 @@
     />
 
     <UPageBody>
-      <UFileUpload
-        v-model="jwpubFile"
-        :file-delete="false"
-        accept=".jwpub,.JWPUB"
-        class="w-full min-h-48"
-        :disabled="!!jwpubFile"
-        label="Importeer vanuit S-34 formulier."
-        @change="importOutlines"
-      />
+      <DevOnly>
+        <UFileUpload
+          v-model="jwpubFile"
+          :file-delete="false"
+          accept=".jwpub,.JWPUB"
+          class="w-full min-h-48"
+          :disabled="!!jwpubFile"
+          label="Importeer vanuit S-34 formulier."
+          @change="importOutlines"
+        />
+      </DevOnly>
       <template v-if="loading">
         <UPageGrid>
           <div v-for="i in 12" :key="i" class="grid gap-2">

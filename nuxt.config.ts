@@ -1,6 +1,4 @@
-// import { join } from "node:path";
-// import { normalizePath } from "vite";
-// import { viteStaticCopy } from "vite-plugin-static-copy";
+const isDev = process.env.NODE_ENV === "development";
 
 /* eslint-disable perfectionist/sort-objects */
 // https://nuxt.com/docs/api/configuration/nuxt-config
@@ -16,25 +14,12 @@ export default defineNuxtConfig({
   ],
   css: ["~/assets/css/main.css"],
   runtimeConfig: {
+    public: { isDev },
     jwpubKey: process.env.JWPUB_KEY,
   },
   compatibilityDate: "2026-01-15",
   piniaPluginPersistedstate: {
     storage: "localStorage",
     debug: true,
-  },
-  vite: {
-    // plugins: [
-    //   viteStaticCopy({
-    //     targets: [
-    //       {
-    //         src: normalizePath(
-    //           join(__dirname, "node_modules/sql.js/dist/sql-wasm.wasm"),
-    //         ),
-    //         dest: normalizePath(join(__dirname, "server/assets")),
-    //       },
-    //     ],
-    //   }),
-    // ],
   },
 });
