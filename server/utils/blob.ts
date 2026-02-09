@@ -26,26 +26,30 @@ export async function receiveFiles(
     multiple: true,
   } satisfies BlobUploadOptions);
 
-  const form = await readFormData(event);
-  const files = form.getAll(options.formKey!) as File[];
+  try {
+    const form = await readFormData(event);
+    const files = form.getAll(options.formKey!) as File[];
 
-  if (!files?.length) throw new Error("No files received");
+    if (!files?.length) throw new Error("No files received");
 
-  if (!options.multiple && files.length > 1)
-    throw new Error("Multiple files are not allowed");
+    if (!options.multiple && files.length > 1)
+      throw new Error("Multiple files are not allowed");
 
-  if (typeof options.multiple === "number" && files.length > options.multiple)
-    throw new Error(
-      `Number of files exceeded. Maximum allowed: ${options.multiple}`,
-    );
+    if (typeof options.multiple === "number" && files.length > options.multiple)
+      throw new Error(
+        `Number of files exceeded. Maximum allowed: ${options.multiple}`,
+      );
 
-  if (options.ensure?.maxSize || options.ensure?.types?.length) {
-    for (const file of files) {
-      ensureBlob(file, options.ensure);
+    if (options.ensure?.maxSize || options.ensure?.types?.length) {
+      for (const file of files) {
+        ensureBlob(file, options.ensure);
+      }
     }
+    return files;
+  } catch (e) {
+    console.error(e);
+    throw new Error("Error receiving files", { cause: e });
   }
-
-  return files;
 }
 
 /**
