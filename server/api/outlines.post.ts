@@ -1,27 +1,12 @@
 export default defineEventHandler(async (event) => {
-  console.log("Getting outlines...");
-  const [file] = await receiveFiles(event, {
-    ensure: {
-      maxSize: "128MB",
-      types: ["application/octet-stream"],
+  const database = await processFileUpload(event, {
+    maxSize: 256 * 1024 * 1024,
+    processor: async (fileStream) => {
+      console.log("Processing file stream...");
+      return await getJWPUBDatabase(fileStream);
     },
-    formKey: "file",
-    multiple: false,
   });
 
-  if (!file) {
-    throw createError({
-      statusCode: 400,
-      statusMessage: "No file received",
-    });
-  }
-
-  console.log("File received");
-
-  const database = await getJWPUBDatabase(
-    getRequestURL(event).origin,
-    await file.arrayBuffer(),
-  );
   const outlines = queryDatabase<{ Title: string }>(
     database,
     "SELECT Title FROM Document",

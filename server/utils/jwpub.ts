@@ -1,49 +1,40 @@
 import type { HTMLElement } from "node-html-parser";
+import type { Readable } from "node:stream";
 import type { Database } from "sql.js";
 
+import { pipeline } from "node:stream/promises";
 import { inflate } from "pako";
+import unzipper from "unzipper";
 
 /**
- * Extracts the database from a .jwpub file.
+ * Extracts the database from a .jwpub file using streaming.
  *
- * @param buffer The buffer of the .jwpub file.
+ * @param stream The readable stream of the .jwpub file.
  * @returns The loaded database.
  */
-export const getJWPUBDatabase = async (
-  origin: string,
-  buffer: ArrayBuffer,
-): Promise<Database> => {
+export const getJWPUBDatabase = async (stream: Readable): Promise<Database> => {
   try {
-    const outerZip = await extractZipFiles(buffer);
-    if (!outerZip.files["contents"]) {
-      throw createError({
-        message: "No contents file found in the JWPUB file",
-        status: 400,
-      });
-    }
-
-    const innerZip = await extractZipFiles(
-      await outerZip.files["contents"]!.async("uint8array"),
+    const dbBuffer = await pipeline(
+      stream,
+      unzipper.ParseOne(/^contents$/),
+      unzipper.ParseOne(/\.db$/),
+      async (stream) => {
+        const chunks: Buffer[] = [];
+        for await (const chunk of stream) {
+          chunks.push(Buffer.from(chunk));
+        }
+        return Buffer.concat(chunks);
+      },
     );
 
-    const dbFile = Object.keys(innerZip.files).find((file) =>
-      file.endsWith(".db"),
-    );
-    if (!dbFile)
-      throw createError({
-        message: "No database file found in the JWPUB file",
-        status: 400,
-      });
-
-    const sqlDb = await innerZip.files[dbFile]!.async("uint8array");
-
-    return loadDatabase(origin, sqlDb);
+    // Load the database
+    return loadDatabase(new Uint8Array(dbBuffer));
   } catch (e) {
-    console.error(e);
+    console.error("Error extracting database:", e);
     throw createError({
       cause: e,
       message: "Failed to get database from .jwpub file",
-      status: 500,
+      statusCode: 500,
     });
   }
 };

@@ -6,7 +6,6 @@ import initSqlJs, { type Database } from "sql.js";
  * @returns The loaded database.
  */
 export const loadDatabase = async (
-  origin: string,
   data: ArrayLike<number> | Buffer,
 ): Promise<Database> => {
   try {
