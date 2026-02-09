@@ -6,13 +6,13 @@ import initSqlJs, { type Database } from "sql.js";
  * @returns The loaded database.
  */
 export const loadDatabase = async (
+  origin: string,
   data: ArrayLike<number> | Buffer,
 ): Promise<Database> => {
   try {
     console.log("Initializing SQL...");
     const SQL = await initSqlJs({
-      locateFile: () =>
-        new URL("./../../public/sql-wasm.wasm", import.meta.url).toString(),
+      locateFile: () => origin + "/sql-wasm.wasm",
     });
     console.log("SQL initialized");
     const db = new SQL.Database(data);

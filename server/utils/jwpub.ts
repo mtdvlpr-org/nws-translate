@@ -10,6 +10,7 @@ import { inflate } from "pako";
  * @returns The loaded database.
  */
 export const getJWPUBDatabase = async (
+  origin: string,
   buffer: ArrayBuffer,
 ): Promise<Database> => {
   try {
@@ -36,7 +37,7 @@ export const getJWPUBDatabase = async (
 
     const sqlDb = await innerZip.files[dbFile]!.async("uint8array");
 
-    return loadDatabase(sqlDb);
+    return loadDatabase(origin, sqlDb);
   } catch (e) {
     console.error(e);
     throw createError({
