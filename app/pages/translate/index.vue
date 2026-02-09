@@ -43,6 +43,11 @@
               variant: 'link',
               to: `/translate/nwp/${term.key}`,
             },
+            {
+              label: 'Markeer als consistent',
+              color: 'neutral',
+              onClick: () => uiStore.markUIConsistent(term.key),
+            },
           ]"
         />
       </template>

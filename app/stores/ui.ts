@@ -1,5 +1,6 @@
 type State = {
   consistentNWS: Record<string, string[]>;
+  consistentUI: string[];
   nwpString: TranslationFile | undefined;
   nwpTranslations: ProgramUIFile | undefined;
   originalsString: TranslationFile;
@@ -14,6 +15,9 @@ export const useUIStore = defineStore("ui", {
         ...this.consistentNWS,
         [key]: [...(this.consistentNWS[key] || []), otherKey],
       };
+    },
+    markUIConsistent(key: string) {
+      this.consistentUI.push(key);
     },
   },
   getters: {
@@ -87,7 +91,9 @@ export const useUIStore = defineStore("ui", {
     },
     uiInconsistencies(state): { key: string; nwp: string; nws: string }[] {
       return this.nwpKeys
-        .filter((key) => this.keys.includes(key))
+        .filter(
+          (key) => this.keys.includes(key) && !state.consistentUI.includes(key),
+        )
         .map((key) => ({
           key,
           nwp: state.nwpTranslations?.[key] || "<LEGE VERTALING>",
@@ -99,6 +105,7 @@ export const useUIStore = defineStore("ui", {
   persist: true,
   state: (): State => ({
     consistentNWS: {},
+    consistentUI: [],
     nwpString: undefined,
     nwpTranslations: undefined,
     originalsString: "",
