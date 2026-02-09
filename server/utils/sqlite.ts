@@ -11,12 +11,14 @@ export const loadDatabase = async (
 ): Promise<Database> => {
   try {
     console.log("Initializing SQL...");
-    const SQL = await initSqlJs({
-      locateFile: () => origin + "/sql-wasm.wasm",
-    });
+    const SQL = await initSqlJs();
     console.log("SQL initialized");
     const db = new SQL.Database(data);
     console.log("Database loaded");
+    if (!db) {
+      // @ts-expect-error - SQL.js is a module that is not typed.
+      await import("sql.js/dist/sql-wasm.wasm");
+    }
     return db;
   } catch (e) {
     console.error(e);

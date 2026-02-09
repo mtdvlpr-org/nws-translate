@@ -1,6 +1,6 @@
-import { join } from "node:path";
-import { normalizePath } from "vite";
-import { viteStaticCopy } from "vite-plugin-static-copy";
+// import { join } from "node:path";
+// import { normalizePath } from "vite";
+// import { viteStaticCopy } from "vite-plugin-static-copy";
 
 /* eslint-disable perfectionist/sort-objects */
 // https://nuxt.com/docs/api/configuration/nuxt-config
@@ -24,17 +24,17 @@ export default defineNuxtConfig({
     debug: true,
   },
   vite: {
-    plugins: [
-      viteStaticCopy({
-        targets: [
-          {
-            src: normalizePath(
-              join(__dirname, "node_modules/sql.js/dist/sql-wasm.wasm"),
-            ),
-            dest: normalizePath(join(__dirname, "public")),
-          },
-        ],
-      }),
-    ],
+    // plugins: [
+    //   viteStaticCopy({
+    //     targets: [
+    //       {
+    //         src: normalizePath(
+    //           join(__dirname, "node_modules/sql.js/dist/sql-wasm.wasm"),
+    //         ),
+    //         dest: normalizePath(join(__dirname, "server/assets")),
+    //       },
+    //     ],
+    //   }),
+    // ],
   },
 });
