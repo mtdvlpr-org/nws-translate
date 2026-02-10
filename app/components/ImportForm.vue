@@ -41,7 +41,7 @@
         :name="file.key"
         :label="file.label"
         :error="errors[file.key]"
-        description="Plak tekst uit het lokale .json-bestand (Literature, Outlines, Songs, Tips)."
+        :description="`Plak tekst uit het lokale ${capitalize(file.key)}.json bestand.`"
       >
         <UTextarea v-model="state[file.key]" class="w-full" />
       </UFormField>
@@ -61,7 +61,7 @@ defineProps<{
 
 const model = defineModel<Output>();
 
-const jsonFiles: { key: keyof Input; label: string }[] = [
+const jsonFiles: { key: JsonKey; label: string }[] = [
   { key: "literature", label: "Literatuur" },
   { key: "outlines", label: "Lezingen" },
   { key: "songs", label: "Liederen" },
@@ -75,7 +75,7 @@ const schema = z.object({
   songs: jsonCodec(songsSchema).optional(),
   tips: jsonCodec(tipsSchema).optional(),
   ui: translationFileSchema,
-});
+} satisfies Record<JsonKey | UIKey, unknown>);
 
 export type Input = z.input<typeof schema>;
 export type Output = z.output<typeof schema>;

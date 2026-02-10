@@ -1,4 +1,4 @@
-export type TranslationKey = keyof State;
+export type JsonKey = Prettify<keyof State>;
 
 type State = {
   literature: {
@@ -64,7 +64,7 @@ export const useJsonStore = defineStore("json", {
         songs?: Songs;
         tips?: Tips;
       },
-      group?: keyof State,
+      group?: JsonKey,
     ) {
       if (!group || group === "literature") {
         this.literature = { ...this.literature, translations: literature };
@@ -82,7 +82,7 @@ export const useJsonStore = defineStore("json", {
   },
   getters: {
     changedGroups(state) {
-      const groups: (keyof State)[] = [];
+      const groups: JsonKey[] = [];
       typedKeys(state).forEach((group) => {
         if (
           state[group] &&

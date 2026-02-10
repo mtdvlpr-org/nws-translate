@@ -10,7 +10,6 @@ const bodySchema = z.object({
 });
 
 export default defineEventHandler(async (event) => {
-  console.log("Exporting translations...");
   const { files } = await readValidatedBody(event, bodySchema.parse);
   const zipBuffer = await createZipFile(files);
 

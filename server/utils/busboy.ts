@@ -83,50 +83,42 @@ export async function processFileUpload<T>(
     let resolved = false;
     let fileProcessed = false;
 
-    busboyInstance.on(
-      "file",
-      async (name, file, filename, _transferEncoding, mimeType) => {
-        console.log(
-          `File received: field=${name}, filename=${filename}, mimeType=${mimeType}`,
-        );
+    busboyInstance.on("file", async (name, file) => {
+      // Only accept the first file with the specified field name
+      if (!fileProcessed && name === fieldName) {
+        fileProcessed = true;
 
-        // Only accept the first file with the specified field name
-        if (!fileProcessed && name === fieldName) {
-          fileProcessed = true;
-
-          // Handle file size limit exceeded
-          file.on("limit", () => {
-            if (!resolved) {
-              resolved = true;
-              reject(
-                createError({
-                  statusCode: 413,
-                  statusMessage: `File too large. Maximum size is ${options.maxSize ? Math.floor(options.maxSize / (1024 * 1024)) : "unknown"}MB`,
-                }),
-              );
-            }
-          });
-
-          try {
-            // Process the stream immediately so Busboy can finish
-            const result = await options.processor(file);
-            if (!resolved) {
-              resolved = true;
-              resolve(result);
-            }
-          } catch (err) {
-            if (!resolved) {
-              resolved = true;
-              reject(err);
-            }
+        // Handle file size limit exceeded
+        file.on("limit", () => {
+          if (!resolved) {
+            resolved = true;
+            reject(
+              createError({
+                statusCode: 413,
+                statusMessage: `File too large. Maximum size is ${options.maxSize ? Math.floor(options.maxSize / (1024 * 1024)) : "unknown"}MB`,
+              }),
+            );
           }
-        } else {
-          // Discard files with different field names
-          console.log(`Ignoring file field: ${name}`);
-          file.resume();
+        });
+
+        try {
+          // Process the stream immediately so Busboy can finish
+          const result = await options.processor(file);
+          if (!resolved) {
+            resolved = true;
+            resolve(result);
+          }
+        } catch (err) {
+          if (!resolved) {
+            resolved = true;
+            reject(err);
+          }
         }
-      },
-    );
+      } else {
+        // Discard files with different field names
+        file.resume();
+      }
+    });
 
     busboyInstance.on("error", (err) => {
       if (!resolved) {

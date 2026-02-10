@@ -1,3 +1,5 @@
+export type UIKey = "nwp" | "ui";
+
 type State = {
   consistentNWS: Record<string, string[]>;
   consistentUI: string[];
@@ -10,6 +12,27 @@ type State = {
 
 export const useUIStore = defineStore("ui", {
   actions: {
+    clearConsistentKeys(keys?: string[]) {
+      if (!keys) {
+        this.consistentNWS = {};
+        this.consistentUI = [];
+        return;
+      }
+
+      this.consistentNWS = Object.fromEntries(
+        Object.entries(this.consistentNWS).map(([key, values]) => {
+          if (keys.includes(key)) {
+            return [key, []];
+          } else {
+            return [key, values.filter((value) => !keys.includes(value))];
+          }
+        }),
+      );
+
+      this.consistentUI = this.consistentUI.filter(
+        (key) => !keys.includes(key),
+      );
+    },
     markNWSConsistent(key: string, otherKey: string) {
       this.consistentNWS = {
         ...this.consistentNWS,

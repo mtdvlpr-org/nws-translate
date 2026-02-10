@@ -52,7 +52,7 @@
         />
       </UPageCard>
       <UPageCard
-        v-if="newTranslationsString && isDifferent"
+        v-if="newTranslationsString"
         title="Update afronden"
         description="Sla de nieuwe teksten op."
       >
@@ -113,19 +113,20 @@ const finishUpdate = () => {
     uiStore.nwpString = newTranslationsString.value;
   }
 
-  const parsed = JSON.parse(newTranslations.value);
-  const newKeys = Object.keys(parsed).filter(
-    (key) => !savedKeys.value.has(key),
+  const newText = changedText.value.filter(
+    ({ key }) => !savedKeys.value.has(key),
   );
 
+  uiStore.clearConsistentKeys(changedText.value.map((t) => t.key));
+
   if (type.value === "NWS") {
-    newKeys.forEach((key) => {
-      uiStore.translations[key] = parsed[key];
+    newText.forEach((t) => {
+      uiStore.translations[t.key] = t.value;
     });
   } else {
-    newKeys.forEach((key) => {
+    newText.forEach((t) => {
       if (uiStore.nwpTranslations) {
-        uiStore.nwpTranslations[key] = parsed[key];
+        uiStore.nwpTranslations[t.key] = t.value;
       }
     });
   }

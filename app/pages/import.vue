@@ -67,10 +67,12 @@ watch(originalsString, (ui) => {
 
 watch(translationsString, (ui) => {
   translations.value = { ...translations.value, ui };
+  uiStore.clearConsistentKeys();
 });
 
 watch(nwpString, (nwp) => {
   translations.value = { ...translations.value, nwp };
+  uiStore.clearConsistentKeys();
 });
 
 watch(originals, (val) => {

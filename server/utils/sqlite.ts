@@ -9,11 +9,8 @@ export const loadDatabase = async (
   data: ArrayLike<number> | Buffer,
 ): Promise<Database> => {
   try {
-    console.log("Initializing SQL...");
     const SQL = await initSqlJs();
-    console.log("SQL initialized");
     const db = new SQL.Database(data);
-    console.log("Database loaded");
     if (!db) {
       // @ts-expect-error - SQL.js is a module that is not typed.
       await import("sql.js/dist/sql-wasm.wasm");
@@ -36,7 +33,6 @@ export const queryDatabase = <T extends Record<string, unknown>>(
   query: string,
 ): T[] => {
   try {
-    console.log("Executing query...");
     const result = db.exec(query);
     const rows = result.flatMap((execResult) => {
       return execResult.values.map((rowValues) => {

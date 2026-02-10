@@ -19,7 +19,7 @@
 
 <script setup lang="ts">
 const props = defineProps<{
-  type: "literature" | "outlines" | "songs" | "tips";
+  type: JsonKey;
 }>();
 
 const jsonStore = useJsonStore();

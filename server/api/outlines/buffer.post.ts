@@ -1,5 +1,4 @@
 export default defineEventHandler(async (event) => {
-  console.log("Getting outlines...");
   const [file] = await receiveFiles(event, {
     ensure: {
       maxSize: "128MB",
@@ -15,8 +14,6 @@ export default defineEventHandler(async (event) => {
       statusMessage: "No file received",
     });
   }
-
-  console.log("File received");
 
   const database = await getJWPUBDatabaseFromBuffer(await file.arrayBuffer());
 
