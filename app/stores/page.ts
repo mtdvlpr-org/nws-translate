@@ -1,3 +1,9 @@
+export type PageLink = {
+  exactHash?: boolean;
+  label: string;
+  to: string;
+};
+
 type State = {
   pageLinks: PageLink[];
 };

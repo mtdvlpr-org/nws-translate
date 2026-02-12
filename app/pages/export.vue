@@ -31,7 +31,7 @@
           />
         </div>
       </UPageCard>
-      <UPageCard title="Instellingen">
+      <UPageCard title="Back-up">
         <div class="flex flex-wrap gap-2">
           <UButton
             class="w-fit"

@@ -16,7 +16,7 @@
             </template>
           </UInput>
         </template>
-        <UPageLinks :links="links" />
+        <UPageAnchors :links="links" />
       </UPageAside>
     </template>
 

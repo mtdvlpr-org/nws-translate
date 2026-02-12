@@ -2,7 +2,8 @@
   <UPage>
     <UPageHeader :title="title" :description="description" />
     <UPageBody>
-      <UPageCard id="originals" title="Originele teksten (Engels)">
+      <UPageCard title="Originele teksten (Engels)">
+        <div id="originals" class="scroll-mt-34"></div>
         <UButton
           loading-auto
           class="w-fit"
@@ -23,7 +24,8 @@
         />
         <ImportForm v-model="originals" no-nwp />
       </UPageCard>
-      <UPageCard id="translations" title="Vertalingen (Nederlands)">
+      <UPageCard title="Vertalingen (Nederlands)">
+        <div id="translations" class="scroll-mt-34"></div>
         <UFileUpload
           v-model="translationFiles"
           multiple
@@ -37,13 +39,16 @@
         />
         <ImportForm v-model="translations" />
       </UPageCard>
-      <UPageCard id="original-emails" title="Originele e-mailtemplates">
+      <UPageCard title="Originele e-mailtemplates">
+        <div id="original-emails" class="scroll-mt-34"></div>
         <EmailImportForm v-model="originalEmails" locale="Engels" />
       </UPageCard>
-      <UPageCard id="translated-emails" title="Vertaalde e-mailtemplates">
+      <UPageCard title="Vertaalde e-mailtemplates">
+        <div id="translated-emails" class="scroll-mt-34"></div>
         <EmailImportForm v-model="inputEmails" locale="Nederlands" />
       </UPageCard>
-      <UPageCard id="backup" title="Back-up">
+      <UPageCard title="Back-up">
+        <div id="backup" class="scroll-mt-34"></div>
         <UFileUpload
           v-model="backupFile"
           :file-delete="false"
@@ -54,6 +59,12 @@
         />
       </UPageCard>
     </UPageBody>
+
+    <template #right>
+      <UPageAside>
+        <UPageLinks :links="anchors" title="Op deze pagina" />
+      </UPageAside>
+    </template>
   </UPage>
 </template>
 <script setup lang="ts">
@@ -62,6 +73,34 @@ import type { Output } from "~/components/ImportForm.vue";
 
 const uiStore = useUIStore();
 const { nwpString, originalsString, translationsString } = storeToRefs(uiStore);
+
+const anchors = computed((): PageLink[] => [
+  {
+    exactHash: true,
+    label: "Originele teksten (Engels)",
+    to: "/import#originals",
+  },
+  {
+    exactHash: true,
+    label: "Vertalingen (Nederlands)",
+    to: "import#translations",
+  },
+  {
+    exactHash: true,
+    label: "Originele e-mailtemplates",
+    to: "import#original-emails",
+  },
+  {
+    exactHash: true,
+    label: "Vertaalde e-mailtemplates",
+    to: "import#translated-emails",
+  },
+  {
+    exactHash: true,
+    label: "Back-up",
+    to: "import#backup",
+  },
+]);
 
 const jsonStore = useJsonStore();
 
