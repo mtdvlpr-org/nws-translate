@@ -24,14 +24,14 @@
     <UPageSection
       id="features"
       title="Alles wat je nodig hebt om NWS efficiënt te vertalen"
-      description="Vertaal NWS UI, NWP UI, lectuur, lezingen, liederen en tips met één tool."
+      description="Vertaal NWS UI, NWP UI, lectuur, lezingen, liederen, tips en e-mailtemplates met één tool."
       :features="[
         {
           icon: 'i-lucide:file-input',
           title: '1. Importeren',
           to: '/import',
           description:
-            'Importeer de originele en vertaalde teksten vanuit Google Docs en .json-bestanden.',
+            'Importeer de originele en vertaalde teksten vanuit Google Docs, .json- en .txt-bestanden.',
         },
         {
           icon: 'i-lucide:languages',
@@ -52,7 +52,7 @@
           title: '4. Exporteren',
           to: '/export',
           description:
-            'Exporteer de lokale vertalingen naar Google Docs of een .json-bestand.',
+            'Exporteer de lokale vertalingen naar Google Docs, .json- en .txt-bestanden.',
         },
       ]"
     />
