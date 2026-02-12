@@ -1,6 +1,6 @@
 export type UIKey = "nwp" | "ui";
 
-type State = {
+export type UIState = {
   consistentNWS: Record<string, string[]>;
   consistentUI: string[];
   nwpString: TranslationFile | undefined;
@@ -126,7 +126,7 @@ export const useUIStore = defineStore("ui", {
     },
   },
   persist: true,
-  state: (): State => ({
+  state: (): UIState => ({
     consistentNWS: {},
     consistentUI: [],
     nwpString: undefined,

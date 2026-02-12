@@ -1,5 +1,3 @@
-import type { z } from "zod";
-
 import JSZip from "jszip";
 
 /**
@@ -20,12 +18,12 @@ export const extractZipFiles = async (
 };
 
 export const createZipFile = async (
-  files: { data: z.core.util.JSONType; name: string }[],
+  files: { data: string; path: string }[],
 ) => {
   try {
     const zip = new JSZip();
     files.forEach((file) => {
-      zip.file(file.name, JSON.stringify(file.data, null, 2));
+      zip.file(file.path, file.data);
     });
     return await zip.generateAsync({ type: "nodebuffer" });
   } catch (e) {

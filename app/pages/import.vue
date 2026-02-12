@@ -2,7 +2,7 @@
   <UPage>
     <UPageHeader :title="title" :description="description" />
     <UPageBody>
-      <UPageCard title="Originele teksten (Engels)">
+      <UPageCard id="originals" title="Originele teksten (Engels)">
         <UButton
           loading-auto
           class="w-fit"
@@ -23,7 +23,7 @@
         />
         <ImportForm v-model="originals" no-nwp />
       </UPageCard>
-      <UPageCard title="Vertalingen (Nederlands)">
+      <UPageCard id="translations" title="Vertalingen (Nederlands)">
         <UFileUpload
           v-model="translationFiles"
           multiple
@@ -37,10 +37,27 @@
         />
         <ImportForm v-model="translations" />
       </UPageCard>
+      <UPageCard id="original-emails" title="Originele e-mailtemplates">
+        <EmailImportForm v-model="originalEmails" locale="Engels" />
+      </UPageCard>
+      <UPageCard id="translated-emails" title="Vertaalde e-mailtemplates">
+        <EmailImportForm v-model="inputEmails" locale="Nederlands" />
+      </UPageCard>
+      <UPageCard id="backup" title="Back-up">
+        <UFileUpload
+          v-model="backupFile"
+          :file-delete="false"
+          class="w-full min-h-48"
+          accept="application/json"
+          label="Importeer NWS Translate back-up"
+          @update:model-value="loadBackup"
+        />
+      </UPageCard>
     </UPageBody>
   </UPage>
 </template>
 <script setup lang="ts">
+import type { Output as EmailOutput } from "~/components/EmailImportForm.vue";
 import type { Output } from "~/components/ImportForm.vue";
 
 const uiStore = useUIStore();
@@ -53,10 +70,21 @@ const originals = ref<Output>({
   ui: originalsString.value,
   ...jsonStore.originals,
 });
+
 const translations = ref<Output>({
   nwp: nwpString.value,
   ui: translationsString.value,
   ...jsonStore.input,
+});
+
+const emailStore = useEmailStore();
+
+const originalEmails = ref<Partial<EmailOutput>>({
+  ...emailStore.originals,
+});
+
+const inputEmails = ref<Partial<EmailOutput>>({
+  ...emailStore.inputs,
 });
 
 const { showSuccess } = useFlash();
@@ -103,19 +131,38 @@ watch(translations, (val) => {
   });
 });
 
+watch(originalEmails, (val) => {
+  emailStore.setOriginals(val);
+
+  showSuccess({
+    description: "Originele e-mailtemplates zijn opgeslagen.",
+    id: "original-emails-import",
+  });
+});
+
+watch(inputEmails, (val) => {
+  emailStore.setInputs(val);
+  emailStore.setTranslations(val);
+
+  showSuccess({
+    description: "Vertaalde e-mailtemplates zijn opgeslagen.",
+    id: "input-emails-import",
+  });
+});
+
 const { showError } = useFlash();
 
 const originalFiles = ref<File[]>([]);
 const translationFiles = ref<File[]>([]);
 
-const supportedFiles = [
+const supportedJsonFiles = [
   "Literature.json",
   "Outlines.json",
   "Songs.json",
   "Tips.json",
 ];
 
-const loadFile = async (file: File, type: "original" | "translation") => {
+const loadJsonFile = async (file: File, type: "original" | "translation") => {
   try {
     const text = JSON.parse(await file.text());
 
@@ -184,14 +231,14 @@ const loadFile = async (file: File, type: "original" | "translation") => {
 };
 
 watch(originalFiles, (files) => {
-  loadFiles(files, "original");
+  loadJsonFiles(files, "original");
 });
 
 watch(translationFiles, (files) => {
-  loadFiles(files, "translation");
+  loadJsonFiles(files, "translation");
 });
 
-const loadFiles = async (
+const loadJsonFiles = async (
   files: File[] | null | undefined,
   type: "original" | "translation",
 ) => {
@@ -209,25 +256,59 @@ const loadFiles = async (
     return;
   }
 
-  if (files.some((file) => !supportedFiles.includes(file.name))) {
+  if (files.some((file) => !supportedJsonFiles.includes(file.name))) {
     if (type === "original") {
       originalFiles.value = originalFiles.value.filter((file) =>
-        supportedFiles.includes(file.name),
+        supportedJsonFiles.includes(file.name),
       );
     } else {
       translationFiles.value = translationFiles.value.filter((file) =>
-        supportedFiles.includes(file.name),
+        supportedJsonFiles.includes(file.name),
       );
     }
     return;
   }
 
   for (const file of files) {
-    await loadFile(file, type);
+    await loadJsonFile(file, type);
   }
 
   originalFiles.value = [];
   translationFiles.value = [];
+};
+
+const backupFile = ref<File | null>(null);
+
+const loadBackup = async (file: File | null | undefined) => {
+  try {
+    if (!file) return;
+
+    const backup = JSON.parse(await file.text()) as BackupFile;
+    if (backup.id !== "nws-translate-backup") {
+      showError({
+        description: "Kon back-up niet laden.",
+        id: "backup-load-error",
+      });
+      return;
+    }
+
+    uiStore.$patch(backup.ui);
+    jsonStore.$patch(backup.json);
+    emailStore.$patch(backup.email);
+    showSuccess({
+      description: "Backup is geladen.",
+      id: "backup-loaded",
+    });
+    window.location.reload();
+  } catch (e) {
+    console.error(e);
+    showError({
+      description: "Kon back-up niet laden.",
+      id: "backup-load-error",
+    });
+  } finally {
+    backupFile.value = null;
+  }
 };
 
 const autoFillOriginalUI = async () => {

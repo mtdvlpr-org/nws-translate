@@ -1,205 +1,337 @@
-export type EmailKey = Prettify<keyof State>;
+export type Email = {
+  text?: string;
+  title?: string;
+};
 
-type State = {
-  literature: {
-    input?: Literature;
-    originals?: Literature;
-    translations?: Literature;
-  };
-  outlines: { input?: Outlines; originals?: Outlines; translations?: Outlines };
-  songs: { input?: Songs; originals?: Songs; translations?: Songs };
-  tips: { input?: Tips; originals?: Tips; translations?: Tips };
+export type EmailGroup = {
+  input: Email;
+  originals: Email;
+  translations: Email;
+};
+
+export type EmailKey = Prettify<keyof EmailState>;
+
+export type EmailState = {
+  assignmentsAndDuties: Partial<Record<number, EmailGroup>> | undefined;
+  fieldServiceReports: Partial<Record<number, EmailGroup>> | undefined;
+  lifeAndMinistryMeeting: Partial<Record<number, EmailGroup>> | undefined;
+  other: Partial<Record<number, EmailGroup>> | undefined;
+  persons: Partial<Record<number, EmailGroup>> | undefined;
+  publicTalks: Partial<Record<number, EmailGroup>> | undefined;
+  schedules: Partial<Record<number, EmailGroup>> | undefined;
+  territory: Partial<Record<number, EmailGroup>> | undefined;
 };
 
 export const useEmailStore = defineStore("email", {
   actions: {
-    async fixInconsistentTips(heading: string, tips: { index: number }[]) {
-      tips.forEach((t) => {
-        if (!this.tips.translations?.[t.index]) return;
-        this.tips.translations![t.index]!.heading = heading;
+    setInputs(
+      inputs: Partial<
+        Record<EmailKey, Partial<Record<number, Email>> | undefined>
+      >,
+    ) {
+      typedKeys(inputs).forEach((g) => {
+        if (!this[g]) this[g] = {};
+        Object.keys(inputs[g]!).forEach((nr) => {
+          if (!this[g]![Number(nr)])
+            this[g]![Number(nr)] = {
+              input: {},
+              originals: {},
+              translations: {},
+            };
+          const input = inputs[g]![Number(nr)] ?? {};
+
+          this[g]! = {
+            ...this[g]!,
+            [Number(nr)]: {
+              input,
+              originals: this[g]![Number(nr)]?.originals ?? {},
+              translations: this[g]![Number(nr)]?.translations ?? {},
+            },
+          };
+        });
       });
-      await new Promise((resolve) => setTimeout(resolve, 100));
     },
-    setInput({
-      literature,
-      outlines,
-      songs,
-      tips,
-    }: {
-      literature?: Literature;
-      outlines?: Outlines;
-      songs?: Songs;
-      tips?: Tips;
-    }) {
-      this.literature = { ...this.literature, input: literature };
-      this.outlines = { ...this.outlines, input: outlines };
-      this.songs = { ...this.songs, input: songs };
-      this.tips = { ...this.tips, input: tips };
+    setOriginals(
+      originals: Partial<
+        Record<EmailKey, Partial<Record<number, Email>> | undefined>
+      >,
+    ) {
+      typedKeys(originals).forEach((g) => {
+        if (!this[g]) this[g] = {};
+        Object.keys(originals[g]!).forEach((nr) => {
+          if (!this[g]![Number(nr)])
+            this[g]![Number(nr)] = {
+              input: {},
+              originals: {},
+              translations: {},
+            };
+          const newOriginals = originals[g]![Number(nr)] ?? {};
+
+          this[g]! = {
+            ...this[g]!,
+            [Number(nr)]: {
+              input: this[g]![Number(nr)]?.input ?? {},
+              originals: newOriginals,
+              translations: this[g]![Number(nr)]?.translations ?? {},
+            },
+          };
+        });
+      });
     },
-    setOriginals({
-      literature,
-      outlines,
-      songs,
-      tips,
-    }: {
-      literature?: Literature;
-      outlines?: Outlines;
-      songs?: Songs;
-      tips?: Tips;
-    }) {
-      this.literature = { ...this.literature, originals: literature };
-      this.outlines = { ...this.outlines, originals: outlines };
-      this.songs = { ...this.songs, originals: songs };
-      this.tips = { ...this.tips, originals: tips };
+    setTranslation(group: EmailKey, nr: number, translations: Email) {
+      if (!this[group]) this[group] = {};
+      this[group]![nr] = {
+        input: this[group]![nr]?.input ?? {},
+        originals: this[group]![nr]?.originals ?? {},
+        translations,
+      };
     },
     setTranslations(
-      {
-        literature,
-        outlines,
-        songs,
-        tips,
-      }: {
-        literature?: Literature;
-        outlines?: Outlines;
-        songs?: Songs;
-        tips?: Tips;
-      },
-      group?: keyof State,
+      translations: Partial<
+        Record<EmailKey, Partial<Record<number, Email>> | undefined>
+      >,
     ) {
-      if (!group || group === "literature") {
-        this.literature = { ...this.literature, translations: literature };
-      }
-      if (!group || group === "outlines") {
-        this.outlines = { ...this.outlines, translations: outlines };
-      }
-      if (!group || group === "songs") {
-        this.songs = { ...this.songs, translations: songs };
-      }
-      if (!group || group === "tips") {
-        this.tips = { ...this.tips, translations: tips };
-      }
+      typedKeys(translations).forEach((g) => {
+        if (!this[g]) this[g] = {};
+        Object.keys(translations[g]!).forEach((nr) => {
+          if (!this[g]![Number(nr)])
+            this[g]![Number(nr)] = {
+              input: {},
+              originals: {},
+              translations: {},
+            };
+          const newTranslations = translations[g]![Number(nr)] ?? {};
+
+          this[g]! = {
+            ...this[g]!,
+            [Number(nr)]: {
+              input: this[g]![Number(nr)]?.input ?? {},
+              originals: this[g]![Number(nr)]?.originals ?? {},
+              translations: newTranslations,
+            },
+          };
+        });
+      });
     },
   },
   getters: {
-    changedGroups(state) {
-      const groups: (keyof State)[] = [];
-      typedKeys(state).forEach((group) => {
-        if (
-          state[group] &&
-          JSON.stringify(state[group].input) !==
-            JSON.stringify(state[group].translations)
-        ) {
-          groups.push(group);
-        }
-      });
-      return groups;
-    },
-    inconsistentTips(state) {
-      if (!state.tips.originals?.length) return [];
-      const headings: Record<string, { index: number; translation: string }[]> =
-        {};
-
-      state.tips.originals.forEach((tip, index) => {
-        // If the translation is missing, skip it
-        if (!state.tips.translations?.[index]?.heading) return;
-
-        if (headings[tip.heading]) {
-          headings[tip.heading]!.push({
-            index,
-            translation: state.tips.translations[index].heading,
-          });
-        } else {
-          headings[tip.heading] = [
-            {
-              index,
-              translation: state.tips.translations[index].heading,
-            },
-          ];
-        }
-      });
-
-      return Object.entries(headings)
-        .filter(
-          ([, tips]) =>
-            tips.length > 1 &&
-            tips.some((t) => t.translation !== tips[0]?.translation),
-        )
-        .map(([heading, tips]) => ({
-          heading,
-          tips: tips,
-          translations: [...new Set(tips.map((t) => t.translation))],
-        }));
-    },
-    input(state) {
+    inputs(
+      state,
+    ): Record<EmailKey, Partial<Record<number, Email>> | undefined> {
       return {
-        literature: state.literature.input,
-        outlines: state.outlines.input,
-        songs: state.songs.input,
-        tips: state.tips.input,
+        assignmentsAndDuties: state.assignmentsAndDuties
+          ? Object.fromEntries(
+              Object.entries(state.assignmentsAndDuties).map(([key, group]) => [
+                key,
+                group?.input,
+              ]),
+            )
+          : undefined,
+        fieldServiceReports: state.fieldServiceReports
+          ? Object.fromEntries(
+              Object.entries(state.fieldServiceReports).map(([key, group]) => [
+                key,
+                group?.input,
+              ]),
+            )
+          : undefined,
+        lifeAndMinistryMeeting: state.lifeAndMinistryMeeting
+          ? Object.fromEntries(
+              Object.entries(state.lifeAndMinistryMeeting).map(
+                ([key, group]) => [key, group?.input],
+              ),
+            )
+          : undefined,
+        other: state.other
+          ? Object.fromEntries(
+              Object.entries(state.other).map(([key, group]) => [
+                key,
+                group?.input,
+              ]),
+            )
+          : undefined,
+        persons: state.persons
+          ? Object.fromEntries(
+              Object.entries(state.persons).map(([key, group]) => [
+                key,
+                group?.input,
+              ]),
+            )
+          : undefined,
+        publicTalks: state.publicTalks
+          ? Object.fromEntries(
+              Object.entries(state.publicTalks).map(([key, group]) => [
+                key,
+                group?.input,
+              ]),
+            )
+          : undefined,
+        schedules: state.schedules
+          ? Object.fromEntries(
+              Object.entries(state.schedules).map(([key, group]) => [
+                key,
+                group?.input,
+              ]),
+            )
+          : undefined,
+        territory: state.territory
+          ? Object.fromEntries(
+              Object.entries(state.territory).map(([key, group]) => [
+                key,
+                group?.input,
+              ]),
+            )
+          : undefined,
       };
     },
-    missingLiterature(state) {
-      return (
-        state.literature.originals?.filter(
-          (o) => !state.literature.translations?.some((t) => t.id === o.id),
-        ) ?? []
-      );
-    },
-    missingOutlines(state) {
-      return (
-        state.outlines.originals?.filter(
-          (o) =>
-            !!o.title &&
-            !state.outlines.translations?.some(
-              (t) => t.number === o.number && !!t.title && !!t.updated,
-            ),
-        ) ?? []
-      );
-    },
-    missingSongs(state) {
-      return (
-        state.songs.originals?.filter(
-          (o) => !state.songs.translations?.some((t) => t.number === o.number),
-        ) ?? []
-      );
-    },
-    missingTips(state) {
-      return (
-        state.tips.originals?.filter(
-          (t, i) => !state.tips.translations?.[i]?.heading,
-        ) ?? []
-      );
-    },
-    originals(state) {
+    originals(
+      state,
+    ): Record<EmailKey, Partial<Record<number, Email>> | undefined> {
       return {
-        literature: state.literature.originals,
-        outlines: state.outlines.originals,
-        songs: state.songs.originals,
-        tips: state.tips.originals,
+        assignmentsAndDuties: state.assignmentsAndDuties
+          ? Object.fromEntries(
+              Object.entries(state.assignmentsAndDuties).map(([key, group]) => [
+                key,
+                group?.originals,
+              ]),
+            )
+          : undefined,
+        fieldServiceReports: state.fieldServiceReports
+          ? Object.fromEntries(
+              Object.entries(state.fieldServiceReports).map(([key, group]) => [
+                key,
+                group?.originals,
+              ]),
+            )
+          : undefined,
+        lifeAndMinistryMeeting: state.lifeAndMinistryMeeting
+          ? Object.fromEntries(
+              Object.entries(state.lifeAndMinistryMeeting).map(
+                ([key, group]) => [key, group?.originals],
+              ),
+            )
+          : undefined,
+        other: state.other
+          ? Object.fromEntries(
+              Object.entries(state.other).map(([key, group]) => [
+                key,
+                group?.originals,
+              ]),
+            )
+          : undefined,
+        persons: state.persons
+          ? Object.fromEntries(
+              Object.entries(state.persons).map(([key, group]) => [
+                key,
+                group?.originals,
+              ]),
+            )
+          : undefined,
+        publicTalks: state.publicTalks
+          ? Object.fromEntries(
+              Object.entries(state.publicTalks).map(([key, group]) => [
+                key,
+                group?.originals,
+              ]),
+            )
+          : undefined,
+        schedules: state.schedules
+          ? Object.fromEntries(
+              Object.entries(state.schedules).map(([key, group]) => [
+                key,
+                group?.originals,
+              ]),
+            )
+          : undefined,
+        territory: state.territory
+          ? Object.fromEntries(
+              Object.entries(state.territory).map(([key, group]) => [
+                key,
+                group?.originals,
+              ]),
+            )
+          : undefined,
       };
     },
-    translations(state) {
+    translations(
+      state,
+    ): Record<EmailKey, Partial<Record<number, Email>> | undefined> {
       return {
-        literature: state.literature.translations,
-        outlines: state.outlines.translations,
-        songs: state.songs.translations,
-        tips: state.tips.translations,
+        assignmentsAndDuties: state.assignmentsAndDuties
+          ? Object.fromEntries(
+              Object.entries(state.assignmentsAndDuties).map(([key, group]) => [
+                key,
+                group?.translations,
+              ]),
+            )
+          : undefined,
+        fieldServiceReports: state.fieldServiceReports
+          ? Object.fromEntries(
+              Object.entries(state.fieldServiceReports).map(([key, group]) => [
+                key,
+                group?.translations,
+              ]),
+            )
+          : undefined,
+        lifeAndMinistryMeeting: state.lifeAndMinistryMeeting
+          ? Object.fromEntries(
+              Object.entries(state.lifeAndMinistryMeeting).map(
+                ([key, group]) => [key, group?.translations],
+              ),
+            )
+          : undefined,
+        other: state.other
+          ? Object.fromEntries(
+              Object.entries(state.other).map(([key, group]) => [
+                key,
+                group?.translations,
+              ]),
+            )
+          : undefined,
+        persons: state.persons
+          ? Object.fromEntries(
+              Object.entries(state.persons).map(([key, group]) => [
+                key,
+                group?.translations,
+              ]),
+            )
+          : undefined,
+        publicTalks: state.publicTalks
+          ? Object.fromEntries(
+              Object.entries(state.publicTalks).map(([key, group]) => [
+                key,
+                group?.translations,
+              ]),
+            )
+          : undefined,
+        schedules: state.schedules
+          ? Object.fromEntries(
+              Object.entries(state.schedules).map(([key, group]) => [
+                key,
+                group?.translations,
+              ]),
+            )
+          : undefined,
+        territory: state.territory
+          ? Object.fromEntries(
+              Object.entries(state.territory).map(([key, group]) => [
+                key,
+                group?.translations,
+              ]),
+            )
+          : undefined,
       };
     },
   },
   persist: true,
-  state: (): State => ({
-    literature: {
-      input: undefined,
-      originals: undefined,
-      translations: undefined,
-    },
-    outlines: {
-      input: undefined,
-      originals: undefined,
-      translations: undefined,
-    },
-    songs: { input: undefined, originals: undefined, translations: undefined },
-    tips: { input: undefined, originals: undefined, translations: undefined },
+  state: (): EmailState => ({
+    assignmentsAndDuties: undefined,
+    fieldServiceReports: undefined,
+    lifeAndMinistryMeeting: undefined,
+    other: undefined,
+    persons: undefined,
+    publicTalks: undefined,
+    schedules: undefined,
+    territory: undefined,
   }),
 });

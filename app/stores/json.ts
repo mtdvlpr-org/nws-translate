@@ -1,6 +1,6 @@
-export type JsonKey = Prettify<keyof State>;
+export type JsonKey = Prettify<keyof JsonState>;
 
-type State = {
+export type JsonState = {
   literature: {
     input?: Literature;
     originals?: Literature;
@@ -188,7 +188,7 @@ export const useJsonStore = defineStore("json", {
     },
   },
   persist: true,
-  state: (): State => ({
+  state: (): JsonState => ({
     literature: {
       input: undefined,
       originals: undefined,

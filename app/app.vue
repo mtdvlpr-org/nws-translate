@@ -104,6 +104,7 @@ const items: NavigationMenuItem[] = [
 
 const uiStore = useUIStore();
 const jsonStore = useJsonStore();
+const emailStore = useEmailStore();
 
 onMounted(() => {
   if (
@@ -124,6 +125,20 @@ onMounted(() => {
     if (jsonStore.input[key] && !jsonStore.translations[key]) {
       jsonStore.setTranslations(jsonStore.input, key);
     }
+  });
+
+  typedKeys(emailStore.$state).forEach((g) => {
+    if (!emailStore[g]) return;
+    typedKeys(emailStore[g]).forEach((nr) => {
+      if (!emailStore[g]![nr]) return;
+
+      if (emailStore[g]![nr]!.input) {
+        emailStore[g]![nr]!.translations = {
+          ...emailStore[g]![nr]!.input,
+          ...(emailStore[g]![nr]!.translations ?? {}),
+        };
+      }
+    });
   });
 });
 </script>

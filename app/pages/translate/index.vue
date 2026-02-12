@@ -14,14 +14,15 @@
         description="Importeer eerst teksten vanuit Google Docs of een .json-bestand om te kunnen vertalen."
       />
       <UPageGrid>
-        <UPageCard
-          v-for="(card, index) in cards"
-          :key="index"
-          v-bind="card"
-          :highlight="card.inconsistent > 0 || card.missing > 0"
-          :highlight-color="card.missing > 0 ? 'error' : 'warning'"
-          :description="`${card.count} records.${card.missing > 0 ? ` ${card.missing} ontbrekende vertaling(en).` : ''}${card.inconsistent > 0 ? ` ${card.inconsistent} mogelijke inconsistentie(s).` : ''}`"
-        />
+        <template v-for="(card, index) in cards" :key="index">
+          <UPageCard
+            v-if="card.count > 0"
+            v-bind="card"
+            :highlight="card.inconsistent > 0 || card.missing > 0"
+            :highlight-color="card.missing > 0 ? 'error' : 'warning'"
+            :description="`${card.count} records.${card.missing > 0 ? ` ${card.missing} ontbrekende vertaling(en).` : ''}${card.inconsistent > 0 ? ` ${card.inconsistent} mogelijke inconsistentie(s).` : ''}`"
+          />
+        </template>
       </UPageGrid>
       <template v-if="uiStore.uiInconsistencies.length > 0">
         <p>{{ uiStore.uiInconsistencies.length }} UI inconsistentie(s):</p>
@@ -58,6 +59,7 @@
 import type { PageCardProps } from "@nuxt/ui";
 const uiStore = useUIStore();
 const jsonStore = useJsonStore();
+const emailStore = useEmailStore();
 
 const cards = computed(
   (): (PageCardProps & {
@@ -114,6 +116,14 @@ const cards = computed(
         title: "Tips",
         to: "/translate/tips",
       },
+      ...emailGroups.map((group) => ({
+        count: Object.keys(emailStore[group.key] ?? {}).length,
+        icon: "i-lucide:mail",
+        inconsistent: 0,
+        missing: group.count - Object.keys(emailStore[group.key] ?? {}).length,
+        title: `${group.label} (e-mailtemplates)`,
+        to: `/translate/email/${group.key}`,
+      })),
     ];
   },
 );
