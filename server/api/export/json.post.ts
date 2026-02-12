@@ -3,7 +3,7 @@ import { z } from "zod";
 const bodySchema = z.object({
   files: z
     .array(
-      z.strictObject({
+      z.object({
         data: z.json(),
         name: z.string(),
       }),
