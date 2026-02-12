@@ -28,6 +28,20 @@
         </UPageGrid>
       </template>
       <template v-else>
+        <UPageCard
+          v-if="jsonStore.missingOutlines.length > 0"
+          highlight
+          highlight-color="error"
+          :title="`${jsonStore.missingOutlines.length} ontbrekende vertaling(en) gevonden:`"
+        >
+          <UPageGrid>
+            <OutlineForm
+              v-for="outline in jsonStore.missingOutlines"
+              :key="outline.number"
+              :outline="outline"
+            />
+          </UPageGrid>
+        </UPageCard>
         <UPageGrid>
           <OutlineForm
             v-for="outline in jsonStore.originals.outlines"

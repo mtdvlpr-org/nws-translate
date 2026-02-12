@@ -87,7 +87,7 @@ const cards = computed(
       {
         count: jsonStore.originals.literature?.length ?? 0,
         icon: "i-lucide:book-open",
-        inconsistent: 0,
+        inconsistent: jsonStore.wrongLiterature.length,
         missing: jsonStore.missingLiterature.length,
         title: "Lectuur",
         to: "/translate/literature",

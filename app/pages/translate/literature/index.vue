@@ -17,6 +17,21 @@
         </UPageGrid>
       </template>
       <template v-else>
+        <UPageCard
+          v-if="jsonStore.wrongLiterature.length > 0"
+          highlight
+          highlight-color="error"
+          :title="`${jsonStore.wrongLiterature.length} verkeerde vertaling(en) gevonden:`"
+          description="De JSON-bestanden zijn niet consistent. Categorie, artikelnummer en symbool moeten gelijk zijn."
+        >
+          <UPageGrid>
+            <LiteratureForm
+              v-for="item in jsonStore.wrongLiterature"
+              :key="item.id"
+              :item="item"
+            />
+          </UPageGrid>
+        </UPageCard>
         <UPageGrid>
           <LiteratureForm
             v-for="item in jsonStore.originals.literature"

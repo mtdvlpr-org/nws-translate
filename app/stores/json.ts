@@ -67,7 +67,20 @@ export const useJsonStore = defineStore("json", {
       group?: JsonKey,
     ) {
       if (!group || group === "literature") {
-        this.literature = { ...this.literature, translations: literature };
+        this.literature = {
+          ...this.literature,
+          translations: literature?.map((l) => {
+            const original = this.literature.originals?.find(
+              (o) => o.id === l.id,
+            );
+            if (!original) return l;
+
+            return {
+              ...original,
+              title: l.title,
+            };
+          }),
+        };
       }
       if (!group || group === "outlines") {
         this.outlines = { ...this.outlines, translations: outlines };
@@ -151,7 +164,11 @@ export const useJsonStore = defineStore("json", {
           (o) =>
             !!o.title &&
             !state.outlines.translations?.some(
-              (t) => t.number === o.number && !!t.title && !!t.updated,
+              (t) =>
+                t.number === o.number &&
+                !!t.title &&
+                !!t.updated &&
+                (!o.notes || !!t.notes),
             ),
         ) ?? []
       );
@@ -185,6 +202,19 @@ export const useJsonStore = defineStore("json", {
         songs: state.songs.translations,
         tips: state.tips.translations,
       };
+    },
+    wrongLiterature(state) {
+      return (
+        state.literature.originals?.filter((item) => {
+          const translation = state.literature.translations?.find(
+            (t) => t.id === item.id,
+          );
+          if (!translation) return false;
+          if (item.categoryName !== translation.categoryName) return true;
+          if (item.itemNumber !== translation.itemNumber) return true;
+          if (item.symbol !== translation.symbol) return true;
+        }) ?? []
+      );
     },
   },
   persist: true,

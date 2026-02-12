@@ -9,7 +9,7 @@
       name="title"
       :hint="item.symbol"
       :description="item.title"
-      :label="`Lectuurartikel ${item.id}`"
+      :label="`Lectuurartikel #${item.id}${item.itemNumber ? ` (${item.itemNumber})` : ''}`"
     >
       <UInput v-model="state.title" class="w-full" />
     </UFormField>

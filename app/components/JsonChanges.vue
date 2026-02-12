@@ -52,6 +52,6 @@ const isDifferent = computed(() => {
 });
 
 const resetUI = () => {
-  jsonStore.setTranslations({ ...jsonStore.input });
+  jsonStore.setTranslations({ ...jsonStore.input }, props.type);
 };
 </script>
