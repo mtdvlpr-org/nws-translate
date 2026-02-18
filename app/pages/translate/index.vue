@@ -119,7 +119,8 @@ const cards = computed(
       ...emailGroups.map((group) => ({
         count: Object.keys(emailStore[group.key] ?? {}).length,
         icon: "i-lucide:mail",
-        inconsistent: 0,
+        inconsistent: Object.keys(emailStore.inconsistencies[group.key] ?? {})
+          .length,
         missing: group.count - Object.keys(emailStore[group.key] ?? {}).length,
         title: `${group.label} (e-mailtemplates)`,
         to: `/translate/email/${group.key}`,

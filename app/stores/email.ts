@@ -22,6 +22,28 @@ export type EmailState = {
   territory: Partial<Record<number, EmailGroup>> | undefined;
 };
 
+const VARIABLE_REGEX = /\[([A-Z0-9_]+)\]/g;
+
+function extractVariables(template: string): string[] {
+  const matches = template.matchAll(VARIABLE_REGEX);
+  return [...matches].map((m) => m[1] ?? "").filter(Boolean);
+}
+
+function variablesMatch(original: string, translated: string): boolean {
+  const origVars = extractVariables(original);
+  const transVars = extractVariables(translated);
+
+  if (origVars.length !== transVars.length) return false;
+
+  const origSet = new Set(origVars);
+  const transSet = new Set(transVars);
+
+  for (const v of origSet) {
+    if (!transSet.has(v)) return false;
+  }
+  return true;
+}
+
 export const useEmailStore = defineStore("email", {
   actions: {
     setInputs(
@@ -115,6 +137,143 @@ export const useEmailStore = defineStore("email", {
     },
   },
   getters: {
+    inconsistencies(
+      state,
+    ): Record<EmailKey, Partial<Record<number, Email>> | undefined> {
+      return {
+        assignmentsAndDuties: state.assignmentsAndDuties
+          ? Object.fromEntries(
+              Object.entries(state.assignmentsAndDuties)
+                .map(([key, group]): [string, Email | undefined] => [
+                  key,
+                  group?.originals,
+                ])
+                .filter(
+                  ([key, mail]) =>
+                    !variablesMatch(
+                      mail?.text ?? "",
+                      state.assignmentsAndDuties?.[+key]?.translations?.text ??
+                        "",
+                    ),
+                ),
+            )
+          : undefined,
+        fieldServiceReports: state.fieldServiceReports
+          ? Object.fromEntries(
+              Object.entries(state.fieldServiceReports)
+                .map(([key, group]): [string, Email | undefined] => [
+                  key,
+                  group?.originals,
+                ])
+                .filter(
+                  ([key, mail]) =>
+                    !variablesMatch(
+                      mail?.text ?? "",
+                      state.fieldServiceReports?.[+key]?.translations?.text ??
+                        "",
+                    ),
+                ),
+            )
+          : undefined,
+        lifeAndMinistryMeeting: state.lifeAndMinistryMeeting
+          ? Object.fromEntries(
+              Object.entries(state.lifeAndMinistryMeeting)
+                .map(([key, group]): [string, Email | undefined] => [
+                  key,
+                  group?.originals,
+                ])
+                .filter(
+                  ([key, mail]) =>
+                    !variablesMatch(
+                      mail?.text ?? "",
+                      state.lifeAndMinistryMeeting?.[+key]?.translations
+                        ?.text ?? "",
+                    ),
+                ),
+            )
+          : undefined,
+        other: state.other
+          ? Object.fromEntries(
+              Object.entries(state.other)
+                .map(([key, group]): [string, Email | undefined] => [
+                  key,
+                  group?.originals,
+                ])
+                .filter(
+                  ([key, mail]) =>
+                    !variablesMatch(
+                      mail?.text ?? "",
+                      state.other?.[+key]?.translations?.text ?? "",
+                    ),
+                ),
+            )
+          : undefined,
+        persons: state.persons
+          ? Object.fromEntries(
+              Object.entries(state.persons)
+                .map(([key, group]): [string, Email | undefined] => [
+                  key,
+                  group?.originals,
+                ])
+                .filter(
+                  ([key, mail]) =>
+                    !variablesMatch(
+                      mail?.text ?? "",
+                      state.persons?.[+key]?.translations?.text ?? "",
+                    ),
+                ),
+            )
+          : undefined,
+        publicTalks: state.publicTalks
+          ? Object.fromEntries(
+              Object.entries(state.publicTalks)
+                .map(([key, group]): [string, Email | undefined] => [
+                  key,
+                  group?.originals,
+                ])
+                .filter(
+                  ([key, mail]) =>
+                    !variablesMatch(
+                      mail?.text ?? "",
+                      state.publicTalks?.[+key]?.translations?.text ?? "",
+                    ),
+                ),
+            )
+          : undefined,
+        schedules: state.schedules
+          ? Object.fromEntries(
+              Object.entries(state.schedules)
+                .map(([key, group]): [string, Email | undefined] => [
+                  key,
+                  group?.originals,
+                ])
+                .filter(
+                  ([key, mail]) =>
+                    !variablesMatch(
+                      mail?.text ?? "",
+                      state.schedules?.[+key]?.translations?.text ?? "",
+                    ),
+                ),
+            )
+          : undefined,
+        territory: state.territory
+          ? Object.fromEntries(
+              Object.entries(state.territory)
+                .map(([key, group]): [string, Email | undefined] => [
+                  key,
+                  group?.originals,
+                ])
+                .filter(
+                  ([key, mail]) =>
+                    !variablesMatch(
+                      mail?.text ?? "",
+                      state.territory?.[+key]?.translations?.text ?? "",
+                    ),
+                ),
+            )
+          : undefined,
+      };
+    },
     inputs(
       state,
     ): Record<EmailKey, Partial<Record<number, Email>> | undefined> {

@@ -4,10 +4,19 @@
     <UPageBody>
       <UIChanges type="NWS" />
       <UIChanges type="NWP" />
-      <JsonChanges type="literature" />
-      <JsonChanges type="outlines" />
-      <JsonChanges type="songs" />
-      <JsonChanges type="tips" />
+      <JsonChanges
+        v-for="type in typedKeys(jsonStore.$state)"
+        :key="type"
+        :type="type"
+      />
+      <template v-for="group in emailGroups" :key="group.key">
+        <EmailChanges
+          v-for="nr in group.count"
+          :key="nr"
+          :nr="nr"
+          :group="group.key"
+        />
+      </template>
       <UPageCard title="Bestanden">
         <div class="flex flex-wrap gap-2">
           <UButton

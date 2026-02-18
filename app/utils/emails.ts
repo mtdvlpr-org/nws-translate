@@ -8,3 +8,14 @@ export const emailGroups: { count: number; key: EmailKey; label: string }[] = [
   { count: 2, key: "schedules", label: "Schema's" },
   { count: 3, key: "territory", label: "Gebied" },
 ] as const;
+
+export const stringifyEmail = (email: Email): string => {
+  return JSON.stringify(
+    {
+      text: email.text?.replace(/\r/g, ""),
+      title: email.title?.replace(/\r/g, ""),
+    },
+    null,
+    2,
+  );
+};

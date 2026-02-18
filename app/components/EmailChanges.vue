@@ -19,32 +19,29 @@
 
 <script setup lang="ts">
 const props = defineProps<{
-  type: JsonKey;
+  group: EmailKey;
+  nr: number;
 }>();
 
-const jsonStore = useJsonStore();
+const emailStore = useEmailStore();
+
+const groupName = computed(() => {
+  return (
+    (emailGroups.find((group) => group.key === props.group)?.label ??
+      "Onbekend") + " (e-mailtemplates)"
+  );
+});
 
 const label = computed(() => {
-  switch (props.type) {
-    case "literature":
-      return "Lectuur";
-    case "outlines":
-      return "Lezingen";
-    case "songs":
-      return "Liederen";
-    case "tips":
-      return "Tips";
-    default:
-      return "Onbekend";
-  }
+  return `${groupName.value} #${props.nr}`;
 });
 
 const inputTranslations = computed(() => {
-  return JSON.stringify(jsonStore.input[props.type], null, 2);
+  return stringifyEmail(emailStore.inputs[props.group]?.[props.nr] ?? {});
 });
 
 const translations = computed(() => {
-  return JSON.stringify(jsonStore.translations[props.type], null, 2);
+  return stringifyEmail(emailStore.translations[props.group]?.[props.nr] ?? {});
 });
 
 const isDifferent = computed(() => {
@@ -52,6 +49,10 @@ const isDifferent = computed(() => {
 });
 
 const reset = () => {
-  jsonStore.setTranslations({ ...jsonStore.input }, props.type);
+  emailStore.setTranslation(
+    props.group,
+    props.nr,
+    emailStore.inputs[props.group]?.[props.nr] ?? {},
+  );
 };
 </script>

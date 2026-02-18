@@ -94,7 +94,7 @@ export const useJsonStore = defineStore("json", {
     },
   },
   getters: {
-    changedGroups(state) {
+    changedGroups(state): JsonKey[] {
       const groups: JsonKey[] = [];
       typedKeys(state).forEach((group) => {
         if (
@@ -107,7 +107,11 @@ export const useJsonStore = defineStore("json", {
       });
       return groups;
     },
-    inconsistentTips(state) {
+    inconsistentTips(state): {
+      heading: string;
+      tips: { index: number; translation: string }[];
+      translations: string[];
+    }[] {
       if (!state.tips.originals?.length) return [];
       const headings: Record<string, { index: number; translation: string }[]> =
         {};
@@ -149,16 +153,16 @@ export const useJsonStore = defineStore("json", {
         outlines: state.outlines.input,
         songs: state.songs.input,
         tips: state.tips.input,
-      };
+      } satisfies Record<JsonKey, unknown>;
     },
-    missingLiterature(state) {
+    missingLiterature(state): Literature {
       return (
         state.literature.originals?.filter(
           (o) => !state.literature.translations?.some((t) => t.id === o.id),
         ) ?? []
       );
     },
-    missingOutlines(state) {
+    missingOutlines(state): Outlines {
       return (
         state.outlines.originals?.filter(
           (o) =>
@@ -173,14 +177,14 @@ export const useJsonStore = defineStore("json", {
         ) ?? []
       );
     },
-    missingSongs(state) {
+    missingSongs(state): Songs {
       return (
         state.songs.originals?.filter(
           (o) => !state.songs.translations?.some((t) => t.number === o.number),
         ) ?? []
       );
     },
-    missingTips(state) {
+    missingTips(state): Tips {
       return (
         state.tips.originals?.filter(
           (t, i) => !state.tips.translations?.[i]?.heading,
@@ -193,7 +197,7 @@ export const useJsonStore = defineStore("json", {
         outlines: state.outlines.originals,
         songs: state.songs.originals,
         tips: state.tips.originals,
-      };
+      } satisfies Record<JsonKey, unknown>;
     },
     translations(state) {
       return {
@@ -201,9 +205,9 @@ export const useJsonStore = defineStore("json", {
         outlines: state.outlines.translations,
         songs: state.songs.translations,
         tips: state.tips.translations,
-      };
+      } satisfies Record<JsonKey, unknown>;
     },
-    wrongLiterature(state) {
+    wrongLiterature(state): Literature {
       return (
         state.literature.originals?.filter((item) => {
           const translation = state.literature.translations?.find(

@@ -6,7 +6,7 @@
         class="w-fit"
         color="error"
         :label="`Reset ${type} UI veranderingen`"
-        @click="resetUI"
+        @click="reset"
       />
     </template>
     <p v-else>Geen veranderde {{ type }} UI teksten gevonden.</p>
@@ -68,7 +68,7 @@ const changedKeys = computed(() => {
       });
 });
 
-const resetUI = () => {
+const reset = () => {
   if (props.type === "NWS") {
     uiStore.translations = parseTranslationFile(uiStore.translationsString);
   } else if (uiStore.nwpString) {
