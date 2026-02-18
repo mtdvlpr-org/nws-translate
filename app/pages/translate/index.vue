@@ -25,7 +25,10 @@
         </template>
       </UPageGrid>
       <template v-if="uiStore.uiInconsistencies.length > 0">
-        <p>{{ uiStore.uiInconsistencies.length }} UI inconsistentie(s):</p>
+        <p>
+          {{ uiStore.uiInconsistencies.length }} mogelijke UI inconsistentie(s)
+          gevonden:
+        </p>
         <UAlert
           v-for="term in uiStore.uiInconsistencies"
           :key="term.key"

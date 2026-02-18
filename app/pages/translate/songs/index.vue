@@ -23,6 +23,20 @@
         </UPageGrid>
       </template>
       <template v-else>
+        <UPageCard
+          v-if="jsonStore.missingSongs.length > 0"
+          highlight
+          highlight-color="error"
+          :title="`${jsonStore.missingSongs.length} ontbrekende vertaling(en) gevonden:`"
+        >
+          <UPageGrid>
+            <SongForm
+              v-for="song in jsonStore.missingSongs"
+              :key="song.number"
+              :song="song"
+            />
+          </UPageGrid>
+        </UPageCard>
         <UPageGrid>
           <SongForm
             v-for="song in jsonStore.originals.songs"

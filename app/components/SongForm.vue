@@ -43,9 +43,20 @@ const state = reactive<Partial<Schema>>({
 const { showSuccess } = useFlash();
 
 function onSubmit(event: FormSubmitEvent<Schema>) {
-  const songs = jsonStore.translations.songs?.map((song) =>
-    song.number === props.song.number ? { ...song, ...event.data } : song,
-  );
+  const songs: Songs =
+    jsonStore.originals.songs?.map((original) => {
+      const translation = jsonStore.translations.songs?.find(
+        (s) => s.number === original.number,
+      );
+
+      if (original.number !== props.song.number) {
+        return translation ?? { number: original.number, title: "" };
+      }
+
+      return translation
+        ? { ...translation, ...event.data }
+        : { ...original, ...event.data };
+    }) ?? [];
 
   jsonStore.setTranslations({ songs }, "songs");
   showSuccess({ description: "Lied opgeslagen.", id: "song-saved" });

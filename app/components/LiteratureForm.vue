@@ -44,9 +44,15 @@ const state = reactive<Partial<Schema>>({
 const { showSuccess } = useFlash();
 
 function onSubmit(event: FormSubmitEvent<Schema>) {
-  const literature = jsonStore.translations.literature?.map((item) =>
-    item.id === props.item.id ? { ...item, ...event.data } : item,
-  );
+  const literature = jsonStore.originals.literature?.map((original) => {
+    const translation = jsonStore.translations.literature?.find(
+      (s) => s.id === original.id,
+    );
+    if (original.id !== props.item.id) return translation ?? original;
+    return translation
+      ? { ...translation, ...event.data }
+      : { ...original, ...event.data };
+  });
 
   jsonStore.setTranslations({ literature }, "literature");
   showSuccess({ description: "Lectuurartikel opgeslagen.", id: "item-saved" });

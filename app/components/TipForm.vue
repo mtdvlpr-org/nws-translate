@@ -55,9 +55,16 @@ const state = reactive<Partial<Schema>>({
 const { showSuccess } = useFlash();
 
 function onSubmit(event: FormSubmitEvent<Schema>) {
-  const tips = jsonStore.translations.tips?.map((tip, i) =>
-    i === props.index ? { ...tip, ...event.data } : tip,
-  );
+  const tips: Tips =
+    jsonStore.originals.tips?.map((original, i) =>
+      i === props.index
+        ? { ...original, ...event.data }
+        : (jsonStore.translations.tips?.[i] ?? {
+            heading: "",
+            text: "",
+            url: original.url,
+          }),
+    ) ?? [];
 
   jsonStore.setTranslations({ tips }, "tips");
   showSuccess({ description: "Tip opgeslagen.", id: "tip-saved" });

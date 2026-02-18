@@ -18,6 +18,20 @@
       </template>
       <template v-else>
         <UPageCard
+          v-if="jsonStore.missingLiterature.length > 0"
+          highlight
+          highlight-color="error"
+          :title="`${jsonStore.missingLiterature.length} ontbrekende vertaling(en) gevonden:`"
+        >
+          <UPageGrid>
+            <LiteratureForm
+              v-for="item in jsonStore.missingLiterature"
+              :key="item.id"
+              :item="item"
+            />
+          </UPageGrid>
+        </UPageCard>
+        <UPageCard
           v-if="jsonStore.wrongLiterature.length > 0"
           highlight
           highlight-color="error"

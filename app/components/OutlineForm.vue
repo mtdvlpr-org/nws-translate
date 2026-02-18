@@ -67,11 +67,20 @@ const state = reactive<Partial<Schema>>({
 const { showSuccess } = useFlash();
 
 function onSubmit(event: FormSubmitEvent<Schema>) {
-  const outlines = jsonStore.translations.outlines?.map((outline) =>
-    outline.number === props.outline.number
-      ? { ...outline, ...event.data }
-      : outline,
-  );
+  const outlines: Outlines =
+    jsonStore.originals.outlines?.map((original) => {
+      const translation = jsonStore.translations.outlines?.find(
+        (s) => s.number === original.number,
+      );
+      if (original.number !== props.outline.number) {
+        return (
+          translation ?? { number: original.number, title: "", updated: "" }
+        );
+      }
+      return translation
+        ? { ...translation, ...event.data }
+        : { ...original, ...event.data };
+    }) ?? [];
 
   jsonStore.setTranslations({ outlines }, "outlines");
   showSuccess({ description: "Schema opgeslagen.", id: "outline-saved" });

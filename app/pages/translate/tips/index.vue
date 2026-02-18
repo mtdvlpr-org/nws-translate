@@ -36,6 +36,19 @@
         </div>
       </template>
       <template v-else>
+        <UPageCard
+          v-if="jsonStore.missingTips.length > 0"
+          highlight
+          highlight-color="error"
+          :title="`${jsonStore.missingTips.length} ontbrekende vertaling(en) gevonden:`"
+        >
+          <TipForm
+            v-for="[i, tip] in jsonStore.missingTips"
+            :key="i"
+            :index="i"
+            :tip="tip"
+          />
+        </UPageCard>
         <TipForm
           v-for="(tip, i) in jsonStore.originals.tips"
           :id="`tip-${i}`"

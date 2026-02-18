@@ -184,11 +184,15 @@ export const useJsonStore = defineStore("json", {
         ) ?? []
       );
     },
-    missingTips(state): Tips {
+    missingTips(state): [number, Tip][] {
       return (
-        state.tips.originals?.filter(
-          (t, i) => !state.tips.translations?.[i]?.heading,
-        ) ?? []
+        state.tips.originals
+          ?.map((t, i): [number, Tip] => [i, t])
+          ?.filter(
+            ([i]) =>
+              !state.tips.translations?.[i]?.heading ||
+              !state.tips.translations?.[i]?.text,
+          ) ?? []
       );
     },
     originals(state) {
