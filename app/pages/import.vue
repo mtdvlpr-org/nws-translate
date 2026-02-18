@@ -338,7 +338,7 @@ const loadBackup = async (file: File | null | undefined) => {
       description: "Backup is geladen.",
       id: "backup-loaded",
     });
-    await navigateTo("/translate");
+    navigateTo("/translate");
   } catch (e) {
     console.error(e);
     showError({
