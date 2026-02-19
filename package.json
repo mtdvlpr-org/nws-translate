@@ -73,8 +73,8 @@
     "*": "eslint --fix"
   },
   "engines": {
-    "node": ">=22.18.0",
-    "pnpm": ">=10.30.0"
+    "node": "^22.18.0",
+    "pnpm": "^10.30.0"
   },
   "packageManager": "pnpm@10.30.0"
 }
