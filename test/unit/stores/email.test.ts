@@ -1,9 +1,15 @@
 import { createPinia, setActivePinia } from "pinia";
 import { beforeEach, describe, expect, it } from "vitest";
 
-import type { Email } from "../../../app/stores/email";
-
 import { useEmailStore } from "../../../app/stores/email";
+import { loadEmailFixture } from "../../fixtures/loaders";
+import {
+  assignmentsAndDutiesEnEmail,
+  assignmentsAndDutiesNlEmail,
+  emailMock,
+  emailTranslationMock,
+  emailWithWrongVariableMock,
+} from "../../mocks/email";
 
 describe("Email Store", () => {
   beforeEach(() => {
@@ -13,14 +19,13 @@ describe("Email Store", () => {
   describe("setInputs", () => {
     it("sets inputs for a group and number", () => {
       const store = useEmailStore();
-      const input: Email = { text: "Hello", title: "Greeting" };
 
       store.setInputs({
-        assignmentsAndDuties: { 1: input },
+        assignmentsAndDuties: { 1: emailMock },
       });
 
       expect(store.assignmentsAndDuties?.[1]).toEqual({
-        input,
+        input: emailMock,
         originals: {},
         translations: {},
       });
@@ -28,18 +33,16 @@ describe("Email Store", () => {
 
     it("merges new inputs with existing group data", () => {
       const store = useEmailStore();
-      store.setInputs({
-        persons: { 1: { text: "Original" } },
-      });
-      store.setOriginals({ persons: { 1: { text: "Original EN" } } });
-      store.setTranslations({ persons: { 1: { text: "Translated" } } });
+      store.setInputs({ persons: { 1: emailTranslationMock } });
+      store.setOriginals({ persons: { 1: emailMock } });
+      store.setTranslations({ persons: { 1: emailTranslationMock } });
 
       store.setInputs({ persons: { 1: { text: "Updated input" } } });
 
       expect(store.persons?.[1]).toEqual({
         input: { text: "Updated input" },
-        originals: { text: "Original EN" },
-        translations: { text: "Translated" },
+        originals: emailMock,
+        translations: emailTranslationMock,
       });
     });
   });
@@ -47,18 +50,14 @@ describe("Email Store", () => {
   describe("setOriginals", () => {
     it("sets originals for a group and number", () => {
       const store = useEmailStore();
-      const original: Email = {
-        text: "Original text",
-        title: "Original title",
-      };
 
       store.setOriginals({
-        territory: { 1: original },
+        territory: { 1: assignmentsAndDutiesEnEmail },
       });
 
       expect(store.territory?.[1]).toEqual({
         input: {},
-        originals: { text: "Original text", title: "Original title" },
+        originals: assignmentsAndDutiesEnEmail,
         translations: {},
       });
     });
@@ -67,18 +66,15 @@ describe("Email Store", () => {
   describe("setTranslation", () => {
     it("sets translation for a specific group and number", () => {
       const store = useEmailStore();
-      store.setInputs({ schedules: { 1: { text: "Input" } } });
-      store.setOriginals({ schedules: { 1: { text: "Original" } } });
+      store.setInputs({ schedules: { 1: emailTranslationMock } });
+      store.setOriginals({ schedules: { 1: emailMock } });
 
-      store.setTranslation("schedules", 1, {
-        text: "Vertaling",
-        title: "Titel",
-      });
+      store.setTranslation("schedules", 1, emailTranslationMock);
 
       expect(store.schedules?.[1]).toEqual({
-        input: { text: "Input" },
-        originals: { text: "Original" },
-        translations: { text: "Vertaling", title: "Titel" },
+        input: emailTranslationMock,
+        originals: emailMock,
+        translations: emailTranslationMock,
       });
     });
   });
@@ -86,14 +82,15 @@ describe("Email Store", () => {
   describe("setTranslations", () => {
     it("sets translations for multiple groups", () => {
       const store = useEmailStore();
-      const translations = { text: "Translated", title: "Subject" };
 
       store.setTranslations({
         other: { 2: { text: "Other translated" } },
-        publicTalks: { 1: translations },
+        publicTalks: { 1: emailTranslationMock },
       });
 
-      expect(store.publicTalks?.[1]?.translations).toEqual(translations);
+      expect(store.publicTalks?.[1]?.translations).toEqual(
+        emailTranslationMock,
+      );
       expect(store.other?.[2]?.translations).toEqual({
         text: "Other translated",
       });
@@ -104,11 +101,9 @@ describe("Email Store", () => {
     describe("inputs", () => {
       it("returns input data per group", () => {
         const store = useEmailStore();
-        store.setInputs({ fieldServiceReports: { 1: { text: "Report" } } });
+        store.setInputs({ fieldServiceReports: { 1: emailMock } });
 
-        expect(store.inputs.fieldServiceReports?.["1"]).toEqual({
-          text: "Report",
-        });
+        expect(store.inputs.fieldServiceReports?.["1"]).toEqual(emailMock);
       });
 
       it("returns undefined for groups with no data", () => {
@@ -123,12 +118,12 @@ describe("Email Store", () => {
       it("returns originals data per group", () => {
         const store = useEmailStore();
         store.setOriginals({
-          lifeAndMinistryMeeting: { 1: { text: "Original" } },
+          lifeAndMinistryMeeting: { 1: emailMock },
         });
 
-        expect(store.originals.lifeAndMinistryMeeting?.["1"]).toEqual({
-          text: "Original",
-        });
+        expect(store.originals.lifeAndMinistryMeeting?.["1"]).toEqual(
+          emailMock,
+        );
       });
 
       it("returns undefined for groups with no data", () => {
@@ -142,11 +137,11 @@ describe("Email Store", () => {
     describe("translations", () => {
       it("returns translations data per group", () => {
         const store = useEmailStore();
-        store.setTranslations({ schedules: { 1: { text: "Translated" } } });
+        store.setTranslations({ schedules: { 1: emailTranslationMock } });
 
-        expect(store.translations.schedules?.["1"]).toEqual({
-          text: "Translated",
-        });
+        expect(store.translations.schedules?.["1"]).toEqual(
+          emailTranslationMock,
+        );
       });
 
       it("returns undefined for groups with no data", () => {
@@ -161,35 +156,51 @@ describe("Email Store", () => {
       it("returns no entries when variable placeholders match", () => {
         const store = useEmailStore();
         store.setOriginals({
-          assignmentsAndDuties: {
-            1: { text: "Hello [NAME], welcome!" },
-          },
+          assignmentsAndDuties: { 1: emailMock },
         });
         store.setTranslations({
-          assignmentsAndDuties: {
-            1: { text: "Hallo [NAME], welkom!" }, // Same variable
-          },
+          assignmentsAndDuties: { 1: emailTranslationMock },
         });
 
         expect(store.inconsistencies.assignmentsAndDuties).toEqual({});
       });
 
+      it("returns no entries for real-world Assignments Reminder EN/NL with matching variables", () => {
+        const store = useEmailStore();
+        store.setOriginals({
+          assignmentsAndDuties: { 1: assignmentsAndDutiesEnEmail },
+        });
+        store.setTranslations({
+          assignmentsAndDuties: { 1: assignmentsAndDutiesNlEmail },
+        });
+
+        expect(store.inconsistencies.assignmentsAndDuties).toEqual({});
+      });
+
+      it("uses fixture content consistent with actual fixture files", async () => {
+        const enText = await loadEmailFixture("assignmentsAndDutiesEn");
+        const nlText = await loadEmailFixture("assignmentsAndDutiesNl");
+
+        expect(assignmentsAndDutiesEnEmail.text?.replace(/\r/g, "")).toBe(
+          enText.replace(/\r/g, ""),
+        );
+        expect(assignmentsAndDutiesNlEmail.text?.replace(/\r/g, "")).toBe(
+          nlText.replace(/\r/g, ""),
+        );
+      });
+
       it("returns entries where translation has different variables", () => {
         const store = useEmailStore();
         store.setOriginals({
-          assignmentsAndDuties: {
-            1: { text: "Hello [NAME], welcome!" },
-          },
+          assignmentsAndDuties: { 1: emailMock },
         });
         store.setTranslations({
-          assignmentsAndDuties: {
-            1: { text: "Hallo [OTHER], welkom!" }, // Different variable
-          },
+          assignmentsAndDuties: { 1: emailWithWrongVariableMock },
         });
 
-        expect(store.inconsistencies.assignmentsAndDuties?.["1"]).toEqual({
-          text: "Hello [NAME], welcome!",
-        });
+        expect(store.inconsistencies.assignmentsAndDuties?.["1"]).toEqual(
+          emailMock,
+        );
       });
 
       it("returns undefined for groups with no data", () => {
@@ -218,64 +229,83 @@ describe("Email Store", () => {
 
       it("exercises all group branches in getters", () => {
         const store = useEmailStore();
-        const email = { text: "Body", title: "Subject" };
         store.setInputs({
-          assignmentsAndDuties: { 1: email },
-          fieldServiceReports: { 1: email },
-          lifeAndMinistryMeeting: { 1: email },
-          other: { 1: email },
-          persons: { 1: email },
-          publicTalks: { 1: email },
-          schedules: { 1: email },
-          territory: { 1: email },
+          assignmentsAndDuties: { 1: emailTranslationMock },
+          fieldServiceReports: { 1: emailTranslationMock },
+          lifeAndMinistryMeeting: { 1: emailTranslationMock },
+          other: { 1: emailTranslationMock },
+          persons: { 1: emailTranslationMock },
+          publicTalks: { 1: emailTranslationMock },
+          schedules: { 1: emailTranslationMock },
+          territory: { 1: emailTranslationMock },
         });
         store.setOriginals({
-          assignmentsAndDuties: { 1: email },
-          fieldServiceReports: { 1: email },
-          lifeAndMinistryMeeting: { 1: email },
-          other: { 1: email },
-          persons: { 1: email },
-          publicTalks: { 1: email },
-          schedules: { 1: email },
-          territory: { 1: email },
+          assignmentsAndDuties: { 1: emailMock },
+          fieldServiceReports: { 1: emailMock },
+          lifeAndMinistryMeeting: { 1: emailMock },
+          other: { 1: emailMock },
+          persons: { 1: emailMock },
+          publicTalks: { 1: emailMock },
+          schedules: { 1: emailMock },
+          territory: { 1: emailMock },
         });
         store.setTranslations({
-          assignmentsAndDuties: { 1: email },
-          fieldServiceReports: { 1: email },
-          lifeAndMinistryMeeting: { 1: email },
-          other: { 1: email },
-          persons: { 1: email },
-          publicTalks: { 1: email },
-          schedules: { 1: email },
-          territory: { 1: email },
+          assignmentsAndDuties: { 1: emailTranslationMock },
+          fieldServiceReports: { 1: emailTranslationMock },
+          lifeAndMinistryMeeting: { 1: emailTranslationMock },
+          other: { 1: emailTranslationMock },
+          persons: { 1: emailTranslationMock },
+          publicTalks: { 1: emailTranslationMock },
+          schedules: { 1: emailTranslationMock },
+          territory: { 1: emailTranslationMock },
         });
 
-        expect(store.inputs.assignmentsAndDuties?.["1"]).toEqual(email);
-        expect(store.inputs.fieldServiceReports?.["1"]).toEqual(email);
-        expect(store.inputs.lifeAndMinistryMeeting?.["1"]).toEqual(email);
-        expect(store.inputs.other?.["1"]).toEqual(email);
-        expect(store.inputs.persons?.["1"]).toEqual(email);
-        expect(store.inputs.publicTalks?.["1"]).toEqual(email);
-        expect(store.inputs.schedules?.["1"]).toEqual(email);
-        expect(store.inputs.territory?.["1"]).toEqual(email);
+        expect(store.inputs.assignmentsAndDuties?.["1"]).toEqual(
+          emailTranslationMock,
+        );
+        expect(store.inputs.fieldServiceReports?.["1"]).toEqual(
+          emailTranslationMock,
+        );
+        expect(store.inputs.lifeAndMinistryMeeting?.["1"]).toEqual(
+          emailTranslationMock,
+        );
+        expect(store.inputs.other?.["1"]).toEqual(emailTranslationMock);
+        expect(store.inputs.persons?.["1"]).toEqual(emailTranslationMock);
+        expect(store.inputs.publicTalks?.["1"]).toEqual(emailTranslationMock);
+        expect(store.inputs.schedules?.["1"]).toEqual(emailTranslationMock);
+        expect(store.inputs.territory?.["1"]).toEqual(emailTranslationMock);
 
-        expect(store.originals.assignmentsAndDuties?.["1"]).toEqual(email);
-        expect(store.originals.fieldServiceReports?.["1"]).toEqual(email);
-        expect(store.originals.lifeAndMinistryMeeting?.["1"]).toEqual(email);
-        expect(store.originals.other?.["1"]).toEqual(email);
-        expect(store.originals.persons?.["1"]).toEqual(email);
-        expect(store.originals.publicTalks?.["1"]).toEqual(email);
-        expect(store.originals.schedules?.["1"]).toEqual(email);
-        expect(store.originals.territory?.["1"]).toEqual(email);
+        expect(store.originals.assignmentsAndDuties?.["1"]).toEqual(emailMock);
+        expect(store.originals.fieldServiceReports?.["1"]).toEqual(emailMock);
+        expect(store.originals.lifeAndMinistryMeeting?.["1"]).toEqual(
+          emailMock,
+        );
+        expect(store.originals.other?.["1"]).toEqual(emailMock);
+        expect(store.originals.persons?.["1"]).toEqual(emailMock);
+        expect(store.originals.publicTalks?.["1"]).toEqual(emailMock);
+        expect(store.originals.schedules?.["1"]).toEqual(emailMock);
+        expect(store.originals.territory?.["1"]).toEqual(emailMock);
 
-        expect(store.translations.assignmentsAndDuties?.["1"]).toEqual(email);
-        expect(store.translations.fieldServiceReports?.["1"]).toEqual(email);
-        expect(store.translations.lifeAndMinistryMeeting?.["1"]).toEqual(email);
-        expect(store.translations.other?.["1"]).toEqual(email);
-        expect(store.translations.persons?.["1"]).toEqual(email);
-        expect(store.translations.publicTalks?.["1"]).toEqual(email);
-        expect(store.translations.schedules?.["1"]).toEqual(email);
-        expect(store.translations.territory?.["1"]).toEqual(email);
+        expect(store.translations.assignmentsAndDuties?.["1"]).toEqual(
+          emailTranslationMock,
+        );
+        expect(store.translations.fieldServiceReports?.["1"]).toEqual(
+          emailTranslationMock,
+        );
+        expect(store.translations.lifeAndMinistryMeeting?.["1"]).toEqual(
+          emailTranslationMock,
+        );
+        expect(store.translations.other?.["1"]).toEqual(emailTranslationMock);
+        expect(store.translations.persons?.["1"]).toEqual(emailTranslationMock);
+        expect(store.translations.publicTalks?.["1"]).toEqual(
+          emailTranslationMock,
+        );
+        expect(store.translations.schedules?.["1"]).toEqual(
+          emailTranslationMock,
+        );
+        expect(store.translations.territory?.["1"]).toEqual(
+          emailTranslationMock,
+        );
 
         expect(store.inconsistencies.assignmentsAndDuties).toEqual({});
         expect(store.inconsistencies.fieldServiceReports).toEqual({});

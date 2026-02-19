@@ -2,7 +2,9 @@ import { createPinia, setActivePinia } from "pinia";
 import { beforeEach, describe, expect, it } from "vitest";
 
 import { useUIStore } from "../../../app/stores/ui";
+import { loadUiFixture } from "../../fixtures/loaders";
 import {
+  NWPProgramUIFileMock,
   NWPTranslationFileMock,
   NWSProgramUIFileMock,
   NWSTranslationFileMock,
@@ -113,13 +115,11 @@ describe("UI Store", () => {
     describe("nwpKeys", () => {
       it("returns keys from nwpTranslations excluding ____ prefix", () => {
         const store = useUIStore();
-        store.nwpTranslations = {
-          ____GENERAL____: "",
-          key: "Value",
-          key2: "Value 2",
-        };
+        store.nwpTranslations = NWPProgramUIFileMock;
 
-        expect(store.nwpKeys).toEqual(["key", "key2"]);
+        expect(store.nwpKeys).toContain("key");
+        expect(store.nwpKeys).toContain("key2");
+        expect(store.nwpKeys).not.toContain("____GENERAL____");
       });
 
       it("returns empty array when nwpTranslations undefined", () => {
@@ -230,6 +230,28 @@ describe("UI Store", () => {
 
         expect(store.remoteTranslations).toEqual({});
       });
+    });
+  });
+
+  describe("fixtures", () => {
+    it("parses real-world NWS ui.txt fixture", async () => {
+      const uiText = await loadUiFixture("nwsEn");
+      const store = useUIStore();
+      store.originalsString = uiText;
+
+      expect(store.references).toHaveProperty("about");
+      expect(store.references.about).toBe("About");
+      expect(store.references.about1).toContain("New World Scheduler");
+    });
+
+    it("parses real-world NWP ui.txt fixture", async () => {
+      const nwpText = await loadUiFixture("nwpNl");
+      const store = useUIStore();
+      store.nwpString = nwpText;
+
+      expect(store.remoteNWP).toHaveProperty("help");
+      expect(store.remoteNWP.help).toBe("Help");
+      expect(store.nwpKeys).not.toContain("____GENERAL____");
     });
   });
 });

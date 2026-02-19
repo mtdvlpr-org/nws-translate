@@ -1,7 +1,15 @@
 import { createPinia, setActivePinia } from "pinia";
 import { beforeEach, describe, expect, it } from "vitest";
 
+import type {
+  Literature,
+  Outlines,
+  Songs,
+  Tips,
+} from "../../../app/utils/schemas";
+
 import { useJsonStore } from "../../../app/stores/json";
+import { loadJsonFixture } from "../../fixtures/loaders";
 import { literatureItemMock, literatureMock } from "../../mocks/literature";
 import {
   emptyOutlineMock,
@@ -352,6 +360,62 @@ describe("Json Store", () => {
         expect(store.inconsistentTips[0].translations).toContain("Vertaling A");
         expect(store.inconsistentTips[0].translations).toContain("Vertaling B");
       });
+    });
+  });
+
+  describe("fixtures", () => {
+    it("handles real-world Literature.json from fixtures", async () => {
+      const literature = await loadJsonFixture<Literature>("literatureEn");
+      const store = useJsonStore();
+
+      store.setInput({ literature });
+      store.setOriginals({ literature });
+      store.setTranslations(
+        {
+          literature: literature.slice(0, 5).map((l) => ({
+            ...l,
+            title: `Translated: ${l.title}`,
+          })),
+        },
+        "literature",
+      );
+
+      expect(store.literature.input).toHaveLength(literature.length);
+      expect(store.literature.translations).toHaveLength(5);
+      expect(store.missingLiterature).toHaveLength(literature.length - 5);
+    });
+
+    it("handles real-world Outlines.json from fixtures", async () => {
+      const outlines = await loadJsonFixture<Outlines>("outlinesEn");
+      const store = useJsonStore();
+
+      store.setOriginals({ outlines });
+      store.setTranslations({ outlines }, "outlines");
+
+      expect(store.outlines.originals).toEqual(outlines);
+      expect(store.outlines.translations).toEqual(outlines);
+    });
+
+    it("handles real-world Songs.json from fixtures", async () => {
+      const songs = await loadJsonFixture<Songs>("songsEn");
+      const store = useJsonStore();
+
+      store.setOriginals({ songs });
+      store.setTranslations({ songs }, "songs");
+
+      expect(store.songs.originals).toEqual(songs);
+      expect(store.missingSongs).toHaveLength(0);
+    });
+
+    it("handles real-world Tips.json from fixtures", async () => {
+      const tips = await loadJsonFixture<Tips>("tipsEn");
+      const store = useJsonStore();
+
+      store.setOriginals({ tips });
+      store.setTranslations({ tips }, "tips");
+
+      expect(store.tips.originals).toEqual(tips);
+      expect(store.inconsistentTips).toBeDefined();
     });
   });
 });

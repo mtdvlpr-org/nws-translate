@@ -1,0 +1,10 @@
+Dear [TO_GENDER_TITLE] [TO_LAST_NAME],
+
+This is a friendly reminder that you have the following Life and Ministry Meeting Assignments:
+
+[CLM_ASSIGNMENTS_ALL]
+
+If you have any questions or problems regarding these assignments, please reply to this email.
+
+Kind Regards,
+[SENDER_NAME]
