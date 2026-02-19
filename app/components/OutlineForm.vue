@@ -30,7 +30,17 @@
     >
       <UTextarea v-model="state.notes" :rows="1" autoresize class="w-full" />
     </UFormField>
-    <UButton class="w-fit" type="submit" label="Opslaan" />
+    <div class="flex gap-2">
+      <UButton class="w-fit" type="submit" label="Opslaan" />
+      <UButton
+        v-if="!outline.notes && !state.notes && !!translation?.notes"
+        type="reset"
+        class="w-fit"
+        label="Reset"
+        color="neutral"
+        @click="reset"
+      />
+    </div>
   </UForm>
 </template>
 <script setup lang="ts">
@@ -64,6 +74,12 @@ const state = reactive<Partial<Schema>>({
   updated: translation.value?.updated,
 });
 
+const reset = () => {
+  state.notes = translation.value?.notes;
+  state.title = translation.value?.title;
+  state.updated = translation.value?.updated;
+};
+
 const { showSuccess } = useFlash();
 
 function onSubmit(event: FormSubmitEvent<Schema>) {
@@ -78,8 +94,12 @@ function onSubmit(event: FormSubmitEvent<Schema>) {
         );
       }
       return translation
-        ? { ...translation, ...event.data }
-        : { ...original, ...event.data };
+        ? {
+            ...translation,
+            ...event.data,
+            notes: event.data.notes || undefined,
+          }
+        : { ...original, ...event.data, notes: event.data.notes || undefined };
     }) ?? [];
 
   jsonStore.setTranslations({ outlines }, "outlines");
