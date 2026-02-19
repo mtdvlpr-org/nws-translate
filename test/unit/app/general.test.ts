@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { typedKeys } from "./../../app/utils/general";
+import { typedKeys } from "./../../../app/utils/general";
 
 describe("typedKeys", () => {
   it("should return the keys of the object", () => {

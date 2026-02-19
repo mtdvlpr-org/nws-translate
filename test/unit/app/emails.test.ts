@@ -1,9 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import {
-  emailGroups,
-  stringifyEmail,
-} from "../../app/utils/emails";
+import { emailGroups, stringifyEmail } from "../../../app/utils/emails";
 
 describe("emailGroups", () => {
   it("should have 8 groups", () => {
@@ -36,11 +33,7 @@ describe("stringifyEmail", () => {
     const email = { text: "Body", title: "Subject" };
     const result = stringifyEmail(email);
     expect(result).toBe(
-      JSON.stringify(
-        { text: "Body", title: "Subject" },
-        null,
-        2,
-      ),
+      JSON.stringify({ text: "Body", title: "Subject" }, null, 2),
     );
   });
 
@@ -60,12 +53,6 @@ describe("stringifyEmail", () => {
   it("should handle empty strings", () => {
     const email = { text: "", title: "" };
     const result = stringifyEmail(email);
-    expect(result).toBe(
-      JSON.stringify(
-        { text: "", title: "" },
-        null,
-        2,
-      ),
-    );
+    expect(result).toBe(JSON.stringify({ text: "", title: "" }, null, 2));
   });
 });

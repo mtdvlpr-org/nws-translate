@@ -14,26 +14,26 @@ import {
   tipSchema,
   tipsSchema,
   translationFileSchema,
-} from "../../app/utils/schemas";
+} from "../../../app/utils/schemas";
 import {
   emptyLiteratureItemMock,
   literatureItemMock,
   literatureMock,
-} from "./../mocks/literature";
+} from "./../../mocks/literature";
 import {
   emptyOutlineMock,
   outlineMock,
   outlinesMock,
   outlineWithNotesMock,
-} from "./../mocks/outline";
-import { songMock, songsMock } from "./../mocks/song";
-import { tipMock, tipsMock } from "./../mocks/tip";
+} from "./../../mocks/outline";
+import { songMock, songsMock } from "./../../mocks/song";
+import { tipMock, tipsMock } from "./../../mocks/tip";
 import {
   NWPProgramUIFileMock,
   NWPTranslationFileMock,
   NWSProgramUIFileMock,
   NWSTranslationFileMock,
-} from "./../mocks/ui";
+} from "./../../mocks/ui";
 
 describe("jsonCodec", () => {
   const testSchema = z.strictObject({

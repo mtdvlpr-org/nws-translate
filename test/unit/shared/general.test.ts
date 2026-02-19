@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { capitalize } from "../../shared/utils/general";
+import { capitalize } from "../../../shared/utils/general";
 
 describe("capitalize", () => {
   it("should capitalize the first character", () => {

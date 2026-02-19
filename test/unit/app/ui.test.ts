@@ -6,13 +6,13 @@ import {
   isNWPTranslationFile,
   parseTranslationFile,
   serializeTranslationFile,
-} from "./../../app/utils/ui";
+} from "./../../../app/utils/ui";
 import {
   NWPProgramUIFileMock,
   NWPTranslationFileMock,
   NWSProgramUIFileMock,
   NWSTranslationFileMock,
-} from "./../mocks/ui";
+} from "./../../mocks/ui";
 
 describe("isNWPProgramUIFile", () => {
   it("should return true if the file is a NWP program UI file", () => {

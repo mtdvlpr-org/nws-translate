@@ -5,4 +5,9 @@ export const songMock: Song = {
   title: "Title",
 };
 
-export const songsMock: Songs = [songMock];
+export const songMock2: Song = {
+  number: "2",
+  title: "Title 2",
+};
+
+export const songsMock: Songs = [songMock, songMock2];
