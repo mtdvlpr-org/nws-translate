@@ -35,7 +35,7 @@
           />
           <UButton
             class="w-fit"
-            label="Zip-bestand met e-mailtemplates"
+            label="Zip-bestand met alle e-mailtemplates"
             @click="exportEmails"
           />
         </div>
