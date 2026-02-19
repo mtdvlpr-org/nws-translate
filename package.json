@@ -32,7 +32,7 @@
     "@vueuse/router": "^14.2.0",
     "jszip": "^3.10.1",
     "node-html-parser": "^7.0.2",
-    "nuxt": "^4.3.0",
+    "nuxt": "^4.3.1",
     "pako": "^2.1.0",
     "pinia": "^3.0.4",
     "pinia-plugin-persistedstate": "^4.7.1",
