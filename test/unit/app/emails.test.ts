@@ -1,6 +1,13 @@
 import { describe, expect, it } from "vitest";
 
 import { emailGroups, stringifyEmail } from "../../../app/utils/emails";
+import {
+  assignmentsAndDutiesEnEmail,
+  emailMock,
+  emailWithCarriageReturnMock,
+  emptyEmailMock,
+  undefinedEmailMock,
+} from "../../mocks/email";
 
 describe("emailGroups", () => {
   it("should have 8 groups", () => {
@@ -30,29 +37,32 @@ describe("emailGroups", () => {
 
 describe("stringifyEmail", () => {
   it("should stringify email with text and title", () => {
-    const email = { text: "Body", title: "Subject" };
-    const result = stringifyEmail(email);
+    const result = stringifyEmail(emailMock);
     expect(result).toBe(
-      JSON.stringify({ text: "Body", title: "Subject" }, null, 2),
+      JSON.stringify({ text: emailMock.text, title: emailMock.title }, null, 2),
     );
   });
 
   it("should strip \\r from text and title", () => {
-    const email = { text: "Line1\r\nLine2\r", title: "Subject\r" };
-    const result = stringifyEmail(email);
+    const result = stringifyEmail(emailWithCarriageReturnMock);
     expect(result).toContain('"text": "Line1\\nLine2"');
     expect(result).toContain('"title": "Subject"');
   });
 
   it("should handle missing text and title", () => {
-    const email = {};
-    const result = stringifyEmail(email);
+    const result = stringifyEmail(undefinedEmailMock);
     expect(result).toBe(JSON.stringify({}, null, 2));
   });
 
   it("should handle empty strings", () => {
-    const email = { text: "", title: "" };
-    const result = stringifyEmail(email);
+    const result = stringifyEmail(emptyEmailMock);
     expect(result).toBe(JSON.stringify({ text: "", title: "" }, null, 2));
+  });
+
+  it("should stringify real-world Assignments Reminder email", () => {
+    const result = stringifyEmail(assignmentsAndDutiesEnEmail);
+    expect(result).toContain("[TO_GENDER_TITLE]");
+    expect(result).toContain("[CLM_ASSIGNMENTS_ALL]");
+    expect(result).toContain("Assignments Reminder (CLM-All)");
   });
 });

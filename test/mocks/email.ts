@@ -17,6 +17,12 @@ export const emptyEmailMock: Email = {
 
 export const undefinedEmailMock: Email = {};
 
+/** Email with carriage returns for testing stringifyEmail strip behavior */
+export const emailWithCarriageReturnMock: Email = {
+  text: "Line1\r\nLine2\r",
+  title: "Subject\r",
+};
+
 /** Real-world style: Assignments Reminder (CLM-All) - English */
 export const assignmentsAndDutiesEnEmail: Email = {
   text: `Dear [TO_GENDER_TITLE] [TO_LAST_NAME],

@@ -1,6 +1,6 @@
-import { readFile } from "node:fs/promises";
 import { describe, expect, it } from "vitest";
 
+import { loadUiFixture } from "../../fixtures/loaders";
 import {
   isNWPProgramUIFile,
   isNWPTranslationFile,
@@ -64,7 +64,7 @@ describe("serializeTranslationFile", () => {
 
 describe("parse and serialize", () => {
   it("should return the same string for English NWS file", async () => {
-    const text = await readFile("./test/fixtures/nws/E/ui.txt", "utf-8");
+    const text = await loadUiFixture("nwsEn");
 
     expect(serializeTranslationFile(parseTranslationFile(text))).toBe(
       text.trim().replaceAll("\r", ""),
@@ -72,7 +72,7 @@ describe("parse and serialize", () => {
   });
 
   it("should return the same string for Dutch NWS file", async () => {
-    const text = await readFile("./test/fixtures/nws/O/ui.txt", "utf-8");
+    const text = await loadUiFixture("nwsNl");
 
     expect(serializeTranslationFile(parseTranslationFile(text))).toBe(
       text.trim().replaceAll("\r", ""),
@@ -80,7 +80,7 @@ describe("parse and serialize", () => {
   });
 
   it("should return the same string for Dutch NWP file", async () => {
-    const text = await readFile("./test/fixtures/nwp/O/ui.txt", "utf-8");
+    const text = await loadUiFixture("nwpNl");
 
     expect(serializeTranslationFile(parseTranslationFile(text))).toBe(
       text.trim().replaceAll("\r", ""),

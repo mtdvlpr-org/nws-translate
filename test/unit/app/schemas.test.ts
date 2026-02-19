@@ -1,4 +1,3 @@
-import { readFile } from "node:fs/promises";
 import { describe, expect, it } from "vitest";
 import { z } from "zod";
 
@@ -15,6 +14,7 @@ import {
   tipsSchema,
   translationFileSchema,
 } from "../../../app/utils/schemas";
+import { loadJsonFixture } from "../../fixtures/loaders";
 import {
   emptyLiteratureItemMock,
   literatureItemMock,
@@ -209,11 +209,8 @@ describe("literatureSchema", () => {
   });
 
   it("should validate a json file with real literature items correctly", async () => {
-    const json = await readFile(
-      "./test/fixtures/nws/E/Literature.json",
-      "utf-8",
-    );
-    const result = literatureSchema.safeParse(JSON.parse(json));
+    const data = await loadJsonFixture("literatureEn");
+    const result = literatureSchema.safeParse(data);
     expect(result.success).toBe(true);
   });
 });
@@ -242,8 +239,8 @@ describe("outlinesSchema", () => {
   });
 
   it("should validate a json file with real outlines correctly", async () => {
-    const json = await readFile("./test/fixtures/nws/E/Outlines.json", "utf-8");
-    const result = outlinesSchema.safeParse(JSON.parse(json));
+    const data = await loadJsonFixture("outlinesEn");
+    const result = outlinesSchema.safeParse(data);
     expect(result.success).toBe(true);
   });
 });
@@ -274,8 +271,8 @@ describe("songsSchema", () => {
   });
 
   it("should validate a json file with real songs correctly", async () => {
-    const json = await readFile("./test/fixtures/nws/E/Songs.json", "utf-8");
-    const result = songsSchema.safeParse(JSON.parse(json));
+    const data = await loadJsonFixture("songsEn");
+    const result = songsSchema.safeParse(data);
     expect(result.success).toBe(true);
   });
 });
@@ -294,8 +291,8 @@ describe("tipsSchema", () => {
   });
 
   it("should validate a json file with real tips correctly", async () => {
-    const json = await readFile("./test/fixtures/nws/E/Tips.json", "utf-8");
-    const result = tipsSchema.safeParse(JSON.parse(json));
+    const data = await loadJsonFixture("tipsEn");
+    const result = tipsSchema.safeParse(data);
     expect(result.success).toBe(true);
   });
 });
