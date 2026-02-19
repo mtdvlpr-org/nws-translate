@@ -67,7 +67,7 @@ describe("jsonCodec", () => {
       const booleanCodec = jsonCodec(z.boolean());
 
       expect(numberCodec.safeParse("123").success).toBe(true);
-      expect(stringCodec.safeParse('"hello"').success).toBe(true);
+      expect(stringCodec.safeEncode('"hello"').success).toBe(true);
       expect(booleanCodec.safeParse("true").success).toBe(true);
     });
 
@@ -76,7 +76,7 @@ describe("jsonCodec", () => {
       const result = testCodec.safeParse(jsonString);
 
       expect(result.success).toBe(false);
-      expect(result.error.issues[0].code).toBe("invalid_format");
+      expect(result.error?.issues[0].code).toBe("invalid_format");
     });
 
     it("should fail on malformed JSON with descriptive error", () => {
@@ -84,8 +84,8 @@ describe("jsonCodec", () => {
       const result = testCodec.safeParse(jsonString);
 
       expect(result.success).toBe(false);
-      expect(result.error.issues[0].code).toBe("invalid_format");
-      expect(result.error.issues[0]).toHaveProperty("message");
+      expect(result.error?.issues[0].code).toBe("invalid_format");
+      expect(result.error?.issues[0]).toHaveProperty("message");
     });
 
     it("should fail when decoded value does not match schema", () => {
@@ -120,9 +120,10 @@ describe("jsonCodec", () => {
       const encoded = JSON.stringify(value);
 
       // The codec's encode method is used internally
-      // We can test it by parsing and then stringifying back
-      const result = testCodec.safeParse(encoded);
+      // We can test it by parsing and then stringify it back
+      const result = testCodec.safeEncode(value);
       expect(result.success).toBe(true);
+      expect(result.data).toEqual(encoded);
     });
 
     it("should encode array to JSON string", () => {
@@ -130,9 +131,9 @@ describe("jsonCodec", () => {
       const value = [1, 2, 3];
       const encoded = JSON.stringify(value);
 
-      const result = arrayCodec.safeParse(encoded);
+      const result = arrayCodec.safeEncode(value);
       expect(result.success).toBe(true);
-      expect(result.data).toEqual(value);
+      expect(result.data).toEqual(encoded);
     });
 
     it("should encode nested objects correctly", () => {
@@ -153,9 +154,9 @@ describe("jsonCodec", () => {
       };
       const encoded = JSON.stringify(value);
 
-      const result = nestedCodec.safeParse(encoded);
+      const result = nestedCodec.safeEncode(value);
       expect(result.success).toBe(true);
-      expect(result.data).toEqual(value);
+      expect(result.data).toEqual(encoded);
     });
   });
 
