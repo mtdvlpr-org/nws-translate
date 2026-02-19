@@ -1,5 +1,6 @@
 <template>
   <UPageCard v-if="isDifferent" :title="label">
+    <div :id="type" class="scroll-mt-34"></div>
     <template v-if="isDifferent">
       <DiffViewer
         :context="1"
@@ -20,6 +21,10 @@
 <script setup lang="ts">
 const props = defineProps<{
   type: JsonKey;
+}>();
+
+const emit = defineEmits<{
+  (e: "reset"): void;
 }>();
 
 const jsonStore = useJsonStore();
@@ -53,5 +58,6 @@ const isDifferent = computed(() => {
 
 const reset = () => {
   jsonStore.setTranslations({ ...jsonStore.input }, props.type);
+  emit("reset");
 };
 </script>

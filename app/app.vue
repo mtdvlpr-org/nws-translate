@@ -30,7 +30,7 @@
       </UContainer>
     </UMain>
 
-    <USeparator icon="i-simple-icons-nuxtdotjs" />
+    <USeparator icon="i-simple-icons:nuxtdotjs" />
 
     <UFooter>
       <template #left>
@@ -45,7 +45,7 @@
           target="_blank"
           variant="ghost"
           aria-label="GitHub"
-          icon="i-simple-icons-github"
+          icon="i-simple-icons:github"
           to="https://github.com/mtdvlpr-org/nws-translate"
         />
       </template>

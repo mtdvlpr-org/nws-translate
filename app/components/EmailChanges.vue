@@ -1,5 +1,6 @@
 <template>
   <UPageCard v-if="isDifferent" :title="label">
+    <div :id="`email-${group}-${nr}`" class="scroll-mt-34"></div>
     <template v-if="isDifferent">
       <DiffViewer
         :context="1"
@@ -21,6 +22,10 @@
 const props = defineProps<{
   group: EmailKey;
   nr: number;
+}>();
+
+const emit = defineEmits<{
+  (e: "reset"): void;
 }>();
 
 const emailStore = useEmailStore();
@@ -54,5 +59,6 @@ const reset = () => {
     props.nr,
     emailStore.inputs[props.group]?.[props.nr] ?? {},
   );
+  emit("reset");
 };
 </script>

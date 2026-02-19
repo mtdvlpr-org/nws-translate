@@ -1,5 +1,6 @@
 <template>
   <UPageCard v-if="isDifferent" :title="`${type} UI veranderingen`">
+    <div :id="type.toLowerCase()" class="scroll-mt-34"></div>
     <template v-if="isDifferent">
       <DiffViewer :new-string="translations" :old-string="remoteTranslations" />
       <UButton
@@ -32,6 +33,10 @@
 <script setup lang="ts">
 const props = defineProps<{
   type: "NWP" | "NWS";
+}>();
+
+const emit = defineEmits<{
+  (e: "reset"): void;
 }>();
 
 const uiStore = useUIStore();
@@ -74,5 +79,6 @@ const reset = () => {
   } else if (uiStore.nwpString) {
     uiStore.nwpTranslations = parseTranslationFile(uiStore.nwpString);
   }
+  emit("reset");
 };
 </script>

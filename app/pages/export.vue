@@ -2,12 +2,13 @@
   <UPage>
     <UPageHeader :title="title" :description="description" />
     <UPageBody>
-      <UIChanges type="NWS" />
-      <UIChanges type="NWP" />
+      <UIChanges type="NWS" @reset="loadAnchors" />
+      <UIChanges type="NWP" @reset="loadAnchors" />
       <JsonChanges
         v-for="type in typedKeys(jsonStore.$state)"
         :key="type"
         :type="type"
+        @reset="loadAnchors"
       />
       <template v-for="group in emailGroups" :key="group.key">
         <EmailChanges
@@ -15,9 +16,11 @@
           :key="nr"
           :nr="nr"
           :group="group.key"
+          @reset="loadAnchors"
         />
       </template>
       <UPageCard title="Bestanden">
+        <div id="files" class="scroll-mt-34"></div>
         <div class="flex flex-wrap gap-2">
           <UButton
             v-if="jsonFiles.some(({ changed }) => changed)"
@@ -41,6 +44,7 @@
         </div>
       </UPageCard>
       <UPageCard title="Back-up">
+        <div id="backup" class="scroll-mt-34"></div>
         <div class="flex flex-wrap gap-2">
           <UButton
             class="w-fit"
@@ -50,6 +54,12 @@
         </div>
       </UPageCard>
     </UPageBody>
+
+    <template #right>
+      <UPageAside>
+        <UPageLinks :links="anchors" title="Op deze pagina" />
+      </UPageAside>
+    </template>
   </UPage>
 </template>
 <script setup lang="ts">
@@ -58,6 +68,40 @@ const jsonStore = useJsonStore();
 const emailStore = useEmailStore();
 
 const { showError } = useFlash();
+
+const anchors = shallowRef<PageLink[]>([]);
+
+onMounted(() => {
+  loadAnchors();
+});
+
+const loadAnchors = async () => {
+  await nextTick();
+  const headings: { hash: string; label: string }[] = [
+    { hash: "nws", label: "NWS UI" },
+    { hash: "nwp", label: "NWP UI" },
+    { hash: "literature", label: "Lectuur" },
+    { hash: "outlines", label: "Lezingen" },
+    { hash: "songs", label: "Liederen" },
+    { hash: "tips", label: "Tips" },
+    ...emailGroups.flatMap(({ count, key, label }) =>
+      Array.from({ length: count }, (_, i) => ({
+        hash: `email-${key}-${i + 1}`,
+        label: `${label} #${i + 1}`,
+      })),
+    ),
+    { hash: "files", label: "Bestanden" },
+    { hash: "backup", label: "Back-up" },
+  ].filter(({ hash }) => !!document.getElementById(hash));
+
+  anchors.value = headings.map(
+    ({ hash, label }): PageLink => ({
+      exactHash: true,
+      label,
+      to: `/export#${hash}`,
+    }),
+  );
+};
 
 const jsonFiles = computed(() => {
   return [

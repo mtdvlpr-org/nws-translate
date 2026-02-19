@@ -54,6 +54,13 @@
           description:
             'Exporteer de lokale vertalingen naar Google Docs, .json- en .txt-bestanden.',
         },
+        {
+          icon: 'i-lucide:database-backup',
+          title: '5. Back-up',
+          to: '/export#backup',
+          description:
+            'Maak een back-up van de lokale vertalingen en herstel je voortgang op een ander apparaat.',
+        },
       ]"
     />
   </div>
