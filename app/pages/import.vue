@@ -162,7 +162,13 @@ watch(translations, (val) => {
 
   // JSON
   jsonStore.setInput(val);
-  jsonStore.setTranslations(val);
+
+  // Only set translations if they are empty
+  typedKeys(jsonStore.translations).forEach((key) => {
+    if (!jsonStore.translations[key]?.length) {
+      jsonStore.setTranslations(val, key);
+    }
+  });
 
   showSuccess({
     description: "Vertalingen zijn opgeslagen.",
@@ -181,7 +187,15 @@ watch(originalEmails, (val) => {
 
 watch(inputEmails, (val) => {
   emailStore.setInputs(val);
-  emailStore.setTranslations(val);
+
+  // Only set translations if they are empty
+  typedKeys(emailStore.translations).forEach((key) => {
+    if (
+      !Object.values(emailStore.translations[key] ?? {}).filter(Boolean).length
+    ) {
+      emailStore.setTranslations(val, key);
+    }
+  });
 
   showSuccess({
     description: "Vertaalde e-mailtemplates zijn opgeslagen.",

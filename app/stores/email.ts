@@ -112,8 +112,10 @@ export const useEmailStore = defineStore("email", {
       translations: Partial<
         Record<EmailKey, Partial<Record<number, Email>> | undefined>
       >,
+      group?: EmailKey,
     ) {
       typedKeys(translations).forEach((g) => {
+        if (group && g !== group) return;
         if (!this[g]) this[g] = {};
         Object.keys(translations[g]!).forEach((nr) => {
           if (!this[g]![Number(nr)])
