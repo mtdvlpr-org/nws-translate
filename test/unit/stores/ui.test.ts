@@ -45,9 +45,31 @@ describe("UI Store", () => {
       store.markNWSConsistent("key", "key2");
       store.markUIConsistent("key");
 
-      store.clearConsistentKeys();
+      store.clearConsistentKeys("all");
 
       expect(store.consistentNWS).toEqual({});
+      expect(store.consistentUI).toEqual([]);
+    });
+
+    it("only clears nws consistent keys when type is 'nws'", () => {
+      const store = useUIStore();
+      store.markNWSConsistent("key", "key2");
+      store.markUIConsistent("key");
+
+      store.clearConsistentKeys("nws");
+
+      expect(store.consistentNWS).toEqual({});
+      expect(store.consistentUI).toEqual(["key"]);
+    });
+
+    it("only clears ui consistent keys when type is 'ui'", () => {
+      const store = useUIStore();
+      store.markNWSConsistent("key", "key2");
+      store.markUIConsistent("key");
+
+      store.clearConsistentKeys("ui");
+
+      expect(store.consistentNWS).toEqual({ key: ["key2"] });
       expect(store.consistentUI).toEqual([]);
     });
 
@@ -57,7 +79,7 @@ describe("UI Store", () => {
       store.markNWSConsistent("key1", "key3");
       store.markUIConsistent("key1");
 
-      store.clearConsistentKeys(["key1", "key2"]);
+      store.clearConsistentKeys("all", ["key1", "key2"]);
 
       // key1 is in the list, so its values are cleared to []
       expect(store.consistentNWS).toEqual({ key1: [] });
@@ -69,7 +91,7 @@ describe("UI Store", () => {
       store.markNWSConsistent("key1", "key2");
       store.markNWSConsistent("key1", "key3");
 
-      store.clearConsistentKeys(["key2"]); // key2 is a value, not a key
+      store.clearConsistentKeys("all", ["key2"]); // key2 is a value, not a key
 
       expect(store.consistentNWS).toEqual({ key1: ["key3"] });
     });

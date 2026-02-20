@@ -134,12 +134,12 @@ watch(originalsString, (ui) => {
 
 watch(translationsString, (ui) => {
   translations.value = { ...translations.value, ui };
-  uiStore.clearConsistentKeys();
+  uiStore.clearConsistentKeys("all");
 });
 
 watch(nwpString, (nwp) => {
   translations.value = { ...translations.value, nwp };
-  uiStore.clearConsistentKeys();
+  uiStore.clearConsistentKeys("ui");
 });
 
 watch(originals, (val) => {
@@ -354,7 +354,7 @@ const autoFillOriginalUI = async () => {
   try {
     const strings = await $fetch<string>(
       "https://docs.google.com/feeds/download/documents/export/Export?exportFormat=txt&id=1KOm9MTLrWv_lll6f1YvnlWlq3srXYVKMSo2a9KZ39a8",
-      { responseType: "text" },
+      { cache: "no-cache", responseType: "text" },
     );
     originalsString.value = strings.trim().replaceAll("\r", "");
     originals.value = { ...originals.value, ui: originalsString.value };

@@ -32,7 +32,7 @@
 
 <script setup lang="ts">
 const props = defineProps<{
-  type: "NWP" | "NWS";
+  type: UIType;
 }>();
 
 const emit = defineEmits<{

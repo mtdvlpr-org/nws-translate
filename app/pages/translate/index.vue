@@ -4,7 +4,7 @@
 
     <UPageBody>
       <UAlert
-        v-if="cards.every((card) => card.description === '0 records.')"
+        v-if="cards.every((card) => card.count === 0)"
         color="warning"
         variant="subtle"
         title="Geen teksten gevonden"

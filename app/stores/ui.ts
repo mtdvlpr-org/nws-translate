@@ -10,28 +10,34 @@ export type UIState = {
   translationsString: TranslationFile;
 };
 
+export type UIType = "NWP" | "NWS";
+
 export const useUIStore = defineStore("ui", {
   actions: {
-    clearConsistentKeys(keys?: string[]) {
-      if (!keys) {
-        this.consistentNWS = {};
-        this.consistentUI = [];
+    clearConsistentKeys(type: "all" | "nws" | "ui", keys?: string[]) {
+      if (!keys?.length) {
+        if (type !== "ui") this.consistentNWS = {};
+        if (type !== "nws") this.consistentUI = [];
         return;
       }
 
-      this.consistentNWS = Object.fromEntries(
-        Object.entries(this.consistentNWS).map(([key, values]) => {
-          if (keys.includes(key)) {
-            return [key, []];
-          } else {
-            return [key, values.filter((value) => !keys.includes(value))];
-          }
-        }),
-      );
+      if (type !== "ui") {
+        this.consistentNWS = Object.fromEntries(
+          Object.entries(this.consistentNWS).map(([key, values]) => {
+            if (keys.includes(key)) {
+              return [key, []];
+            } else {
+              return [key, values.filter((value) => !keys.includes(value))];
+            }
+          }),
+        );
+      }
 
-      this.consistentUI = this.consistentUI.filter(
-        (key) => !keys.includes(key),
-      );
+      if (type !== "nws") {
+        this.consistentUI = this.consistentUI.filter(
+          (key) => !keys.includes(key),
+        );
+      }
     },
     markNWSConsistent(key: string, otherKey: string) {
       this.consistentNWS = {
@@ -41,6 +47,16 @@ export const useUIStore = defineStore("ui", {
     },
     markUIConsistent(key: string) {
       this.consistentUI.push(key);
+    },
+    sortKeys(type: UIType) {
+      if (type === "NWS") {
+        this.translations = Object.fromEntries(
+          this.keys.map((key): [string, string] => [
+            key,
+            this.translations[key] ?? "",
+          ]),
+        );
+      }
     },
   },
   getters: {
@@ -69,7 +85,7 @@ export const useUIStore = defineStore("ui", {
             )
             .map(([k]) => ({
               key: k,
-              value: state.translations[k] ?? "",
+              value: state.translations[k] || "<LEGE VERTALING>",
             }))
             .filter(
               ({ value }) =>
@@ -84,7 +100,7 @@ export const useUIStore = defineStore("ui", {
     keys(state): string[] {
       return [
         ...new Set(
-          Object.keys(state.translations).concat(Object.keys(this.references)),
+          Object.keys(this.references).concat(Object.keys(state.translations)),
         ),
       ];
     },

@@ -16,8 +16,18 @@
     <UPageBody>
       <URadioGroup
         v-model="type"
-        :items="['NWP', 'NWS']"
+        :items="['NWS', 'NWP']"
         legend="Welke UI wil je updaten?"
+      />
+      <UAlert
+        v-if="type === 'NWS'"
+        color="warning"
+        title="Let op!"
+        variant="subtle"
+        description="Update eerst de originele (Engelse) teksten voordat je de nieuwe teksten inlaadt."
+        :actions="[
+          { label: 'Ga naar Importeren', variant: 'link', to: '/import' },
+        ]"
       />
       <UPageCard title="Nieuwe teksten">
         <TranslationFileForm
@@ -63,7 +73,7 @@
 </template>
 <script setup lang="ts">
 const uiStore = useUIStore();
-const type = ref<"NWP" | "NWS">("NWS");
+const type = ref<UIType>("NWS");
 
 const stringValue = computed(() => {
   return type.value === "NWS" ? uiStore.translationsString : uiStore.nwpString;
@@ -117,7 +127,10 @@ const finishUpdate = () => {
     ({ key }) => !savedKeys.value.has(key),
   );
 
-  uiStore.clearConsistentKeys(changedText.value.map((t) => t.key));
+  uiStore.clearConsistentKeys(
+    type.value === "NWS" ? "all" : "ui",
+    changedText.value.map((t) => t.key),
+  );
 
   if (type.value === "NWS") {
     newText.forEach((t) => {
@@ -131,6 +144,7 @@ const finishUpdate = () => {
     });
   }
 
+  uiStore.sortKeys(type.value);
   showSuccess({ description: "Update afgerond.", id: "update-finish" });
 
   newTranslationsString.value = "";

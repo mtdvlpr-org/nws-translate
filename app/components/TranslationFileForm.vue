@@ -29,7 +29,7 @@ import { z } from "zod";
 const props = defineProps<{
   required?: boolean;
   submit?: ButtonProps;
-  type: "NWP" | "NWS";
+  type: UIType;
 }>();
 
 const placeholder = computed(() => {

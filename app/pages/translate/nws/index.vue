@@ -1,5 +1,19 @@
 <template>
   <div class="flex flex-col gap-8">
+    <UAlert
+      v-if="uiStore.missingNWS.length > 0"
+      color="error"
+      variant="subtle"
+      :title="`${uiStore.missingNWS.length} ontbrekende vertaling(en)`"
+      description="Ga naar Update en importeer daar de nieuwste NWS-teksten."
+      :actions="[
+        {
+          label: 'Ga naar Update',
+          variant: 'link',
+          to: '/update',
+        },
+      ]"
+    />
     <p>Kies een key uit de lijst om te vertalen.</p>
     <template v-if="uiStore.inconsistentNWS.length > 0">
       <p>
