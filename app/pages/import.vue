@@ -8,6 +8,7 @@
           loading-auto
           class="w-fit"
           color="neutral"
+          variant="subtle"
           label="Vul NWS UI automatisch in"
           @click="autoFillOriginalUI"
         />

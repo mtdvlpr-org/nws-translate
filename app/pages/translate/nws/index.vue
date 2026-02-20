@@ -43,6 +43,7 @@
                   onClick: () => {
                     uiStore.markNWSConsistent(i.key, i.others[0]!.key);
                   },
+                  variant: 'subtle',
                   color: 'neutral',
                 },
               ] as const)

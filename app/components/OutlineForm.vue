@@ -38,6 +38,7 @@
         class="w-fit"
         label="Reset"
         color="neutral"
+        variant="subtle"
         @click="reset"
       />
     </div>

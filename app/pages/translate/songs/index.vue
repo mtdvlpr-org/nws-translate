@@ -10,6 +10,7 @@
       <UButton
         loading-auto
         color="neutral"
+        variant="subtle"
         label="Liederen automatisch vertalen"
         @click="translateSongs"
       />

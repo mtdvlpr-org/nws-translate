@@ -50,6 +50,7 @@
             {
               label: 'Markeer als consistent',
               color: 'neutral',
+              variant: 'subtle',
               onClick: () => uiStore.markUIConsistent(term.key),
             },
           ]"

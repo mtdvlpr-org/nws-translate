@@ -33,6 +33,7 @@
             :key="file.name"
             class="w-fit"
             color="neutral"
+            variant="subtle"
             :label="`${file.name}.json`"
             @click="exportJSON(file.name, file.data)"
           />
