@@ -154,12 +154,18 @@ watch(originals, (val) => {
 
 watch(translations, (val) => {
   // NWS
-  translationsString.value = val.ui;
-  uiStore.translations = parseTranslationFile(val.ui);
+  if (val.ui !== translationsString.value) {
+    translationsString.value = val.ui;
+    uiStore.translations = parseTranslationFile(val.ui);
+  }
 
   // NWP
-  nwpString.value = val.nwp;
-  uiStore.nwpTranslations = val.nwp ? parseTranslationFile(val.nwp) : undefined;
+  if (val.nwp !== nwpString.value) {
+    nwpString.value = val.nwp;
+    uiStore.nwpTranslations = val.nwp
+      ? parseTranslationFile(val.nwp)
+      : undefined;
+  }
 
   // JSON
   jsonStore.setInput(val);
