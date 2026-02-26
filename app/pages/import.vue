@@ -73,7 +73,6 @@ import type { Output as EmailOutput } from "~/components/EmailImportForm.vue";
 import type { Output } from "~/components/ImportForm.vue";
 
 const uiStore = useUIStore();
-const { nwpString, originalsString, translationsString } = storeToRefs(uiStore);
 
 const anchors = computed((): PageLink[] => [
   {
@@ -106,14 +105,13 @@ const anchors = computed((): PageLink[] => [
 const jsonStore = useJsonStore();
 
 const originals = ref<Output>({
-  nwp: nwpString.value,
-  ui: originalsString.value,
+  ui: uiStore.originalsString,
   ...jsonStore.originals,
 });
 
 const translations = ref<Output>({
-  nwp: nwpString.value,
-  ui: translationsString.value,
+  nwp: uiStore.nwpString,
+  ui: uiStore.translationsString,
   ...jsonStore.input,
 });
 
@@ -129,22 +127,8 @@ const inputEmails = ref<Partial<EmailOutput>>({
 
 const { showSuccess } = useFlash();
 
-watch(originalsString, (ui) => {
-  originals.value = { ...originals.value, ui };
-});
-
-watch(translationsString, (ui) => {
-  translations.value = { ...translations.value, ui };
-  uiStore.clearConsistentKeys("all");
-});
-
-watch(nwpString, (nwp) => {
-  translations.value = { ...translations.value, nwp };
-  uiStore.clearConsistentKeys("ui");
-});
-
 watch(originals, (val) => {
-  originalsString.value = val.ui;
+  uiStore.originalsString = val.ui;
   jsonStore.setOriginals(val);
   showSuccess({
     description: "Originele teksten zijn opgeslagen.",
@@ -154,17 +138,19 @@ watch(originals, (val) => {
 
 watch(translations, (val) => {
   // NWS
-  if (val.ui !== translationsString.value) {
-    translationsString.value = val.ui;
+  if (val.ui !== uiStore.translationsString) {
+    uiStore.translationsString = val.ui;
     uiStore.translations = parseTranslationFile(val.ui);
+    uiStore.clearConsistentKeys("all");
   }
 
   // NWP
-  if (val.nwp !== nwpString.value) {
-    nwpString.value = val.nwp;
+  if (val.nwp !== uiStore.nwpString) {
+    uiStore.nwpString = val.nwp;
     uiStore.nwpTranslations = val.nwp
       ? parseTranslationFile(val.nwp)
       : undefined;
+    uiStore.clearConsistentKeys("ui");
   }
 
   // JSON
@@ -359,6 +345,7 @@ const loadBackup = async (file: File | null | undefined) => {
       description: "Backup is geladen.",
       id: "backup-loaded",
     });
+
     navigateTo("/translate");
   } catch (e) {
     console.error(e);
@@ -377,8 +364,10 @@ const autoFillOriginalUI = async () => {
       "https://docs.google.com/feeds/download/documents/export/Export?exportFormat=txt&id=1KOm9MTLrWv_lll6f1YvnlWlq3srXYVKMSo2a9KZ39a8",
       { cache: "no-cache", responseType: "text" },
     );
-    originalsString.value = strings.trim().replaceAll("\r", "");
-    originals.value = { ...originals.value, ui: originalsString.value };
+    originals.value = {
+      ...originals.value,
+      ui: strings.trim().replaceAll("\r", ""),
+    };
   } catch {
     showError({
       description:
