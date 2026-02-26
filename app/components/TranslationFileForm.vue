@@ -23,7 +23,7 @@
       type="submit"
       label="Opslaan"
       v-bind="submit"
-      :disabled="disabled"
+      :disabled="disabled || submit?.disabled"
     />
   </UForm>
 </template>
