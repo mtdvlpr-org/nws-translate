@@ -53,13 +53,24 @@
         v-if="newTranslationsString && isDifferent"
         title="Vertaal de veranderde teksten"
       >
-        <NWSTranslationForm
-          v-for="t in changedText"
-          :key="t.key"
-          :new-value="t.value"
-          :translation-key="t.key"
-          @save="savedKeys.add(t.key)"
-        />
+        <template v-if="type === 'NWS'">
+          <NWSTranslationForm
+            v-for="t in changedText"
+            :key="t.key"
+            :new-value="t.value"
+            :translation-key="t.key"
+            @save="savedKeys.add(t.key)"
+          />
+        </template>
+        <template v-else>
+          <NWPTranslationForm
+            v-for="t in changedText"
+            :key="t.key"
+            :new-value="t.value"
+            :translation-key="t.key"
+            @save="savedKeys.add(t.key)"
+          />
+        </template>
       </UPageCard>
       <UPageCard
         v-if="newTranslationsString"
