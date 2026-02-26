@@ -2,6 +2,7 @@
   <UForm
     :state="state"
     :schema="schema"
+    :disabled="disabled"
     class="flex flex-col gap-4"
     @submit="handleSubmit"
   >
@@ -17,7 +18,13 @@
         :placeholder="placeholder"
       />
     </UFormField>
-    <UButton class="w-fit" type="submit" label="Opslaan" v-bind="submit" />
+    <UButton
+      class="w-fit"
+      type="submit"
+      label="Opslaan"
+      v-bind="submit"
+      :disabled="disabled"
+    />
   </UForm>
 </template>
 
@@ -27,6 +34,7 @@ import type { ButtonProps, FormSubmitEvent } from "@nuxt/ui";
 import { z } from "zod";
 
 const props = defineProps<{
+  disabled?: boolean;
   required?: boolean;
   submit?: ButtonProps;
   type: UIType;

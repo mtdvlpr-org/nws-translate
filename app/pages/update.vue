@@ -18,6 +18,7 @@
         v-model="type"
         :items="['NWS', 'NWP']"
         legend="Welke UI wil je updaten?"
+        :disabled="!!newTranslationsString"
       />
       <UAlert
         v-if="type === 'NWS'"
@@ -34,6 +35,7 @@
           v-model="newTranslationsString"
           required
           :type="type"
+          :disabled="!!newTranslationsString"
           :submit="{
             label: 'Teksten inladen',
             disabled: !stringValue,
