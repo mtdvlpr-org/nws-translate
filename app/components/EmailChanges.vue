@@ -42,11 +42,13 @@ const label = computed(() => {
 });
 
 const inputTranslations = computed(() => {
-  return stringifyEmail(emailStore.inputs[props.group]?.[props.nr] ?? {});
+  return jsonStringifyEmail(emailStore.inputs[props.group]?.[props.nr] ?? {});
 });
 
 const translations = computed(() => {
-  return stringifyEmail(emailStore.translations[props.group]?.[props.nr] ?? {});
+  return jsonStringifyEmail(
+    emailStore.translations[props.group]?.[props.nr] ?? {},
+  );
 });
 
 const isDifferent = computed(() => {

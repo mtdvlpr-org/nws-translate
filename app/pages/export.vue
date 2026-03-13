@@ -187,7 +187,8 @@ const exportEmails = async () => {
         Object.entries(emails ?? {}).map(([nr, email]) => ({
           group,
           nr,
-          ...email,
+          text: emailToText(email),
+          title: email?.title,
         })),
     );
 

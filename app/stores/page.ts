@@ -4,13 +4,12 @@ export type PageLink = {
   to: string;
 };
 
-type State = {
+type PageState = {
   pageLinks: PageLink[];
 };
 
 export const usePageStore = defineStore("page", {
-  persist: false,
-  state: (): State => ({
+  state: (): PageState => ({
     pageLinks: [],
   }),
 });
