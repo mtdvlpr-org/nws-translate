@@ -18,8 +18,5 @@ export default defineNuxtConfig({
     jwpubKey: process.env.JWPUB_KEY,
   },
   compatibilityDate: "2026-01-15",
-  piniaPluginPersistedstate: {
-    storage: "localStorage",
-    debug: true,
-  },
+  piniaPluginPersistedstate: { storage: "localStorage" },
 });
