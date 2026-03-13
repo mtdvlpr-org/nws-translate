@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { emailGroups, stringifyEmail } from "../../../app/utils/emails";
+import { emailGroups, jsonStringifyEmail } from "../../../app/utils/emails";
 import {
   assignmentsAndDutiesEnEmail,
   emailMock,
@@ -35,32 +35,32 @@ describe("emailGroups", () => {
   });
 });
 
-describe("stringifyEmail", () => {
+describe("jsonStringifyEmail", () => {
   it("should stringify email with text and title", () => {
-    const result = stringifyEmail(emailMock);
+    const result = jsonStringifyEmail(emailMock);
     expect(result).toBe(
       JSON.stringify({ text: emailMock.text, title: emailMock.title }, null, 2),
     );
   });
 
   it("should strip \\r from text and title", () => {
-    const result = stringifyEmail(emailWithCarriageReturnMock);
+    const result = jsonStringifyEmail(emailWithCarriageReturnMock);
     expect(result).toContain('"text": "Line1\\nLine2"');
     expect(result).toContain('"title": "Subject"');
   });
 
   it("should handle missing text and title", () => {
-    const result = stringifyEmail(undefinedEmailMock);
+    const result = jsonStringifyEmail(undefinedEmailMock);
     expect(result).toBe(JSON.stringify({}, null, 2));
   });
 
   it("should handle empty strings", () => {
-    const result = stringifyEmail(emptyEmailMock);
+    const result = jsonStringifyEmail(emptyEmailMock);
     expect(result).toBe(JSON.stringify({ text: "", title: "" }, null, 2));
   });
 
   it("should stringify real-world Assignments Reminder email", () => {
-    const result = stringifyEmail(assignmentsAndDutiesEnEmail);
+    const result = jsonStringifyEmail(assignmentsAndDutiesEnEmail);
     expect(result).toContain("[TO_GENDER_TITLE]");
     expect(result).toContain("[CLM_ASSIGNMENTS_ALL]");
     expect(result).toContain("Assignments Reminder (CLM-All)");

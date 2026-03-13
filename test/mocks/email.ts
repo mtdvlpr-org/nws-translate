@@ -17,7 +17,7 @@ export const emptyEmailMock: Email = {
 
 export const undefinedEmailMock: Email = {};
 
-/** Email with carriage returns for testing stringifyEmail strip behavior */
+/** Email with carriage returns for testing jsonStringifyEmail strip behavior */
 export const emailWithCarriageReturnMock: Email = {
   text: "Line1\r\nLine2\r",
   title: "Subject\r",

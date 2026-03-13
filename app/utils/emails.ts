@@ -9,7 +9,7 @@ export const emailGroups: { count: number; key: EmailKey; label: string }[] = [
   { count: 3, key: "territory", label: "Gebied" },
 ] as const;
 
-export const stringifyEmail = (email: Email): string => {
+export const jsonStringifyEmail = (email: Email): string => {
   return JSON.stringify(
     {
       text: email.text?.replace(/\r/g, ""),
@@ -18,4 +18,10 @@ export const stringifyEmail = (email: Email): string => {
     null,
     2,
   );
+};
+
+export const emailToText = (email?: Email): string => {
+  if (!email?.text) return "";
+  if (email.text?.includes("\r")) return email.text;
+  return email.text.replaceAll("\n", "\r\n");
 };
