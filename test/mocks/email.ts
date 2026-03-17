@@ -23,6 +23,18 @@ export const emailWithCarriageReturnMock: Email = {
   title: "Subject\r",
 };
 
+/** Clean email for testing emailToText behavior */
+export const emailWithoutCarriageReturnMock: Email = {
+  text: "Line1\nLine2",
+  title: "Subject",
+};
+
+/** Email for testing emailToText behavior */
+export const emailExportMock: Email = {
+  text: "Line1\r\nLine2",
+  title: "Subject",
+};
+
 /** Real-world style: Assignments Reminder (CLM-All) - English */
 export const assignmentsAndDutiesEnEmail: Email = {
   text: `Dear [TO_GENDER_TITLE] [TO_LAST_NAME],
