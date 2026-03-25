@@ -50,5 +50,5 @@ jobs:
           git config user.name "bot"
           git config user.email "bot@example.com"
           git add last.txt
-          git commit -m "update snapshot" || exit 0
+          git commit -m "chore: update snapshot" || exit 0
           git push
