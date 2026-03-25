@@ -1,0 +1,49 @@
+name: Monitor nws version file
+
+on:
+  schedule:
+    - cron: "*/10 * * * *" # every 10 minutes
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch file
+        run: curl -s https://nwscheduler.com/NW-Scheduler/008/Versions.txt -o current.txt
+
+      - name: Compare with previous
+        id: diff
+        run: |
+          if [ -f last.txt ]; then
+            if diff current.txt last.txt > /dev/null; then
+              echo "changed=false" >> $GITHUB_OUTPUT
+            else
+              echo "changed=true" >> $GITHUB_OUTPUT
+            fi
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Notify (Discord webhook example)
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          curl -H "Content-Type: application/json" \
+          -d '{"content":"File changed: https://nwscheduler.com/NW-Scheduler/008/Versions.txt"}' \
+          ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Save latest
+        run: |
+          mv current.txt last.txt
+
+      - name: Commit state
+        run: |
+          git config user.name "bot"
+          git config user.email "bot@example.com"
+          git add last.txt
+          git commit -m "update snapshot" || exit 0
+          git push
