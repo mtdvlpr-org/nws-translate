@@ -1,10 +1,16 @@
 import { describe, expect, it } from "vitest";
 
-import { emailGroups, jsonStringifyEmail } from "../../../app/utils/emails";
+import {
+  emailGroups,
+  emailToText,
+  jsonStringifyEmail,
+} from "../../../app/utils/emails";
 import {
   assignmentsAndDutiesEnEmail,
+  emailExportMock,
   emailMock,
   emailWithCarriageReturnMock,
+  emailWithoutCarriageReturnMock,
   emptyEmailMock,
   undefinedEmailMock,
 } from "../../mocks/email";
@@ -64,5 +70,12 @@ describe("jsonStringifyEmail", () => {
     expect(result).toContain("[TO_GENDER_TITLE]");
     expect(result).toContain("[CLM_ASSIGNMENTS_ALL]");
     expect(result).toContain("Assignments Reminder (CLM-All)");
+  });
+});
+
+describe("emailToText", () => {
+  it("should return the text of the email with carriage returns", () => {
+    const result = emailToText(emailWithoutCarriageReturnMock);
+    expect(result).toBe(emailExportMock.text);
   });
 });

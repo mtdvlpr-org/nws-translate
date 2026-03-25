@@ -1,0 +1,103 @@
+name: Monitor nws version file
+
+on:
+  schedule:
+    - cron: "*/10 * * * *" # every 10 minutes
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Fetch file
+        #run: curl -s https://nwscheduler.com/NW-Scheduler/008/Versions.txt -o current.txt
+        run: curl -s https://nws-translate.netlify.app/nws-versions.txt -o current.txt
+
+      - name: Parse and compare with previous
+        id: diff
+        run: |
+          get_val() {
+            local key="$1"
+            local file="$2"
+            awk -F: -v wanted="$key" '$1 == wanted { gsub(/^[ \t]+/, "", $2); print $2; exit }' "$file"
+          }
+
+          desktop_curr="$(get_val NWS_DESKTOP_MAJOR current.txt) #$(get_val NWS_DESKTOP_MINOR current.txt)"
+          mobile_curr="$(get_val NWS_MOBILE_MAJOR current.txt) #$(get_val NWS_MOBILE_MINOR current.txt)"
+          nwp_curr="$(get_val NWP_VERSION current.txt)"
+
+          if [ -f nws-versions.txt ]; then
+            desktop_prev="$(get_val NWS_DESKTOP_MAJOR nws-versions.txt) #$(get_val NWS_DESKTOP_MINOR nws-versions.txt)"
+            mobile_prev="$(get_val NWS_MOBILE_MAJOR nws-versions.txt) #$(get_val NWS_MOBILE_MINOR nws-versions.txt)"
+            nwp_prev="$(get_val NWP_VERSION nws-versions.txt)"
+          else
+            desktop_prev="(none)"
+            mobile_prev="(none)"
+            nwp_prev="(none)"
+          fi
+
+          desktop_changed=false
+          mobile_changed=false
+          nwp_changed=false
+
+          [ "$desktop_curr" != "$desktop_prev" ] && desktop_changed=true
+          [ "$mobile_curr" != "$mobile_prev" ] && mobile_changed=true
+          [ "$nwp_curr" != "$nwp_prev" ] && nwp_changed=true
+
+          any_changed=false
+          if [ "$desktop_changed" = true ] || [ "$mobile_changed" = true ] || [ "$nwp_changed" = true ]; then
+            any_changed=true
+          fi
+
+          echo "desktop_changed=$desktop_changed" >> "$GITHUB_OUTPUT"
+          echo "mobile_changed=$mobile_changed" >> "$GITHUB_OUTPUT"
+          echo "nwp_changed=$nwp_changed" >> "$GITHUB_OUTPUT"
+          echo "changed=$any_changed" >> "$GITHUB_OUTPUT"
+          echo "desktop_prev=$desktop_prev" >> "$GITHUB_OUTPUT"
+          echo "desktop_curr=$desktop_curr" >> "$GITHUB_OUTPUT"
+          echo "mobile_prev=$mobile_prev" >> "$GITHUB_OUTPUT"
+          echo "mobile_curr=$mobile_curr" >> "$GITHUB_OUTPUT"
+          echo "nwp_prev=$nwp_prev" >> "$GITHUB_OUTPUT"
+          echo "nwp_curr=$nwp_curr" >> "$GITHUB_OUTPUT"
+
+      - name: Notify desktop update
+        if: steps.diff.outputs.desktop_changed == 'true'
+        run: |
+          curl -H "Content-Type: application/json" \
+          -d '{"content":"NWS Desktop updated: ${{ steps.diff.outputs.desktop_prev }} -> ${{ steps.diff.outputs.desktop_curr }}"}' \
+          ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Notify mobile update
+        if: steps.diff.outputs.mobile_changed == 'true'
+        run: |
+          curl -H "Content-Type: application/json" \
+          -d '{"content":"NWS Mobile updated: ${{ steps.diff.outputs.mobile_prev }} -> ${{ steps.diff.outputs.mobile_curr }}"}' \
+          ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Notify NWP update
+        if: steps.diff.outputs.nwp_changed == 'true'
+        run: |
+          curl -H "Content-Type: application/json" \
+          -d '{"content":"NWP updated: ${{ steps.diff.outputs.nwp_prev }} -> ${{ steps.diff.outputs.nwp_curr }}"}' \
+          ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Save latest
+        run: |
+          mv current.txt nws-versions.txt
+
+      - name: Commit state
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git add nws-versions.txt
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -m "chore: update snapshot" || exit 0
+          git push
