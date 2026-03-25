@@ -117,22 +117,28 @@ jobs:
       - name: Notify desktop update
         if: steps.diff.outputs.desktop_changed == 'true'
         run: |
+          msg="NWS Desktop ${{ steps.diff.outputs.desktop_update_type }} update: ${{ steps.diff.outputs.desktop_prev }} -> ${{ steps.diff.outputs.desktop_curr }}"
+          payload="$(jq -cn --arg content "$msg" '{content: $content}')"
           curl -H "Content-Type: application/json" \
-          -d '{"content":"NWS Desktop ${{ steps.diff.outputs.desktop_update_type }} update: ${{ steps.diff.outputs.desktop_prev }} -> ${{ steps.diff.outputs.desktop_curr }}"}' \
+          -d "$payload" \
           ${{ secrets.DISCORD_WEBHOOK }}
 
       - name: Notify mobile update
         if: steps.diff.outputs.mobile_changed == 'true'
         run: |
+          msg="NWS Mobile ${{ steps.diff.outputs.mobile_update_type }} update: ${{ steps.diff.outputs.mobile_prev }} -> ${{ steps.diff.outputs.mobile_curr }}"
+          payload="$(jq -cn --arg content "$msg" '{content: $content}')"
           curl -H "Content-Type: application/json" \
-          -d '{"content":"NWS Mobile ${{ steps.diff.outputs.mobile_update_type }} update: ${{ steps.diff.outputs.mobile_prev }} -> ${{ steps.diff.outputs.mobile_curr }}"}' \
+          -d "$payload" \
           ${{ secrets.DISCORD_WEBHOOK }}
 
       - name: Notify NWP update
         if: steps.diff.outputs.nwp_changed == 'true'
         run: |
+          msg="NWP ${{ steps.diff.outputs.nwp_update_type }} update: ${{ steps.diff.outputs.nwp_prev }} -> ${{ steps.diff.outputs.nwp_curr }}"
+          payload="$(jq -cn --arg content "$msg" '{content: $content}')"
           curl -H "Content-Type: application/json" \
-          -d '{"content":"NWP ${{ steps.diff.outputs.nwp_update_type }} update: ${{ steps.diff.outputs.nwp_prev }} -> ${{ steps.diff.outputs.nwp_curr }}"}' \
+          -d "$payload" \
           ${{ secrets.DISCORD_WEBHOOK }}
 
       - name: Save latest
