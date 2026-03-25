@@ -19,8 +19,7 @@ jobs:
           persist-credentials: true
 
       - name: Fetch file
-        #run: curl -s https://nwscheduler.com/NW-Scheduler/008/Versions.txt -o current.txt
-        run: curl -s https://nws-translate.netlify.app/nws-versions.txt -o current.txt
+        run: curl -s https://nwscheduler.com/NW-Scheduler/008/Versions.txt -o current.txt
 
       - name: Parse and compare with previous
         id: diff
