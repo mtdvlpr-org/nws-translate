@@ -48,10 +48,46 @@ jobs:
           desktop_changed=false
           mobile_changed=false
           nwp_changed=false
+          desktop_update_type="none"
+          mobile_update_type="none"
+          nwp_update_type="none"
 
-          [ "$desktop_curr" != "$desktop_prev" ] && desktop_changed=true
-          [ "$mobile_curr" != "$mobile_prev" ] && mobile_changed=true
-          [ "$nwp_curr" != "$nwp_prev" ] && nwp_changed=true
+          if [ "$desktop_curr" != "$desktop_prev" ]; then
+            desktop_changed=true
+            if [ "$desktop_prev" = "(none)" ]; then
+              desktop_update_type="initial"
+            elif [ "$(get_val NWS_DESKTOP_MAJOR current.txt)" != "$(get_val NWS_DESKTOP_MAJOR nws-versions.txt)" ]; then
+              desktop_update_type="major"
+            else
+              desktop_update_type="minor"
+            fi
+          fi
+
+          if [ "$mobile_curr" != "$mobile_prev" ]; then
+            mobile_changed=true
+            if [ "$mobile_prev" = "(none)" ]; then
+              mobile_update_type="initial"
+            elif [ "$(get_val NWS_MOBILE_MAJOR current.txt)" != "$(get_val NWS_MOBILE_MAJOR nws-versions.txt)" ]; then
+              mobile_update_type="major"
+            else
+              mobile_update_type="minor"
+            fi
+          fi
+
+          if [ "$nwp_curr" != "$nwp_prev" ]; then
+            nwp_changed=true
+            if [ "$nwp_prev" = "(none)" ]; then
+              nwp_update_type="initial"
+            else
+              nwp_curr_major="$(echo "$nwp_curr" | cut -d. -f1)"
+              nwp_prev_major="$(echo "$nwp_prev" | cut -d. -f1)"
+              if [ "$nwp_curr_major" != "$nwp_prev_major" ]; then
+                nwp_update_type="major"
+              else
+                nwp_update_type="minor"
+              fi
+            fi
+          fi
 
           any_changed=false
           if [ "$desktop_changed" = true ] || [ "$mobile_changed" = true ] || [ "$nwp_changed" = true ]; then
@@ -64,30 +100,33 @@ jobs:
           echo "changed=$any_changed" >> "$GITHUB_OUTPUT"
           echo "desktop_prev=$desktop_prev" >> "$GITHUB_OUTPUT"
           echo "desktop_curr=$desktop_curr" >> "$GITHUB_OUTPUT"
+          echo "desktop_update_type=$desktop_update_type" >> "$GITHUB_OUTPUT"
           echo "mobile_prev=$mobile_prev" >> "$GITHUB_OUTPUT"
           echo "mobile_curr=$mobile_curr" >> "$GITHUB_OUTPUT"
+          echo "mobile_update_type=$mobile_update_type" >> "$GITHUB_OUTPUT"
           echo "nwp_prev=$nwp_prev" >> "$GITHUB_OUTPUT"
           echo "nwp_curr=$nwp_curr" >> "$GITHUB_OUTPUT"
+          echo "nwp_update_type=$nwp_update_type" >> "$GITHUB_OUTPUT"
 
       - name: Notify desktop update
         if: steps.diff.outputs.desktop_changed == 'true'
         run: |
           curl -H "Content-Type: application/json" \
-          -d '{"content":"NWS Desktop updated: ${{ steps.diff.outputs.desktop_prev }} -> ${{ steps.diff.outputs.desktop_curr }}"}' \
+          -d '{"content":"NWS Desktop ${{ steps.diff.outputs.desktop_update_type }} update: ${{ steps.diff.outputs.desktop_prev }} -> ${{ steps.diff.outputs.desktop_curr }}"}' \
           ${{ secrets.DISCORD_WEBHOOK }}
 
       - name: Notify mobile update
         if: steps.diff.outputs.mobile_changed == 'true'
         run: |
           curl -H "Content-Type: application/json" \
-          -d '{"content":"NWS Mobile updated: ${{ steps.diff.outputs.mobile_prev }} -> ${{ steps.diff.outputs.mobile_curr }}"}' \
+          -d '{"content":"NWS Mobile ${{ steps.diff.outputs.mobile_update_type }} update: ${{ steps.diff.outputs.mobile_prev }} -> ${{ steps.diff.outputs.mobile_curr }}"}' \
           ${{ secrets.DISCORD_WEBHOOK }}
 
       - name: Notify NWP update
         if: steps.diff.outputs.nwp_changed == 'true'
         run: |
           curl -H "Content-Type: application/json" \
-          -d '{"content":"NWP updated: ${{ steps.diff.outputs.nwp_prev }} -> ${{ steps.diff.outputs.nwp_curr }}"}' \
+          -d '{"content":"NWP ${{ steps.diff.outputs.nwp_update_type }} update: ${{ steps.diff.outputs.nwp_prev }} -> ${{ steps.diff.outputs.nwp_curr }}"}' \
           ${{ secrets.DISCORD_WEBHOOK }}
 
       - name: Save latest
