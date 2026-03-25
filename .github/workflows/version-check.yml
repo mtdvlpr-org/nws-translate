@@ -19,7 +19,14 @@ jobs:
           persist-credentials: true
 
       - name: Fetch file
-        run: curl -s https://nwscheduler.com/NW-Scheduler/008/Versions.txt -o current.txt
+        run: |
+          ts="$(date +%s)"
+          curl -fsSL \
+            -H "Cache-Control: no-cache, no-store, must-revalidate" \
+            -H "Pragma: no-cache" \
+            -H "Expires: 0" \
+            "https://nwscheduler.com/NW-Scheduler/008/Versions.txt?ts=${ts}" \
+            -o current.txt
 
       - name: Parse and compare with previous
         id: diff
