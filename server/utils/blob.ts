@@ -1,12 +1,13 @@
+import type { H3Event } from "h3";
+
+import { defu } from "defu";
+
 import type {
   BlobEnsureOptions,
   BlobSize,
   BlobUploadOptions,
   FileSizeUnit,
 } from "#server/types/blob";
-import type { H3Event } from "h3";
-
-import { defu } from "defu";
 
 // Credits from shared utils of https://github.com/pingdotgg/uploadthing
 const FILESIZE_UNITS = ["B", "KB", "MB", "GB"];
