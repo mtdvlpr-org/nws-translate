@@ -51,6 +51,26 @@
         ]"
       />
     </template>
+    <template v-if="uiStore.inconsistentNWSSpecialCharacters.length > 0">
+      <p>
+        {{ uiStore.inconsistentNWSSpecialCharacters.length }}
+        mismatch(es) in afsluitende leestekens gevonden:
+      </p>
+      <UAlert
+        v-for="i in uiStore.inconsistentNWSSpecialCharacters"
+        :key="`special-${i.key}`"
+        color="warning"
+        variant="subtle"
+        title="Mismatch in afsluitend leesteken"
+        :description="`EN: ${i.original} • NL: ${i.translation}`"
+        :actions="[
+          {
+            label: 'Open key',
+            to: `/translate/nws/${i.key}`,
+          },
+        ]"
+      />
+    </template>
   </div>
 </template>
 <script setup lang="ts">

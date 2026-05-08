@@ -97,6 +97,33 @@ export const useUIStore = defineStore("ui", {
         }))
         .filter(({ others }) => others.length > 0);
     },
+    inconsistentNWSSpecialCharacters(state): {
+      key: string;
+      original: string;
+      translation: string;
+    }[] {
+      if (!state.nwpString?.length) return [];
+
+      const endingSpecialChars = [".", "!", "?", ":", ";", ","] as const;
+      const hasEndingChar = (text: string, char: (typeof endingSpecialChars)[number]) =>
+        text.trimEnd().endsWith(char);
+
+      return this.keys
+        .map((key) => ({
+          key,
+          original: this.references[key] || "",
+          translation: state.translations[key] || "<LEGE VERTALING>",
+        }))
+        .filter(
+          ({ original, translation }) =>
+            original &&
+            translation !== "<LEGE VERTALING>" &&
+            endingSpecialChars.some(
+              (char) =>
+                hasEndingChar(original, char) !== hasEndingChar(translation, char),
+            ),
+        );
+    },
     keys(state): string[] {
       return [
         ...new Set(
