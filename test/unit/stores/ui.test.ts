@@ -193,9 +193,8 @@ describe("UI Store", () => {
     });
 
     describe("inconsistentNWS", () => {
-      it("returns empty when nwpString is empty", () => {
+      it("returns empty when originalsString is empty", () => {
         const store = useUIStore();
-        store.originalsString = NWSTranslationFileMock;
         store.translations = NWSProgramUIFileMock;
 
         expect(store.inconsistentNWS).toEqual([]);
@@ -203,7 +202,6 @@ describe("UI Store", () => {
 
       it("returns inconsistencies for two-word terms with mismatched translations", () => {
         const store = useUIStore();
-        store.nwpString = "x"; // Non-empty to pass guard
         store.originalsString = "termA: Value 2\ntermB: Other Value 2"; // termB ends with termA
         store.translations = { termA: "A", termB: "B" }; // B does not include A
 
@@ -216,6 +214,40 @@ describe("UI Store", () => {
           key: "termB",
           value: "B",
         });
+      });
+    });
+
+    describe("inconsistentNWSSpecialCharacters", () => {
+      it("returns empty when originalsString is empty", () => {
+        const store = useUIStore();
+        store.translations = { keyA: "Eindigt met punt." };
+
+        expect(store.inconsistentNWSSpecialCharacters).toEqual([]);
+      });
+
+      it("returns keys with mismatched ending punctuation between source and translation", () => {
+        const store = useUIStore();
+        store.originalsString =
+          "keyA: Ends with dot.\nkeyB: Ends with question?\nkeyC: No mismatch.";
+        store.translations = {
+          keyA: "Eindigt zonder punt",
+          keyB: "Eindigt met vraagteken.",
+          keyC: "Geen mismatch.",
+        };
+
+        const result = store.inconsistentNWSSpecialCharacters;
+        expect(result).toEqual([
+          {
+            key: "keyA",
+            original: "Ends with dot.",
+            translation: "Eindigt zonder punt",
+          },
+          {
+            key: "keyB",
+            original: "Ends with question?",
+            translation: "Eindigt met vraagteken.",
+          },
+        ]);
       });
     });
 

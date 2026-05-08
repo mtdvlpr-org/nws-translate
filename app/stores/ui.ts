@@ -66,7 +66,7 @@ export const useUIStore = defineStore("ui", {
       others: { key: string; value: string }[];
       translation: string;
     }[] {
-      if (!state.nwpString?.length) return [];
+      if (!state.originalsString?.length) return [];
 
       const terms = Object.entries(this.references).filter(
         ([, val]) => val.split(" ").length === 2,
@@ -96,6 +96,36 @@ export const useUIStore = defineStore("ui", {
           translation: state.translations[key] || "<LEGE VERTALING>",
         }))
         .filter(({ others }) => others.length > 0);
+    },
+    inconsistentNWSSpecialCharacters(state): {
+      key: string;
+      original: string;
+      translation: string;
+    }[] {
+      if (!state.originalsString?.length) return [];
+
+      const endingSpecialChars = [".", "!", "?", ":", ";", ","] as const;
+      const hasEndingChar = (
+        text: string,
+        char: (typeof endingSpecialChars)[number],
+      ) => text.trimEnd().endsWith(char);
+
+      return this.keys
+        .map((key) => ({
+          key,
+          original: this.references[key] || "",
+          translation: state.translations[key] || "<LEGE VERTALING>",
+        }))
+        .filter(
+          ({ original, translation }) =>
+            original &&
+            translation !== "<LEGE VERTALING>" &&
+            endingSpecialChars.some(
+              (char) =>
+                hasEndingChar(original, char) !==
+                hasEndingChar(translation, char),
+            ),
+        );
     },
     keys(state): string[] {
       return [

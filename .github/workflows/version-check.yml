@@ -13,14 +13,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Set snapshot path
+        run: echo "SNAPSHOT_FILE=nws-versions.txt" >> "$GITHUB_ENV"
+
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           persist-credentials: true
 
       - name: Fetch file
-        #run: curl -s https://nwscheduler.com/NW-Scheduler/008/Versions.txt -o current.txt
-        run: curl -s https://nws-translate.netlify.app/nws-versions.txt -o current.txt
+        run: |
+          ts="$(date +%s)"
+          curl -fsSL \
+            -H "Cache-Control: no-cache, no-store, must-revalidate" \
+            -H "Pragma: no-cache" \
+            -H "Expires: 0" \
+            "https://nwscheduler.com/NW-Scheduler/008/Versions.txt?ts=${ts}" \
+            -o current.txt
 
       - name: Parse and compare with previous
         id: diff
@@ -28,17 +37,25 @@ jobs:
           get_val() {
             local key="$1"
             local file="$2"
-            awk -F: -v wanted="$key" '$1 == wanted { gsub(/^[ \t]+/, "", $2); print $2; exit }' "$file"
+            awk -F: -v wanted="$key" '
+              $1 == wanted {
+                gsub(/\r/, "", $2)
+                gsub(/^[ \t]+/, "", $2)
+                gsub(/[ \t]+$/, "", $2)
+                print $2
+                exit
+              }
+            ' "$file"
           }
 
           desktop_curr="$(get_val NWS_DESKTOP_MAJOR current.txt) #$(get_val NWS_DESKTOP_MINOR current.txt)"
           mobile_curr="$(get_val NWS_MOBILE_MAJOR current.txt) #$(get_val NWS_MOBILE_MINOR current.txt)"
           nwp_curr="$(get_val NWP_VERSION current.txt)"
 
-          if [ -f nws-versions.txt ]; then
-            desktop_prev="$(get_val NWS_DESKTOP_MAJOR nws-versions.txt) #$(get_val NWS_DESKTOP_MINOR nws-versions.txt)"
-            mobile_prev="$(get_val NWS_MOBILE_MAJOR nws-versions.txt) #$(get_val NWS_MOBILE_MINOR nws-versions.txt)"
-            nwp_prev="$(get_val NWP_VERSION nws-versions.txt)"
+          if [ -f "$SNAPSHOT_FILE" ]; then
+            desktop_prev="$(get_val NWS_DESKTOP_MAJOR "$SNAPSHOT_FILE") #$(get_val NWS_DESKTOP_MINOR "$SNAPSHOT_FILE")"
+            mobile_prev="$(get_val NWS_MOBILE_MAJOR "$SNAPSHOT_FILE") #$(get_val NWS_MOBILE_MINOR "$SNAPSHOT_FILE")"
+            nwp_prev="$(get_val NWP_VERSION "$SNAPSHOT_FILE")"
           else
             desktop_prev="(none)"
             mobile_prev="(none)"
@@ -56,7 +73,7 @@ jobs:
             desktop_changed=true
             if [ "$desktop_prev" = "(none)" ]; then
               desktop_update_type="initial"
-            elif [ "$(get_val NWS_DESKTOP_MAJOR current.txt)" != "$(get_val NWS_DESKTOP_MAJOR nws-versions.txt)" ]; then
+            elif [ "$(get_val NWS_DESKTOP_MAJOR current.txt)" != "$(get_val NWS_DESKTOP_MAJOR "$SNAPSHOT_FILE")" ]; then
               desktop_update_type="major"
             else
               desktop_update_type="minor"
@@ -67,7 +84,7 @@ jobs:
             mobile_changed=true
             if [ "$mobile_prev" = "(none)" ]; then
               mobile_update_type="initial"
-            elif [ "$(get_val NWS_MOBILE_MAJOR current.txt)" != "$(get_val NWS_MOBILE_MAJOR nws-versions.txt)" ]; then
+            elif [ "$(get_val NWS_MOBILE_MAJOR current.txt)" != "$(get_val NWS_MOBILE_MAJOR "$SNAPSHOT_FILE")" ]; then
               mobile_update_type="major"
             else
               mobile_update_type="minor"
@@ -111,32 +128,39 @@ jobs:
       - name: Notify desktop update
         if: steps.diff.outputs.desktop_changed == 'true'
         run: |
+          msg="NWS Desktop ${{ steps.diff.outputs.desktop_update_type }} update: ${{ steps.diff.outputs.desktop_prev }} -> ${{ steps.diff.outputs.desktop_curr }}"
+          payload="$(jq -cn --arg content "$msg" '{content: $content}')"
           curl -H "Content-Type: application/json" \
-          -d '{"content":"NWS Desktop ${{ steps.diff.outputs.desktop_update_type }} update: ${{ steps.diff.outputs.desktop_prev }} -> ${{ steps.diff.outputs.desktop_curr }}"}' \
+          -d "$payload" \
           ${{ secrets.DISCORD_WEBHOOK }}
 
       - name: Notify mobile update
         if: steps.diff.outputs.mobile_changed == 'true'
         run: |
+          msg="NWS Mobile ${{ steps.diff.outputs.mobile_update_type }} update: ${{ steps.diff.outputs.mobile_prev }} -> ${{ steps.diff.outputs.mobile_curr }}"
+          payload="$(jq -cn --arg content "$msg" '{content: $content}')"
           curl -H "Content-Type: application/json" \
-          -d '{"content":"NWS Mobile ${{ steps.diff.outputs.mobile_update_type }} update: ${{ steps.diff.outputs.mobile_prev }} -> ${{ steps.diff.outputs.mobile_curr }}"}' \
+          -d "$payload" \
           ${{ secrets.DISCORD_WEBHOOK }}
 
       - name: Notify NWP update
         if: steps.diff.outputs.nwp_changed == 'true'
         run: |
+          msg="NWP ${{ steps.diff.outputs.nwp_update_type }} update: ${{ steps.diff.outputs.nwp_prev }} -> ${{ steps.diff.outputs.nwp_curr }}"
+          payload="$(jq -cn --arg content "$msg" '{content: $content}')"
           curl -H "Content-Type: application/json" \
-          -d '{"content":"NWP ${{ steps.diff.outputs.nwp_update_type }} update: ${{ steps.diff.outputs.nwp_prev }} -> ${{ steps.diff.outputs.nwp_curr }}"}' \
+          -d "$payload" \
           ${{ secrets.DISCORD_WEBHOOK }}
 
       - name: Save latest
         run: |
-          mv current.txt nws-versions.txt
+          mkdir -p "$(dirname "$SNAPSHOT_FILE")"
+          mv current.txt "$SNAPSHOT_FILE"
 
       - name: Commit state
         if: steps.diff.outputs.changed == 'true'
         run: |
-          git add nws-versions.txt
+          git add "$SNAPSHOT_FILE"
           git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
             commit -m "chore: update snapshot" || exit 0
           git push
