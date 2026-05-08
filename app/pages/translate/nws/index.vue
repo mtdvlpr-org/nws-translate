@@ -54,14 +54,14 @@
     <template v-if="uiStore.inconsistentNWSSpecialCharacters.length > 0">
       <p>
         {{ uiStore.inconsistentNWSSpecialCharacters.length }}
-        mismatch(es) in afsluitende leestekens gevonden:
+        inconsistentie(s) in afsluitende leestekens gevonden:
       </p>
       <UAlert
         v-for="i in uiStore.inconsistentNWSSpecialCharacters"
         :key="`special-${i.key}`"
         color="warning"
         variant="subtle"
-        title="Mismatch in afsluitend leesteken"
+        title="Inconsistentie in afsluitend leesteken"
         :description="`EN: ${i.original} • NL: ${i.translation}`"
         :actions="[
           {

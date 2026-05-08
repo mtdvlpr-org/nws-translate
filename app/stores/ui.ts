@@ -66,7 +66,7 @@ export const useUIStore = defineStore("ui", {
       others: { key: string; value: string }[];
       translation: string;
     }[] {
-      if (!state.nwpString?.length) return [];
+      if (!state.originalsString?.length) return [];
 
       const terms = Object.entries(this.references).filter(
         ([, val]) => val.split(" ").length === 2,
@@ -102,11 +102,13 @@ export const useUIStore = defineStore("ui", {
       original: string;
       translation: string;
     }[] {
-      if (!state.nwpString?.length) return [];
+      if (!state.originalsString?.length) return [];
 
       const endingSpecialChars = [".", "!", "?", ":", ";", ","] as const;
-      const hasEndingChar = (text: string, char: (typeof endingSpecialChars)[number]) =>
-        text.trimEnd().endsWith(char);
+      const hasEndingChar = (
+        text: string,
+        char: (typeof endingSpecialChars)[number],
+      ) => text.trimEnd().endsWith(char);
 
       return this.keys
         .map((key) => ({
@@ -120,7 +122,8 @@ export const useUIStore = defineStore("ui", {
             translation !== "<LEGE VERTALING>" &&
             endingSpecialChars.some(
               (char) =>
-                hasEndingChar(original, char) !== hasEndingChar(translation, char),
+                hasEndingChar(original, char) !==
+                hasEndingChar(translation, char),
             ),
         );
     },
