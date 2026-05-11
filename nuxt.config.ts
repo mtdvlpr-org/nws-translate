@@ -19,4 +19,9 @@ export default defineNuxtConfig({
   },
   compatibilityDate: "2026-01-15",
   piniaPluginPersistedstate: { storage: "localStorage" },
+  // Workaround for Nuxt 4.4.5 regression with `ssr: false`
+  // throwing "No entry found in rollupOptions.input".
+  // Track: https://github.com/nuxt/nuxt/issues/35033 (fix in #35037).
+  // Remove once a patched @nuxt/vite-builder is released.
+  experimental: { viteEnvironmentApi: true },
 });
