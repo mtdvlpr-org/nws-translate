@@ -75,7 +75,10 @@ const cards = computed(
       {
         count: uiStore.keys.length,
         icon: "i-lucide:monitor",
-        inconsistent: uiStore.inconsistentNWS.length,
+        inconsistent:
+          uiStore.inconsistentNWS.length +
+          uiStore.inconsistentNWSSpecialCharacters.length +
+          uiStore.inconsistentNWSUntranslatedTerms.length,
         missing: uiStore.missingNWS.length,
         title: "NWS UI",
         to: "/translate/nws",

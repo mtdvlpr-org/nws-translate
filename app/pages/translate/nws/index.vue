@@ -71,6 +71,26 @@
         ]"
       />
     </template>
+    <template v-if="uiStore.inconsistentNWSUntranslatedTerms.length > 0">
+      <p>
+        {{ uiStore.inconsistentNWSUntranslatedTerms.length }}
+        onvertaalde term(en) ontbreken in vertaling:
+      </p>
+      <UAlert
+        v-for="i in uiStore.inconsistentNWSUntranslatedTerms"
+        :key="`untranslated-${i.key}-${i.term}`"
+        color="warning"
+        variant="subtle"
+        :description="`EN: ${i.original} • NL: ${i.translation}`"
+        :title="`Term &quot;${i.term}&quot; ontbreekt in vertaling`"
+        :actions="[
+          {
+            label: 'Open key',
+            to: `/translate/nws/${i.key}`,
+          },
+        ]"
+      />
+    </template>
   </div>
 </template>
 <script setup lang="ts">

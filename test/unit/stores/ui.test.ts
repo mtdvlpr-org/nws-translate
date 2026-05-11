@@ -251,6 +251,85 @@ describe("UI Store", () => {
       });
     });
 
+    describe("inconsistentNWSUntranslatedTerms", () => {
+      it("returns empty when originalsString is empty", () => {
+        const store = useUIStore();
+        store.translations = { keyA: "Open NWS Mobile" };
+
+        expect(store.inconsistentNWSUntranslatedTerms).toEqual([]);
+      });
+
+      it("returns empty when terms are preserved in both original and translation", () => {
+        const store = useUIStore();
+        store.originalsString = "keyA: Open NWS Mobile";
+        store.translations = { keyA: "Open NWS Mobile" };
+
+        expect(store.inconsistentNWSUntranslatedTerms).toEqual([]);
+      });
+
+      it("flags both 'NWS Mobile' and 'NWS' when the translation drops the entire product name", () => {
+        const store = useUIStore();
+        store.originalsString = "keyA: Open NWS Mobile";
+        store.translations = { keyA: "Open Mobiel" };
+
+        const result = store.inconsistentNWSUntranslatedTerms;
+        expect(result).toHaveLength(2);
+        expect(result).toContainEqual({
+          key: "keyA",
+          original: "Open NWS Mobile",
+          term: "NWS Mobile",
+          translation: "Open Mobiel",
+        });
+        expect(result).toContainEqual({
+          key: "keyA",
+          original: "Open NWS Mobile",
+          term: "NWS",
+          translation: "Open Mobiel",
+        });
+      });
+
+      it("skips keys with no original or empty translation", () => {
+        const store = useUIStore();
+        store.originalsString =
+          "keyA: Open NWS Mobile\nkeyB: Open NWP\nempty: ";
+        store.translations = { keyA: "", keyB: "Open NWP" };
+
+        expect(store.inconsistentNWSUntranslatedTerms).toEqual([]);
+      });
+
+      it("detects multiple distinct terms across multiple keys in one pass", () => {
+        const store = useUIStore();
+        store.originalsString =
+          "keyA: Launch NW Publisher\nkeyB: Use NWS Desktop today\nkeyC: All good with NWP";
+        store.translations = {
+          keyA: "Start de uitgever",
+          keyB: "Gebruik vandaag bureaublad",
+          keyC: "Alles in orde met NWP",
+        };
+
+        const result = store.inconsistentNWSUntranslatedTerms;
+        expect(result).toContainEqual({
+          key: "keyA",
+          original: "Launch NW Publisher",
+          term: "NW Publisher",
+          translation: "Start de uitgever",
+        });
+        expect(result).toContainEqual({
+          key: "keyB",
+          original: "Use NWS Desktop today",
+          term: "NWS Desktop",
+          translation: "Gebruik vandaag bureaublad",
+        });
+        expect(result).toContainEqual({
+          key: "keyB",
+          original: "Use NWS Desktop today",
+          term: "NWS",
+          translation: "Gebruik vandaag bureaublad",
+        });
+        expect(result.every(({ key }) => key !== "keyC")).toBe(true);
+      });
+    });
+
     describe("remoteNWP", () => {
       it("parses nwpString when set", () => {
         const store = useUIStore();
