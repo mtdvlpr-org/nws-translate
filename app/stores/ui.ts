@@ -127,6 +127,36 @@ export const useUIStore = defineStore("ui", {
             ),
         );
     },
+    inconsistentNWSUntranslatedTerms(state): {
+      key: string;
+      original: string;
+      term: string;
+      translation: string;
+    }[] {
+      if (!state.originalsString?.length) return [];
+
+      const untranslatedTerms = [
+        "NWS Mobile",
+        "NWS Desktop",
+        "NW Publisher",
+        "NW Scheduler",
+        "NWS",
+        "NWP",
+      ];
+
+      return this.keys.flatMap((key) => {
+        const original = this.references[key] || "";
+        const translation = state.translations[key] || "";
+
+        if (!original || !translation) return [];
+
+        return untranslatedTerms
+          .filter(
+            (term) => original.includes(term) && !translation.includes(term),
+          )
+          .map((term) => ({ key, original, term, translation }));
+      });
+    },
     keys(state): string[] {
       return [
         ...new Set(
