@@ -30,7 +30,7 @@
     "@vueuse/nuxt": "^14.3.0",
     "@vueuse/router": "^14.3.0",
     "jszip": "^3.10.1",
-    "node-html-parser": "^7.1.0",
+    "node-html-parser": "^8.0.4",
     "nuxt": "^4.4.5",
     "pako": "^2.1.0",
     "pinia": "^3.0.4",
