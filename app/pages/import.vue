@@ -210,7 +210,11 @@ const supportedJsonFiles = [
 
 const loadJsonFile = async (file: File, type: "original" | "translation") => {
   try {
-    const text = JSON.parse(await file.text());
+    const raw = await file.text();
+
+    // Remove trailing slashes
+    const fixed = raw.replace(/,([\s\n]*[}\]])/g, "$1");
+    const text = JSON.parse(fixed);
 
     switch (file.name) {
       case "Literature.json":
