@@ -195,12 +195,21 @@ export type Tip = z.infer<typeof tipSchema>;
  */
 export type Tips = z.infer<typeof tipsSchema>;
 
-export const translationFileSchema = z.custom<TranslationFile>(
-  (val) =>
-    typeof val === "string" &&
-    // eslint-disable-next-line security/detect-unsafe-regex
-    /^("?[a-zA-Z_\d]+"?: "?.*?"?,?\n)+("?[a-zA-Z_\d]+"?: "?.*?"?,?\n*)$/.test(
-      val,
-    ),
-  "Kan waarde niet valideren.",
-);
+function isValidKeyValueText(text: string): boolean {
+  const keyPattern = /^[a-zA-Z_\d]+:/;
+  let foundKey = false;
+
+  for (const line of text.split(/\r?\n/)) {
+    if (keyPattern.test(line)) {
+      foundKey = true;
+    } else if (!foundKey && line.trim() !== "") {
+      return false;
+    }
+  }
+
+  return foundKey || text.trim() === "";
+}
+
+export const translationFileSchema = z.string().refine(isValidKeyValueText, {
+  message: "Invalid key-value format",
+}) as unknown as z.ZodCustom<TranslationFile, TranslationFile>;

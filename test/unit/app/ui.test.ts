@@ -40,12 +40,6 @@ describe("parseTranslationFile", () => {
       NWSProgramUIFileMock,
     );
   });
-
-  it("should parse NWP translation file correctly", () => {
-    expect(parseTranslationFile(NWPTranslationFileMock)).toEqual(
-      NWPProgramUIFileMock,
-    );
-  });
 });
 
 describe("serializeTranslationFile", () => {
@@ -73,14 +67,6 @@ describe("parse and serialize", () => {
 
   it("should return the same string for Dutch NWS file", async () => {
     const text = await loadUiFixture("nwsNl");
-
-    expect(serializeTranslationFile(parseTranslationFile(text))).toBe(
-      text.trim().replaceAll("\r", ""),
-    );
-  });
-
-  it("should return the same string for Dutch NWP file", async () => {
-    const text = await loadUiFixture("nwpNl");
 
     expect(serializeTranslationFile(parseTranslationFile(text))).toBe(
       text.trim().replaceAll("\r", ""),

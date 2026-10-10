@@ -38,7 +38,7 @@
           :disabled="translationFiles.length > 0"
           label="Importeer vanuit lokale bestanden"
         />
-        <ImportForm v-model="translations" />
+        <ImportForm v-model="translations" no-nwp />
       </UPageCard>
       <UPageCard title="Originele e-mailtemplates">
         <div id="original-emails" class="scroll-mt-34"></div>

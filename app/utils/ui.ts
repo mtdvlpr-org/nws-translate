@@ -50,42 +50,90 @@ const isNWPTranslationLine = (
   return line.startsWith('"');
 };
 
-const normalizeTranslationLine = (
-  line: TranslationLine,
-): NWSTranslationLine => {
-  if (isNWPTranslationLine(line)) {
-    const key = line.match(/^"([^"]+)"/)?.[1];
-    const value = line.match(/: "([^"]+)"/)?.[1];
-    return `${key}: ${value || "<empty>"}`;
+// const normalizeTranslationLine = (
+//   line: TranslationLine,
+// ): NWSTranslationLine => {
+//   if (isNWPTranslationLine(line)) {
+//     const key = line.match(/^"([^"]+)"/)?.[1];
+//     const value = line.match(/: "([^"]+)"/)?.[1];
+//     return `${key}: ${value || "<empty>"}`;
+//   }
+
+//   return (line.endsWith("\r") ? line.slice(0, -1) : line) as NWSTranslationLine;
+// };
+
+export const parseTranslationFile = (text: TranslationFile): ProgramUIFile => {
+  const record: ProgramUIFile = Object.create(null);
+  const length = text.length;
+  let pos = 0;
+  let keyStart = 0;
+  let currentKey: string | null = null;
+  let valueStart = 0;
+  let valueEnd = 0;
+
+  function saveValue(): void {
+    if (currentKey !== null) {
+      record[currentKey] = text.slice(valueStart, valueEnd).trim();
+    }
   }
 
-  return (line.endsWith("\r") ? line.slice(0, -1) : line) as NWSTranslationLine;
-};
+  while (pos < length) {
+    const lineStart = pos;
 
-export const parseTranslationFile = (file: TranslationFile): ProgramUIFile => {
-  const lines = (file.trim().split(LINE_SEPARATOR) as TranslationLine[]).map(
-    normalizeTranslationLine,
-  );
-
-  const programUI: ProgramUIFile = {};
-
-  lines.forEach((line) => {
-    const [key, ...rest] = line.trim().split(KEY_VALUE_SEPARATOR);
-
-    if (key?.endsWith(":") && rest.length === 0) {
-      programUI[key.slice(0, -1)] = "";
-      return;
+    // Find the end of the current line.
+    while (pos < length) {
+      const code = text.charCodeAt(pos);
+      if (code === 10 || code === 13) break;
+      pos++;
     }
 
-    // Some strings end with a colon and space (": "), keep it in the value
-    const value = line.endsWith(KEY_VALUE_SEPARATOR)
-      ? rest.join(KEY_VALUE_SEPARATOR) + " "
-      : rest.join(KEY_VALUE_SEPARATOR);
+    const lineEnd = pos;
 
-    if (key && value) programUI[key] = value === "<empty>" ? "" : value; // Value can be empty in NWP translation file
-  });
+    // Skip the line ending (LF or CRLF).
+    if (pos < length && text.charCodeAt(pos) === 13) pos++;
+    if (pos < length && text.charCodeAt(pos) === 10) pos++;
 
-  return programUI;
+    // Check whether this line begins with a valid key.
+    let i = lineStart;
+
+    while (i < lineEnd) {
+      const c = text.charCodeAt(i);
+      if (
+        (c >= 65 && c <= 90) ||
+        (c >= 97 && c <= 122) ||
+        c === 95 ||
+        (c >= 48 && c <= 57)
+      ) {
+        i++;
+      } else {
+        break;
+      }
+    }
+
+    const isKey = i > lineStart && i < lineEnd && text.charCodeAt(i) === 58; // :
+
+    if (isKey) {
+      saveValue();
+
+      currentKey = text.slice(lineStart, i);
+      i++; // Skip colon.
+
+      // Skip spaces and tabs after the colon.
+      while (i < lineEnd) {
+        const c = text.charCodeAt(i);
+        if (c !== 32 && c !== 9) break;
+        i++;
+      }
+
+      valueStart = i;
+      valueEnd = lineEnd;
+    } else if (currentKey !== null) {
+      valueEnd = lineEnd;
+    }
+  }
+
+  saveValue();
+  return record;
 };
 
 export const serializeTranslationFile = (

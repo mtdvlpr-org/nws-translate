@@ -1,6 +1,8 @@
 about: About
 about1: New World Scheduler was created to help simplify and unify the scheduling and organising by appointed brothers in the congregation. Whether you are serving as an elder or ministerial servant, the Coordinator of the Body of Elders, Secretary, or have any other responsibility, we hope that New World Scheduler makes your work easier and quicker. That way we can all spend more time with our families, preaching, teaching and shepherding!
 about2: NWS is maintained by a small team of brothers and sisters based in Australia. Our team are all currently in full-time service, and all brothers are elders. Between us we have spent over 45 years in the full-time service, including more than 10 years in special full-time service. Our team members have also served at branch offices, remote translation offices and in many lands where the need is greater.
+aboutLine2: New World Publisher (NW Publisher) was created to help publishers keep up-to-date with what is happening in the congregation as well as show any assignments, duties and more. We hope you enjoy using this app and find it helpful!
+aboutLine3: This app is maintained by a small team of brothers and sisters based in Australia. Our team are all currently in full-time service, and all brothers are elders.
 aboutNote: Please Note: While all team members are active Jehovah’s Witnesses, we are not affiliated with JW.org or the Watchtower Bible and Tract Society. This program does not replace any official program or website, does not contain any ‘spiritual food’ and does not gather personal data. All data inside this program comes from your local body of elders only.
 aboutUs: About Us
 accompanyingBrother: Accompanying Brother
@@ -15,12 +17,13 @@ activePersons: Active Persons
 activePersonsOnly: Active Persons only
 activePublishers: Active Publishers
 activePublishersExplanation1: Count all persons in the congregation who reported at least once in the last 6 months.
-activeRegularInformation: Active and Regular are automatically set when then the Congregation Field Service Report is Submitted. They can also be manually adjusted as needed.
 activities: Activities
 activity: Activity
 add: Add
 addAll: Add All
 addApartmentNumber: Add Apartment Number
+addAttachment: Add Attachment
+addCartLocation: Add Cart Location
 addEditBoundary: Add or Edit Boundary
 addEditCongregationBoundary: Add or Edit Congregation Boundary
 addEditLabels: Add or Edit Labels
@@ -28,6 +31,7 @@ addFromFile: Add from File
 addGroup: Add Group
 additional: Additional
 additionalHelp: Additional Help
+additionalPeopleAndReports: Additional {0} people and {1} reports
 addMultipleApartmentNumbers: Add Multiple Apartment Numbers
 addOrEditPublicTalkOutlines: Add or Edit Public Talk Outlines
 addOrRemoveLocalPublicSpeakers: Please click Persons to Add or Remove Local Public Speakers
@@ -40,19 +44,25 @@ addressDisplay: Address Display
 addresses: Addresses
 addressLanguage: Address Language
 addressNotesFromPublishers: Address Notes from Publishers
+addressSort: Address Sort
 addressTypesToInclude: Address Types to Include
 addressTypesToReset: Address Types to Reset
 addSharedPerson: Add Shared Person
+addShifts: Add Shifts
+addTheMemorialInCongregationEvents: Add the Memorial in Congregation Events
+addToCalendar: Add to Calendar
 addUpdate: Add/Update
 affectAllAppUsers: This will affect all App Users.
 affectAllSharedCongregations: This will affect all Shared Congregations.
 affectAllSharedPersons: This will affect all Shared Persons.
 africa: Africa
 afternoon: Afternoon
+afterSendingPleaseContactYourLocalElders: After sending, please contact your local elders.
 age: Age
 all: All
 allAppointedBrothers: All appointed brothers
 allAppointedBrothersInYourCongregation: All appointed brothers in your congregation
+allAreas: All Areas
 allAssignmentsAndDutiesByPerson: All Assignments and Duties by Person
 allCategories: All Categories
 allCircuits: All Circuits
@@ -64,6 +74,7 @@ allFieldServiceReportsReceived: All Field Service Reports received
 allFieldServiceScheduled: All Field Service scheduled
 allFuture: All Future
 allGroups: All Groups
+allLanguages: All Languages
 allMeetings: All Meetings
 allNonSchoolParts: All Non-School Parts
 allOtherElders: All Other Elders
@@ -73,6 +84,7 @@ allowReservations: Allow Reservations
 allowSelfAssign: Allow Self Assign
 allowSelfAssignTerritories: Allow Self Assign Territories
 allowSelfCompleteTerritories: Allow Self Complete Territories
+allowSubmitAuxiliaryPioneerApplications: Allow Submit Auxiliary Pioneer Applications
 allowSubmitAwayPeriods: Allow Submit Away Periods
 allowSubmitLiteratureRequests: Allow Submit Literature Requests
 allowSubmitMeetingAttendance: Allow Submit Meeting Attendance
@@ -98,6 +110,9 @@ allTasks: All Tasks
 allTerritories: All Territories
 allTerritoriesToKML: All Territories to KML
 allWeekendAssignmentsScheduled: All Weekend Assignments scheduled
+alreadyHaveAssignmentDuty: If you already have an Assignment or Duty during this Away Period, please contact your local elders.
+alreadySubmitted: Already submitted
+alreadySubmittedPleaseIgnore: (If you have already submitted, please ignore)
 alsoDisableNWPApp: Also Disable the NWP App?
 alsoRemoveCongregationSharing: Also Remove this Congregation from Sharing?
 alsoRemoveFamily: Would you also like to Remove this Family?
@@ -107,6 +122,7 @@ amount: Amount
 and: and
 announcement: Announcement
 announcements: Announcements
+announcementsAndEvents: Announcements and Events
 announcementsLettersNotes: Announcements/Letters/Notes
 annualItems: Annual Items
 anointed: Anointed
@@ -119,8 +135,11 @@ anyIncludingAssistant: Any (inc. Assistant)
 anyPart: Any Part
 anySchoolPart: Any School Part
 apartment: Apartment
+apartmentNumber: Apartment Number
 apartments: Apartments
 apartmentsDisplay: Apartments Display
+appAccessCleanupWarning: Authentication accounts or devices were found for persons who no longer have App access. Likely these persons were previously deleted or moved. Please click Clean Authentication to fix.
+appAccessDisabled: App Access Disabled
 appAdministration: App Administration
 appAllUsersDisconnectReconnectCongregationPINMessage: After changing the Congregation PIN, ALL NW Publisher app users will need to Disconnect then Re-connect to your congregation.
 appAllUsersDisconnectReconnectRegionMessage: After changing the App Region, ALL NW Publisher app Users will need to select the new Region.
@@ -142,7 +161,9 @@ appDataWaitingToReceiveMessage1: There is currently App Data waiting to be Recei
 appDataWaitingToReceiveMessage2: You have temporarily been giving User Access to Receive and Import all waiting App Data.
 appDataWaitingToReceiveMessage3: Please first Receive and Import all waiting App Data, then you can Change App Region.
 appDevicesAutomaticallyRefreshed: There is usually no need to do this. Devices are automatically refreshed when you first open NW Scheduler
-appDisableAppAccessMessage1: This person will longer be able to connect to your congregation in NW Publisher.
+appDisableAppAccessMessage1: This person will no longer be able to connect to your congregation using NWP app.
+appDisplay: App Display
+appearance: Appearance
 appEnabledPleaseConnect: NW Publisher app is enabled for your congregation. Please Connect so you can Send and Receive App Data.
 appErrorPleaseTryAgain: Please check your Internet connection, click Reconnect and try again. Otherwise please close and re-open NW Scheduler and try again. If the problem persists, please click Help
 appExperiencedError: Sorry, NW Publisher app experienced an error
@@ -153,6 +174,7 @@ appExperiencedErrorStep444: 4. Close NW Scheduler, wait a few hours, then re-ope
 appExperiencedErrorStep55: 5. Click Help > NW Publisher app
 appExperiencedErrorStep6: 6. Disable and Re-Enable NWP app
 appInternetConnectionErrorHelpLink: Help > NW Publisher app > Common Questions and Problems
+apply: Apply
 applyToAllFamilyMembers: Apply to all family members
 applyYourselfToTheFieldMinistry: Apply Yourself to the Field Ministry
 applyYourselfToTheFieldMinistryShort: Apply
@@ -168,21 +190,30 @@ appNotDoneOftenMessage: This should NOT be done often. If you often have to do t
 appointedBrothers: Appointed Brothers
 appointmentsAndPioneers: Appointments and Pioneers
 appProcessReceivedAppDataErrors: There were some errors Receiving App Data. Please check the 'App Logs - Received'.
-appRefreshPersonMessage: You should only do this if this Person is having App data problems.
+appRefreshAllAuthenticationMessage: Please only do this if there are many Authentication problems.
+appRefreshAllDataMessage: You should only do this if LOTS of your app data has problems or is missing.
+appRefreshAllDataMessage2: It is generally safer to Refresh Selected App Data instead.
+appRefreshAuthenticationMessage: Please only do this if the person has an Authentication problem.
+appRefreshDataMessage: You should only do this if your app data has problems or is missing.
 appRememberSendAppData: Please remember to Send App Data, otherwise no data will appear on the App.
-appRemovePersonInformationMessage: This persons personal data will be removed from the App Server, including from the Publishers list, but except for their name on schedules.
+appRemovePersonInformationMessage: This person's personal data will be removed from the App Server, including from the Publishers list (except for their name on schedules).
+appRequestsNotificationEmailSubject: New Request from NW Publisher app
 appResetDevicesMessage: You should only do this if this Person is having problems with App Notifications, or App Notifications keep failing for this person.
 appResetPINMessage: You should only do this if this Person cannot connect with their App PIN.
 approve: Approve
 approveCongregation: Approve Congregation
 approved: Approved
+approvedAppPersons: Approved App Persons
 approvedAssignmentsAndDutiesByPerson: Approved Assignments and Duties by Person
 approvedBy: Approved by
 approvedCLMAssignmentsByPerson: Approved CLM Assignments by Person
 approvedRequests: Approved Requests
 approvedSpeakers: Approved Speakers
+approvePublisherAsAuxiliaryPioneeringForRequestedMonths: Would you like to approve this publisher as an Auxiliary Pioneer for the months requested?
 approveRequest: Approve Request
-appUnableToDecryptMessage: This data cannot be imported and must be deleted. The publisher should try to resend this data. If that doesnt work, they must Disconnect then Reconnect to your congregation, then re-send this data.
+appSummary: App Summary
+appTerritoryCompletedNotificationEmailSubject: Territory Completed on NW Publisher app
+appUnableToDecryptMessage: This data cannot be imported and must be deleted. The publisher should please resend this data, otherwise they will need to Disconnect then Reconnect to your congregation.
 appWrongPINMessage1: These are several ways this can happen:
 appWrongPINMessage2: 1. A Congregation Administrator in your congregation clicked Disable NWP App, then re-enabled the NWP App. This creates a new Congregation PIN
 appWrongPINMessage3: 2. A Congregation in your congregation clicked Change PIN
@@ -208,10 +239,15 @@ assigned: Assigned
 assignedBy: Assigned by
 assignedTo: Assigned to
 assignment: Assignment
+assignmentReminder: Assignment in {NUMBER} {PERIOD}
 assignments: Assignments
+assignmentsAndDuties: Assignments and Duties
 assignmentSlips: Assignment Slips
+assignmentSlipsMustBeGeneratedBeforeDistribution: Assignment Slips must be generated before they can be distributed.
 assignmentsOtherPersonList: Assignments Other Person List
 assignPrivilegesAndDuties: Assign Privileges and Duties
+assignTo: Assign to
+assignToSelf: Assign to self
 assistant: Assistant
 assistantCLM: Assistant
 assistants: Assistants
@@ -220,18 +256,40 @@ atHome: At Home
 atHomeAbbreviation: H
 atLeastOnePersonEditAccess: At least one person must have EDIT access to the Congregation and Persons at all times
 attachment: Attachment
+attachmentDownloadURLEmpty: Attachment download URL is empty.
+attachmentFileDoesNotExist: Attachment file does not exist:
+attachmentFileNameEmpty: Attachment file name is empty.
+attachmentFileNotFoundAskEldersToReUpload: File not found. Please ask your local elders to re-upload this file.
+attachmentFileTooSmall: Attachment File too small. Try removing and re-adding.
+attachmentMustBeImageOrPdf: Attachment must be an image or PDF file.
+attachmentNotExistMessage: This Attachment cannot be found either on your local computer or on the server. Please either REMOVE or RE-SELECT the attachment.
+attachmentNotFound: Attachment not found
+attachmentPreviewDownloadFailed: Unable to download attachment from server.
+attachmentPreviewFileMissing: Unable to load attachment preview. The file does not exist locally or on the server.
+attachmentPreviewFilenameMissing: Unable to load attachment preview. Attachment filename is missing.
+attachmentPreviewLoadFailed: Unable to load attachment preview.
+attachmentPreviewUnsupportedFileType: Unable to load attachment preview. Unsupported file type.
 attachments: Attachments
 attachmentTooLarge: Sorry, this file is too large. The file must be 2MB or less.
 attendance: Attendance
 attendant: Attendant
 attendants: Attendants
 attendantsServant: Attendants Servant
+attention: Attention
 audience: Audience
+audioVideo: Audio/Video
 audioVideoSupportCoordinator: Audio/​Video Support Coordinator
 australianDollar: AUD Australian Dollar
+authenticating: Authenticating...
+authentication: Authentication
+authenticationErrorStep1: 1) Tap Reconnect
+authenticationErrorStep2: 2) Close NW Publisher, then reopen.
+authenticationErrorStep3: 3) Tap Disconnect, then connect again to your congregation
 autoAssign: Auto-Assign
 autoAssignNotEnoughPersonsAvailable: Please Note: Not all parts were auto-assigned as there were not enough available persons for the following:
+autoAssignWeekendOverwriteWarning: This will overwrite selected weekend assignments and clear all future assignments for the selected roles.
 autoMaintenanceLogs: Auto Maintenance Logs
+automatic: Automatic
 automaticallyAssignRequests: Automatically Assign Requests
 automaticallyImported: Automatically Imported
 automaticallyImportingNWPAppData: Automatically Importing NWP App Data
@@ -259,10 +317,20 @@ auxiliaryClassroomCounselorShort: Aux. Class Counselor
 auxiliaryCounselor: Auxiliary Counselor
 auxiliaryPioneer: Auxiliary Pioneer
 auxiliaryPioneerAbbreviation: AP
+auxiliaryPioneerApplication: Auxiliary Pioneer Application
+auxiliaryPioneerApplicationNote: NOTE: If possible, please fill out this application and send at least a week before you desire to begin your auxiliary pioneer service.
 auxiliaryPioneers: Auxiliary Pioneers
+auxiliaryPioneerServiceCommitteeMessage1: Attention Congregation Service Committee:
+auxiliaryPioneerServiceCommitteeMessage2: 1. Is the applicant a good example in Christian living, being of good moral character?
+auxiliaryPioneerServiceCommitteeMessage3: 2. Persons reproved or reinstated during the past year or those who still have restrictions on them do not qualify.
+auxiliaryPioneerServiceCommitteeMessage4: 3. Have you consulted with the appropriate group overseer?
+auxiliaryPioneerText1: Because of my love for Jehovah and my desire to help others to learn about him and his loving purposes, I would like to increase my share in the field service by enrolling as an auxiliary pioneer for the period indicated below:
+auxiliaryPioneerText2: Check here if you wish to serve continuously as an auxiliary pioneer until further notice.
+auxiliaryPioneerText3: I am of good moral standing and habits. I have made plans that will enable me to meet the hour requirement. —See the June 2013 Our Kingdom Ministry, p. 2.
+auxiliaryPioneerText4: Type your name to sign application
+auxiliaryPioneerTitle: APPLICATION FOR AUXILIARY PIONEER SERVICE
 availability: Availability
 available: Available
-availableForHospitality: Available for Hospitality
 availableFrom: Available from
 availableFullVersionOnly: Available in Full Version only
 availableTerritories: Available Territories
@@ -285,6 +353,7 @@ awaitingYourResponse: Awaiting Your Response
 away: Away
 awayFrequency: Away Frequency
 awayFrom: Away From
+awayNow: Away Now
 awayPeriod: Away Period
 awayPeriodConflicts: Away Period Conflicts
 awayPeriods: Away Periods
@@ -295,8 +364,10 @@ awayPublicSpeakers: Away Public Speakers
 awayPublicTalk: Away Public Talk
 awayPublicTalks: Away Public Talks
 awayPublicTalksList: Away Public Talks List
+awaySoon: Away Soon
 awaySpeakers: Away Speakers
 awayTo: Away To
+awayUntil: Away until
 backgroundOpacity: Background Opacity
 backup: Backup
 backupAllData: Backup All Data
@@ -312,40 +383,29 @@ backupReminderMessage1: IMPORTANT: Please make a REGULAR OFFSITE BACKUP of your 
 backupReminderMessage2: NW Scheduler creates an Automatic Backup each time the program is closed. This is saved on your local computer only.
 backupReminderMessage3: We STRONGLY RECOMMEND you also REGULARLY create an OFFSITE backup to a portable USB drive in case your computer crashes, is damaged, stolen, or if your data is damaged or corrupted.
 backupReminderMessage4: Would you like to create an offsite backup now? (Please first insert a portable USB drive)
-backupRestore: Backup and Restore
 backupSharedPersons: Backup Shared Persons
 backupSource: Backup Source
 backupSuccessful: Backup Successful
 bajanDollar: Bajan Dollar
-baptismDate: Baptism Date
 baptized: Baptized
 baptized1Year: Baptized 1 Year
 baptizedMonths: Baptized Months
 baptizedPublishers: Baptized Publishers
+basicMarkdownHelp: Use *text* for bold and _text_ for italics
 bcc: Bcc
 beforeImportPleaseBackup: Before importing, please create a Backup of your data!
 believingFamilyMembers: Believing Family Members
 believingFamilyMembersLivingWithYou: Believing family members living with you
-betaCurrentlyUsing: You are currently using a Beta Version of NW Scheduler
-betaGreatlyAppreciateMessage: We greatly appreciate all who lovingly make themselves available to become a Beta Tester!
-betaPleaseTestMessage1: 1. Please *carefully read* the Overview, Important Information and Release Notes.
-betaPleaseTestMessage2: 2. Please test all new and updated features.
-betaPleaseTestMessage3: 3. Please click the Beta Verstion Testing button to send any problems, bugs, screenshots or other comments.
-betaPleaseTestMessage4: Reminder: Only experienced users of NW Scheduler, who are good at problem solving and have carefully read Help should enable Beta Version Testing.
-betaSendMultipleScreenshots: Important: Please attach multiple screenshots of any problems you have, as well as screenshots of each step you performed leading up to the problem, and what you see after the problem.
-betaThankYouForSendingMessage: Thank you for sending any problems, bugs, screenshots or other comments
-betaVersion: Beta Version
-betaVersionTestingReminder: Beta Version Testing Reminder
-betaVersionUpdates: Beta Version Updates
-betaVersionUpdatesAndTesting: Beta Version Updates and Testing
 bibleReading: Bible Reading
 bibleReadingAbbreviation: BR
 bibleReadingShort: Reading
 bibles: Bibles
 bibleStudies: Bible Studies
 bibleStudiesAbbreviation: BS
+bibleStudiesConductedThisMonth: Different Bible Studies conducted this month
+bibleStudiesConductedToday: Names of Bible Studies conducted today
+bibleStudiesLong: Number of different Bible studies conducted
 bibleStudy: Bible Study
-bibleStudyAbbreviation: BS
 blank: Blank
 blind: Blind
 blindPublishers: Blind Publishers
@@ -367,11 +427,18 @@ cancel: Cancel
 cancelled: Cancelled
 cancelledRequests: Cancelled Requests
 cancelRequest: Cancel Request
+canGive: Can Give
 cannotBeUndone: This cannot be undone.
+cannotOpenUpdateFile: Cannot open Update file. Please close NWS Desktop and try again.
 cannotReachServerMessage: Cannot reach the server. Check your internet connection and try again.
+cantConnectToUpdateServerInstallingOrUpdatingHelp: Can't connect to Update Server. Please try again later or click Help > Installing or Updating Help
+cantConnectToUpdateServerUpdatingHelp: Can't connect to Update Server. Please try again later or click Help > Updating Help
 canYouHelp: Can you Help?
 captain: Captain
+captainAbbreviation: C
 captureFromMap: Capture from Map
+carParkAttendants: Car Park Attendants
+carryForwardToNextMonth: Carry forward to next month
 cart: Cart
 cartNumber: Cart Number
 categories: Categories
@@ -387,19 +454,27 @@ change: Change
 changeAppRegion: Change App Region
 changed: Changed
 changedBy: Changed by
+changeFieldServiceGroup: Change Field Service Group
 changePassword: Change Password
 changePIN: Change PIN
 changeSharingRegion: Change Sharing Region
+changeShowToOnly: Change Show to only
 changingComputersOrMultipleComputers: Changing Computers or Multiple Computers
+checkAuthentication: Check Authentication
+checkConnectionRefreshTerritoriesAppDataAndSendLogsFix: Check internet connection, then ask your local elders to open NWS and Refresh Territories App Data. If this repeats, send these Error Logs to support.
+checkConnectionReopenAndSendLogsFix: Check internet connection and reopen the app. If this repeats, send these Error Logs to support.
+checkConnectionReopenOrRefreshAppDataFix: Check internet connection and reopen the app. Otherwise, ask your local elders to open NWS and refresh App Data.
 checkContactDetails: Check Contact Details
 checkContactDetailsRequest: Check Contact Details Request
 checkForExistingAssignment: Check for Existing Assignment
 checkForUpdates: Check for Updates
+checkIfSharedInMinistry: Check the box if you shared in any form of the ministry during the month
 checkingForUpdates: Checking for updates...
 child: Child
 children: Children
 chileanPeso: Chilean Peso
 christianLifeMinistryAbbreviation: CLM
+christianLove: Christian Love,
 circuit: Circuit
 circuitAssembly: Circuit Assembly
 circuitCode: Circuit Code
@@ -409,7 +484,9 @@ circuitOverseerAbbreviation: CO
 circuitOverseerAbbreviationName: CO Name
 circuitOverseerAbbreviationWifeName: CO Wife Name
 circuitOverseerCopy: Circuit Overseer Copy
+circuitOverseerFinalTalk: Circuit Overseer Final Talk
 circuitOverseerNote: Note: First review the program just held, preview the next week’s program, make any necessary announcements, read any necessary letters, and then introduce the circuit overseer.
+circuitOverseerPartners: Circuit Overseer Partners
 circuitOverseerReport: Circuit Overseer Report
 circuitOverseersWife: Circuit Overseer's Wife
 circuitOverseerTalk: Circuit Overseer Talk
@@ -422,12 +499,16 @@ circuitOverseerVisitPreparationComplete: Circuit Overseer Visit preparation comp
 circuitOverseerVisitRemoveExistingAssignmentsMessage1: Would you like to also remove any existing Life and Ministry Meeting Auxiliary School, CSB Conductor, CBS Reader, Watchtower Reader and local Public Talk assignments for this week?
 circuitOverseerVisitRemoveExistingAssignmentsMessage2: We recommend clicking Yes, otherwise you may cause scheduling problems.
 circuitOverseerVisitSchedule: Circuit Overseer Visit Schedule
+circuitOverseerVisitServiceOverseerDated: Circuit Overseer Visit ({date}) - Service Overseer
 circuitOverseerVisitStartOnTuesday: Circuit Overseer Visit must start on Tuesday
+circuitOverseerVisitUsualDates: Circuit Overseer visit usually starts on Tuesday and ends on Sunday
+circuitOverseerWifePartners: Circuit Overseer Wife Partners
 circuits: Circuits
 circuitsCongregationsPublicSpeakers: Circuits, Congregations and Public Speakers
 circuitStillHasApprovedCongregations: This Circuit still has other Approved Congregations.
 city: City
 citySuburb: City Suburb
+cleanAuthentication: Clean Authentication
 cleaning: Cleaning
 cleaningAndGardenCare: Cleaning and Garden Care
 cleaningCoordinator: Cleaning Coordinator
@@ -456,6 +537,7 @@ clickHereToDownload: click here to download
 clmAssignments: CLM Assignments
 clmExplorerNotFound: CLM Explorer not found. Would you like to use a CLM Explorer Backup File instead? If yes, please use CLM Explorer to create a Local Backup (File > Backup), then click Yes to locate the Backup File.
 clmScheduleCheckDraftExplanation: While in Draft mode, no changes to the schedule or assignments will be sent to NW Publisher app.
+clmSchedules: CLM Schedules
 clmScheduleUncheckDraftExplanation: This schedule and any assignments can now be sent to the NW Publisher app.
 clmStudent: CLM Student
 clmStudents: CLM Students
@@ -471,12 +553,15 @@ closingViewMessageSyncingSharedData: Syncing Shared Data...
 code: Code
 coListScheduledFieldMinistry: List of those scheduled to work with CO and his Wife
 colombianPeso: Colombian Peso
+colorful: Colorful
 combined: Combined
 combinedMonthlyTotals: Combined Monthly Totals
 combineInto1File: Combine into 1 file
+comments: Comments
 commonQuestionsAndProblems: Common Questions and Problems
 comparisonPeriod: Comparison Period
 completed: Completed
+completedInPeriod: Completed in Period
 completedLast12Months: Completed in the last 12 months
 completedLast6Months: Completed in the last 6 months
 completedMonthsSubmittedToBranch: Please first ensure all completed Field Service Reports have been marked as 'Submitted to Branch'. Only months that have been 'Submitted to Branch' will be included.
@@ -495,6 +580,7 @@ confirmation: Confirmation
 confirmationAgreePolicies: I have read and agree to the Privacy Policy and License Agreement
 confirmDeleteCongregationMessage: Are you sure you want to Delete this Congregation from your local computer?
 confirmed: Confirmed
+confirmLiteratureRequestMessage: After sending, please speak to your Literature Servant to edit or cancel any requests.
 confirmNewPIN: Confirm New PIN
 confirmYourLocation: Please confirm your Location
 conflicts: Conflicts
@@ -506,9 +592,6 @@ congregationAdministrators: Congregation Administrators
 congregationAlreadyExists: Congregation Already Exists
 congregationAnalysisReport: Congregation Analysis Report
 congregationAnnouncement: Congregation Announcement
-congregationAnnouncementAttachmentNotExistMessage1: This Announcement contains an Attachment, but the Attachment cannot be found either on your local computer or on the server.
-congregationAnnouncementAttachmentNotExistMessage3:  1) Click Congregation > Information Board > Announcements and Remove or re-Add the Attachment.
-congregationAnnouncementAttachmentNotExistMessage4:  2) Click Congregation > Information Board > Announcements and Delete this Announcement.
 congregationAnnouncements: Congregation Announcements
 congregationAppDisabled: NW Publisher app Disabled
 congregationAppPINChanged: NW Publisher app Congregation PIN Changed
@@ -521,10 +604,8 @@ congregationData: Congregation Data
 congregationDeletedFromSharing: Congregation Deleted from Sharing
 congregationDetails: Congregation Details
 congregationDocument: Congregation Document
-congregationDocumentAttachmentNotExistMessage1: This Document/Letter contains an Attachment, but the Attachment cannot be found either on your local computer or on the server.
-congregationDocumentAttachmentNotExistMessage3:  1) Click Congregation > Information Board > Documents/Letters and Remove or re-Add the Attachment.
-congregationDocumentAttachmentNotExistMessage4:  2) Click Congregation > Information Board > Documents/Letters and Delete this Document/Letter.
 congregationDocuments: Congregation Documents
+congregationDoNotKnowIDOrPIN1: If you do not know your Region, Congregation ID or Congregation PIN, please contact your local elders, or tap Help.
 congregationEvent: Congregation Event
 congregationEvents: Congregation Events
 congregationEventsUpdated: Congregation Events Updated
@@ -563,12 +644,13 @@ congregationRecentlyDeletedFromSharing1: This congregation was recently deleted 
 congregationResponsibilities: Congregation Responsibilities
 congregationResponsibilitiesByPerson: Congregation Responsibilities by Person
 congregations: Congregations
+congregationSettings: Congregation Settings
 congregationSharedButRequestNotSent: This Congregation is Shared and you have selected a Public Speaker, but you have NOT sent any Requests
 congregationSharing: Congregation Sharing
 congregationSharingAllUsersSelectRegionMessage: After changing the Sharing Region, all Shared Persons will need to open NW Scheduler and select the new Region.
 congregationSharingAppointedBrothers: NW Scheduler is designed for appointed brothers who handle congregation responsibilities only. Non-appointed brothers or sisters should only be added as a Shared Person if they handle a congregation responsibility.
-congregationSharingBeforeEnablingPleaseConfirm: Before enabling Congregration Sharing, please consent to and confirm the following:
-congregationSharingConfirm: I have clicked Help > Congregation Sharing and understand how Congregation Sharing works, how to setup and how to solve any problems. I understand that Congregation Administrators are responsilbe for creating, editing and deleting all congregation and personal data, and that New World Solutions is unable to access, view, edit or transfer any of your personal or congregation data.
+congregationSharingBeforeEnablingPleaseConfirm: Before enabling Congregation Sharing, please consent to and confirm the following:
+congregationSharingConfirm: I have clicked Help > Congregation Sharing and understand how Congregation Sharing works, how to setup and how to solve any problems. I understand that Congregation Administrators are responsible for creating, editing and deleting all congregation and personal data, and that New World Solutions is unable to access, view, edit or transfer any of your personal or congregation data.
 congregationSharingConfirmEUUKSimilar: I have visited the 'New World Scheduler compliance with EU GDPR, UK GDPR and other similar Data Protection Regulations' webpage, and I understand and consent to everything on that page, including my responsibilities. I understand that by enabling Congregation Sharing, the congregation takes the role of Data Controller and New World Solutions the Data Processor subject to the terms of our Privacy Policy and Data Processing Agreement.
 congregationSharingCongregationInEuropeanUnionUKorSimilar: This Congregation IS located in the European Union, UK, or places with similar Data Protection Regulations
 congregationSharingCongregationNotInEuropeanUnionUKorSimilar: This Congregation is NOT located in the European Union, UK, or places with similar Data Protection Regulations
@@ -576,13 +658,15 @@ congregationSharingConnectMessage: If you do not know your Sharing Region, Congr
 congregationSharingDataErrors: Sorry, your Congregation Sharing data has errors. Please try again. If this problem persists, please update to the latest version of NW Scheduler and then ask a Congregation Administrator to Re-Share with you. Click Help > Congregation Sharing for more information.
 congregationSharingDataNotExist: Data does not exist on Sharing Server.
 congregationSharingDataRemotelyDeletedMessage: If you think this was an error, please speak to your local Congregation Administrator.
+congregationSharingDidNotConnect: Congregation Sharing was not connected or authenticated when NWS loaded. Please check and fix any Congregation Sharing errors before trying again.
 congregationSharingEnableExplanation1: Congregation Sharing allows you to automatically share and synchronize all NW Scheduler data with other appointed brothers in your congregation. This is separate to the NW Publisher app. Congregation Sharing does NOT store confidential information online.
 congregationSharingEnableExplanation2: NW Scheduler Congregation Sharing is fully compliant with sfg, the EU GDPR, UK GDPR and other similar regulations.
 congregationSharingExperiencedError: Sorry, your Congregation Sharing experienced an error
 congregationSharingExperiencedErrorStep1: 1. Click Reconnect and try again
-congregationSharingExperiencedErrorStep2: 2. Close NW Scheduler, then re-open and try again
-congregationSharingExperiencedErrorStep3: 3. Close NW Scheduler, wait a few hours, then re-open and try again
-congregationSharingExperiencedErrorStep4: 4. Note the Error Details below and click Help > Congregation Sharing
+congregationSharingExperiencedErrorStep2ReadErrorDetails: 2. Carefully read the Error Details below, and follow any instructions given
+congregationSharingExperiencedErrorStep3CloseNWScheduler: 3. Close NW Scheduler, then re-open and try again
+congregationSharingExperiencedErrorStep4ClickHelpCongregationSharing: 4. Click Help > Congregation Sharing
+congregationSharingFixSharedDataPushMessage: To fix: Please ask someone with EDIT User Access to click Congregation Sharing > Problems > select this data type > click PUSH.
 congregationSharingHasProblem1: Your Congregation Sharing has a problem.
 congregationSharingHasProblem22: We strongly recommend clicking Fix and fixing your Congregation Sharing.
 congregationSharingHasProblemIgnoreMessage1: Ignoring Sharing problems may cause data loss for yourself and others.
@@ -617,25 +701,6 @@ congregationSharingPleaseSeeHelp: Please see Help > Congregation Sharing for mor
 congregationSharingPleaseSeeHelpSharingProblems: Please see Help > Congregation Sharing > Sharing Problems for more information
 congregationSharingPleaseVerifyYourComputer: Please Verify your Computer
 congregationSharingProblem: Congregation Sharing Problem
-congregationSharingProblemHeading1a: Check Missing Data, Wrong Data or Syncing Problems
-congregationSharingProblemHeading1Item1: Refresh the screen
-congregationSharingProblemHeading1Item2: Check the Sharing Logs
-congregationSharingProblemHeading2: Avoid Data or Syncing problems
-congregationSharingProblemHeading2Item1: Ensure all elders always promptly update to the latest version of NW Scheduler
-congregationSharingProblemHeading2Item2: Correctly setup User Access
-congregationSharingProblemHeading2Item3: Only edit data when Congregation Sharing is Connected
-congregationSharingProblemHeading2Item4: Ensure everyone is connected to the same Congregation ID and Sharing Region
-congregationSharingProblemHeading2Item5: Do not edit the same type of data at the same time as another Shared Person
-congregationSharingProblemHeading2Item6: Ensure all Shared Persons can successfully save data on their own computer
-congregationSharingProblemHeading2Item7: Ensure all Shared Persons have the correct Computer Time set
-congregationSharingProblemHeading3a: Fix Missing Data, Wrong Data or Syncing Problems
-congregationSharingProblemHeading3Item1: Verify
-congregationSharingProblemHeading3Item2: Test
-congregationSharingProblemHeading3Item3: Fix
-congregationSharingProblemHeading3SubItem1: Refresh the specific data that is not syncing
-congregationSharingProblemHeading3SubItem2: Pull or Push Data
-congregationSharingProblemHeading3SubItem3: Re-setup Congregation Sharing
-congregationSharingProblemHeading4Item1: Congregation Sharing still has problems...
 congregationSharingProblems: Congregation Sharing Problems
 congregationSharingRemotelyDeleteData: Also Remotely Delete all their NW Scheduler data
 congregationSharingRemotelyDeleteDataWarning: You should only choose this option in extreme circumstances, e.g. a person is deleted as an elder and disagrees with the decision.
@@ -665,6 +730,7 @@ connectionErrorLicenseMessage: Please try again or see License Help > Connection
 connectionErrorMessage1: NW Scheduler cannot connect to our servers
 connectionErrorMessage2: Please click Reconnect and try again, or click Test Internet Connection, or see Connection Problems and Solutions.
 connectionFailedMessage: Connection failed. Please try again.
+connectionLogs: Connection Logs
 connectionTimedOutMessage: Connection timed out. Please try again.
 connectToCongregation: Connect to Congregation
 connectToNWPublisherApp: Connect to the NW Publisher app
@@ -679,11 +745,13 @@ contactInformation: Contact Information
 contactInformationCheckNotYetReturned: Contact Information Check not yet returned
 contactInformationForAllPublishers: Contact Information for all publishers
 contactName: Contact Name
+contactOutsideAreaMessage: It is preferred that at least one emergency contact lives outside of your immediate area, so that the emergency contact is not likely to be affected by the same disaster.
 contactUs: Contact Us
 continuous: Continuous
 continuousAuxiliary: Continuous Auxiliary
+continuousAuxiliaryPioneer: Continuous Auxiliary Pioneer
 convention: Convention
-convertAddresses: Convert Addresses
+convertAddresses: Convert
 convertAddressesToLetterWriting: Convert Addresses to Letter Writing
 convertAddressesToPhoneWitnessing: Convert Addresses to Phone Witnessing
 coordinates: Coordinates
@@ -708,11 +776,12 @@ country: Country
 countryOfCongregation: Country of Congregation
 couple: Couple
 coVisit: CO Visit
-cOVisitActivities: CO Visit Activities
-cOVisitActivity: CO Visit Activity
+coVisitActivities: CO Visit Activities
+coVisitActivity: CO Visit Activity
 coWifePartner: CO Wife Partner
 coWifePartners: CO Wife Partners
 crashMessage1: Please tap Restart and try again. If the same problem keeps happening, please check you are using the latest version. If you are, please Copy Details and then Send Crash Report.
+crashMessageDesktop: Please close and reopen NWS Desktop and try again. If the same problem keeps happening, please check you are using the latest version. If you are, please Copy Details and then Send Crash Report.
 create: Create
 create6DigitSharingPersonPIN: Create a 6-digit Sharing Person PIN
 createAccount: Create Account
@@ -730,14 +799,18 @@ createSampleCongregationMessage: This will create a randomly generated Sample Co
 createScheduleFromAnotherLanguage: Create Schedule from another language
 credit: Credit
 creditAbbreviation: Cr
+creditLong: Credit (e.g. Bethel, Construction, Pioneer school, etc)
 csvFileAlreadyOpen: CSV File already open. Please close before Importing.
 currency: Currency
+current: Current
 currentlyBeingWorked: Currently Being Worked
 custom: Custom
 customAssignment: Custom Assignment
 customDuty: Custom Duty
 customInformation: Custom Information
 customizePrintingTemplates: Customize Printing Templates
+customSchedule: Custom Schedule
+customSchedules: Custom Schedules
 customSpiritual: Custom Spiritual
 data: Data
 dataChanged: Data Changed
@@ -749,6 +822,7 @@ dataExpiredLogs: Data Expired Logs
 dataMaintenance: Data Maintenance
 dataMaintenanceLogs: Data Maintenance Logs
 dataRemotelyDeleted: Data Remotely Deleted
+dataRemoved: Data Removed
 dataSize: Data Size
 dataTimestamps: Data Timestamps
 dataToRestore: Data to Restore
@@ -761,6 +835,7 @@ dataWaitingToSend: Data Waiting to Send
 date: Date
 dateAssigned: Date Assigned
 dateCompleted: Date Completed
+dateDue: Date Due
 dateFirstStartedPreaching: Date first started preaching
 dateFirstStartedPreachingBeforeDateImmersed: Date first started preaching must be before Date Immersed
 dateFormat: Date Format
@@ -770,10 +845,12 @@ dateOfBaptism: Date of Baptism
 dateOfBirth: Date of birth
 dateOfLastPioneerSchool: Date of Last Pioneer School
 dateOfRequest: Date of Request
+dateRange: Date Range
 dateRangeFormat: Date Range Format
 dateReinstated: Date Reinstated
 dateRemoved: Date Removed
 dateRequested: Date Requested
+dates: Dates
 datesAndTimes: Dates and Times
 dateSent: Date Sent
 dateShort: Date Short
@@ -788,14 +865,18 @@ deaf: Deaf
 deafPublishers: Deaf Publishers
 dearBrothers: Dear Brothers,
 decryptingLocalData: Decrypting Local Data
-default: Default
+defaultClasses: Default Classes
 defaultPrinterHasProblems: Sorry, Windows says that your Default Printer has problems or has been deleted. Please try adding a new Default Printer.
-delegate: Delegate
+defaultShowTo: Default Show to
+defaultText: Default
 delegated: Delegated
+delegates: Delegates
 delegatesChanged: Delegates Changed
-delegateString: Delegate
+delegatesMessage: You have been assigned as a delegate for:
+delegateText: Delegate
 delete: Delete
 deleteAddresses: Delete Addresses
+deleteAll: Delete All
 deleteAllFromApp: Delete All from App
 deleteAllFromAppMessage1: This will remove ALL upcoming data of this type from the App. You will then need to re-add to NW Scheduler and re-send to the App.
 deleteAllFromAppMessage2: Data is automatically removed from the App after a period of time, so you should ONLY use this option if there are serious data errors in the App and they cannot be fixed inside NW Scheduler.
@@ -810,6 +891,7 @@ deletedFromApp: Deleted from App
 deletedLocalDataMessage: Local Data Deleted. Please tap Reload Local Data.
 deleteGroup: Delete Group
 deleteLanguage: Delete Language
+deleteLiteratureRequestMessage: This will delete the request from your local device only. To edit or cancel any requests, please speak to your Literature Servant.
 deleteLocalData: Delete Local Data
 deleteMeetingData: Delete Meeting Data
 deleteOrMovePersons: Delete or Move Persons
@@ -823,6 +905,7 @@ demographics: Demographics
 denyCongregation: Deny Congregation
 denyRequest: Deny Request
 description: Description
+detailed: Detailed
 details: Details
 detailsHostShepherdingMeals: Details of Host, Shepherding visits and Meal Arrangements
 detectDataProblems: Detect Data Problems
@@ -830,8 +913,10 @@ device: Device
 devices: Devices
 deviceVerificationCodeIncorrect: Verification Code Incorrect. Please try again or click Resend Verification Code.
 deviceVerificationTokenExpired: Verification Token Expired. Please verify your device again.
+diagnosticLogs: Diagnostic Logs
 dialInNumber: Dial in number
 didNotShareInMinistry: Did not share in ministry
+didNotVisit: Did Not Visit
 differentAPs: Different APs
 differentAuxiliaryPioneers: Different Auxiliary Pioneers
 differentCongLangauge: (This may be different from your Congregation language)
@@ -851,20 +936,42 @@ discussion: Discussion
 display: Display
 displayAfter: Display After
 displayName: Display Name
+displayNameLastNameCommaFirstName: Display Name - Last Name, First Name
+distribute: Distribute
+distributeReportDefaultEmailMessage: Dear [FIRST_NAME],
+
+
+Please find the attached [ATTACHMENT_NAME].
+
+
+Kind Regards,
+[YOUR_NAME]
+distributeReportDefaultTextMessage: Dear [FIRST_NAME], Please find the attached [ATTACHMENT_NAME]. Kind Regards, [YOUR_NAME]
+distributeSmsSendingToPersons: SMS: Sending to {count} persons
+distributeSmsTapIconToSendEachMessage: Tap SMS icon to send each message.
+distributeTo: Distribute To
+distributeToPersons: Distribute to {count} persons
+distributeWhatsAppSendingToPersons: WhatsApp: Sending to {count} persons
+distributeWhatsAppTapIconToSendEachMessage: Tap WhatsApp icon to send. Paste the message into the Add a Caption.
 document: Document
 documents: Documents
+documentsAndLetters: Documents and Letters
 doesNotReportHere: Does not Report here
+done: Done
 doNotCall: Do Not Call
 doNotCallAbbreviation: DNC
 doNotCalls: Do not calls
-doNotReceiveBetaUpdates: Do not Receive Beta Updates
+doNotKnowRegion: If you do not know your Region, please contact your local elders.
 downgradeRenew: Downgrade & Renew
 downgradeRenewUntil: Downgrade & Renew until
 download: Download
 downloaded: Downloaded
+downloadedAttachmentCouldNotBeOpened: Downloaded attachment could not be opened
+downloadedAttachmentNotSavedLocally: Downloaded attachment was not saved locally.
 downloadFailedPleaseTryAgain: Download Failed. Please try again.
 downloading: Downloading
 downloadNow: Download Now
+downloadSuccessfulInstalling: Download succesfull. Installing...
 doYouAgree: Do you agree?
 doYouWantToDownload: Do you want to download now?
 draft: Draft
@@ -878,6 +985,7 @@ dutiesSchedule: Duties Schedule
 dutiesUpdated: Duties Updated
 dutiesUsageHistory: Duties Usage History
 duty: Duty
+dutyReminder: Duty in {NUMBER} {PERIOD}
 earlyMorning: Early Morning
 edit: Edit
 editAddress: Edit Address
@@ -898,20 +1006,28 @@ elderAbbreviation: E
 elderly: Elderly
 elderlyInfirm: Elderly / Infirm
 elders: Elders
+eldersAndMinisterialServantsMeeting: Elders and Ministerial Servants Meeting
 eldersAndMSMeeting: Elders and MS Meeting
 email: Email
 email2: Email 2
 emailAbbreviation: (e)
+emailAccountAuthenticationFailed: Unable to connect to the email account. Please try again.
+emailAccountSetupMissingConfig: OAuth setup is incomplete. Replace the TODO values in EmailViewModel with the mobile OAuth client IDs and redirect URIs.
 emailAttachments: Email Attachments
 emailDocument: Email Document
 emailing: Emailing
+emailingToPersons: Emailing to {count} persons
 emailInvalid: Email Invalid
+emailInvitationEnableAppMessage: Please enable the NW Publisher app before sending an app invitation.
+emailInvitationEnableSharingMessage: Please enable Congregation Sharing before sending a Congregation Sharing invitation.
 emailLogs: Email Logs
+emailLogsToSeeMore: Email Logs to see more.
 emailLooksWrong: Your email address looks wrong
 emailLooksWrongMessage1: The correct format is usually:
 emailLooksWrongMessage2: You have entered:
 emailLooksWrongMessage3: Would you like to fix your email address?
 emailMessage: Email Message
+emailMissingRecipientAddress: Missing email address
 emailNoEmailsToSend: No emails to send
 emailNotSetupMessage: Email not setup. Please click 'from', then setup and test your email. Click Help > Email > Setup Email for more information.
 emailNotYetVerified: Email Address not yet verified. Please check your email and verify.
@@ -920,11 +1036,13 @@ emailPleaseAddSubjectAndMessage: Please add a Subject and Message
 emailReminderSent: Email reminder sent
 emailsAlreadySent: Emails already sent
 emailSchedulesSlipsAndReports: Email Schedules, Slips and Reports
+emailSendingCompleted: Email: Sending completed.
 emailServer: Email Server
 emailSpecialFeatures: Email Special Features
 emailTags: Email Tags
 emailTagSpecialFeatures: This Email Tag can only be used for reports supporting Email Special Features.
 emailTemplates: Email Templates
+emailTimedOut: Email timed out after 20 seconds. Please check your internet connection, or Setup Email again.
 emergency: Emergency
 emergencyContact: Emergency Contact
 emergencyContactAbbreviation: EMG
@@ -933,15 +1051,18 @@ emergencyContactList: Emergency Contact List
 emergencyContactListCondensed: Emergency Contact List Condensed
 emergencyContactNotLinked: The Publisher has indicated this person is in this congregation, however they have not been linked.
 emergencyContacts: Emergency Contacts
+emergencyContactsDetails: Emergency Contacts Details
 emergencyContactsMissing: Emergency Contacts Missing
 emergencyNotes: Emergency Notes
 enable: Enable
 enableCongregationSharing: Enable Congregation Sharing
 enabled: Enabled
 enableLimitedFinancialMeans: Enable Limited Financial Means Pricing
-enablePinLock: Enable PIN Lock
+enablePINLock: Enable PIN Lock
 enablePublicSpeakerSharing: Enable Public Speaker Sharing
 enableUserAccess: Enable User Access
+encryptionKeyLoadFailed: Sorry, your device encryption key could not be loaded. Sometimes device Keychains change, so new encryption keys are needed.
+encryptionKeyLoadFailedReconnect: Please tap Disconnect, then reconnect to your congregation. This will create new local secure encryption keys.
 end: End
 endDate: End Date
 endTime: End Time
@@ -955,6 +1076,7 @@ enterPIN: Enter PIN
 enterPublicTalksMessage: Enter talk numbers, separated by comma
 error: Error
 errorDetails: Error Details
+errorDisplayingAttachment: Error Displaying Attachment
 errorLogs: Error Logs
 errorMessageCrash1: Sorry! NW Scheduler has experienced an error. Please try the following:
 errorMessageCrash2: 1. Close and re-open NW Scheduler, then try again.
@@ -962,17 +1084,23 @@ errorMessageCrash3: 2. Click Me > Updates > Check for Updates, then update NW Sc
 errorMessageCrash4: If you still experience this error, please do the following:
 errorMessageCrash5: 1. Take a screenshot of this error, and screenshots of ALL steps you performed leading up to this error.
 errorMessageCrash6: 2. Visit our website and click Help > Contact Us > Problem, then please describe what you were doing, and include all the screenshots.
+errorOpeningImage: Error Opening Image
 errorReportCouldNotBeCreated: Sorry, this report could not be created.
 errors: Errors
 errorUpdating: Error Updating
+errorUpdatingRestartNWSDesktopTryAgain: Error updating. Please close and re-opn NWS Desktop and try again.
+errorUpdatingRestartNWSDesktopTryAgainOrClickHelpUpdating: Error updating. Please close and re-opn NWS Desktop and try again, or click Help > Updating
 estimatedTimeToCompleteTerritory: Estimated time to complete entire Territory
 euro: EUR Euro
 europe: Europe
 europeNorth: Europe (North)
 europeSouthAfrica: Europe (South) and Africa
+even: Even
 evening: Evening
+event: Event
 eventEndDateLaterTodayAndWithin60Days: End Date must be later than the Start Date, and within 60 days of the Start Date. No Event lasts more than 60 days.
 eventName: Event Name
+eventReminder: Congregation Event in {NUMBER} {PERIOD}
 events: Events
 everyone: Everyone
 everyoneInReport: Everyone in Report
@@ -988,11 +1116,13 @@ example: Example
 examples: Examples
 exceptAttachmentsAndMaps: Except Attachments and Maps
 existingCOVisitFieldServiceActivitiesWillBeReplaced: Any existing Circuit Overseer Visit Field Service Activities will be replaced.
+existingFieldServiceMeetings: There are existing Field Service Meetings during this period. Are you sure you want to overwrite?
 existingFieldServiceScheduleWillBeReplaced: The existing Field Service Schedule will be replaced.
 existingPersonsFound: Existing Persons found. If you Open a Congregation from file, all previous Persons will be deleted.
 expecting: Expecting
 expert: Expert
 expired: Expired
+expiry: Expiry
 expiryDate: Expiry Date
 explainingYourBeliefs: Explaining Your Beliefs
 explainingYourBeliefsDemo: Explaining your Beliefs Demo
@@ -1008,6 +1138,8 @@ exportPersonsMessage: You are about to export X Persons from your congregation.
 exportPublicSpeakers: Export Public Speakers
 exportSelectedAddressTypes: Export Selected Address Types
 exportSuccessful: Export Successful
+exportTerritory: Export Territory
+failedToLogin: Failed to login. Please try again or disconnect and re-connect.
 families: Families
 family: Family
 familyAlreadyHasFamilyHead: This Family already has a Family Head
@@ -1031,12 +1163,16 @@ fieldMissionaries: Field Missionaries
 fieldMissionary: Field Missionary
 fieldMissionaryAbbreviation: FM
 fieldService: Field Service
+fieldServiceActivity: Field Service Activity
 fieldServiceAndMeetingAttendance: Field Service and Meeting Attendance
+fieldServiceAssignments: Field Service Assignments
 fieldServiceAssignmentsPersonList: Field Service Assignments Person List
 fieldServiceConductor: Field Service Conductor
 fieldServiceGroup: Field Service Group
 fieldServiceGroups: Field Service Groups
 fieldServiceGroupsMissingOverseerAssistant: Field Service Groups missing Overseer or Assistant
+fieldServiceHistory: Field Service History
+fieldServiceInformationAppearsAfterProcessing: Field Service information only appears after processing by your local congregation.
 fieldServiceLocation: Field Service Location
 fieldServiceLocations: Field Service Locations
 fieldServiceMeeting: Field Service Meeting
@@ -1058,21 +1194,29 @@ fileNotValidSharedPersonsBackup: File is not a valid NW Scheduler Shared Persons
 fileType: File Type
 filter: Filter
 filterBySelectedOutline: Filter by Selected Outline
+finalReminderPleaseSubmitYouFieldServiceReport: FINAL REMINDER: Please submit your {MONTH} Field Service Report
+finalString: Final
 finalTalk: Final Talk
 findAddress: Find Address
 fineZoomingDisabled: Fine Zooming Disabled
 fineZoomingEnabled: Fine Zooming Enabled
+first: First
 firstContactUsForInstructionsImportPersonsFromKHS: Please first Contact Us and ask for instructions to Import Persons from KHS.
 firstContactUsForInstructionsImportPublicSpeakersFromKHS: Please first Contact Us and ask for instructions to Import Public Speakers from KHS.
 firstCreateAndSelectTheCongregation: Please first create and select the Congregation
 firstName: First Name
+firstNameLastName: First Name Last Name
+firstNameMiddleNameLastName: First Name Middle Name Last Name
+firstNameMissing: First Name Missing
 fixProblem: Fix Problem
+fixProblemData: Fix Problem Data
 folderNotValidOrNoAccess: Folder is not valid or NW Scheduler has no access to this folder. Please Save to another folder.
 followingUp: Following Up
 fontSize: Font Size
 forCircuitOverseer: for Circuit Overseer
 forCOVisit: for CO Visit
 forMoreDetails: for more details.
+fourth: Fourth
 free: Free
 freeText: Free Text
 freeTrial: Free Trial
@@ -1083,7 +1227,9 @@ fromDate: From Date
 fromFile: from File
 fromNWSchedulerFile: from NW Scheduler file
 fromSharing: from Sharing
+fromWeek: From week
 fullVersion: Full Version
+future: Future
 futureDatesOnly: Future Dates Only
 futureDuty: Future Duty
 futureMonthsToShowOnSchedule: Future Months to Show on Schedule
@@ -1096,12 +1242,16 @@ general: General
 generateS88: Generate S-88
 geocodingProvider: Geocoding Provider
 geolocate: Geolocate
+getAddressAtYourLocation: Get Address at your Location
+getMyCoordinates: Get My Coordinates
 getStarted: Get Started!
 gettingDownload: Getting Download
 gettingStarted: Getting Started
 gettingStartedWithNWScheduler: Getting Started with NW Scheduler
 giveInformationToTheCOBE: Give information to the COBE
 givePINToOthers: This PIN should then be given to publishers to allow them to connect using the NW Publisher app.
+gmailSendFailed: Gmail send failed: {status} {response}
+googleAuthorizationMissing: Google authorization is missing.
 goToRequest: Go to Request
 graph: Graph
 graphsCannotBeIncluded: Sorry, graphs can only be included if you select 15 people or less. Please either select less people, or untick 'Include Graphs'.
@@ -1159,8 +1309,10 @@ helpRequestPersonalHelpExplanationMessage1: This is an arrangement where you can
 helpRequestPersonalHelpExplanationMessage2: Please show reasonableness and kindness when requesting personal Help from volunteers.
 helpUpdatingChristianLifeAndMinistryMeetingSchedule: Help > Updating Christian Life and Ministry Meeting Schedule
 helpWhatShouldIChoose: Help! What should I choose?
+hide: Hide
 hideGroupArrangements: Hide Group Arrangements
 highQuality: High Quality
+historicalLastCompleted: Historical Last Completed
 history: History
 home: Home
 homePhone: Home Phone
@@ -1175,6 +1327,8 @@ hourAbbreviation: H
 hours: Hours
 hoursAbbreviation: Hrs
 hoursAgo: hours ago
+hoursIfPioneerMessage: Hours (if auxiliary, regular, or special pioneer or field missionary)
+hoursMustBeWholeNumber: Hours must be a whole number
 house: House
 howDoesCongregationSharingWork: How does Congregation Sharing work?
 howDoesNWPublisherAppWork: How does the NW Publisher app work?
@@ -1229,7 +1383,7 @@ importMeetingWorkbookFilenameIncorrect: EPUB filename is incorrect. Should be 'm
 importMeetingWorkbookNotMatchLanguage: This EPUB Meeting Workbook does not match the selected Language.
 importNamesMatchCLMAssignmentAdded: If both the First Name and Last Name *exactly match* any existing person, the CLM assignments will be added. Otherwise a warning will be shown.
 importNamesMatchDutyAdded: If both the First Name and Last Name *exactly match* any existing person, the Duty will be added. Otherwise a warning will be shown.
-importNamesMatchPersonMerged: If both the First Name and Last Name match *exactly* for any existing persons, the existing person data will merged. Otherwise a new person will be created.
+importNamesMatchPersonMerged: If both the First Name and Last Name match *exactly* for any existing persons, the existing person data will be merged. Otherwise a new person will be created.
 importOrExport: Import or Export
 importPersons: Import Persons
 importPersonsMessage: You are about to import X Persons from your congregation.
@@ -1255,6 +1409,7 @@ includeChildren: Include children
 includeCleaningDescription: Include Cleaning Description
 includeCLMStudents: Include CLM students
 includeCoordinates: Include Coordinates
+includeCustomMeetingAttendance: Include Custom Meeting Attendance
 includeFieldServiceMeetings: Include Field Service Meetings
 includeGardenCare: Include Garden Care
 includeGraphs: Include Graphs
@@ -1281,22 +1436,25 @@ individual: Individual
 individualLicenseCongregationSharingEnabledMessage: You have an Individual License, but Congregation Sharing is enabled. Congregation Sharing requires a Congregation License.
 indonesianRupiah: Indonesian Rupiah
 infirm: Infirm
-infirmPioneer: Infirm
 information: Information
 informationBoard: Information Board
 informationBoardMessage1: The Information Board should only be used for Announcements, Letters and Documents that would normally appear on your Kingdom Hall Information Board, or that are read aloud during the meeting.
 informationBoardMessage2: All Announcements, Letters and Documents should be approved by the COBE (see sfg 13:14).
 informationBoardMessage3: NW Scheduler is not a messaging application. Please do not use the Information Board to send messages or notifications to publishers.
 informationBoardUpdated: Information Board Updated
+informedEmergencyContactMessage: I have informed my emergency contact that this information will be shared with the congregation elders, who may contact them in an emergency, and that any personal information is handled according to the Privacy Policy
+initial: Initial
 initialCall: Initial Call
-initialSyncronization: Initial Syncronization
 initialView: Initial View
 inOrderOfPreference: In order of preference
 inPerson: In Person
 installing: Installing
 installOnAppleMac: Install on Apple Mac
+interface: Interface
 invalidEmail: Invalid Email Address. Please try again.
+invalidTerritoryAppData: Invalid territory app data
 invitation: Invitation
+inYourCongregation: In Your Congregation?
 irregular: Irregular
 irregularPublishers: Irregular Publishers
 isThisCorrect: Is this correct?
@@ -1305,14 +1463,15 @@ itemNumber: Item Number
 items: items
 jamaicanDollar: Jamaican Dollar
 japaneseYen: Japanese Yen
-joinedMaximumCircuits: Sorry, you have already joined the maximum amount of Circuits.
+joinedMaximumCircuits: Sorry, you have already joined the maximum number of Circuits.
 joinOrCreate: Join or Create
 jWorgRequested: JW.org Requested
 jWStream: JW Stream
+keep: Keep
+keepAppOpenAndCheckConnectionFix: Keep the app open while it retries. If this repeats, check internet connection.
 keepOpen: Keep Open
 key: Key
 keyPerson: Key Person
-khOperatingCommittee: KH Operating Committee
 kindRegards: Kind Regards
 kingdomHall: Kingdom Hall
 kingdomHallAddress: Kingdom Hall Address
@@ -1322,6 +1481,7 @@ kingdomHallServant: Kingdom Hall Servant
 label: Label
 labels: Labels
 landscape: Landscape
+landscapeSimple: Landscape Simple
 language: Language
 languageCode: Language Code
 languageGroup: Language Group
@@ -1330,11 +1490,14 @@ languageGroupOnly: Language Group only
 languageGroups: Language Groups
 languages: Languages
 largePrint: Large Print
+last: Last
 last12Months: Last 12 Months
 last3Months: Last 3 Months
 last6Months: Last 6 Months
+lastAtHome: Last At Home
 lastChanged: Last Changed
 lastCheckedUpdated: Last Checked or Updated
+lastCompleted: Last Completed
 lastConnected: Last Connected
 lastDateCompleted: Last Date Completed
 lastGiven1Years: Last Given 1+ Years
@@ -1343,13 +1506,16 @@ lastGiven3Years: Last Given 3+ Years
 lastGiven4Years: Last Given 4+ Years
 lastGiven5Years: Last Given 5+ Years
 lastName: Last Name
+lastNameCommaFirstName: Last Name, First Name
+lastNameCommaFirstNameMiddleName: Last Name, First Name Middle Name
+lastNameFirstName: Last Name First Name
 lastPioneerSchool: Last Pioneer School
 lastPublisherRecord: Last Publisher Record
+lastServiceYear: Last Service Year
 lastUpdated: Last Updated
 lastVisited: Last Visited
 late: Late
 later: Later
-lateReportExplanation: Tick only if this months Congregation Field Service Report has already been submitted to the Branch. This report will be added to next months totals.
 latestAppVersion: Latest App Version
 latestVersion: Latest Version
 latitude: Latitude
@@ -1358,7 +1524,9 @@ learnMore: Learn More
 leaveCircuit: Leave Circuit
 lessThan1MinuteLeft: less than 1 min left
 letter: Letter
+letterNotSent: Letter Not Sent
 letters: Letters
+letterSent: Letter Sent
 letterWriting: Letter Writing
 letterWritingAbbreviation: LW
 letterWritingMaps: Letter Writing Maps
@@ -1403,6 +1571,9 @@ literatureRequests: Literature Requests
 literatureRequestsWaitingToBeDelivered: Literature Requests waiting to be delivered
 literatureRequestsWaitingToBeOrdered: Literature Requests waiting to be ordered
 literatureServant: Literature Servant
+living1: Living 1
+living2: Living 2
+living3: Living 3
 livingAsChristians: Living as Christians
 livingAsChristiansShort: Living
 livingPart: Living Part
@@ -1411,12 +1582,23 @@ load: Load
 loadedSuccessfully: Loaded Successfully
 loading: Loading
 loadingError: Loading Error
+loadingErrorCongregationPinChanged: Your local congregation elders recently changed the Congregation PIN.
+loadingErrorCongregationPinChangedAction: Please tap Disconnect and then reconnect to your congregation using the new Congregation PIN.
+loadingErrorDataCouldNotBeLoaded: Sorry, some of your data could not be loaded.
+loadingErrorLocalDataCouldNotBeDecrypted: NW Publisher could not decrypt data stored on this device.
+loadingErrorLocalDataCouldNotBeDecryptedAction: Please tap Disconnect and reconnect to your congregation. If this error returns, expand Technical Details below and send a screenshot to NW Publisher Support.
+loadingErrorRefreshLocalDataStep: 1. Click Refresh Local Data
+loadingErrorRefreshSelectedAppDataStep: 2. Ask your local elders to use NWS to Refresh Selected App Data
+loadingErrorSendScreenshotStep: 3. Take a screenshot of this error and send to your local elders
 loadSuggestedRole: Load Suggested Role
 loadTemplate: Load Template
 local: Local
 localAttachmentNotOpenMessage1: Cannot upload attachment - Unable to access the Attachment.
 localAttachmentNotOpenMessage2: Please CLOSE all attachments before sending! Otherwise, please remove and re-Add the Attachment, and try again.
+localAuthenticationKeyMissing: Local authentication key is missing. Please click Disconnect and reconnect to your congregation.
 localDownloadLog: Local Download Log
+localEldersNotEnabledFeature: Your local elders have not enabled this feature.
+localEldersNotEnabledSubmittingReports: Your local elders have not enabled submitting reports.
 localNeed: Local Need
 localNeedCurrentlyScheduledMessage1: This local need is currently Scheduled.
 localNeeds: Local Needs
@@ -1454,15 +1636,17 @@ maintenanceTaskCategories: Maintenance Task Categories
 maintenanceTaskCategory: Maintenance Task Category
 maintenanceTasks: Maintenance Tasks
 majorProblemsPleaseReplyOrContactUs: If there are major problems, please reply to our Import Instructions email, or Contact Us. You MUST please include the Import Log when replying or contacting us.
+makingADonation: making a Donation
 makingDisciples: Making Disciples
 malaysianRinggit: Malaysian Ringgit
 male: Male
+manual: Manual
 manuallyEnterMeetingData: Manually Enter Meeting Data
 map: Map
 mapCache: Map Cache
 mapCacheEnabledMessage: We strongly recommend enabling the Map Cache.
 mapDownloadFailedMessage: Map Download Failed. Please check your internet connecting and try again. If the problem persists, you will need to Remove then Re-Add the map.
-mapFileTooBig: Sorry, this file is too big. Maps must be 300KB or less.
+mapFileTooBig1: Sorry, this file is too big. Maps must be less than:
 mapNotFound: Map not found
 mapOverlay: Map Overlay
 mapScale: Map Scale
@@ -1478,17 +1662,23 @@ meetingAttendanceOnly: Meeting Attendance only
 meetingAttendanceRecord: Meeting Attendance Record
 meetingAttendanceRecords: Meeting Attendance Records (S-88)
 meetingAttendanceValueEmpty: A meeting was held, but some cells are blank. Please enter attendance (or 0) for all weeks that a meeting was held.
+meetingDataUpdatedPleaseRestart: Meeting Data Updated, please restart NWS Desktop.
+meetingDataUpdatedReloading: Meeting data updated. Reloading…
 meetingDayChange: Meeting Day Change
 meetingID: Meeting ID
 meetings: Meetings
 meetingSchedules: Meeting Schedules
 memorial: Memorial
+memorialSchedule: Memorial Schedule
+meSettings: Me Settings
 message: Message
 meView: Me view
 meViewAlerts: Me view Alerts
 mexicanPeso: Mexican Peso
 microphone: Microphone
 microphones: Microphones
+microsoftAuthorizationMissing: Microsoft authorization is missing.
+microsoftSendFailed: Microsoft send failed: {status} {response}
 middleName: Middle Name
 midweek: Midweek
 midweekCleaning: Midweek Cleaning
@@ -1506,17 +1696,28 @@ minimumTimeBetweenDuties: Minimum time between Duties
 ministerialServant: Ministerial Servant
 ministerialServantAbbreviation: MS
 ministerialServants: Ministerial Servants
+ministry: Ministry
+minorUpdateDownloadedInstallMessage: A new Minor Version of NWS Desktop is available and has been automatically downloaded to your computer.
+minorUpdateInstallQuestion: Would you like to quickly install after you close?
+minorUpdateInstallTitle: Minor Update Ready
+minutes: minutes
 minutesAbbreviation: min.
 minutesAgo: minutes ago
 minutesLeft: mins left
+mismatchPleaseRefresh: Mismatch - Please Refresh
+missing: Missing
 missingGroupOverseersAndAssistants: Missing Group Overseers and Assistants
 missingPersonInformation: Missing Person Information
+missingPleaseRefresh: Missing - Please Refresh
 missingReport: Missing Report
 missingReportList: Missing Report List
 missingReports: Missing Reports
+missionary: Missionary
 mobile: Mobile
+mobilePhone: Mobile Phone
 mobilePhoneAbbreviation: (m)
 month: Month
+monthly: Monthly
 months: months
 monthTemplate: Month Template
 monthView: Month view
@@ -1538,6 +1739,10 @@ myCircuit: My Circuit
 myCircuits: My Circuits
 myCongregation: My Congregation
 myCongregationResponsibilities: My Congregation Responsibilities
+myContactInformation: My Contact Information
+myEmergencyContacts: My Emergency Contacts
+myResponsibilities: My Responsibilities
+myself: Myself
 myTasks: My Tasks
 myUserAccess: My User Access
 na: N/A
@@ -1554,26 +1759,30 @@ neighborPerson: Neighbor Person
 neighborPersons: Neighbor Persons
 neighborPublicSpeaker: Neighbor Public Speaker
 never: Never
-new: New
 newAddress: New Address
 newAddresses: New Addresses
 newAnnouncement: New Announcement
+newAssignment: New Assignment!
 newCircuit: New Circuit
 newCongregation: New Congregation
+newDuty: New Duty!
 newEvent: New Event
 newFromCongregation: New from Congregation
 newFromOther: New from Other
 newFromPublisher: New from Publisher
 newInactivePublishers: New Inactive Publishers
+newIrregularPublishers: New Irregular Publishers
 newLanguage: New Language
 newLetterWritingTerritory: New Letter Writing Territory
+newMeetingDataAvailableDownloading: New Meeting Data Available. Downloading...
 newMessage: New Message
 newOrUpdated: New or Updated
 newPassword: New Password
 newPerson: New Person
 newPhoneWitnessingTerritory: New Phone Witnessing Territory
+newRegularPublishers: New Regular Publishers
 newRequest: New Request
-newString: New
+newText: New
 newZealandDollar: NZD New Zealand Dollar
 nextFourWeeksAreScheduled: Next 4 Weeks are Scheduled.
 nextToAssign: Next to Assign
@@ -1581,32 +1790,39 @@ nextWeek: Next Week
 nilReport: Nil '0' Report
 no: No
 noActiveSharingProblemsDetected: No Active Sharing Problems Detected
+noAddresses: No Addresses
 noAnswer: No Answer
-noAppointedBrothersWithEmail: Sorry, no appointed brothers with an Email Address have been added to NW Scheduler. This is required to Enable Sharing.
+noAppointedBrothersWithEmail: Sorry, no appointed brothers with an Email Address have been added to NWS. This is required to Enable Sharing.
 noApprovedSpeakers: No Approved Speakers
 noArrangements: No Arrangements
 noCampaign: No Campaign
 noCategory: No Category
+noChairmanAssigned: No Chairman Assigned for selected week
 noCircuits: No Circuits
 noCongregationFieldServiceReportsSubmitted: There are no Congregation Field Service Reports marked as 'Submitted to Branch' in this period. Please click 'Submitted to Branch' for all Congregation Field Service Reports in this period.
 noCongregations: No Congregations
+noCongregationSelected: No congregation selected
 noCountrySelectedMessage: No Country selected. Please first click 'Congregation > Congregation Information' and select your country.
 noDataFound: No Data Found
 noDataToRestore: No Data to Restore
 noDateSelected: No Date Selected
 noFieldServiceArrangements: No Field Service Arrangements
+noFromAccountSetup: No From account has been setup.
 noGroupsMessage: This report requires Groups, but you have not created any. Please click Congregation > Groups to add and assign persons to groups.
 noGuestCongregations: No Guest Congregations
 noInformationToPrintCheckEvents: No Information to Print. Check your Congregation Events.
 noInternetConnectionMessage: No internet connection. Please connect and try again.
+noKeyPerson: No Key Person
 noLiteratureRequestsWaitingToBeDelivered: No Literature Requests waiting to be delivered
 noLiteratureRequestsWaitingToBeOrdered: No Literature Requests waiting to be ordered
+noLocations: No Locations
 noMeeting: No Meeting
+noMemorialFound: No Memorial found in Congregation Events
 nonAppointedActiveBrothers: Non Appointed Active Brothers
 none: None
 noNewAddresses: No New Addresses
+noNewMeetingDataFound: No new meeting data found.
 nonPublishers: Non Publishers
-nonRecurringOnly: Non-Recurring only
 nonSchool: Non-School
 nonSchoolParts: Non-School Parts
 nonSchoolUsageHistory: Non-School Usage History
@@ -1619,7 +1835,9 @@ noPublicSpeakerEmail: No Public Speaker email found.
 noPublicSpeakerEmailMessage: Please click Congregation > Neighbor Congregations and Public Speakers to add the Public Speaker.
 noPublicTalkCoordinatorFound: No Public Talk Coordinator email found.
 noPublicTalkCoordinatorFoundMessage: Please click Congregation > Neighbor Congregations and Public Speakers to add the Public Talk Coordinator.
+noPublicWitnessingArrangements: No Public Witnessing Arrangements
 noReport: No Report
+noReportsAvailable: No Reports Available
 noReportsToImport: No reports to Import
 northAmerica: North America
 northAmericaCentral: North America Central
@@ -1627,12 +1845,17 @@ northAmericaEast: North America East
 northAmericaWest: North America West
 norwegianKrone: Norwegian Krone
 noSaveButton: Tip: There is no save button. Everything saves automatically!
+noScheduleAvailable: No Schedule Available
 notApproved: Not Approved
+notApprovedAppPersons: Not-Approved App Persons
 notAvailable: Not Available
 notCompleted: Not Completed
+notCompletedInPeriod: Not Completed in Period
 notCompletedLast12Months: Not completed in the last 12 months
 notCompletedLast6Months: Not completed in the last 6 months
 notConnected: Not Connected
+notConnectedToInternet: Sorry, it seems you are not connected to the internet. Please check your connection and try again.
+note: Note
 notEnabled: Not Enabled
 notEnoughMemoryError: Not enough memory to Save. Please select less data to save at once, or untick 'Combine'.
 noTerritoriesOverdue: No Territories Overdue
@@ -1641,6 +1864,7 @@ noTerritoryNotesFromPublishers: No Territory Notes from Publishers
 noTerritorySelected: No territory selected
 notes: Notes
 notesForCO: Notes for CO
+notesForTerritoryServant: Notes for Territory Servant
 notesFromPublisher: Notes from Publisher
 notesName: Notes Name
 notesSpecialNeeds: Notes or Special Needs
@@ -1649,6 +1873,7 @@ notHome: Not Home
 notHomeAbbreviation: NH
 notHomeAttempts: Not Home Attempts
 notHomeDisplay: Not Home Display
+notHomeTime: Not Home Time
 notification: Notification
 notificationEmails: Notification Emails
 notifications: Notifications
@@ -1659,7 +1884,11 @@ notifyingAllElders: Notifying all Congregation Elders
 notInActiveCampaign: Not in Active Campaign
 notIncludingAssistant: Not Including Assistant
 notLinked: Not Linked
+notOfficialAppPart1: This is not an official App of Jehovah's Witnesses and does not replace any official App.
+notOfficialAppPart2: This App does not contain any misleading information or 'spiritual food', and does not gather any personal data from you.
+notOfficialAppPart3: All data inside this App comes from your local body of elders only.
 notPioneering: Not Pioneering
+notPublisherOrCLMStudent: Not a Publisher or CLM Student
 notRequested: Not Requested
 notSaved: not saved.
 notScheduled: Not Scheduled
@@ -1670,8 +1899,9 @@ notSubmitted: Not Submitted
 notWorked: Not Worked
 notWorkedLast12Months: Not worked in the last 12 months
 notWorkedLast6Months: Not worked in the last 6 months
+notYetAssignedToGroup: You have not yet been assigned to a Field Service Group.
 notYetConnected: Not yet connected
-noUpcomingCOVisits: No upcoming Circuit Overseer visits.
+noUpcomingCOVisits: No upcoming Circuit Overseer visits
 noUpdates: No Updates
 noVolunteersFound: No volunteers found
 noWeekSelected: No week selected
@@ -1690,22 +1920,27 @@ nwpAppPersonsNotConnected: NWP App Persons Not Connected
 nwpAppPersonsWithOldVersion: NWP App Persons with Old Version
 nwpAppRegion: NWP App Region
 nwpAppSettings: NWP App Settings
+nwpAppShowTo: NWP App Show to
 nwpAppVersion: NWP App Version
 nwPublisherAppExplanation1: NW Publisher is a free app that can be installed on Apple iOS, Google Android and Amazon devices, allowing publishers to see upcoming Schedules, Assignments, Duties, Congregation Events and Announcements, submit Field Service Reports and more.
-nwPublisherAppExplanation2: Data for the NW Publisher app comes to and from your local NW Scheduler congregation only.
+nwPublisherAppExplanation2: Data for the NW Publisher app comes to and from your local NWS congregation only.
 nwPublisherAppExplanation3: Before enabling, please click Help > NW Publisher app and ensure you understand how the App works, how to setup and how to solve any problems.
 nwPublisherAppExplanation4: We are unable to offer individual support for publishers.
-nwSchedulerComplianceWithGDPR1: NW Scheduler compliance with EU GDPR, UK GDPR and other similar Data Protection Regulations
-nwSchedulerFile: NW Scheduler file
+nwSchedulerComplianceWithGDPR1: NWS compliance with EU GDPR, UK GDPR and other similar Data Protection Regulations
+nwSchedulerFile: NWS file
 nwsMobileEnableMessage1: This will allow all appointed brothers to use NWS Mobile to connect to your congregation.
 nwsMobileEnableMessage2: Warning: NWS Mobile is currently BETA TESTING. This means problems or bugs are more likely, including data loss. Please only enable NWS Mobile if your congregation elders are willing to participate in BETA testing, are willing and able to report problems, and know how to restore data from Backup in case of data loss.
 nwsMobileNewSharingRegionMessage: NWS Mobile is only available on the new Sharing Regions. When you are ready, click Change Region to change to one of the new Regions. We recommend first carefully reading Help > Congregation Sharing Overview > Sharing Regions
 nwsMobileNotEnabledMessage: NWS Mobile has not been enabled for this congregation. Please ask a Congregation Administrator to use NWS Desktop to enable NWS Mobile.
+nwsMobileRequiresCongregationGold: NWS Mobile requires Congregation Gold
 obtainInformationFromSecretary: Obtain information from Secretary
 obtainInformationFromServiceOverseer: Obtain information from Service Overseer
+odd: Odd
 offerHelp: Offer Help
 offerPersonalHelp: Offer Personal Help
 offline: Offline
+offlineViewOnly: Offline - View Only
+ok: OK
 old: Old
 oldAppVersion: Old App Version
 oldDevice: Old Device
@@ -1718,20 +1953,26 @@ onePagePerGroup: One page per Group
 oneUser: 1 user
 oneYear: 1 year
 oneYearFree: 1 year Free
+onFileWithCongregation: On file with congregation
 online: Online
 onlineMeetings: Online Meetings
+onlinePercentageMidweek: Online % Midweek
+onlinePercentageWeekend: Online % Weekend
 onlyCongregationAdministratorsCanChangeThis: Sorry, only Congregation Administrators can change this.
 onlyCongregationAdministratorsDoThis: Only Congregation Administrators should do this!
 onlyDelete50Territories: Sorry, you can only delete up to 50 territories at a time.
 onlyEldersCanEnableCongregationSharing: Warning: Only Elders can Enable Congregation Sharing.
 onlyOneCongregationAdministrator: Your congregation only has 1 Congregation Administrator. We strongly recommend you have at least 2 Congregation Administrators.
+onlyOneCongregationAdministratorLabel: Only 1 Congregation Administrator
 onlyOneCongregationAdministratorShort: Congregation Sharing Only 1 Congregation Administrator
+onlyResendIfAsked: You should only Resend if asked to by your local elders. Otherwise, please contact your local elders to make any changes.
 open: Open
+openAddresses: Open Addresses
 openCongregation: Open Congregation
-openCongregationFromAutomaticBackupMessage: Every time NW Scheduler closes it creates an Automatic Backup on your local computer. If you have already used NW Scheduler on this computer, you can open this Congregation from Automatic Backup.
-openCongregationFromFileMessage: If you or another elder has already created a NW Scheduler Congregation and then created a Backup File, you can open this Congregation from Backup File
+openCongregationFromAutomaticBackupMessage: Every time NWS closes it creates an Automatic Backup on your local computer. If you have already used NWS on this computer, you can open this Congregation from Automatic Backup.
+openCongregationFromFileMessage: If you or another elder has already created a NWS Congregation and then created a Backup File, you can open this Congregation from Backup File
 openCongregationFromSharing: Open a Congregation from Sharing
-openCongregationFromSharingMessage: If you or another elder has already created a NW Scheduler Congregation and then Enabled Congregation Sharing, you can open this Congregation from Sharing.
+openCongregationFromSharingMessage: If you or another elder has already created a NWS Congregation and then Enabled Congregation Sharing, you can open this Congregation from Sharing.
 openedCongregation: Congregation Opened Successfully!
 openFullLogs: Open Full Logs
 openingComments: Opening Comments
@@ -1739,9 +1980,12 @@ openingCommentsCLM: Opening Comments (1 min.)
 openingPrayer: Opening Prayer
 openingSong: Opening Song
 openLog: Open Log
+openMap: Open Map
 openMapCacheFolder: Open Map Cache Folder
 openNow: Would you like to Open now?
+openPhoneNumbers: Open Phone Numbers
 optional: Optional
+options: Options
 or: or
 order: Order
 orderBy: Order by
@@ -1757,9 +2001,12 @@ otherGroup: Other Group
 otherGroupCaptains: Other Group Captains
 otherGroups: Other Groups
 otherPublicSpeaker: Other Public Speaker
+otherPublishersWithoutCoordinatesMessage: There are other publishers without coordinates. Would you also like to geolocate these?
 otherRegistrationQuestions: I have other License Questions
+others: Others
 otherSheep: Other sheep
 otherSpeaker: Other Speaker
+otherTalk: Other Talk
 outgoingRequest: Outgoing Request
 outgoingRequestReply: Outgoing Request Reply
 outgoingRequests: Outgoing Requests
@@ -1770,8 +2017,8 @@ outlines: Outlines
 outOfMemoryError: Out of Memory Error
 outOfMemoryErrorMessage1: Your computer has run out of memory while drawing the Territory boundary. Please try again.
 outOfMemoryErrorMessageOption1: Option 1: Use a 64-bit Windows Operating System (Recommended)
-outOfMemoryErrorMessageOption2: Option 2: Allocate more Virtual Memory to NW Scheduler
-outOfMemoryErrorMessageOption3: Option 3: Before drawing any new Territory Boundaries, first reduce your NW Scheduler screen size
+outOfMemoryErrorMessageOption2: Option 2: Allocate more Virtual Memory to NWS
+outOfMemoryErrorMessageOption3: Option 3: Before drawing any new Territory Boundaries, first reduce your NWS screen size
 outOfMemoryErrorMessageOptions: If you still have this problem, there are 3 ways to fix:
 overallBoundaryThickness: Overall Boundary Thickness
 overdue: Overdue
@@ -1784,6 +2031,7 @@ panAndZoomControls: Pan and Zoom Controls
 paperSize: Paper Size
 part: Part
 partHistory: Part History
+partners: Partners
 partNo: Part no.
 parts: Parts
 partsNotScheduled: Parts not scheduled
@@ -1794,33 +2042,47 @@ passwordHint: Password Hint
 passwordIncorrect: Password Incorrect. Please try again.
 passwordNotValid2: Password must be 12 characters or more, and include lowercase, uppercase and numbers.
 passwordProtect: Password Protect
-passwordProtectMessage: This means every time you open NW Scheduler you must enter your NW Scheduler password. If you forget your NW Scheduler password, you may not be able to open NW Scheduler.
+passwordProtectMessage: This means every time you open NWS you must enter your NWS password. If you forget your NWS password, you may not be able to open NWS.
 passwordRecoveryEmail: Password Recovery Email
 passwordRecoveryEmailMessage: (in case you forget your password)
 passwordResetMessage: Your password has been reset. A new password will be sent to your Password Recovery Email in a few minutes. Please also check your SPAM or JUNK folders.
 passwordsNotMatch: Passwords do not match
 paste: Paste
+pasteDay: Paste Day
+pasteMonth: Paste Month
+pasteWeek: Paste Week
 pastHistory: Past History
 patientlyWaitUntilMeetingWorkbookDataAvailable: Patiently wait until the Meeting Workbook data is available
 paymentMethod: Payment Method
 pdfViewerMustBeInstalledToPreview: PDF Viewer must be installed to Preview reports. Please Google 'How to install PDF viewer' or ask a local friend for assistance.
 pending: Pending
+pendingDelete: Pending Delete
 percentageCompleted: % Percentage Completed
 period: Period
 permanentlyDeleteData: This will permanently Delete data.
 permanentlyRemoveDataFromSharingServer: This will immediately and permanently remove all encrypted data from the Sharing Server. This will affect all Shared Persons.
 person: Person
+personal: Personal
+personalDetails: Personal Details
 personAlreadyHasAssignmentThisWeekend: Person already has an assignment this weekend.
 personAlreadyPartOfFamily: Person is already part of a Family. Please first set the family to None.
 personAlreadyShared: Person already shared.
 personalTerritory: Personal Territory
 personAssignments: Person Assignments
+personAuthentication: Person Authentication
 personData: Person Data
 personDetailedInformation: Person Detailed Information
-personHasCurrentTerritoryAssignments: This person has current Territory Assignments. Please first remove or Complete these territory assignments.
+personDetails: Person Details
+personDoesNotMatchMessage1: Sorry, this information does not match anyone in this congregation.
+personDoesNotMatchMessage2: 1. Please carefully check your First Name and Person PIN, and try again.
+personDoesNotMatchMessage3: 2. Please tap Disconnect, and then re-connect to your Congregation.
+personDoesNotMatchMessage4: 3. Please contact your local elders, and send them a screenshot of this screen. Ask them to follow the instructions on our website Help.
+personDoNotKnowPIN: If you do not know your Person PIN, please tap Help or contact your local elders.
+personHasCurrentTerritoryAssignments: This person has current Territory Assignments.
 personHasFutureAssignmentsOrDuties: This person has future Assignments or Duties. Please first remove these.
 personHasFuturePublicTalks: This person has future Public Talks. Please first click 'Information > History' and remove these assignments.
 personHasPartsWhileAway: This person has parts while they are away.
+personID: Person ID
 personIdentity: Person Identity
 personInformation: Person Information
 personInformationCheck: Person Information Check
@@ -1828,14 +2090,18 @@ personList: Person List
 personLocationData: Person Location Data
 personMissingEmergencyContactInformation: Person Missing Emergency Contact Information
 personMissingPersonalInformation: Person Missing Personal Information
+personMoveOrDeleteContinue: Do you want to continue?
+personMoveOrDeleteOutstandingItems: This person still has the assignments or responsibilities listed below. We recommend manually clearing or reassigning them before marking this person as moved or deleting them.
 personNotAssignedGroup: Person not assigned to a Field Service Group
 personPIN: Person PIN
 persons: Persons
 personSetRemoved: This will remove all their future Assignments and Duties, and disable their App access.
+personsInFamily: Persons in Family
 personsMissingEmergencyContactInformation: Persons Missing Emergency Contact Information
 personsMissingInformation: Persons Missing Information
 personsMissingPersonalInformation: Persons Missing Personal Information
 personsNotAssignedGroup: Persons not assigned to a Field Service Group
+personsNotInFamily: Persons not in Family
 personsSpiritualSummary: Persons Spiritual Summary
 personsToBcc: Persons to Bcc
 personsToCc: Persons to Cc
@@ -1849,7 +2115,6 @@ phoneAbbreviation: P
 phoneNumber: Phone Number
 phoneNumbers: Phone Numbers
 phoneWitnessing: Phone Witnessing
-phoneWitnessingAbbreviation: P
 phoneWitnessingMaps: Phone Witnessing Maps
 pin: PIN
 pinNotMatch: PINs do not match.
@@ -1864,15 +2129,18 @@ pleaseCarefullyCheckAndConfirm: Please carefully check and confirm this informat
 pleaseChangeCircuitInPublicSpeakerSharing: Sorry, please change your Circuit in Public Speaker Sharing.
 pleaseCheckAppLogs: Please check NWP App Logs.
 pleaseCheckInformationMessage: Please check all information and adjust as necessary. Afterwards, return to your Group Overseer.
+pleaseCloseReOpenChangeRegionMessage: Please close and re-open NW Publisher to connect to a different Region.
 pleaseConfirm: Please confirm
 pleaseConnectToYourCongregation: Please connect to your Congregation
+pleaseContactLocalEldersForStatus: Please contact your local elders for the status of this request or to make any changes.
+pleaseCreateCircuitOverseerVisitInCongregationEvents: Please create the Circuit Overseer visit in Congregation Events
 pleaseCreateCongregationPIN1: Please create an 8-digit Congregation PIN
 pleaseCreateCongregationSharingPassword: Please create a Congregation Sharing Password
 pleaseDoNotForgetPassword: Please do not forget this password!
 pleaseDoNotUsejwpubEmail: Invalid Email. Please do not use your jwpub email address.
 pleaseEditLocalPublicTalksUsingPublicTalksLocal: Please edit Local Public Talks using Public Talks - Local
 pleaseEnterCongregationPIN: Please enter Congregation PIN
-pleaseEnterPassword: Please enter NW Scheduler Password
+pleaseEnterPassword: Please enter NWS Password
 pleaseEnterValidEmail: Please enter at least one valid email address
 pleaseFirstSeeHelpSetupYourOwnSMTPServer: Please first see Help > Setup your own SMTP Server
 pleaseFirstSetupEmail: Please first Setup Email
@@ -1884,9 +2152,1148 @@ pleaseSelect: Please Select
 pleaseSelectPerson: Please select a person.
 pleaseSelectProgramLanguage: Please Select Program Language
 pleaseSelectYourCountry: Please select your Country
+pleaseSubmitYouFieldServiceReport: Please submit your {MONTH} Field Service Report
 pleaseSyncAppReservations: Please first Sync App Reservations before making changes to reservations or disabling locations.
 pleaseTryAgain: Please check your Internet connection and try again. If the problem persists, please click Help.
-pleaseTryTheFollowing: Please try the following: 
+pleaseTryTheFollowing: Please try the following:
+pleaseUpdate: Please update New World Publisher app as soon as possible.
+pleaseUpdateNWScheduler: Please Update NWS
+pleaseUpdateNWSchedulerMessage1: To continue using Congregation Sharing, please install this Major Update by clicking Me > Updates. WARNING: Until you update, any changes you make might not be Shared. Please update as soon as possible.
+pleaseUseAutoAssignResponsibily: Please use Auto-Assign responsibly and double-check each Part is assigned to the most suitable person.
+pleaseValidateEmail: A Verification Email has been sent to your email address. Please verify your email and then Login.
+pleaseVisit: Please visit
+pleaseWait: Please wait
+pleaseWaitForLocalEldersToProcess: Please wait for your local elders to process this update or request.
+pm: PM
+portrait: Portrait
+positionDown: Position Down
+positions: Positions
+positionUp: Position Up
+postalCode: Postal Code
+postedOn: Posted on
+prayer: Prayer
+prayerForBread: Prayer for Bread
+prayerForWine: Prayer for Wine
+prayers: Prayers
+prepare: Prepare
+prepareBread: Prepare Bread
+prepareCongregationAccounts: Prepare Congregation Accounts
+prepareFlowers: Prepare Flowers
+prepareKHOCAccounts: Prepare KHOC Accounts
+prepareMonthlyMovementOfLiteratureForms: Prepare Monthly Movement of Literature (S-28) forms
+prepareVarietyOfTerritories: Prepare a variety of territories that can be used
+prepareWine: Prepare Wine
+preview: Preview
+previous12MonthsNotSubmitted: The previous 12-months Congregation Field Service Reports have not been 'Submitted', so this report might not work correctly. See Help > Congregation Field Service Report for more information.
+previousMonthsToShowOnSchedule: Previous Months to Show on Schedule
+price: Price
+primary: Primary
+primaryCircuit: Primary Circuit
+print: Print
+printed: Printed
+printedBy: Printed by
+printedMeetingWorkbook: Printed Meeting Workbook
+printedStudyWatchtower: Printed Study Watchtower
+printing: Printing
+printingAccess: Please Note: Printing Access is automatically based on the above.
+printS21PublisherRecordCards: Print S-21 Publisher Record Cards
+privacyPolicy: Privacy Policy
+privilege: Privilege
+problem: Problem
+problemAuthenticating: Sorry, your device had a problem authenticating. Please tap Disconnect and connect again.
+problems: Problems
+problemsUpdatingMessage: If you have ANY problems updating, please see Help > Updating NWS.
+problemsWithTranslation: If you notice any problems with the translation, please click
+processing: Processing
+processingPayment: Processing Payment
+processReceivedAppData: Process Received App Data
+program: Program
+programInactivityMessage1: Please do not leave NWS open when you are not using it, as this may cause data sync problems.
+programInactivityMessage2: Instead, only open NWS when you need to use it, and then please close it when you have finished.
+programInactivityMessage3: NWS will automatically Save and Close in
+programLanguage: Program Language
+programLanguageChangeAfterRestart: The program language will change after restarting NWS Desktop.
+programOpenTooLongMessage1a: NWS has been open for over 1 hour
+programOpenTooLongMessage2a: This may have been caused by closing your laptop lid, or sleeping your computer, while NWS was still open. Please do not do this.
+programOpenTooLongMessage3a: NWS must be properly closed and opened for data to sync correctly, especially if you are using the NW Publisher app or Congregation Sharing.
+programOpenTooLongMessage4a: We *strongly recommend* closing NW Scheduler now. If you need to keep using NW Scheduler, simply re-open.
+programStatus: Program Status
+publicNotes: Public Notes
+publicSpeaker: Public Speaker
+publicSpeakerCongregations: Public Speaker Congregations
+publicSpeakerHasUpcomingLocalPublicTalks: This Public Speaker has upcoming Local Public Talks in your congregation. Please first remove these assignments.
+publicSpeakerInformation: Public Speaker Information
+publicSpeakerLocalNotes: Public Speaker Local Notes
+publicSpeakerRequest: Public Speaker Request
+publicSpeakerRequests: Public Speaker Requests
+publicSpeakers: Public Speakers
+publicSpeakersAvailability: Public Speakers Availability
+publicSpeakersExchangeHistory: Public Speakers Exchange History
+publicSpeakersExchangeSummary: Public Speakers Exchange Summary
+publicSpeakersFuture: Public Speakers - Future
+publicSpeakerSharing: Public Speaker Sharing
+publicSpeakerSharingAddRequestedSpeakersAndDates: Please first add some Requested Speakers and Requested Dates.
+publicSpeakerSharingAlreadyExists: This Circuit already exists. Please try joining the Circuit.
+publicSpeakerSharingAlreadyScheduledPublicTalkWillRemove: You have already scheduled a Public Talk for this weekend. Creating a New Request will remove the existing Public Talk.
+publicSpeakerSharingApprovedRequests: Approved Requests will be added to your Away Public Talk Schedule.
+publicSpeakerSharingApprovedRequestsNeedOutline: All Approved Requests must have an Outline.
+publicSpeakerSharingApproveMessage1: Do you recognize and trust this Congregation?
+publicSpeakerSharingApproveMessage2: Is this congregation either in this circuit, or physically nearby?
+publicSpeakerSharingCancelledRequests: Cancelled Requests will be removed from your Away Public Talk Schedule.
+publicSpeakerSharingCancellingApprovedIncomingSpeaker: Cancelling an Approved Speaker will remove the Local Public Talk Assignment and notify the other congregation.
+publicSpeakerSharingCancellingApprovedOutgoingSpeaker: Cancelling an Approved Speaker will remove the Away Public Talk Assignment and notify the other congregation.
+publicSpeakerSharingCannotSwap: Sorry, you cannot swap a talk scheduled with Public Speaker Sharing.
+publicSpeakerSharingChangesMadeNotSent: You made changes but did not Send or Update the Request.
+publicSpeakerSharingCircuitMissing: Please first create your Circuit (see Congregation > Circuits, Congregations and Speakers)
+publicSpeakerSharingCircuitNameFormat: Your circuit name should be in the following format
+publicSpeakerSharingCircuitNameFormatLanguageCode: If you are a Foreign Language circuit, you may add the Language Code
+publicSpeakerSharingCircuitNameNotValid: Your circuit name is not valid.
+publicSpeakerSharingConfirmCircuitName2: Please carefully check your Circuit Name MATCHES the Circuit Name given by your local branch. This can be found on jw.org.
+publicSpeakerSharingConfirmCircuitName3: Please DO NOT include any A,B,C divisions.
+publicSpeakerSharingConfirmDisable: Do you still want to Disable Sharing?
+publicSpeakerSharingConfirmOrCancelRequests: Please first Confirm or Cancel all Approved Requests.
+publicSpeakerSharingCongregationNoLongerShared: This congregation is no longer shared. Setting to "Not Shared"
+publicSpeakerSharingCongregationRequestedDataRemotelyDeleted: Congregation Requested their data be Remotely Deleted
+publicSpeakerSharingCongregationUnableToDenyAlreadyApproved1: Unable to Deny Congregation because this congregation is already Approved and may have outstanding Requests.
+publicSpeakerSharingCongregationUnableToDenyAlreadyApproved2: If you feel this congregation should be Denied or Removed, please Contact Us and include the Circuit ID, Congregation ID and an explanation.
+publicSpeakerSharingContactByPhoneMessage: (Perhaps you can contact them via phone or message to confirm they made this request)
+publicSpeakerSharingDeleteCircuitInstead: You are the only Approved Congregation in this Circuit. Please Delete the circuit instead.
+publicSpeakerSharingEnabledMessage: Public Speaker Sharing is Enabled. Changing your Circuit might cause problems for Public Speaker Sharing.
+publicSpeakerSharingExplanation1: Public Speaker Sharing allows you to share your local Public Speaker information with nearby congregations, as well as Send and Receive Requests for Public Speakers directly from within NW Scheduler.
+publicSpeakerSharingExplanation2: Public Speaker Sharing is self-managed by all congregations within a circuit.
+publicSpeakerSharingExplanation3: Before enabling, please click Help > Public Speaker Sharing to ensure you understand how Public Speaker Sharing works, how to setup and how to solve any problems.
+publicSpeakerSharingFirstAssignCOBEAndPTC: Please first assign the COBE and Public Talk Coordinator. (See Congregation > Congregation Responsibilities)
+publicSpeakerSharingFirstEnterCOBEAndPTCDetails: Please first enter your COBE and Public Talk Coordinator contact details. (See Person Information)
+publicSpeakerSharingJoinCircuitAsGuestNoCircuitName: Sorry, you may not join another circuit as a Guest unless you have first created your OWN circuit and specified the Circuit Name.
+publicSpeakerSharingJoinCircuitExplanation: Each congregation may join their Primary Circuit, and up to 5 other Circuits as Guests.
+publicSpeakerSharingJoinCircuitReminder1: Reminder: You should only join a Circuit that your congregation is in, or is PHYSICALLY NEAR (such as neighboring circuits).
+publicSpeakerSharingJoinCircuitReminder2: Please DO NOT join circuits that you are not in, or that are far away.
+publicSpeakerSharingNoDataAvailable: No data available. Congregation has not connected recently or is using an old version of NW Scheduler.
+publicSpeakerSharingNotApproved: Sorry, you were Not Approved to join this circuit. Your congregation must be either in this circuit, or physically nearby.
+publicSpeakerSharingNotApprovedAnyRequests: You have not approved any of their Public Speaker Requests.
+publicSpeakerSharingNotJoined: Sorry, you have not joined the Circuit. Please Join Circuit to see Congregation Information.
+publicSpeakerSharingNotYetApproved: Sorry, you are not yet Approved. To see Congregation Information, you must first be Approved by one of the congregations in the circuit.
+publicSpeakerSharingOnlyOneRequestedSpeakerAndDateMessage1: You have only requested ONE speaker for ONE date.
+publicSpeakerSharingOnlyOneRequestedSpeakerAndDateMessage2: It is unlikely the other congregation will be able to approve your request. We strongly recommend requesting MULTIPLE speakers for MULTIPLE dates. This allows the other congregation flexibility in approving your requests.
+publicSpeakerSharingOutlineAlreadyApproved: This outline was already approved and sent. If you change the outline, please inform the other congregation and public speaker.
+publicSpeakerSharingRecommendFirstLeaveAllCircuits: We highly recommend you please first LEAVE all Shared Circuits before Disabling Sharing.
+publicSpeakerSharingRemotelyDeleteData: Do you want your Public Speaker data to be remotely deleted from Neighbor Congregations who are currently sharing with you?
+publicSpeakerSharingRemotelyDeleteRecommend: (We recommend selecting No, otherwise you might cause problems with any congregations you have Requests with.)
+publicSpeakerSharingRequestInPast: Sorry, you cannot create Public Speaker Sharing Requests in the past.
+publicSpeakerSharingRequestPermanentlyCancelled: This request has already been sent and will now be permanently cancelled. All Public Talks related to this request will be removed.
+publicSpeakerSharingStillHaveRequests: You still have Requests for this Circuit. You should first CANCEL or DENY all requests before leaving.
+publicSpeakerSharingTimedOut: Public Speaker Sharing timed out. Please check your Internet connection and try again.
+publicSpeakerSharingUnscheduledDates: Sorry, only unscheduled dates can be added.
+publicSpeakerSharingWaitingForCongregationSharing: Waiting for Congregation Sharing to connect and sync.
+publicSpeakersInCongregationHaveUpcomingLocalPublicTalks: Some Public Speakers in this congregation have upcoming Local Public Talks in your congregation. Please first remove these assignments.
+publicSpeakersList: Public Speakers List
+publicSpeakerUnavailable: This Public Speaker is Not Available on this date.
+publicTalk: Public Talk
+publicTalkAssignments: Public Talk Assignments
+publicTalkCoordinator: Public Talk Coordinator
+publicTalkCoordinatorsInReport: Public Talk Coordinators in report
+publicTalkHistory: Public Talk History
+publicTalkHistoryByPerson: Public Talk History by Person
+publicTalkOutlineAvailability: Public Talk Outline Availability
+publicTalks: Public Talks
+publicTalksAway: Public Talks - Away
+publicTalkSchedule: Public Talk Schedule
+publicTalksCombined: Public Talks Combined
+publicTalksLocal: Public Talks - Local
+publicTalksNotScheduled: Public Talks not scheduled
+publicTalkThisWeekend: Public Talk this Weekend
+publicWitnessing: Public Witnessing
+publicWitnessingLocation: Public Witnessing Location
+publicWitnessingLocations: Public Witnessing Locations
+publicWitnessingLocationsUtilization: Public Witnessing Locations Utilization
+publicWitnessingNotKeyPerson: Sorry, this person is not a Key Person.
+publicWitnessingPublishersReservations: Public Witnessing Publishers Reservations
+publicWitnessingReservation: Public Witnessing Reservation
+publicWitnessingReservations: Public Witnessing Reservations
+publicWitnessingReservationsUpdated: Public Witnessing Reservations Updated
+publicWitnessingReservationsWaitingToSend: Public Witnessing Reservations waiting to send. Please first Send App Data before syncing.
+publicWitnessingSchedule: Public Witnessing Schedule
+publicWitnessingSchedules: Public Witnessing Schedules
+publicWitnessingTemplates: Public Witnessing Templates
+publisher: Publisher
+publisherAbbreviation: PUB
+publisherInformedEmergencyContactMessage: Publisher has informed their emergency contact that this information will be shared with the congregation elders, who may contact him in an emergency, and that any personal information is handled according to the Privacy Policy
+publisherRecord: Publisher Record
+publisherRecords: Publisher Records
+publisherReport: Publisher Report
+publisherReports: Publisher Reports
+publisherReportsEditAllGroupsMessage1: We strongly recommend ONLY the Secretary and his assistant has Edit access to All Groups
+publisherReportsSharingDisabled: Publisher Reports Sharing is disabled.
+publisherRequested: Publisher Requested
+publishers: Publishers
+publishersFieldServiceSummary: Publishers Field Service Summary
+publishersInformation: Publishers Information
+publishersStatusUpdated: The following publishers will have their Active and Regular status updated:
+publishersViewDeprecatedMessage: This feature has been deprecated and will be removed in the second half of 2026. Please use NWS Mobile to view publisher information.
+pullData: Pull Data
+pullDataLogMessage: This data was PULLED. This persons LOCAL data is being removed and will be replaced with server data. Person who PULLED:
+pullDataMessage1: This will overwrite your current LOCAL data and replace it with the SHARED data.
+pullDataMessage2: Please Note: You should NOT do this often, but only if your LOCAL data is missing or corrupted. If this happens regularly, please click Help.
+pullDataPublisherReportsSharingDisabled: Unable to PULL Data. Publisher Reports Sharing is disabled.
+pulled: Pulled
+pullPushDataMessage: Before doing this, please carefully check the following Help pages:
+purchase: Purchase
+purpose: Purpose
+pushData: Push Data
+pushDataLogMessage: PUSHING DATA! Everyone's LOCAL data will be removed and replaced with this persons data.
+pushDataMessage1: This will overwrite the SHARED data and replace it with your current LOCAL data.
+pushDataMessage2: Please Note: You should NOT do this often, but only if the SHARED data is missing or corrupted. If this happens regularly, please click Help.
+pushDataPublisherReportsSharingDisabled: Unable to PUSH Data. Publisher Reports Sharing is disabled.
+pushed: Pushed
+qatariRiyal: Qatari Riyal
+qualifiedAsUBP: Qualified as UBP
+quality: Quality
+quantity: Quantity
+quantityAbbreviation: Qty
+question: Question
+questions: Questions
+quickStepCreateServiceOverseerVisitEvent: Create Service Overseer Visit Event
+quickStepOptions: Quick Step Options
+quickSteps: Quick Steps
+quickStepSendAppInvitationEmail: Send App Invitation Email
+quickStepSendAppInvitationEmailToCO: Send App Invitation Email to Circuit Overseer
+quickStepSendAppInvitationEmailToNotConnectedAppPersons: Send App Invitation Email to Not Connected App Persons
+quickStepSendAssignedTerritoriesToGroupOverseers: Send Assigned Territories to Group Overseers
+quickStepSendAssignmentSlipsToStudents: Send Assignment Slips to students
+quickStepSendChairmanOutlinesToChairmen: Send Chairman Outlines to chairmen
+quickStepSendCleaningAndGardenCareSchedule: Send Cleaning and Garden Care Schedule
+quickStepSendConfirmationRequestsToPublicTalkCoordinators: Send Confirmation Requests to Public Talk Coordinators
+quickStepSendCongregationDutiesReminders: Send Congregation Duties Reminders
+quickStepSendCongregationDutiesScheduleToThoseWithDuties: Send Congregation Duties Schedule to those with Duties
+quickStepSendCongregationEmergencyContactListToAllElders: Send Congregation Emergency Contact List to all elders
+quickStepSendCongregationFieldServiceSummaryToAllElders: Send Congregation Field Service Summary to all elders
+quickStepSendEmailToAppPersonsWithOldVersion: Send Email to App Persons with Old Version
+quickStepSendFieldServiceAssignmentReminders: Send Field Service Assignment Reminders
+quickStepSendFieldServiceCollectionToGroupOverseers: Send Field Service Collection to Group Overseers
+quickStepSendFieldServiceGroupReportNotReceivedReminders: Send Field Service Group Report not received Reminders
+quickStepSendGroupEmergencyContactListToGroupOverseers: Send Group Emergency Contact List to Group Overseers
+quickStepSendGroupFieldServiceSummaryToGroupOverseers: Send Group Field Service Summary to Group Overseers
+quickStepSendInvitationEmailToAllNotConnectedSharedPersons: Send Invitation Email to ALL Not Connected Shared Persons
+quickStepSendInvitationEmailToSelectedSharedPerson: Send Invitation Email to selected Shared Person
+quickStepSendLifeAndMinistryMeetingAssignmentReminders: Send Life and Ministry Meeting Assignment Reminders
+quickStepSendMaintenanceTaskDetails: Send Maintenance Task Details
+quickStepSendMissingInformationOrEmergencyContactsToGroupOverseers: Send Missing Information or Emergency Contacts to Group Overseers
+quickStepSendMissingReportsListToGroupOverseers: Send Missing Reports List to Group Overseers
+quickStepSendOverdueTerritoriesReminder: Send Overdue Territories Reminder
+quickStepSendPublicSpeakerHospitalityReminder: Send Public Speaker Hospitality Reminder
+quickStepSendPublicTalkReminder: Send Public Talk Reminder
+quickStepSendPublicTalkReminderConfirmationOrInvitation: Send Reminder, Confirmation or Invitation
+quickStepSendPublicWitnessingSchedule: Send Public Witnessing Schedule to approved publishers
+quickStepSendPublishersFieldServiceGroup: Send Publishers their Field Service Group
+quickStepSendPublishersReportNotReceivedReminders: Send Publishers Report not received Reminders
+quickStepSendSchoolWorksheetsToChairmenAndAuxiliaryCounselors: Send School Worksheets to chairmen and auxiliary counselors
+quickStepSendTerritoryCoverageToAllElders: Send Territory Coverage to all elders
+quickStepSendUpcomingMaintenanceTasks: Send Upcoming Maintenance Tasks
+quickStepSendUpcomingPublicTalkAssignmentsToAppointedBrothers: Send Upcoming Public Talk Assignments to appointed brothers
+quickStepSendVisitingSpeakerInvitationsToPublicTalkCoordinators: Send Visiting Speaker Invitations to Public Talk Coordinators
+quickStepSendWeekendMeetingAssignmentReminders: Send Weekend Meeting Assignment Reminders
+quickStepSendWeeklyOverviewToAppointedBrothers: Send Weekly Overview to appointed brothers
+reactivated: Reactivated
+reactivatedPublishers: Reactivated Publishers
+reader: Reader
+reading: Reading
+receive: Receive
+received: Received
+receivedBy: Received by
+receivedReport: Received Report
+receivedReportFormatIncorrect: Received Publisher Report format was incorrect.
+receivedReportReadyToSend: The following report has been received and is ready to send to your local elders.
+receiveFromApp: Receive from App
+receiveImportAppData: Receive or Import App Data
+receiveNotificationsMessage: Would you like to receive Notifications from your congregation?
+receiveNWPAppData: Receive NWP App Data
+receiveRemindersMessage: Would you like to receive Reminders for upcoming events, assignments and duties?
+receiveRequests: Receive Requests
+receiveUpdatedDevices: Receive Updated Devices
+receiving: Receiving
+receivingNWPAppData: Receiving NW Publisher app Data
+recent: Recent
+recentActivity: Recent Activity
+recentAssistant: Recent Assistant
+recentDuty: Recent Duty
+recentlyCompleted: Recently Completed
+recentNonSchool: Recent Non-School
+recentPart: Recent Part
+recentPublicTalk: Recent Public Talk
+recentSchool: Recent School
+recommendYes: (We recommend clicking Yes)
+reconnect: Reconnect
+reconnectWithCurrentCongregationIdAndPinFix: Disconnect from the congregation and reconnect using the current Congregation ID and PIN.
+recurring: Recurring
+recurringRequest: Recurring Request
+reducePDFSizeMessage1: To reduce your PDF file size:
+reducePDFSizeMessage2: 1) Remove any graphics or pictures
+reducePDFSizeMessage3: 2) Re-save with a lower quality setting
+reducePDFSizeMessage4: 3) Visit https://smallpdf.com/compress-pdf and compress the PDF
+reEnterPassword: Re-Enter Password
+refresh: Refresh
+refreshAllAppData: Refresh All App Data
+refreshAllAuthentication: Refresh All Authentication
+refreshAppDataAndSendLogsFix: Ask your local elders to open NWS and refresh app data. If this repeats, send these Error Logs to support.
+refreshAppDataFix: Ask your local elders to open NWS and refresh app data.
+refreshAppDataOrReconnectFix: Ask your local elders to open NWS and refresh App Data. Otherwise, please Disconnect and Reconnect to your congregation.
+refreshAuthentication: Refresh Authentication
+refreshCongregation: Refresh Congregation
+refreshCongregationsAndSpeakers: Refresh Congregations and Speakers
+refreshData: Refresh Data
+refreshDataWarning: You should only do this if your local elders asked you to, and not often.
+refreshDevices: Refresh Devices
+refreshInformation: Refresh Information
+refreshingMeetingData: Refreshing Meeting Data...
+refreshLocalData: Refresh Local Data
+refreshLocalDataForDataTypeFix: Refresh Local Data for this data type.
+refreshLocalDataOrReconnectFix: Refresh Local Data. Otherwise, please Disconnect and Reconnect to your congregation.
+refreshMasterMapMessage: To Refresh the Master Map Boundaries, please leave the Territories window, then return to the Territories window
+refreshMeetingData: Refresh Meeting Data
+refreshOnlineMap: Refresh Online Map
+refreshPersonData: Refresh Person Data
+refreshPublisherAppDataFix: Ask your local elders to open NWS and refresh Publisher App Data.
+refreshPublisherAppDataOrReconnectFix: Ask your local elders to open NWS and refresh Publisher App Data. Otherwise, please Disconnect and Reconnect to your congregation.
+refreshRequests: Refresh Requests
+refreshRequestsMessage: This will also reset the Status of your Requests, and may require you to Re-Approve, Re-Confirm or Re-Cancel requests.
+refreshSelectedAppData: Refresh Selected App Data
+refreshTerritoriesAppDataAndSendLogsFix: Ask your local elders to open NWS and Refresh Territories App Data. If this repeats, send these Error Logs to support.
+refreshTerritoriesAppDataFix: Ask your local elders to open NWS and Refresh Territories App Data.
+refreshTerritoriesAppDataThenReopenFix: Refresh Territories App Data, then reopen Territories.
+refundPolicy: Refund Policy
+region: Region
+regionChanged: Region Changed
+registration: Registration
+registrationAllCongregationSilverFeatures: All Congregation Silver features
+registrationCardSurchangeMessage2: Payments incur a Card Surcharge of up to 3.9% + $0.30
+registrationConfirmationAgreePolicies1: The above information is correct. I have also read and agree to the Privacy Policy, License Agreement and Refund Policy
+registrationConfirmationCarefullyCheck: Please carefully check all of the above is correct, especially your Email.
+registrationConfirmationInformationCorrect: The above information is correct
+registrationConfirmationPaymentOpenInWebBrowser: The payment page will open in your web browser
+registrationConfirmationPleaseEnterFollowingCongregation: Please enter your Congregation ID and Email EXACTLY AS BELOW when making payment
+registrationConfirmationPleaseEnterFollowingIndividual: Please enter your Email EXACTLY AS BELOW when making payment
+registrationExpiredViewOnly: Registration Expired: VIEW only
+registrationExtraFeaturesCongregationGold: + Territory Mapping and Addresses
+registrationExtraFeaturesCongregationSilver1: Includes Public Witnessing, Language Groups, Literature Requests, Maintenance
+registrationFeaturesCongregationGold: Congregation Sharing, 350 persons, 1000 territories
+registrationFeaturesCongregationSilver: Congregation Sharing, 250 persons, 500 territories
+registrationFeaturesIndividual: 250 persons, 100 territories
+regular: Regular
+regularPioneer: Regular Pioneer
+regularPioneerAbbreviation: RP
+regularPioneerHours: Regular Pioneer Hours
+regularPioneers: Regular Pioneers
+regularPublishers: Regular Publishers
+reinstated: Reinstated
+relationship: Relationship
+releaseNotes: Release Notes
+reloadEmailTemplates: Reload Email Templates
+reloadLocalData: Reload Local Data
+remainingAverage: Remaining Average
+remainingHours: Remaining Hours
+remarks: Remarks
+remarksAbbreviation: Rem.
+reminder: Reminder
+reminderDismissAuxiliaryClasses: Reminder: Dismiss Auxiliary Classes
+reminderPleaseSubmitYouFieldServiceReport: Reminder: Please submit your {MONTH} Field Service Report
+reminderPleaseUpdateMessage2: Reminder: Please update within the next few days. Old versions are not supported and may cause problems.
+reminders: Reminders
+reminderSendPersonAppData: Reminder: The NW Publisher app and Show Field Service History are enabled. After Submitting, please click App > Send App Data > then Prepare and Send any Person data.
+remindMeLater: Remind me later
+remove: Remove
+removeAll: Remove All
+removeAllLabels: Remove All Labels
+removeAttachment: Remove Attachment
+removed: Removed
+removeDelegate: Remove Delegate
+removeDevice: Remove Device
+removedPublishers: Removed Publishers
+removePerson: Remove Person
+removePersonalInformation: Remove Personal Information
+removeSelfAssign: Remove Self Assign
+removeSharedPerson: Remove Shared Person
+removingCurrentAppRegion: Removing Current App Region
+renameCircuit: Rename Circuit
+renew: Renew
+renewAvailableWithinXDaysExpiry: Renew available within X days of Expiry Date
+renewUntil: Renew until
+reopenAppOrReinstallUpdateFix: Close and reopen the app. Otherwise, please reinstall or update the app.
+reopenAppThenRefreshLocalDataFix: Close and reopen the app, then try Refresh Local Data again.
+reopenTerritoryOnlineOrRefreshAppDataFix: Reopen the territory while online. If this repeats, ask your local elders to open NWS and Refresh Territories App Data.
+repeatEvery: Repeat Every
+replied: Replied
+replyReceived: Reply Received
+replyToRequest: Reply to Request
+report: Report
+reportMustBeGeneratedBeforeDistribution: A report must be generated before it can be distributed.
+reportMustBeGeneratedBeforeSelectingRecipients: A report must be generated before its recipients can be selected.
+reportPathTooLong: The report could not be saved because its folder path or file name is too long. Choose a folder closer to the top of the drive, such as C:\S21, and try again.
+reports: Reports
+reportsDirectlyToBranch: Reports Directly to Branch
+reportsServant: Reports Servant
+request: Request
+requestCancelled: Request Cancelled
+requestDetails: Request Details
+requested: Requested
+requestedBy: Requested by
+requestedDates: Requested Dates
+requestEdited: Request Edited
+requestedSpeakers: Requested Speakers
+requestedSuccessfully: Requested Successfully!
+requestJoin: Request Join
+requestLiterature: Request Literature
+requestLog: Request Log
+requestNewLanguage: Request New Language
+requestPersonalHelp: Request Personal Help
+requests: Requests
+requestSent: Request Sent
+requestsReceived: Requests Received
+requestsSent: Requests Sent
+requestStatus: Request Status
+requestTerritory: Request Territory
+required: Required
+resend: Resend
+resendVerificationCode: Resend Verification Code
+reserve: Reserve
+reset: Reset
+resetAddresses: Reset Addresses
+resetCongregationFromSharingMessage: Please Note: If no other elders have access, please Contact Us with your Congregation ID and we can reset your Congregation Sharing.
+resetCongregationSharing: Reset Congregation Sharing
+resetCongregationSharingMessage: If you are the ONLY Congregation Administrator and do not have another device connected, you will need to Reset Congregation Sharing.
+resetDevices: Reset Devices
+resetPassword: Reset Password
+resetPIN: Reset PIN
+reShare: Re-Share
+reShared: Re-Shared
+restart: Restart
+restore: Restore
+restoreCongregation: Restore Congregation
+restoreCongregationOverwriteExisting: Restoring a Congregation will overwrite all existing Congregation data.
+restoreData: Restore Data
+restoreDataOverwriteExisting: Restoring data will overwrite any existing data of the selected Data Types.
+restoredCongregationFromBackup: Restored Congregation from Backup
+restoreSharedCongregationMessage: This Congregation is currently Shared. Would you like this Restored Congregation to replace the current Shared Congregation?
+restoreSharedPersons: Restore Shared Persons
+restoreSuccessful: Your data has been successfully restored!
+restoring: Restoring
+result: Result
+retrieve: Retrieve
+retrievedOn: Retrieved on
+retry: Retry
+returnTerritory: Return Territory
+returnVisit: Return Visit
+review: Review Followed by Preview of Next Week
+role: Role
+roles: Roles
+rural: Rural
+s13No: No.
+s13Note: When beginning a new sheet, use this column to record the date on which each territory was last completed.
+s13Terr: Terr.
+s140ReviewText: Review / Preview / Announcements (3 min.)
+s21CongregationsPublisherRecord: CONGREGATION'S PUBLISHER RECORD
+s21IfPioneerOrFieldMissionary: (If pioneer or field missionary)
+s89HeadingLine1: OUR CHRISTIAN LIFE AND MINISTRY
+s89HeadingLine2: MEETING ASSIGNMENT
+s89NoteToStudent: Note to student
+s89NoteToStudentMessagePart1: The source material and study point for your assignment can be found in the Life and Ministry Meeting Workbook.
+s89NoteToStudentMessagePart2: Please review the instructions for the part as outlined in Instructions for Our Christian Life and Ministry Meeting (S-38).
+sampleCongregation: Sample Congregation
+sampleCongregationOnly: Sample Congregation Only
+save: Save
+save10Percent: save 10%
+save15Percent: save 15%
+save5Percent: save 5%
+saveAsCustomTemplate: Save as Custom Template
+saveAsDocument: Save As Document
+saveAsNewTemplate: Save as New Template
+saveAsPDF: Save As PDF
+saved: Saved
+saveDiagnosticLogs: Save Diagnostic Logs
+savedSuccessfully: Saved successfully!
+saveImportLogAndClose: Save Import Log and Close
+savePrintAndEmailReports: Save, Print & Email Reports
+saveToFile: Save to File
+saveToTerritory: Save to Territory
+schedule: Schedule
+scheduled: Scheduled
+scheduledLocalNeeds: Scheduled Local Needs
+schedules: Schedules
+scheduleSettings: Schedule Settings
+scheduleVersion: Schedule Version
+school: School
+schoolPart: School Part
+schoolParts: School Parts
+schools: Schools
+schoolSummary: School Summary
+schoolUsageHistory: School Usage History
+schoolWorksheets: School Worksheets
+search: Search
+second: Second
+secondary: Secondary
+seconds: seconds
+secretary: Secretary
+secretaryPrinting: Secretary Printing
+security: Security
+seeTerritoriesSettings1: See 'Territories > Settings' for all Territory App Settings
+select: Select
+selectAddresses: Select Addresses
+selectAll: Select All
+selectAwayCongregationAndTalk: Select Away Congregation and Talk
+selectBackup: Select Backup
+selectCongregation: Select Congregation
+selectData: Select Data
+selectDataFile: Select Data File
+selectDate: Select date
+selectDays: Select Days
+selected: Selected
+selectedArea: Selected Area
+selectedDate: Selected Date
+selectedDates: Selected Dates
+selectedGroup: Selected Group
+selectedPerson: Selected Person
+selectedSpeakerCanGive: Selected Speaker Can Give
+selectedTerritoryToKML: Selected Territory to KML
+selectedType: Selected Type
+selectFile: Select File
+selectGroups: Select Groups
+selectInformation: Select Information
+selectLanguage: Select Language
+selectMonths: Select Months
+selectOutline: Select Outline
+selectPaymentMethodAndCurrency: Please select Payment Method and Currency
+selectPerson: Select Person
+selectPersons: Select Persons
+selectPublicSpeaker: Select Public Speaker
+selectPublicSpeakerAndOutline: Select Public Speaker and Outline
+selectPublicSpeakerAndTalk: Select Public Speaker and Talk
+selectPublicSpeakers: Select Public Speakers
+selectPublicTalk: Select Public Talk
+selectPublisher: Select Publisher
+selectRegion: Select Region
+selectReportType: Select Report Type
+selectRole: Select Role
+selectSchool: Select School
+selectTime: Select time
+selectYears: Select Years
+self: Self
+selfAssigned: Self Assigned
+selfAssignTerritories: Self Assign Territories
+selfCompleteOnly: Self Complete only
+send: Send
+sendAll: Send All
+sendAndReceiveNWPAppData: Send and Receive NWP App Data
+sendAttachmentAndMaps: Send Attachment and Maps
+sendBcc: Send Bcc
+sendCc: Send Cc
+sendConfirmation: Send Confirmation
+sendCrashReport: Send Crash Report
+sendEmail: Send Email
+sendErrorLogsToSupportIfRepeated: If this repeats, send these Error Logs to support.
+sendFail: Send Fail
+sendFrom: Send From
+sendFrom1EnterYourNameAndEmail: 1. Enter your Name and Email
+sendFrom2ClickAuthenticate: 2. Click Sign in
+sendFrom3LoginWithYourAccount: 3. Sign in to your account
+sendFrom4AllowNWSToSendEmails: 4. Allow NWS to Send Emails
+sendIndividually: Send Individually
+sending: Sending
+sendingAppData: Sending App Data
+sendingAppNotifications: Sending App Notifications
+sendLater: Send Later
+sendLog: Send Log
+sendNow: Send Now
+sendNWPAppData: Send NWP App Data
+sendReply: Send Reply
+sendRequest: Send Request
+sendSavedDiagnosticLogsToNWSSupportMessage: To send your logs to NWS Support, click Save Diagnostic Logs
+and then Contact Us and attach the generated ZIP file.
+sendTo: Send to
+sendToAsBCC: Send to as BCC
+sendUpdated: Send Updated
+sendUpdates: Send Updates
+sendWithNotifications: Send with Notifications
+sendWithoutNotifications: Send without Notifications
+sent: Sent
+sentBy: Sent by
+sentIndividually: Sent Individually
+sentSuccessfully: Sent Successfully!
+sentTo: Sent to
+separateByGroup: Separate by Group
+separator: Separator
+seriousErrorLoading: Sorry! NW Scheduler experienced a serious error while loading. This usually means your installation is corrupt.
+servant: Servant
+serverError: Server Error
+serverErrorWhileAuthenticating: Server error while authenticating.
+serversLeft: Servers (Left)
+serversRight: Servers (Right)
+serverUpdateLog: Server Update Log
+serviceOverseer: Service Overseer
+serviceOverseerVisit: Service Overseer Visit
+serviceTalk: Service Talk
+serviceYear: Service Year
+setPassword: Set Password
+settings: Settings
+setupCongregationSharing: Setup Congregation Sharing
+setupEmail: Setup Email
+setupYourOwnSMTPServer: Setup your own SMTP Server
+share: Share
+shared: Shared
+sharedData: Shared Data
+sharedDataNotFoundSyncBy: Shared Data not found. Initial Sync by
+sharedInMinistry: Shared in Ministry
+sharedInMinistryShort: Shared
+sharedPerson: Shared Person
+sharedPersonEditEmailMessage: This person is a Shared Person. Changing their Email may prevent them from accessing Congregation Sharing.
+sharedPersonInvalidEmail: Sorry, this person does not have a valid 'Email 1' added in NW Scheduler. This is required so they can correctly Identify with Congregation Sharing.
+sharedPersonNotExist: Sorry, this congregation does not have a Shared Person with this Email. Please double-check your Email is correct, or otherwise ask a Congregation Administrator to use 'NWS Desktop' to add you as a Shared Person.
+sharedPersonRemotelyDeleteData: A Congregation Administrator has removed you from this congregation and remotely deleted the data. If you think this was an error, please speak to one of your local Congregation Administrators.
+sharedPersons: Shared Persons
+sharedPersonsNotConnected: Shared Persons Not Connected
+sharedPersonsNotRecentlyConnected: Shared Persons not recently connected
+sharedPersonsReVerifyPeriod: Shared Persons re-verify period
+sharing: Sharing
+sharingAdministration: Administration
+sharingAdministrator: Sharing Administrator
+sharingDataChangeSourceExternalDataImport: External data import
+sharingDataChangeSourceManualUserEdit: Manual user edit
+sharingDataChangeSourceRestoreFromBackup: Restore from backup
+sharingDisablePublisherReportsMessage1: This will remove all encrypted Publisher Report data from the Sharing Server and prevent any future sharing or synchronizing of Publisher Reports.
+sharingDisablePublisherReportsMessage2: If you later re-enabled this, Publisher Reports may not be synchronized correctly.
+sharingDisablePublisherReportsMessage3: We strongly recommend AGAINST doing this unless specifically directed by your local Branch.
+sharingErrors: Sharing Errors
+sharingErrorTryAgain: Error. Please try again.
+sharingLogs: Sharing Logs
+sharingNotAvailable: Sharing is not available
+sharingPassword: Sharing Password
+sharingProblems: Sharing Problems
+sharingProblemsMessage: Please carefully read Help > Congregation Sharing Problems to diagnose, fix and prevent Congregation Sharing problems.
+sharingRegion: Sharing Region
+sharingRegionChangedNotification: Congregation Sharing Region Changed
+sharingSettings: Sharing Settings
+sharingStatus: Sharing Status
+shepherding: Shepherding
+shepherdingVisits: Shepherding Visits
+shiftFull: Shift Full
+shifts: Shifts
+shiftsPerPublisher: Shifts per Publisher
+shortDateFormat: Short Date Format
+show: Show
+showAddresses: Show Addresses
+showAllOutlines: Show All Outlines
+showAllowDataProcessingMessage: Show 'Allow Data Processing' Message
+showAssignmentAndDutyConflicts: Show Assignment and Duty Conflicts
+showBrothers: Show Brothers
+showCLMTimingOnSchedule: Show CLM Timing on Schedule
+showCongregationBorder: Show Congregation Border
+showContactDetails: Show Contact Details
+showContactDetailsOnCLMAssignmentSlips: Show Contact Details on CLM Assignment Slips
+showCustomAttendance: Show Custom Attendance
+showDayNames: Show Day Names
+showDescriptions: Show Descriptions
+showDetails: Show Details
+showEndTime: Show End Time
+showEveryone: Show Everyone
+showFamilies: Show Families
+showFieldServiceAssignments: Show Field Service Assignments
+showFieldServiceSchedule: Show Field Service Schedule
+showFirstEmergencyContactOnly: Show first Emergency Contact only
+showFutureMonths: Show Future Months
+showKingdomHall: Show Kingdom Hall
+showLabels: Show Labels
+showMeetingDates: Show Meeting Dates
+showMenu: Show Menu
+showMyContactInformation: Show My Contact Information
+showMyEmergencyContacts: Show My Emergency Contacts
+showMyFieldServiceAssignments: Show My Field Service Assignments
+showMyFieldServiceHistory: Show My Field Service History
+showMyPublicWitnessingAssignments: Show My Public Witnessing Assignments
+showNumbers: Show Numbers
+showOnlineAttendance: Show Online Attendance
+showOnNWPSchedules: Show on NWP Schedules
+showOutlineNumbers: Show Outline Numbers
+showPassword: Show Password
+showPreviousMonths: Show Previous Months
+showPublicWitnessing: Show Public Witnessing
+showPublisherInformation: Show Publisher Information
+showPublisherLocations: Show Publisher Locations
+showPublishers: Show Publishers
+showReservedShiftsOnly: Show Reserved Shifts Only
+showSisters: Show Sisters
+showStartTime: Show Start Time
+showTerritories: Show Territories
+showTerritoryWorkingNotes: Show Territory Working Notes
+showThisMonthReportOnHome: Show This Month Report on Home
+showTipsOnStartup: Show Tips on startup
+showTo: Show to
+showUnassigned: Show Unassigned
+signature: Signature
+signedInSuccessfully: Signed in successfully
+simple: Simple
+simplifyGroupArrangements: Simplify Group Arrangements
+singaporeDollar: Singapore Dollar
+single: Single
+singleParentFamily: Single Parent Family
+sister: Sister
+sisters: Sisters
+sixMonthAvg: 6-Month Avg
+sixMonths: 6 months
+size: Size
+slips: Slips
+sms: SMS
+smsAndWeChatDoNotSupportBulkSending: SMS and WeChat do not support bulk sending. Please click Send for each person.
+smtpPassword: SMTP Password
+smtpPort: SMTP Port
+smtpServer: SMTP Server
+smtpUsername: SMTP Username
+software: Software
+someCongregationFieldServiceReportsNotSubmitted: Some Congregation Field Service Reports in this period have NOT been marked as 'Submitted to Branch'. For accurate results, please click 'Submitted to Branch' for all Congregation Field Service Reports in this period.
+song: Song
+songs: Songs
+sorrySomethingWentWrong: Sorry, something went wrong
+sort: Sort
+sortBy: Sort by
+sound: Sound
+source: Source
+southAfricanRand: South African Rand
+southAmerica: South America
+spaceAroundBoundary: Space Around Boundary
+speaker: Speaker
+speakerConfirmed: Speaker Confirmed
+speakerNotAvailable: Speaker Not Available
+speakers: Speakers
+speakersAwayThisWeek: Speakers Away this week
+speakersPerPage: Speakers per page
+speakersRequested: Speakers Requested
+special: Special
+specialPioneer: Special Pioneer
+specialPioneerAbbreviation: SP
+specialPioneers: Special Pioneers
+specialTalk: Special Talk
+specialWeek: Special Week
+spiritual: Spiritual
+spiritualGems: Spiritual Gems
+spiritualInformation: Spiritual Information
+spiritualNotes: Spiritual Notes
+standard: Standard
+standardQuality: Standard Quality
+start: Start
+startDate: Start Date
+startingAConversation: Starting a Conversation
+startTime: Start Time
+stateOrCity: State or City
+stateProvince: State Province
+status: Status
+stopOfferingHelp: Stop Offering Help
+street: Street
+streetBeforeHouseNumber: Street Before House Number
+stronglyRecommended: Strongly Recommended
+student: Student
+studentAbbreviation: STU
+studentAndAssistantSlips: Student and Assistant Slips
+students: Students
+studentSlips: Student Slips
+studentTalk: Student Talk
+study: study
+subject: Subject
+submit: Submit
+submitFieldServiceReport: Submit Field Service Report
+submitOldCongregationFieldServiceReport1: You are attempting to set an old Congregation Field Service Report as 'Submitted to Branch'. This will cause all publishers Active, Inactive and Irregular status to be updated as at the time of this old Field Service Report. We strongly recommend setting older Congregation Field Service Reports as 'Submitted to Branch' in reverse date order, ending with the most recent month.
+submitOldCongregationFieldServiceReport2: Please see Help > Congregation Field Service Report for more information.
+submitPublisherReports: Submit Publisher Reports
+submitted: Submitted
+submittedOn: Submitted on
+submittedSuccessfully: Submitted Successfully!
+submittedToBranch: Submitted to Branch
+submitToBranch: Submit to Branch
+success: Success!
+successfullyAssignedTerritoryPleaseCloseReopen: Successfully Assigned Territory. Please close this Territory and then re-open.
+suffix: Suffix
+suggestion: Suggestion
+summary: Summary
+supportDevelopmentCosts: Support the development costs by
+supportLine1: If you would like to support New World Publisher
+supportLine2: Please tell others about New World Publisher
+swap: Swap
+swissFranc: Swiss Franc
+symbol: Symbol
+syncCongregations: Sync Congregations
+syncCongregationsAndSpeakers: Sync Congregations and Speakers
+syncing: Syncing
+systemTask: System Task
+talk: Talk
+talkNumber: Talk Number
+talkOutlines: Talk Outlines
+talksCanGive: Talks Can Give
+tanzanianShilling: Tanzanian Shilling
+task: Task
+taskCOBEArrangeAuditDescription: (sfg 1:12)
+taskCOBEArrangeAuditName: Arrange Audit
+taskCompleted: Task Completed
+taskGroupOverseerReviewGroupActivityDescription: Review with assistant the activity of those in group to determine their strengths and weaknesses in the ministry (sfg 1:18.3)
+taskGroupOverseerReviewGroupActivityName: Review with assistant the activity of those in group
+taskOneYearAfterBaptismDescription: One year after the publisher’s baptism, two elders should meet with him to provide encouragement and helpful suggestions (od 211-212)
+taskOneYearAfterBaptismName: Meet with baptized publisher
+tasks: Tasks
+taskSecretaryDPANewlyBaptizedName: Provide DPA cards and related materials to newly baptized publisher​
+taskSecretaryServiceOverseerReviewRPActivityDescription: Review the activity of regular pioneers near the midpoint of the service year (sfg 14:5)
+taskSecretaryServiceOverseerReviewRPActivityName: Review activity of regular pioneers - midpoint
+taskServiceCommitteeReviewDisasterPreparationsPlanDescription: Review local disaster preparedness arrangements with the Body of Elders (sfg 11:3.4)
+taskServiceCommitteeReviewDisasterPreparationsPlanName: Review local disaster preparedness arrangements
+taskServiceCommitteeReviewRPActivityDescription: Review the activity of any regular pioneers who did not reach the annual hour requirement (sfg 14:6)
+taskServiceCommitteeReviewRPActivityName: Review activity of regular pioneers - end of year
+taskServiceOverseerVisitFieldServiceGroupDescription: Visit all field service groups at least once each year (sfg 1:17)
+taskServiceOverseerVisitFieldServiceGroupName: Visit field service group
+team: Team
+technicalDetails: Technical Details
+template: Template
+templateName: Template Name
+templateNotExist: Template does not exist.
+templates: Templates
+temporaryAccommodationsForDisasterVictims: Temporary Accommodations for Disaster Victims
+territories: Territories
+territoriesAndAddresses: Territories and Addresses
+territoriesAssigned: Territories Assigned
+territoriesCompleted: Territories Completed
+territoriesDataMaintenanceFix: Ask your local elders to open NWS and run Congregation > Data Maintenance, then Refresh Territories App Data.
+territoriesList: Territories List
+territoriesListAndMap: Territories List and Map
+territoriesMap: Territories Map
+territoriesNotCompletedDuringPastServiceYear: Territories not completed during past service year
+territoriesNotWorkedDuringPastServiceYear: Territories not worked during past service year
+territoriesOverdue: Territories Overdue
+territory: Territory
+territoryAddAddressInstructions: Right-click to add an address
+territoryAddApartmentNumberRangeMessage: This will add Apartment Numbers from 1 to
+territoryAddBoundaryInstructions: Click to add a point, Double-click to finish
+territoryAddRemoveLabelsInstructions2: Right-click to add a label, left-click a label to Remove
+territoryAddress: Territory Address
+territoryAddressApartment: Territory Address Apartment
+territoryAddressApartments: Territory Address Apartments
+territoryAddressCongregationLanguageAutomaticallyAdded: Your Congregation Language is automatically added.
+territoryAddresses: Territory Addresses
+territoryAddressLanguageEnableMessage: Please carefully read Organized (od) Chapter 9 paragraphs 35-41 before enabling this feature.
+territoryAddressNotesFromPublisher: Territory Addresses Notes from Publisher
+territoryArea: Territory Area
+territoryAreas: Territory Areas
+territoryAssignment: Territory Assignment
+territoryAssignmentBeforeBranchDataRetentionPolicy1: Territory Assignment Record earlier than Branch Data Retention Policy allows.
+territoryAssignmentRecords: Territory Assignment Records
+territoryAssignments: Territory Assignments
+territoryAssignmentsFieldServiceGroupMaxMessage1: This Field Service Group already has the maximum Territories Assigned at one time. Please ask them to complete their other territories first. Limit:
+territoryAssignmentsHistoryDatesNotValid: Some Territory Assignment History dates are not valid. Dates must not overlap.
+territoryAssignmentsMaxSelfAssign: You have reached the maximum amount of Territories allowed to be Self-Assigned at one time. Limit:
+territoryAssignmentsPublisherMaxMessage1: This Publisher already has the maximum Territories Assigned at one time. Please ask them to complete their other territories first. Limit:
+territoryBoundary: Territory Boundary
+territoryBoundaryOpacity: Territory Boundary Opacity
+territoryBoundaryThickness: Territory Boundary Thickness
+territoryCampaign: Territory Campaign
+territoryCampaigns: Territory Campaigns
+territoryCannotCreateTerritory: Cannot create Territory. No addresses to convert.
+territoryCard: Territory Card
+territoryCards: Territory Cards
+territoryCategories: Territory Categories
+territoryCategory: Territory Category
+territoryCompleted: Territory Completed
+territoryCoverage: Territory Coverage
+territoryCurrentlyAssignedResetAddressesMessage: Territory is currently assigned. Please complete the territory before resetting addresses.
+territoryCurrentlyAssignedWarning: This territory is currently Assigned. Making your changes may overwrite any RECENT changes made by the person working the territory.
+territoryEditBoundaryInstructions: Click a line to add a point, Double-click a point to Remove. Click Edit to finish
+territoryExceedAddressAndApartmentLimit: Sorry, each territory can have a maximum of 500 combined addresses and apartments.
+territoryExceedAddressLimit: Sorry, each territory can have a maximum of 300 addresses.
+territoryExceedAddressLimitFreeTrial: Sorry, during the Free Trial you may only add up to 40 addresses. This should be enough to fully test the Territory Address feature.
+territoryExceedBoundaryLimitFreeTrial: Sorry, during the Free Trial you may only add up to 10 Territory Boundaries. This should be enough to fully test the Territory Boundary feature.
+territoryFirstAddTerritoryBoundary: Please first Add Territory Boundary before adding addresses.
+territoryFontSize: Territory Font Size
+territoryImportPhoneNumbersError: Selected Territory Type must be set as Phone Witnessing to import Phone Numbers
+territoryInformation: Territory Information
+territoryLabel: Territory Label
+territoryLabels: Territory Labels
+territoryLocateMultipleAddressesMessage: You are attempting to Locate Coordinates for multiple addresses. Any errors will not be shown. Locate a single address to see error messages.
+territoryLocationNotFound: Sorry, this Location could not be found. Cannot add Location.
+territoryLocationNotWithinTerritory1: This Location is not within this territory boundary.
+territoryManagement: Territory Management
+territoryManagementUpdateInvalidShowToForFieldServiceGroup: When assigned to a Field Service Group, you cannot 'Show to' Persons or Family.
+territoryManagementUpdateMustIncludeMe: You must be included in the 'Show to' list.
+territoryManagementUpdateMustIncludeMyFieldServiceGroup: Your Field Service Group must be included in the 'Show to' list.
+territoryMap: Territory Map
+territoryMapAttachmentMissingUrlMessage: Either use NWS Desktop to re-add this attachment, or tap Clear Attachment
+territoryMapImageError1: Territory Map Image is corrupted or has been deleted.
+territoryMapImageError2: Please try removing and re-adding the map image. See Help > Territory > Territory Map (Printed) for more information.
+territoryMasterMapBoundaryAlreadyExists: The Master Territory Map Boundary already exists. Importing will overwrite the existing Boundary.
+territoryMasterMapBoundaryNotExist: Overall Boundary does not exist. Please first create or import your Overall Boundary.
+territoryMasterMapSaveError: Could not save Master Territory Map.
+territoryMasterMapSaveMessage: This may take a long time. Larger Sizes and higher quality will take much longer. Please be patient.
+territoryNotes: Territory Notes
+territoryNotFindAddress: Sorry, could not find an Address at this location
+territoryNotReset: This Territory has not been reset. We recommend clicking Addresses > Reset Addresses.
+territoryNotResetAssignAnyway: Would you like to Assign anyway?
+territoryNotResetCompleteAnyway: Would you like to Complete anyway?
+territoryRequest: Territory Request
+territoryServant: Territory Servant
+territorySettings: Territory Settings
+test: Test
+testedOK: Tested OK!
+testimonialMessage1: Please be as specific as possible.
+testimonialMessage2: Please DO NOT use this form for problems, questions or suggestions.
+testimonialMessage3: Instead, please click
+testimonialMessage4: I allow my positive Review or Testimonial to be shared with others and placed on the NW Scheduler website with my country, state and first name.
+testimonialMessageTitle: Would you like to provide a positive Review or Testimonial for our website?
+testimonialsAndReviews: Testimonials and Reviews
+testInternetConnection: Test Internet Connection
+testReminders: Test Reminders
+text: Text
+textSMS: Text / SMS
+thankYou: Thank You!
+theme: Theme
+themeBlue: Blue
+themeCharcoal: Charcoal
+themeColor: Theme Color
+themeGreen: Green
+themeMarine: Marine
+themeMode: Theme Mode
+themeModeDark: Dark
+themeModeLight: Light
+themeModeSystem: System
+themeNature: Nature
+themeOrange: Orange
+themeOriginal: Original
+themePurple: Purple
+themeRadiant: Radiant
+themeRoyal: Royal
+themeSteel: Steel
+themeTurquoise: Turquoise
+thenBy: Then by
+third: Third
+thisMayTakeLongTime: This may take a long time to process. We recommend ticking 'One file per Group'.
+thisServiceYear: This Service Year
+thisWeek: This Week
+threeMonthAvg: 3-Month Avg
+threeMonths: 3 months
+tickShowAllOutlines: Tick Show All Outlines below
+time: Time
+timeFormat: Time Format
+timeOfDay: Time of Day
+timeZone: Time Zone
+timing: Timing
+tipMoney: Tip
+tips: Tips
+title: Title
+to: To
+toBeGivenIn: To be given in
+toCSVFiles: to CSV files
+toDate: To Date
+today: Today
+toFix: To fix
+toLearnMorePleaseClick: To learn more, please click
+toNWSchedulerFile: to NW Scheduler file
+tooManyFailedAttempts: Sorry, unable to authenticate. Too many failed attempts. Please try again later, or contact your local elders for Help.
+tooManySpeakersAwayThisWeek: Too many Speakers Away this week
+toPDFFile: to PDF file
+toPDFFiles: to PDF files
+toShareCongregation: To Share the congregation, please complete the following:
+toSpeaker: To Speaker
+total: Total
+totalAddresses: Total Addresses
+totalAreas: Total Areas
+totalAttendance: Total Attendance
+totalNumberOfTerritories: Total number of territories
+totalPublishers: Total Publishers
+totalRecords: Total Records
+totals: Totals
+totalStudents: Total Students
+totalTerritories: Total Territories
+toWeek: To week
+tracts: Tracts
+transfer: Transfer
+transferPersons: Transfer Persons
+translationOrLanguages: Translation or Languages
+treasuresFromGodsWord: Treasures from God's Word
+treasuresFromGodsWordShort: Treasures
+treasuresTalk: Treasures Talk
+trinidadTobagoDollar: Trinidad and Tobago Dollar
+twelveHourTime: 12-hour time
+twelveMonthAvg: 12-Month Avg
+twelveMonths: 12 months
+twentyFourHourTime: 24-hour time
+twentyFourMonths: 24 months
+twoYears: 2 years
+type: Type
+unableToAuthenticateReconnect: Unable to authenticate. Please click Disconnect and reconnect to your congregation.
+unableToConnectToCongregation: Sorry, unable to connect to your Congregation. Either your Congregation ID does not exist in this Region, or your Congregation PIN is incorrect. Please try again, or contact your local elders for Help.
+unableToDecrypt: Unable to Decrypt
+unableToDecryptMessage: Unable to decrypt. This likely means your congregation elders changed the Congregation PIN or your Person PIN. Please tap Disconnect and reconnect to your congregation.
+unableToDownloadSharedPersons: Unable to download Shared Persons.
+unableToDownloadSharedPersonsMessage: Click Reconnect and try again. If the problem continues, close and reopen New World Scheduler. If it still fails, click Help > Congregation Sharing.
+unassigned: Unassigned
+unavailable: Unavailable
+unbaptisedPublisher: Unbaptised Publisher
+unbaptized: Unbaptized
+unbaptizedPublisher: Unbaptized Publisher
+unbaptizedPublisherAbbreviation: UBP
+unbaptizedPublishers: Unbaptized Publishers
+unbelievingSpouse: Unbelieving Spouse
+unconfirmed: Unconfirmed
+undoSubmit: Undo Submit
+unitedArabEmiratesDirham: United Arab Emirates Dirham
+unitedStatesDollar: USD United States Dollar
+unknown: Unknown
+unlink: Unlink
+unregistered: Unregistered
+unselectAll: Unselect All
+unsent: Unsent
+unsupportedAttachmentDataType: Unsupported attachment data type
+untested: Untested
+upcoming: Upcoming
+upcoming7Days: Upcoming 7 Days
+upcomingCircuitOverseerVisit: Upcoming Circuit Overseer visit on
+upcomingPublicSpeakers: Upcoming Public Speakers
+upcomingReminders: Upcoming Reminders
+update: Update
+updateAppOrSendLogsFix: Update the app. If already updated, send these Error Logs to support.
+updateAvailable: Update Available
+updateConfirmation: Update Confirmation
+updated: Updated
+updateData: Update Data
+updatedBy: Updated by
+updatedPleaseRestart: Updated! Please restart
+updatedSharedCongregation: Updated Shared Congregation
+updatedSharedPerson: Updated Shared Person
+updatedSuccessfully: Updated Successfully!
+updateErrorDataIsNull: Update Error. Data is null.
+updateLater: Update Later
+updateMajorAvailable: New Major Update Available
+updateMajorMessage: This is a Major Update. Please carefully read the Major Update Overview and Major Update Release Notes BEFORE updating, or you may cause problems for yourself and the entire congregation.
+updateMajorQuestion: Have you carefully read the Major Update Overview and Major Update Release Notes?
+updateMinorAvailable: New Minor Update Available
+updateMinorExplanation1: Minor Updates fix bugs and update translations. If you have ANY problems or bugs, please install the latest Minor Update, or if ANYONE has data or sync problems, all elders should install the latest Minor Update.
+updateNow: Update Now
+updateReply: Update Reply
+updateRequest: Update Request
+updates: Updates
+updatesSubmittedSuccessfully: Updates Submitted Successfully
+updating: Updating
+updatingCLMSchedule: Updating CLM Schedule
+updatingPublicTalkOutlines: Updating Public Talk Outlines
+updatingTranslationsAndLanguages: Updating Translations and Languages
+upgrade: Upgrade
+upgradeRenew: Upgrade & Renew
+upgradeRenewUntil: Upgrade & Renew until
+upgradeUntil: Upgrade until
+upload: Upload
+uploaded: Uploaded
+uploadFailedPleaseTryAgain: Upload Failed. Please try again.
+uploadingAttachment: Uploading Attachment
+urlTooLongToConvertToQRCode: URL is too long to convert to a QR Code
+uruguayanPeso: Uruguayan Peso
+useActualLastCompletedDate: Use Actual "Last Completed" Date
+useAlternativePaymentProvider: Use Alternative Payment provider
+useCongregationEmail: Use Congregation Email
+useDevicePDFViewer: Use Device PDF Viewer
+user: User
+userAccess: User Access
+userAccessChangedMessage: User Access Changed. Please don't forget to Save.
+userAccessClickCongregationSharingUserAccess: Click Congregation Sharing > User Access
+userAccessContactCongregationAdministrator: Contact a Congregation Administrator
+userAccessEditReport: User Access 'Edit' Report
+userAccessIfNeedAccess: If you need access:
+userAccessNoAccess: User Access: No Access
+userAccessNone: User Access: None
+userAccessPleaseSeeHelp: Please see Help > User Access for more information
+userAccessSeeHelp: See Help > User Access
+userAccessSorryNoAccess: Sorry, you do not have access to this
+userAccessSorryNoAccessEmail: Sorry, you do not have access to Email
+userAccessViewOnly: User Access: VIEW only
+userCreated: User Created
+userInterface: User Interface
+users: Users
+userTasks: User Tasks
+useSavedPassword: Use Saved Password
+usualNumber: Usual Number
+validPasswordRecoveryEmailNotFound: A valid Password Recovery Email was not found.
+verificationCode: Verification Code
+verificationCodeSent: A Verification Code has just been sent to your Email.
+verify: Verify
+verifyYourDevice: Verify your Device
+version: Version
+versionTooOldMessage: This version of NWS Mobile is out of date. Please update to the latest version of NWS Mobile.
+video: Video
+videosDVDs: Videos/DVDs
+videoTutorials: Video Tutorials
+view: View
+viewAllFeatures: View all Features
+viewAndSubmitGroupReports: View and Submit Group Reports
+viewOnline: View Online
+viewPublisherReports: View Publisher Reports
+viewRequest: View Request
+visiting: Visiting
+visitingSpeakerInvitations: Visiting Speaker Invitations
+visitingSpeakersOnly: Visiting Speakers Only
+visitWebsiteForMoreInformation: Please visit our website for more information
+visitWebsiteHelpInstallingUpdating: Please visit our website and click Help > Installing or Updating NW Scheduler
+waiting: Waiting
+waitingForNWPToConnect: Waiting for NWP app to Connect
+waitingForResponse: Waiting for response
+waitingForSharingToConnect: Waiting for Congregation Sharing to Connect
+waitingToImport: Waiting to Import
+warning: Warning
+warningHaveAssignmentDutyWhileAway: You have the following Assignments or Duties while you are away:
+watchtower: Watchtower
+watchtowerReader: Watchtower Reader
+watchtowerReaderAbbreviation: WT Reader
+watchtowerStudyConductor: Watchtower Study Conductor
+website: Website
+week: Week
+weekend: Weekend
+weekendAssignments: Weekend Assignments
+weekendAssignmentsNotScheduled: Weekend Assignments not scheduled
+weekendAssignmentsPersonList: Weekend Assignments Person List
+weekendCleaning: Weekend Cleaning
+weekendDuties: Weekend Duties
+weekendMeeting: Weekend Meeting
+weekendMeetingDay: Weekend Meeting Day
+weekendMeetingSchedule: Weekend Meeting Schedule
+weekendMeetingSchedules: Weekend Meeting Schedules
+weekendMeetingTime: Weekend Meeting Time
+weekendOf: Weekend of
+weekly: Weekly
+weeklyOverview: Weekly Overview
+weekOfCircuitAssembly: Week of Circuit Assembly
+weekOfCircuitOverseer: Week of Circuit Overseer
+weekOfConvention: Week of Convention
+weekOfMemorial: Week of Memorial
+weekRange: Week Range
+weeks: Weeks
+weeksToAutoAssign: Weeks to Auto-Assign
+weekTemplate: Week Template
+weekView: Week view
+welcome: Welcome to
+whatsApp: WhatsApp
+whatsAppCouldNotBeOpened: Unable to open WhatsApp. Please try again.
+whatWouldYouLikeToDo: What would you like to do?
+whyHaveToRegister: Why do I have to Register?
+widow: Widow
+wife: Wife
+with: with
+withPerson: with
+work: Work
+workingNotes: Working Notes
+workingOfflineMessage1: Working offline may cause data loss for yourself and others. We strongly recommend fixing your internet connection.
+workingOfflineMessage2: You should only work offline if you have a very good reason (e.g. viewing data only) and understand exactly what you are doing.
+workOffline: Work Offline
+workPhone: Work Phone
+workPhoneAbbreviation: (w)
+wouldYouLikeToDoThis: Would you like to do this?
+wouldYouLikeToRemoveImportedMeetingData: Would you like to remove this imported EPUB Meeting Data?
+year: Year
+years: Years
+yes: Yes
+yesterday: Yesterday
+youHaveNoCongregationResponsibilities: You have no Congregation Responsibilities.
+youHaveNoQuickSteps: You have No Quick Steps.
+youHaveNoTasks: You have No Tasks.
+youHaveSelectedSharingRegion: You have selected Sharing Region
+youHaveTheFollowingOptions: You have the following options:
+yourEmail: Your Email
+yourName: Your Name
 zeroHourReports: 0-hour Reports
-
-
+zoomHost: Zoom Host
