@@ -89,6 +89,7 @@ const state = reactive<Partial<Input>>(
 watch(
   model,
   (newVal) => {
+    console.debug("model", newVal);
     if (newVal) {
       const parsed = newVal.ui
         ? schema.partial().safeEncode(newVal)
