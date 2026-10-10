@@ -128,6 +128,7 @@ const inputEmails = ref<Partial<EmailOutput>>({
 const { showSuccess } = useFlash();
 
 watch(originals, (val) => {
+  console.debug("originals", val);
   uiStore.originalsString = val.ui;
   jsonStore.setOriginals(val);
   showSuccess({
@@ -137,6 +138,8 @@ watch(originals, (val) => {
 });
 
 watch(translations, (val) => {
+  console.debug("translations", val);
+
   // NWS
   if (val.ui !== uiStore.translationsString) {
     uiStore.translationsString = val.ui;
@@ -209,6 +212,7 @@ const supportedJsonFiles = [
 ];
 
 const loadJsonFile = async (file: File, type: "original" | "translation") => {
+  console.debug("loadJsonFile", { file, type });
   try {
     const raw = await file.text();
 
@@ -281,10 +285,12 @@ const loadJsonFile = async (file: File, type: "original" | "translation") => {
 };
 
 watch(originalFiles, (files) => {
+  console.debug("originalFiles", { files });
   loadJsonFiles(files, "original");
 });
 
 watch(translationFiles, (files) => {
+  console.debug("translationFiles", { files });
   loadJsonFiles(files, "translation");
 });
 
@@ -292,6 +298,7 @@ const loadJsonFiles = async (
   files: File[] | null | undefined,
   type: "original" | "translation",
 ) => {
+  console.debug("loadJsonFiles", { files, type });
   if (!files || files.length === 0) return;
   if (files.some((file) => file.type !== "application/json")) {
     if (type === "original") {
@@ -330,6 +337,7 @@ const loadJsonFiles = async (
 const backupFile = ref<File | null>(null);
 
 const loadBackup = async (file: File | null | undefined) => {
+  console.debug("loadBackup", { file });
   try {
     if (!file) return;
 
@@ -363,6 +371,7 @@ const loadBackup = async (file: File | null | undefined) => {
 };
 
 const autoFillOriginalUI = async () => {
+  console.debug("autoFillOriginalUI");
   try {
     const strings = await $fetch<string>(
       "https://docs.google.com/feeds/download/documents/export/Export?exportFormat=txt&id=1KOm9MTLrWv_lll6f1YvnlWlq3srXYVKMSo2a9KZ39a8",
@@ -372,6 +381,7 @@ const autoFillOriginalUI = async () => {
       ...originals.value,
       ui: strings.trim().replaceAll("\r", ""),
     };
+    console.debug("autoFillOriginalUI", strings.trim().replaceAll("\r", ""));
   } catch {
     showError({
       description:
