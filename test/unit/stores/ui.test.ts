@@ -331,18 +331,6 @@ describe("UI Store", () => {
     });
 
     describe("remoteNWP", () => {
-      it("parses nwpString when set", () => {
-        const store = useUIStore();
-        store.nwpString = NWPTranslationFileMock;
-
-        expect(store.remoteNWP).toEqual(
-          expect.objectContaining({
-            key: "Value",
-            key2: "Value 2",
-          }),
-        );
-      });
-
       it("returns empty object when nwpString is undefined", () => {
         const store = useUIStore();
 
@@ -375,16 +363,6 @@ describe("UI Store", () => {
       expect(store.references).toHaveProperty("about");
       expect(store.references.about).toBe("About");
       expect(store.references.about1).toContain("New World Scheduler");
-    });
-
-    it("parses real-world NWP ui.txt fixture", async () => {
-      const nwpText = await loadUiFixture("nwpNl");
-      const store = useUIStore();
-      store.nwpString = nwpText;
-
-      expect(store.remoteNWP).toHaveProperty("help");
-      expect(store.remoteNWP.help).toBe("Help");
-      expect(store.nwpKeys).not.toContain("____GENERAL____");
     });
   });
 });

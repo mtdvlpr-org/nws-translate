@@ -8,9 +8,10 @@ export const NWSProgramUIFileMock: ProgramUIFile = {
   empty: "",
   key: "Value",
   key2: "Value 2",
+  multiLine: "Value 1\nValue 2",
 };
 
-export const NWSTranslationFileMock: NWSTranslationFile = `empty: \nkey: Value\nkey2: Value 2`;
+export const NWSTranslationFileMock: NWSTranslationFile = `empty: \nkey: Value\nkey2: Value 2\nmultiLine: Value 1\nValue 2`;
 
 export const NWPProgramUIFileMock: ProgramUIFile = {
   ____GENERAL____: "",
