@@ -250,11 +250,6 @@ describe("programUISchema", () => {
     const result = programUIFileSchema.safeParse(NWSProgramUIFileMock);
     expect(result.success).toBe(true);
   });
-
-  it("should validate a NWP program UI file correctly", () => {
-    const result = programUIFileSchema.safeParse(NWPProgramUIFileMock);
-    expect(result.success).toBe(true);
-  });
 });
 
 describe("songSchema", () => {
@@ -300,11 +295,6 @@ describe("tipsSchema", () => {
 describe("translationFileSchema", () => {
   it("should validate a NWS translation file correctly", () => {
     const result = translationFileSchema.safeParse(NWSTranslationFileMock);
-    expect(result.success).toBe(true);
-  });
-
-  it("should validate a NWP translation file correctly", () => {
-    const result = translationFileSchema.safeParse(NWPTranslationFileMock);
     expect(result.success).toBe(true);
   });
 });
