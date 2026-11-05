@@ -17,7 +17,7 @@ jobs:
         run: echo "SNAPSHOT_FILE=nws-versions.txt" >> "$GITHUB_ENV"
 
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           persist-credentials: true
 
